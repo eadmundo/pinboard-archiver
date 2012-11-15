@@ -1,0 +1,3 @@
+git+git://github.com/misja/python-boilerpipe.git#egg=boilerpipe
+envoy==0.0.2
+celery==3.0.12
