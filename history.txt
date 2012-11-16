@@ -1,0 +1,23 @@
+   76  sudo pip install envoy
+   78  wget -p --convert-links -P build/ http://www.thegeekstuff.com/2009/09/the-ultimate-wget-download-guide-with-15-awesome-examples/
+   79  wget -E -H -k -K -p http://www.dheinemann.com/2011/archiving-with-wget/
+   83  sudo pip install celery
+   94  celery --config=celeryconfig worker --loglevel=info
+   95  celery --config=celeryconfig worker -B --loglevel=info
+   01  curl -XGET 'http://localhost:9200/_cluster/nodes'
+  102  curl -XPOST localhost:9200/bookmarks -d @bookmarks-index-settings.json
+  103  curl -XGET 'http://localhost:9200/bookmarks/_search' -d @check-latest-update-query.json
+  104  curl -XGET 'http://localhost:9200/bookmarks/_search?size=1' -d @check-latest-update-query.json
+  105  curl -XGET 'http://localhost:9200/bookmarks/_search?limit=1' -d @check-latest-update-query.json
+  106  curl -XGET 'http://localhost:9200/bookmarks/_search' -d @check-latest-update-query.json
+  107  curl -XGET 'http://localhost:9200/bookmarks/_search' -d @check-latest-update-query.json | python -mjson.tool
+  108  curl https://api.pinboard.in/v1/posts/all?auth_token=edwardjstone:13204B53B64A2C29FA8D&format=json | python -mjson.tool > all.json
+  109  curl https://api.pinboard.in/v1/posts/update?auth_token=edwardjstone:13204B53B64A2C29FA8D&format=json
+  110  curl -XGET https://api.pinboard.in/v1/posts/update?auth_token=edwardjstone:13204B53B64A2C29FA8D&format=json
+  111  curl -XGET 'https://api.pinboard.in/v1/posts/update?auth_token=edwardjstone:13204B53B64A2C29FA8D&format=json'
+  112  curl -XGET 'https://api.pinboard.in/v1/posts/update?auth_token=edwardjstone:13204B53B64A2C29FA8D&format=json' | python -mjson.tool
+  113  curl -XGET 'https://api.pinboard.in/v1/posts/update?auth_token=edwardjstone:13204B53B64A2C29FA8D&format=json' | python -mjson.tool > test.json
+  114  vi test.json
+  115  rm test.json
+  116  curl -XGET 'https://api.pinboard.in/v1/posts/all?auth_token=edwardjstone:13204B53B64A2C29FA8D&format=json' | python -mjson.tool > all.json
+  117  history > history.txt
