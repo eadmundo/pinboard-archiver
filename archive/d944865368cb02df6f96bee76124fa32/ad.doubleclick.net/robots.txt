@@ -1,8 +1,0 @@
-User-Agent: AdsBot-Google
-Disallow:
-
-User-Agent: MSNPTC
-Disallow:
-
-User-agent: *
-Disallow: /

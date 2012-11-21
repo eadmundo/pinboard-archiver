@@ -1,5 +1,0 @@
-# Robots.txt file for http://throwingfire.com
-#
-
-User-agent: *
-Disallow: /atom.xml

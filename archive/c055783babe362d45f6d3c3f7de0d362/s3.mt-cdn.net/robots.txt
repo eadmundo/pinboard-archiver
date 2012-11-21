@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /_error/
-Disallow: /_js/
-Disallow: /_css/
-Sitemap: http://mediatemple.net/sitemap.xml

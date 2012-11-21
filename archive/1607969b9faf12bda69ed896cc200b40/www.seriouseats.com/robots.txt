@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /features
-Disallow: /includes
-Disallow: /cgi-bin
-Disallow: /4stars

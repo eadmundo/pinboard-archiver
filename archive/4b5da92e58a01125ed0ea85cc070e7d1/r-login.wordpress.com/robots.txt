@@ -1,3 +1,0 @@
-# This file was generated on Fri, 29 Jun 2012 08:48:34 +0000
-User-agent: *
-Disallow: /

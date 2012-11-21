@@ -1,9 +1,0 @@
-# BEGIN XML-SITEMAP-PLUGIN
-Sitemap: http://chaotic-flow.com/sitemap.xml.gz
-# END XML-SITEMAP-PLUGIN
-User-agent: *
-Disallow: /wp-admin/
-Disallow: /wp-includes/
-Disallow: /page/
-Disallow: /category/
-Disallow: /trackback/

@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /ext.php
-Disallow: /xml2.php
-Disallow: /myoped.php

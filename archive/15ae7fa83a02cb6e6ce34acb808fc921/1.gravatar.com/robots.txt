@@ -1,7 +1,0 @@
-User-Agent: *
-Disallow: /*.json
-Disallow: /*.xml
-Disallow: /*.php
-Disallow: /*.vcf
-Disallow: /*.qr
-Disallow: /accounts/activate/*

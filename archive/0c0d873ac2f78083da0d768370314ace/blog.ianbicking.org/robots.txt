@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /login
-Disallow: /WK/
-Crawl-delay: 60
-Request-rate: 1/60

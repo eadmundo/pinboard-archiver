@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /_/scs/
-Allow: /_/apps-static/
-Disallow: /_/
