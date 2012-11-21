@@ -1,0 +1,50 @@
+{% macro search_result(item) %}
+    <li>
+        <h3><a href="{{ item.link }}" title="{{ item.title|e }}">{{ item.htmlTitle|replace(" | Unum", "") }}</a></h3>
+        <p class="url">from <a href="{{ item.link }}" title="{{ item.title|e }}">{{ item.htmlFormattedUrl }}</a></p>
+        <p>{{ item.htmlSnippet }}</p>
+    </li>
+{% endmacro %}
+
+{% macro search_results(results) %}
+<ol>
+{% for item in results: %}
+    {{ search_result(item) }}
+{% endfor %}
+</ol>
+{% endmacro %}
+
+{% macro pagination_ui(num_pages, page, terms) %}
+{#
+markup based on Mike West's excellent suggestion:
+https://mikewest.org/2010/02/an-accessible-pagination-pattern
+#}
+<p id="paginglabel" class="audible">Pagination</p>
+<ul role="navigation" aria-labelledby="paginglabel">
+{% for i in range(1, [num_pages + 1, 8]|sort|first) %}
+    <li>{{ pagination_item(i, page, terms) }}</li>
+{% endfor %}
+</ul>
+{% endmacro %}
+
+{% macro pagination_item(i, current, terms) -%}
+    {% if i == current %}
+        <p><span class="audible">You&rsquo;re currently reading Search Results Page </span>{{ i }}</p>
+    {% elif i == current - 1 %}
+        {% call pagination_link(i, terms, rel="prev") %}
+            <span class="prev">Previous<span class="audible">: Search Results Page </span></span>{{ i }}
+        {% endcall %}
+    {% elif i == current + 1 %}
+        {% call pagination_link(i, terms, rel="next") %}
+            <span class="next">Next<span class="audible">: Search Results Page </span></span>{{ i }}
+        {% endcall %}
+    {% else %}
+        {% call pagination_link(i, terms) %}
+            <span class="audible">Search Results Page</span> {{ i }}
+        {% endcall %}
+    {% endif %}
+{%- endmacro %}
+
+{% macro pagination_link(i, terms, rel="") -%}
+<a href="{{ url_for('search.results', q=terms, page=i) }}"{% if rel %} rel="{{ rel }}"{% endif %}>{{ caller() }}</a>
+{%- endmacro %}
