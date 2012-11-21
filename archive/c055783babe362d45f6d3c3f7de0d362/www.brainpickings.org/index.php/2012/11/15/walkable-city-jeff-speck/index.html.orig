@@ -1,0 +1,677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"
+ xmlns:og='http://opengraphprotocol.org/schema/'
+ xmlns:fb='http://www.facebook.com/2008/fbml'>
+<head profile="http://gmpg.org/xfn/11">
+	
+	<meta name="google-site-verification" content="4LJuFXcNVYbpBQ849fq77MYVRWvru3fXV8CMWF6OkE4" />
+		
+	<title>What Makes a Great City: A General Theory of Walkability | Brain Pickings</title>
+	
+	<!-- Facebook Like Button OpenGraph Settings Start-->
+	<meta property="og:image" content="http://www.brainpickings.org/wp-content/uploads/2012/11/walkablecity1-150x150.jpg" />
+<!-- Facebook Like Button OpenGraph Settings end-->
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+		
+	<meta name="keywords" content="brain pickings, brainpickings, maria popova, blog, creativity, ideas, books, book reviews, history, science, design, inspiration, art, technology, photography, music, green, sustainability, culture, cool"/>
+	    	
+	<meta name="description" content="A library of cross-disciplinary interestingness and combinatorial creativty"/>
+	<meta name="verify-v1" content="Xa6DUHnX8eUvM0BipzIqAMUlASbBY1m+Gi2M5NCe16Q=" />
+	<meta name="mbl" content="e68cad7d4385c61a716edadf114599f5f246e242" />
+	
+	<link rel="alternate" type="application/rss+xml" title="Brain Pickings RSS Feed" href="http://feedproxy.google.com/brainpickings/rss" />
+	<link rel="pingback" href="http://www.brainpickings.org/xmlrpc.php" />
+	
+	<link rel="stylesheet" type="text/css" media="all" href="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/style.css"  />
+	<link media="all" rel="stylesheet" type="text/css" href="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/css/all.css" />
+	<link type="image/x-icon" href="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/favicon.ico" rel="icon"/>
+	<link href="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/favicon.ico" rel="shortcut icon"/>
+	
+	<link rel='stylesheet' id='nrelate-style-common-0-05-1-css'  href='http://static.nrelate.com/common_wp/0.05.1/nrelate-panels-common.min.css' type='text/css' media='all' />
+<!--[if IE 6]>
+<link rel='stylesheet' id='nrelate-ie6-0-05-1-css'  href='http://static.nrelate.com/common_wp/0.05.1/ie6-panels.min.css' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='nrelate-style-default-0-05-1-css'  href='http://static.nrelate.com/common_wp/0.05.1/nrelate-panels-default.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://www.brainpickings.org/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.brainpickings.org/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+<script type='text/javascript' src='http://www.brainpickings.org/wp-content/plugins/nrelate-related-content/admin/common_frontend.min.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.brainpickings.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.brainpickings.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='The Birth of Sound: Why the Big Bang Was Actually Silent' href='http://www.brainpickings.org/index.php/2012/11/15/the-birth-of-sound/' />
+<link rel='next' title='Kurt Vonnegut: You&#8217;re Allowed To Be In Love Three Times In Your Life' href='http://www.brainpickings.org/index.php/2012/11/15/kurt-vonnegut-love/' />
+<link rel='shortlink' href='http://wp.me/peM2X-5Tv' />
+
+<!-- All in One SEO Pack 1.6.15.2 by Michael Torbert of Semper Fi Web Design[414,500] -->
+<meta name="description" content="City engineers have turned our downtowns into places that are easy to get to but not worth arriving at." />
+<meta name="keywords" content="books,cities,culture" />
+<link rel="canonical" href="http://www.brainpickings.org/index.php/2012/11/15/walkable-city-jeff-speck/" />
+<!-- /all in one seo pack -->
+
+<script src="http://www.brainpickings.org/wp-content/plugins/embed_quicktime/jquery-1.2.1.pack.js" type="text/javascript"></script>
+
+<script src="http://www.brainpickings.org/wp-content/plugins/embed_quicktime/jquery.embedquicktime.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+  jQuery.noConflict();
+  jQuery(document).ready(function() {
+    jQuery.embedquicktime({jquery: "http://www.brainpickings.org/wp-content/plugins/embed_quicktime/jquery-1.2.1.pack.js", plugin: "http://www.brainpickings.org/wp-content/plugins/embed_quicktime/jquery.embedquicktime.js"});
+  });
+  </script>
+	<!--Facebook Like Button OpenGraph Settings Start-->
+	<meta property="og:site_name" content="Brain Pickings"/>
+	<meta property="og:title" content="What Makes a Great City: A General Theory of Walkability"/>
+		<meta property="og:description" content=""City engineers have turned our downtowns into places that are easy to get to but not worth arriving at."
+
+"I walk everywhere in the city."/>
+	
+	<meta property="og:url" content="http://www.brainpickings.org/index.php/2012/11/15/walkable-city-jeff-speck/"/>
+	<meta property="fb:admins" content="" />
+	<meta property="fb:app_id" content="10374074638" />
+	<meta property="og:type" content="article" />
+		<!--Facebook Like Button OpenGraph Settings End-->
+	<script type='text/javascript'>/* <![CDATA[ */ var _wpaudio = {url: 'http://www.brainpickings.org/wp-content/plugins/wpaudio-mp3-player', enc: {}, convert_mp3_links: false, style: {text_font:'Arial, Sans-serif',text_size:'12px',text_weight:'normal',text_letter_spacing:'-1px',text_color:'#ffdb00',link_color:'#990000',link_hover_color:'#ffdb00',bar_base_bg:'#ffdb00',bar_load_bg:'#ccc',bar_position_bg:'#990000',sub_color:'#aaa'}}; /* ]]> */</script>	
+	<script type="text/javascript" src="http://use.typekit.com/wal2ikf.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/js/main.js"></script>
+	<!--[if lt IE 7]>
+		<link media="all" rel="stylesheet" type="text/css" href="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/css/ie.css" />
+		<script type="text/javascript" src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/js/ie-hover-pack.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+	<div id="wrapper">
+		<h1 class="logo"><a href="http://www.brainpickings.org">Brain Pickings</a></h1>
+		<div id="main">
+			<div id="content">
+				<div class="box-wrapper">
+					<div class="box">
+						<div class="holder">
+							<ul class="social-networks">
+								<li><a target="_blank" href="http://www.facebook.com/pages/Brain-Pickings/55555550744?ref=mf" class="facebook">facebook</a></li>
+								<li><a target="_blank" href="http://www.twitter.com/brainpicker" class="twitter">twitter</a></li>
+								<li><a href="http://www.brainpickings.org/index.php/newsletter/" class="email">email</a></li>
+								<li><a target="_blank" href="http://feedproxy.google.com/brainpickings/rss" class="rss">rss</a></li>
+							</ul>
+							<div class="search">
+	<form method="get" id="searchform" action="http://www.brainpickings.org" >
+		<fieldset>
+			<input type="text" name="s" value="Search" class="text" />
+			<input type="submit" value="Search" class="submit" />
+		</fieldset>
+	</form>
+</div>
+
+						</div>
+					</div>
+				</div>	<div class="post">
+		<div class="holder">
+			<em class="date">15 NOVEMBER, 2012</em>
+			<h2><a href="http://www.brainpickings.org/index.php/2012/11/15/walkable-city-jeff-speck/">What Makes a Great City: A General Theory of Walkability</a></h2>
+			<strong class="by">by <a href="http://www.brainpickings.org/index.php/author/mpopova/" title="Posts by Maria Popova" rel="author">Maria Popova</a></strong>
+			<p class="intro"><em>&#8220;City engineers have turned our downtowns into places that are easy to get to but not worth arriving at.&#8221;</em></p>
+<p><a href="http://www.amazon.com/Walkable-City-Downtown-Save-America/dp/0374285810/?tag=braipick-20" target="_blank"><img align="right" style="margin: 9px 0 3px 15px;" src="http://www.brainpickings.org/wp-content/uploads/2012/11/walkablecity.jpg" alt="" width="190" /></a><em>&#8220;I walk everywhere in the city. Any city. You see everything you need to see for a lifetime. Every emotion. Every condition. Every fashion. Every glory,&#8221;</em> <strong>Maira Kalman</strong> observed in considering <a href="http://www.brainpickings.org/index.php/2012/07/30/maira-kalman-thinking-feeling-interview/">the creative capacity of walking</a>. <strong>Charles Dickens</strong> and <strong>Victor Hugo</strong>, too, <a href="http://www.brainpickings.org/index.php/2012/07/09/an-anatomy-of-inspiration-rosamond-harding/">came up with their best ideas while walking</a>. For <em>Peanuts</em> creator <strong>Charles Shulz</strong>, <a href="http://www.brainpickings.org/index.php/2012/03/30/love-is-walking-hand-in-hand-schulz-peanuts/">walking was part of love</a>.</p>
+<p>In <a href="http://www.amazon.com/Walkable-City-Downtown-Save-America/dp/0374285810/?tag=braipick-20" target="_blank"><strong><em>Walkable City: How Downtown Can Save America, One Step at a Time</em></strong></a> (<a href="http://www.worldcat.org/title/walkable-city-how-downtown-can-save-america-one-step-at-a-time/oclc/778422668&#038;referer=brief_results" target="_blank"><em>public library</em></a>), city planner <strong>Jeff Speck</strong>, who spent four years leading the design division of the National Endowment for the Arts working directly with a couple hundred mayors to help solve their greatest city-planning challenges, turns a perceptive eye towards what makes a great city and how we might be able to harness the power of a conceptually simple, practically complex, immeasurably far-reaching solution in improving the fabric and experience of urban life.</p>
+<p>Speck opens with a bang:</p>
+<blockquote><p>This is not the next great book on American cities. That book is not needed. An intellectual revolution is no longer necessary. What characterizes the discussion on cities these days is not a wrongheadedness or a lack of awareness about what needs to be done, but rather a complete disconnect between that awareness and the actions of those responsible for the physical form of our communities. </p>
+<p>We&#8217;ve known for three decades how to make livable cities &#8212; after forgetting for four &#8212; yet we&#8217;ve somehow not been able to pull it off. Jane Jacobs, who wrote in 1960, won over the planners by 1980. But the planners have yet to win over the city.</p></blockquote>
+<p>Winning the city over, however, requires equal parts sensitivity and rigor:</p>
+<blockquote><p>The pedestrian is an extremely fragile species, the canary in the coal mine of urban livability. Under the right conditions, this creature thrives and multiplies. But creating those conditions requires attention to a broad range of criteria, some more easily satisfied than others.</p></blockquote>
+<p>And yet, there&#8217;s hope:</p>
+<blockquote><p>It turns out that since the late nineties, the share of automobile miles driven by Americans in their twenties has dropped from 20.8 percent to just 13.7 percent. And if one looks at teens, future shifts seem likely to be greater. The number of nineteen-year-olds who have opted out of earning driver&#8217;s licenses has almost tripled since the late seventies, from 8 percent to 23 percent. .This statistic is particularly meaningful when one considers how the American landscape has changed since the seventies, when most American teens could walk to school, to the store, and to the soccer field, in stark contrast to the realities of today&#8217;s autocentric sprawl.</p></blockquote>
+<p>I was recently in London, curating a session on the future of cities at the <a href="http://www.wiredevent.co.uk/" target="_blank">2012 <em>Wired</em> conference</a>, where one of my speakers, the wonderful and witty <a href="http://twitter.com/gelatobaby" target="_blank">Alissa Walker</a>, made a case for walkable cities and walked the point home brilliantly:</p>
+<p><img src="http://www.brainpickings.org/wp-content/uploads/2012/11/alissa_wired.jpg" alt="" width="500" /></p>
+<p style="text-align: right; font-size: 0.8em; color: #666; margin-top: -20px;"><em>Photograph by Nate Lanxon for <a href="http://www.wired.co.uk/news/archive/2012-10/26/alissa-walker" target="_blank">Wired UK</a></em></p>
+<p>Speck goes on to outline a &#8220;General Theory of Walkability,&#8221; focusing on the four key factors of making a city attractive to pedestrians:</p>
+<blockquote><p>The General Theory of Walkability explains how, to be favored, a walk has to satisfy four main conditions: it must be useful, safe, comfortable, and interesting. Each of these qualities is essential an none alone is sufficient. <em>Useful</em> means that most aspects of daily life are located close at hand and organized in a way that walking serves them well. <em>Safe</em> means that the street has been designed to give pedestrians a fighting chance against being hit by automobiles; they must not only be safe but <em>feel</em> safe, which is even tougher to satisfy. <em>Comfortable</em> means that buildings and landscape shape urban streets into &#8216;outdoor living rooms,&#8217; in contrast to wide-open spaces, which usually fail to attract pedestrians. <em>Interesting</em> means that sidewalks are lined by unique buildings with friendly faces and that signs of humanity abound.</p></blockquote>
+<p>He argues that, more than a utopian notion, the walkable city is a practical solution to a number of problems that affect both our daily lives as individuals and our economic, environmental, and cultural health as a society. He writes:</p>
+<blockquote><p>These fixes simply give pedestrians a fighting chance, while also embracing bikes, enhancing transit, and making downtown living attractive to a broader range of people. Most are not expensive &#8212; some require little more than yellow paint. Each one individually makes a difference; collectively, they can transform a city and the lives of its residents.</p></blockquote>
+<p><img src="http://www.brainpickings.org/wp-content/uploads/2012/11/bikegod_london.png" alt="" width="500" /></p>
+<p>But to spark such holistic transformation, Speck advocates for the role of the generalist:</p>
+<blockquote><p>If they are to function properly, cities need to be planned by generalists, as they once were. Generalists understand that consolidating parks means that fewer people can walk to them. Generalists understand that infrastructure organized in service of big trucks is not always inviting to small people. And generalists, finally, are coming to understand that more lanes usually just lead to more traffic.</p>
+<p>Most significantly, generalists &#8212; such as planners and, one hopes, mayors &#8212; ask the big-picture questions that are so often forgotten among the day-to-day shuffle of city governance. Questions like: What kind of city will help us thrive economically? What kind of city will keep our citizens not just safe, but healthy? What kind of city will be sustainable for generations to come?</p>
+<p>These three issues &#8212; wealth, health, and sustainability &#8212; are, not coincidentally, the three principal arguments for making our cities more walkable.</p></blockquote>
+<p>As far as wealth is concerned, walkability is proving to be a monumental economic draw:</p>
+<blockquote><p>The economic advantage that has already begun to accrue to walkable places can be attributed to three key factors. First, for certain segments of the population, chief among them young &#8216;creatives,&#8217; urban living is simply more appealing; many wouldn&#8217;t be caught dead anywhere else. Second, massive demographic shifts occurring right now mean that these pro-urban segments of the population are becoming dominant, crating a spike in demand that is expected to last for decades. Third, the choice to live the walkable life generates considerable savings for these households, and much of these savings are spent locally.</p></blockquote>
+<p>Ultimately, a walkable city isn&#8217;t merely an economically and environmentally healthy city &#8212; it&#8217;s also a relentlessly alluring city, the kind in which you can <a href="http://www.brainpickings.org/index.php/2012/08/23/anais-nin-on-new-york/">&#8220;create a sparkle of the highest power&#8221;</a>:</p>
+<blockquote><p>Walkability is both an end and a means, as well as a measure. While the physical and social rewards of walking are many, walkability is perhaps most useful as it contributes to urban vitality and most meaningful as an indicator of that vitality.</p>
+<p>[…]</p>
+<p>This discussion is necessary because, since midcentury, whether intentionally or by accident, most American cities have effectively become no-walking ones. In the absence of any larger vision or mandate, city engineers &#8212; worshipping the twin gods of Smooth Traffic and Ample Parking &#8212; have turned our downtowns into places that are easy to get to but not worth arriving at.</p></blockquote>
+<p>Insightful and passionately argued, <a href="http://www.amazon.com/Walkable-City-Downtown-Save-America/dp/0374285810/?tag=braipick-20" target="_blank"><strong><em>Walkable City</em></strong></a> comes as a follow-up to the landmark 2010 tome <a href="http://www.amazon.com/Suburban-Nation-Sprawl-Decline-American/dp/0865477507/?tag=braipick-20"><em>Suburban Nation</em></a>, which Speck co-authored, and presents a welcome addition to these <a href="http://www.brainpickings.org/index.php/2011/08/22/must-read-books-about-cities/">favorite reads on urbanism</a>.</p>
+<p class="author" style="background: #f8f8f8;margin: 15px 0;padding: 10px 15px;color: #000;"><a target="_blank" href="http://www.brainpickings.org/index.php/newsletter/"><img align="left" style="margin: 3px 7px 3px 0" src="http://www.brainpickings.org/wp-content/themes/BrainPickings/images/email.png" alt="" width="50" /></a>Brain Pickings has a free weekly newsletter and people <a target="_blank" href="http://www.brainpickings.org/index.php/newsletter/">say it&#8217;s cool</a>. It comes out on Sundays and offers the week&#8217;s best articles. Here&#8217;s <a target="_blank" href="http://us2.campaign-archive2.com/?u=13eb080d8a315477042e0d5b1&#038;id=ccae42412d">what to expect</a>. Like? <a target="_blank" href="http://www.brainpickings.org/index.php/newsletter/">Sign up.</a></p>
+<div style="float: right;  margin-left: 5px;"><a href="https://twitter.com/share" class="twitter-share-button" data-via="brainpicker" data-count="vertical" data-url="http://www.brainpickings.org/index.php/2012/11/15/walkable-city-jeff-speck/">Tweet</a></div>
+ 
+<span class = "fb" style = "height: 50px;  float: left; "><iframe src="http://www.facebook.com/plugins/like.php?href=http://www.brainpickings.org/index.php/2012/11/15/walkable-city-jeff-speck/&layout=button_count&send=false&show_faces=false&width=&action=like&colorscheme=light&font=" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:px; height:50px"></iframe></span>			
+		<div class="tags-block">tags: <a href="http://www.brainpickings.org/index.php/tag/books/" rel="tag">books</a> <a href="http://www.brainpickings.org/index.php/tag/cities/" rel="tag">cities</a> <a href="http://www.brainpickings.org/index.php/tag/culture/" rel="tag">culture</a></div>
+			
+<div class="nr_clear"></div>	
+	<div id="nrelate_related_1" class="nrelate nrelate_related nrelate_default nr_1col nr_110"></div>
+	<!--[if IE 6]>
+		<script type="text/javascript">jQuery('.nrelate_default').removeClass('nrelate_default');</script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+	/* <![CDATA[ */
+		nRelate.domain = "www.brainpickings.org";
+		var entity_decoded_nr_url = jQuery('<span/>').html("http://api.nrelate.com/rcw_wp/0.51.2/?tag=nrelate_related&keywords=What+Makes+a+Great+City%3A+A+General+Theory+of+Walkability&domain=www.brainpickings.org&url=http%3A%2F%2Fwww.brainpickings.org%2Findex.php%2F2012%2F11%2F15%2Fwalkable-city-jeff-speck%2F&nr_div_number=1").text();
+		nRelate.getNrelatePosts(entity_decoded_nr_url);
+	/* ]]> */
+	</script>
+<div class="nr_clear"></div>			<div class="blocks-holder">&nbsp;</div>
+						
+		</div>
+	</div>
+			</div>
+			<div id="sidebar">
+       
+   <ul id="nav">
+        <li><a href="http://www.brainpickings.org/index.php/about/">about</a></li>
+        <li><a href="http://www.brainpickings.org/index.php/donate/">support</a></li>
+        <li><a href="http://www.brainpickings.org/index.php/contact/">contact</a></li>
+        <li><a href="http://bookpickings.brainpickings.org/">bookshelf</a></li>        
+        <li><a href="http://www.brainpickings.org/index.php/newsletter/">newsletter</a></li>
+		<li><a href="http://literaryjukebox.brainpickings.org/">literary jukebox</a></li>
+
+
+    </ul>
+    
+    <div class="info-block">
+    <a href="http://www.curatorscode.org" target="_blank"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/curatorscode.png"  /></a>
+    </div>
+   
+   <div class="info-block">
+        <h3>tip jar</h3>
+        <p><em>Brain Pickings</em> remains ad-free and takes 450+ hours a month to curate and edit, between the site, the email newsletter, and Twitter. If you find any joy and value in it, please consider becoming a Member and supporting with a recurring monthly <a href="http://www.brainpickings.org/index.php/donate/">donation</a> of your choosing, between a cup of coffee and a fancy dinner:</p>
+        
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RFAWPPCRF96AE">
+<table width="150px;" style="margin-bottom: 10px;">
+<tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td><select name="os0">
+	<option value="**">&hearts; $10 / month</option>
+	<option value="*">&hearts; $3 / month</option>
+	<option value="***">&hearts; $25 / month</option>
+	<option value="****">&hearts; $50 / month</option>
+	<option value="*****">&hearts; $100 / month</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/subscribe.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+        <p style="margin-top: 20px;">You can also become a one-time patron with a single donation in any amount:</p>
+
+
+         <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="KFC5ULUNFDTCG">
+<input type="image" src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/donate.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>	
+
+    </div>
+   
+    <div class="info-block widget_newsletter">
+        <h3>newsletter</h3>
+        <p><em>Brain Pickings</em> has a free weekly interestingness digest. It comes out on Sundays and offers the week's best articles. Here's an <a target="_blank" href="http://us2.campaign-archive2.com/?u=13eb080d8a315477042e0d5b1&id=ccae42412d" target="_blank">example</a>. Like? Sign up.</p>
+        <!-- Begin MailChimp Signup Form -->
+        
+        <!--[if IE]>
+            <style type="text/css" media="screen">
+                #mc_embed_signup fieldset {position: relative;}
+                #mc_embed_signup legend {position: absolute; top: -1em; left: .2em;}
+            </style>
+        <![endif]--> 
+        <!--[if IE 7]>
+            <style type="text/css" media="screen">
+                .mc-field-group {overflow:visible;}
+            </style>
+        <![endif]-->
+        
+        
+                
+        
+        <div id="mc_embed_signup">
+            <form action="http://brainpickings.us2.list-manage2.com/subscribe/post?u=13eb080d8a315477042e0d5b1&amp;id=179ffa2629" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <fieldset>
+                    
+                    <span class="text"><input type="text" value="Name" name="MMERGE3" class="" id="mce-MMERGE3"></span>
+                        
+                    <span class="text"><input type="text" value="Email" name="EMAIL" class="required email" id="mce-EMAIL"></span>
+                    
+                    <div class="response" id="mce-error-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: FBE3E4;color: #D12F19;"></div>
+                    <div class="response" id="mce-success-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #E3FBE4;color: #529214;"></div>
+                    
+                    <input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn submit">
+                    
+                </fieldset>	
+                <a href="#" id="mc_embed_close" class="mc_embed_close" style="display: none;">Close</a>
+            </form>
+        </div>
+        
+        <script type="text/javascript">
+            var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='text';
+            try {
+                var jqueryLoaded=jQuery;
+                jqueryLoaded=true;
+            } catch(err) {
+                var jqueryLoaded=false;
+            }
+            var head= document.getElementsByTagName('head')[0];
+            if (!jqueryLoaded) {
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+                head.appendChild(script);
+                if (script.readyState && script.onload!==null){
+                    script.onreadystatechange= function () {
+                          if (this.readyState == 'complete') mce_preload_check();
+                    }    
+                }
+            }
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+            head.appendChild(script);
+            var err_style = '';
+            try{
+                err_style = mc_custom_error_style;
+            } catch(e) {
+                err_style = 'margin: 1em 0 0 0; padding: 1em 0.5em 0.5em 0.5em; background: FFEEEE none repeat scroll 0% 0%; font-weight: bold; float: left; z-index: 1; width: 80%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; color: FF0000;';
+            }
+            var head= document.getElementsByTagName('head')[0];
+            var style= document.createElement('style');
+            style.type= 'text/css';
+            if (style.styleSheet) {
+                style.styleSheet.cssText = '.mce_inline_error {' + err_style + '}';
+            } else {
+                style.appendChild(document.createTextNode('.mce_inline_error {' + err_style + '}'));
+            }
+            head.appendChild(style);
+            setTimeout('mce_preload_check();', 250);
+            
+            var mce_preload_checks = 0;
+            function mce_preload_check(){
+                if (mce_preload_checks>40) return;
+                mce_preload_checks++;
+                try {
+                    var jqueryLoaded=jQuery;
+                } catch(err) {
+                    setTimeout('mce_preload_check();', 250);
+                    return;
+                }
+                try {
+                    var validatorLoaded=$("#fake-form").validate({});
+                } catch(err) {
+                    setTimeout('mce_preload_check();', 250);
+                    return;
+                }
+                mce_init_form();
+            }
+            function mce_init_form(){
+                $(document).ready( function($) {
+                    var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+                    var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+                    options = { url: 'http://brainpickings.us2.list-manage.com/subscribe/post-json?u=13eb080d8a315477042e0d5b1&id=179ffa2629&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+                        beforeSubmit: function(){
+                            $('#mce_tmp_error_msg').remove();
+                            $('.datefield','#mc_embed_signup').each(
+                                function(){
+                                    var txt = 'filled';
+                                    var fields = new Array();
+                                    var i = 0;
+                                    $(':text', this).each(
+                                        function(){
+                                            fields[i] = this;
+                                            i++;
+                                        });
+                                    $(':hidden', this).each(
+                                        function(){
+                                            if ( fields[0].value=='MM' && fields[1].value=='DD' && fields[2].value=='YYYY' ){
+                                                this.value = '';
+                                            } else if ( fields[0].value=='' && fields[1].value=='' && fields[2].value=='' ){
+                                                this.value = '';
+                                            } else {
+                                                this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                            }
+                                        });
+                                });
+                            return mce_validator.form();
+                        }, 
+                        success: mce_success_cb
+                    };
+                    $('#mc-embedded-subscribe-form').ajaxForm(options);      
+                });
+            }
+            
+            function mce_success_cb(resp){
+                $('#mce-success-response').hide();
+                $('#mce-error-response').hide();
+                if (resp.result=="success"){
+                    $('#mce-'+resp.result+'-response').show();
+                    $('#mce-'+resp.result+'-response').html(resp.msg);
+                    $('#mc-embedded-subscribe-form').each(function(){
+                        this.reset();
+                    });
+                } else {
+                    var index = -1;
+                    var msg;
+                    try {
+                        var parts = resp.msg.split(' - ',2);
+                        if (parts[1]==undefined){
+                            msg = resp.msg;
+                        } else {
+                            i = parseInt(parts[0]);
+                            if (i.toString() == parts[0]){
+                                index = parts[0];
+                                msg = parts[1];
+                            } else {
+                                index = -1;
+                                msg = resp.msg;
+                            }
+                        }
+                    } catch(e){
+                        index = -1;
+                        msg = resp.msg;
+                    }
+                    try{
+                        if (index== -1){
+                            $('#mce-'+resp.result+'-response').show();
+                            $('#mce-'+resp.result+'-response').html(msg);            
+                        } else {
+                            err_id = 'mce_tmp_error_msg';
+                            html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+                            
+                            var input_id = '#mc_embed_signup';
+                            var f = $(input_id);
+                            if (ftypes[index]=='address'){
+                                input_id = '#mce-'+fnames[index]+'-addr1';
+                                f = $(input_id).parent().parent().get(0);
+                            } else if (ftypes[index]=='date'){
+                                input_id = '#mce-'+fnames[index]+'-month';
+                                f = $(input_id).parent().parent().get(0);
+                            } else {
+                                input_id = '#mce-'+fnames[index];
+                                f = $().parent(input_id).get(0);
+                            }
+                            if (f){
+                                $(f).append(html);
+                                $(input_id).focus();
+                            } else {
+                                $('#mce-'+resp.result+'-response').show();
+                                $('#mce-'+resp.result+'-response').html(msg);
+                            }
+                        }
+                    } catch(e){
+                        $('#mce-'+resp.result+'-response').show();
+                        $('#mce-'+resp.result+'-response').html(msg);
+                    }
+                }
+            }
+        
+        </script>
+        <!--End mc_embed_signup-->
+        
+    </div>
+    
+    <div class="info-block">
+    <a href="http://mbsy.co/7pD" target="_blank"><img src="http://www.brainpickings.org/wp-content/uploads/2012/10/holsteemanifesto.jpg" width="200" /></a>
+    </div>
+    
+     <div class="info-block">
+    <a href="http://www.brainpickings.org/index.php/2012/08/03/susan-sontag-on-love/"><img src="http://www.brainpickings.org/wp-content/uploads/2012/07/sontagonlove_brainpickings.jpg" width="200" /></a>
+    </div>
+
+    
+    
+    <!--<div class="info-block">
+    <h3>the year in reading</h3>
+    
+    <a href="http://www.brainpickings.org/index.php/2011/11/28/best-art-design-books-2011/"><img src="http://www.brainpickings.org/wp-content/uploads/2011/05/radioactive.png" style="margin-top: 30px;" width="200" /></a>
+    
+    <p class="fav">☞ <a href="http://www.brainpickings.org/index.php/2011/11/28/best-art-design-books-2011/">The best art, design & creativity books of 2011</a></p>
+    
+    <a href="http://www.brainpickings.org/index.php/2011/11/21/best-childrens-books-2011/"><img src="http://www.brainpickings.org/wp-content/uploads/2011/08/blexbolexpeople.jpg" style="margin-top: 30px;" width="200" /></a>
+
+    <p class="fav">☞ <a href="http://www.brainpickings.org/index.php/2011/11/21/best-childrens-books-2011/">The best children's books of 2011</a></p>
+    
+    
+    <a href="http://www.brainpickings.org/index.php/2011/12/12/best-science-books-2011/"><img src="http://www.brainpickings.org/wp-content/uploads/2011/07/beginningofinfinity.png" style="margin-top: 30px;" width="200" /></a>
+
+    <p class="fav">☞ <a href="http://www.brainpickings.org/index.php/2011/12/12/best-science-books-2011/">The best science books of 2011</a></p>
+    
+    
+    <a href="http://www.brainpickings.org/index.php/2011/12/05/best-photography-books-2011/"><img src="http://www.brainpickings.org/wp-content/uploads/2011/08/emergencyinslowmotion.png" style="margin-top: 30px;" width="200" /></a>
+
+    <p class="fav">☞ <a href="http://www.brainpickings.org/index.php/2011/12/05/best-photography-books-2011/">The best photography books of 2011</a></p>
+    
+    <a href="http://www.brainpickings.org/index.php/2011/12/16/best-history-books-2011/"><img src="http://www.brainpickings.org/wp-content/uploads/2011/10/booksalivinghistory.jpg" style="margin-top: 30px;" width="200" /></a>
+
+    <p class="fav">☞ <a href="http://www.brainpickings.org/index.php/2011/12/16/best-history-books-2011/">The best history books of 2011</a></p>
+    
+    <a href="http://www.brainpickings.org/index.php/2011/12/19/best-food-books-of-2011/"><img src="http://www.brainpickings.org/wp-content/uploads/2011/10/kalmanfoodrulescover2.jpg" style="margin-top: 30px;" width="200" /></a>
+
+    <p class="fav">☞ <a href="http://www.brainpickings.org/index.php/2011/12/19/best-food-books-of-2011/">The best food books of 2011</a></p>
+    
+    <a href="http://www.brainpickings.org/index.php/2011/12/22/best-psychology-and-philosophy-books-of-2011/"><img src="http://www.brainpickings.org/wp-content/uploads/2011/10/thinkingfastandslow.jpg" style="margin-top: 30px;" width="200" /></a>
+
+    <p class="fav">☞ <a href="http://www.brainpickings.org/index.php/2011/12/22/best-psychology-and-philosophy-books-of-2011/">The best psychology and philosophy books of 2011</a></p>
+    
+    <a href="http://www.brainpickings.org/index.php/2011/12/27/best-biographies-and-memoirs-of-2011/"><img src="http://www.brainpickings.org/wp-content/uploads/2011/11/andsoitgoes.jpg" style="margin-top: 30px;" width="200" /></a>
+
+    <p class="fav">☞ <a href="http://www.brainpickings.org/index.php/2011/12/27/best-biographies-and-memoirs-of-2011/">The best biographies and memoirs of 2011</a></p>
+
+    </div>-->
+    
+    <div class="info-block">
+    <h3>favorite pickings</h3>
+    
+     <a href="http://www.brainpickings.org/index.php/2012/02/27/purpose-work-love/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_purpose.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2012/02/27/purpose-work-love/">How to Find Your Purpose and Do What You Love</a></p>
+    
+
+    <a href="http://www.brainpickings.org/index.php/2012/01/09/best-books-on-writing-reading/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_reading.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2012/01/09/best-books-on-writing-reading/">9 Books to Help You Read More and Write Better</a></p>
+    
+    
+    <a href="http://www.brainpickings.org/index.php/2012/06/15/how-to-talk-about-books-you-havent-read/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_unreadbooks.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2012/06/15/how-to-talk-about-books-you-havent-read/">How To Talk About Books You Haven’t Read
+</a></p>
+    
+
+    
+    
+     <a href="http://www.brainpickings.org/index.php/2011/01/25/must-read-books-happiness/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_happiness.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2011/01/25/must-read-books-happiness/">7 Must-Read Books on the Art & Science of Happiness</a></p>
+
+    
+    <a href="http://www.brainpickings.org/index.php/2011/06/13/10-primers-on-culture/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_culture.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2011/06/13/10-primers-on-culture/">(Almost) Everything You Need to Know about Culture in 10 Books</a></p>
+    
+     <a href="http://www.brainpickings.org/index.php/2011/04/08/five-manifestos-for-life/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_manifestos.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2011/04/08/five-manifestos-for-life/">5 Manifestos for Life</a></p>
+    
+    <a href="http://www.brainpickings.org/index.php/2012/02/07/david-ogilvy-on-writing/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_ogilvy.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2012/02/07/david-ogilvy-on-writing/">10 Tips on Writing from David Ogilvy</a></p>
+    
+    <a href="http://www.brainpickings.org/index.php/2011/07/04/7-essential-books-on-optimism//"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_optimism.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2011/07/04/7-essential-books-on-optimism/">7 Essential Books on Optimism</a></p>
+    
+     
+     <a href="http://www.brainpickings.org/index.php/2012/01/12/john-steinbeck-on-love-1958/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_steinbeck.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2012/01/12/john-steinbeck-on-love-1958/">John Steinbeck on Falling in Love: A 1958 Letter</a></p>
+        
+
+    <a href="http://www.brainpickings.org/index.php/2011/01/07/must-read-map-books/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_maps.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2011/01/07/must-read-map-books/">Creative Cartography: 7 Must-Read Books on Maps</a></p>
+    
+           <a href="http://www.brainpickings.org/index.php/2011/01/28/isaac-asimov-creativity-education-science/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_asimov.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2011/01/28/isaac-asimov-creativity-education-science/">Isaac Asimov on Science and Creativity in Education</a></p>
+        
+    
+    <a href="http://www.brainpickings.org/index.php/2011/07/25/childrens-books-by-adult-authors-2/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_stein.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2011/07/25/childrens-books-by-adult-authors-2/">7 Obscure Children’s Books by Famous Authors of Adult Literature</a></p>
+    
+    <a href="http://www.brainpickings.org/index.php/2011/04/18/5-must-read-books-on-love/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_love.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2011/04/18/5-must-read-books-on-love/">Why We Love: 5 Books on the Psychology of Love</a></p>
+   
+
+    
+
+ <a href="http://www.brainpickings.org/index.php/2010/09/27/yanko-tsvetkov-mapping-european-stereotypes/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_stereotypes.jpg" style="margin-top: 20px;opacity:0.6; filter:alpha(opacity=40); " width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2010/09/27/yanko-tsvetkov-mapping-european-stereotypes/">Mapping European Stereotypes</a></p>
+        
+        
+     <a href="http://www.brainpickings.org/index.php/2011/03/21/must-read-books-music-emotion-brain/"><img src="http://www.brainpickings.org/wp-content/themes/brainpickings_p2h/images/sidebar_music.jpg" style="margin-top: 20px; opacity:0.6; filter:alpha(opacity=40);" width="200" /></a>
+    <p class="fav"><a href="http://www.brainpickings.org/index.php/2011/03/21/must-read-books-music-emotion-brain/">7 Must-Read Books on Music, Emotion & the Brain</a></p>
+
+
+    </div>
+   
+    <div class="info-block">
+        <h3>explore</h3>
+        <ul class="wp-tag-cloud"><li><a href='http://www.brainpickings.org/index.php/tag/activism/' class='tag-link-26' title='95 topics' style='font-size: 11.278481012658pt;'>activism</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/advertising/' class='tag-link-7' title='64 topics' style='font-size: 9.7721518987342pt;'>advertising</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/animation/' class='tag-link-159' title='184 topics' style='font-size: 13.848101265823pt;'>animation</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/art/' class='tag-link-6' title='820 topics' style='font-size: 19.518987341772pt;'>art</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/bizarre/' class='tag-link-50' title='45 topics' style='font-size: 8.4430379746835pt;'>bizarre</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/books/' class='tag-link-36' title='948 topics' style='font-size: 20.139240506329pt;'>books</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/childrens-books/' class='tag-link-572' title='108 topics' style='font-size: 11.810126582278pt;'>children's books</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/collaboration/' class='tag-link-523' title='64 topics' style='font-size: 9.7721518987342pt;'>collaboration</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/creativity/' class='tag-link-524' title='142 topics' style='font-size: 12.873417721519pt;'>creativity</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/culture/' class='tag-link-17' title='1,565 topics' style='font-size: 22pt;'>culture</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/data-visualization/' class='tag-link-515' title='114 topics' style='font-size: 11.987341772152pt;'>data visualization</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/design/' class='tag-link-9' title='637 topics' style='font-size: 18.544303797468pt;'>design</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/documentary/' class='tag-link-454' title='197 topics' style='font-size: 14.113924050633pt;'>documentary</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/education/' class='tag-link-508' title='89 topics' style='font-size: 11.012658227848pt;'>education</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/film/' class='tag-link-37' title='322 topics' style='font-size: 15.974683544304pt;'>film</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/food/' class='tag-link-137' title='40 topics' style='font-size: 8pt;'>food</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/happiness/' class='tag-link-535' title='91 topics' style='font-size: 11.101265822785pt;'>happiness</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/health/' class='tag-link-28' title='40 topics' style='font-size: 8pt;'>health</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/history/' class='tag-link-389' title='555 topics' style='font-size: 18.101265822785pt;'>history</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/illustration/' class='tag-link-54' title='219 topics' style='font-size: 14.46835443038pt;'>illustration</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/innovation/' class='tag-link-201' title='133 topics' style='font-size: 12.607594936709pt;'>innovation</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/interview/' class='tag-link-517' title='81 topics' style='font-size: 10.658227848101pt;'>interview</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/knowledge/' class='tag-link-548' title='157 topics' style='font-size: 13.227848101266pt;'>knowledge</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/letters/' class='tag-link-608' title='43 topics' style='font-size: 8.2658227848101pt;'>letters</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/literature/' class='tag-link-533' title='120 topics' style='font-size: 12.164556962025pt;'>literature</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/love/' class='tag-link-540' title='47 topics' style='font-size: 8.620253164557pt;'>love</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/maps/' class='tag-link-545' title='42 topics' style='font-size: 8.1772151898734pt;'>maps</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/media/' class='tag-link-79' title='43 topics' style='font-size: 8.2658227848101pt;'>media</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/music/' class='tag-link-4' title='232 topics' style='font-size: 14.73417721519pt;'>music</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/neuroscience/' class='tag-link-52' title='49 topics' style='font-size: 8.7974683544304pt;'>neuroscience</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/omnibus/' class='tag-link-583' title='142 topics' style='font-size: 12.873417721519pt;'>omnibus</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/philosophy/' class='tag-link-534' title='120 topics' style='font-size: 12.164556962025pt;'>philosophy</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/photography/' class='tag-link-5' title='227 topics' style='font-size: 14.645569620253pt;'>photography</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/politics/' class='tag-link-19' title='170 topics' style='font-size: 13.493670886076pt;'>politics</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/psychology/' class='tag-link-27' title='337 topics' style='font-size: 16.151898734177pt;'>psychology</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/remix/' class='tag-link-527' title='93 topics' style='font-size: 11.189873417722pt;'>remix</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/science/' class='tag-link-428' title='406 topics' style='font-size: 16.860759493671pt;'>science</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/social-web/' class='tag-link-3' title='65 topics' style='font-size: 9.8607594936709pt;'>social web</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/software/' class='tag-link-16' title='50 topics' style='font-size: 8.8860759493671pt;'>software</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/sustainability/' class='tag-link-12' title='149 topics' style='font-size: 13.050632911392pt;'>sustainability</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/technology/' class='tag-link-18' title='213 topics' style='font-size: 14.379746835443pt;'>technology</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/ted/' class='tag-link-259' title='128 topics' style='font-size: 12.430379746835pt;'>TED</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/video/' class='tag-link-156' title='217 topics' style='font-size: 14.46835443038pt;'>video</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/vintage/' class='tag-link-512' title='195 topics' style='font-size: 14.025316455696pt;'>vintage</a></li>
+<li><a href='http://www.brainpickings.org/index.php/tag/world/' class='tag-link-308' title='93 topics' style='font-size: 11.189873417722pt;'>world</a></li></ul>    </div>
+    
+    <div class="info-block">
+     <a href="http://feedproxy.google.com/brainpickings/rss"><img src="http://feedproxy.google.com/~fc/brainpickings/rss?bg=ffdb00&amp;fg=000000&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+    </div>
+    
+    <div class="info-block">
+    <a href="http://twittercounter.com/?username=brainpicker" title="TwitterCounter for @brainpicker"><img src="http://twittercounter.com/counter/?username=brainpicker&style=blue" width="88" height="26" style="border:none;" alt="TwitterCounter for @brainpicker" /></a>
+    </div>
+    
+        
+</div>		</div>
+	</div>
+	<div class="footer-holder">
+		<div id="footer">
+			<div class="footer-block">
+				<h3><a href="http://www.brainpickings.org">Brain Pickings</a></h3>
+				<a href="http://mediatemple.net/webhosting/dv/" target="_blank"><img float="right" alt="VPS hosting by MediaTemple" title="VPS hosting by MediaTemple" src="http://s3.mt-cdn.net/_images/partnerlogos/mt-234x60-lt__a484464.jpg" width="230" /></a>
+
+			</div>
+			<div class="footer-block">
+				<h3>Subscribe</h3>
+				<ul>
+					<li><a href="http://feedproxy.google.com/brainpickings/rss">RSS</a></li>
+					<li><a href="http://www.brainpickings.org/index.php/newsletter/">email</a></li>
+				</ul>
+			</div>
+			<div class="design">
+				<strong>Design by: <a href="http://joshboston.com">Josh Boston</a></strong>
+			</div>
+						
+	</div>
+		
+		
+
+	</div>
+	    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'brainpickings';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+                        s.src = 'http' + '://' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><script type='text/javascript' src='http://www.brainpickings.org/wp-content/plugins/wpaudio-mp3-player/wpaudio.min.js?ver=3.1'></script>
+<!--stats_footer_test--><script src="http://stats.wordpress.com/e-201247.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'3521287',v:'ext',post:'22661'});
+var load_cmc = function(){linktracker_init(3521287,22661,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script>
+	
+	<!-- Start Quantcast tag -->
+		<script type="text/javascript">
+			_qoptions={
+			qacct:"p-140Ut8CnMgOo2"
+		};
+		</script>
+		
+		<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+		<noscript>
+			<a href="http://www.quantcast.com/p-140Ut8CnMgOo2" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-140Ut8CnMgOo2.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></a>
+		</noscript>
+	<!-- End Quantcast tag -->
+	
+	<!--Start Google Analytics tag -->
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-2729035-3");
+			pageTracker._trackPageview();
+		</script>
+	<!--End Google Analytics tag -->
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using apc
+Page Caching using apc (Requested URI is rejected)
+Database Caching using apc
+Object Caching 928/970 objects using apc
+
+Served from: www.brainpickings.org @ 2012-11-21 06:08:26 -->

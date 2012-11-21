@@ -1,0 +1,106 @@
+/*
+CSS Name: Default Styles
+Description: NextGEN Default Gallery Stylesheet
+Author: Alex Rabe
+Version: 1.50
+*/
+
+.gallery-overview {
+    overflow: hidden;
+    margin-top: 10px;
+    width: 660px;
+    clear:both;
+    display:block !important;
+}
+    body.wide-post .gallery-overview,
+    body.wide-page .gallery-overview {
+        width: 100%;
+    }
+
+.gallery-overview ul {
+    list-style-type:none;
+}
+
+.gallery-overview .gallery-caption {
+    margin: 7px 0px 15px 0px;
+}
+
+.gallery-overview .gallery-caption img.creative-commons{
+    position:relative;
+    top: 3px;
+    left:3px;
+}
+
+.gallery-overview ul li:before {
+    content: '' !important;
+}
+
+.gallery-thumbnails {
+    list-style-type:none;
+    padding: 5px 0px 0px 0px !important; /*was 12px 0px 0px 8px&nbsp; */
+    text-indent:0px !important;
+}
+
+.gallery-overview .gallery-slide img{
+    width: 100%;
+}
+
+.gallery-thumbnails li {
+    float:left;
+    margin: 3px !important;
+    overflow:hidden;
+}
+
+.gallery-thumbnails li a {
+    display:block;
+    padding:2px;
+}
+
+#page .gallery-thumbnails li a:hover {
+        background-color: #238db7;
+}
+
+.gallery-thumbnails li.selected a{
+    -moz-background-clip:border;
+    -moz-background-inline-policy:continuous;
+    -moz-background-origin:padding;
+    background:#000000 none repeat scroll 0 0;
+}
+
+.gallery-overview #blog_slideshow_previous_next,
+.gallery-overview #blog_slideshow_previous_next_bottom {
+    padding: 3px;
+    color: #d2d2d2;
+    font-family: arial;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 0.8em;
+    line-height: normal;
+}
+.gallery-overview #blog_slideshow_previous_next span,
+.gallery-overview #blog_slideshow_previous_next_bottom span,
+.gallery-overview #blog_slideshow_previous_next div,
+.gallery-overview #blog_slideshow_previous_next_bottom div {
+    line-height: 2em;
+}
+
+.gallery-overview #blog_slideshow_previous_next {
+    margin-left: 530px;
+}
+.wide-post .gallery-overview #blog_slideshow_previous_next {
+    margin-left: 0px;
+}
+.gallery-overview #blog_slideshow_previous_next_bottom {
+    margin-left: 0px;
+}
+
+#blog_slideshow_previous_next a:link,
+#blog_slideshow_previous_next a:visited,
+#blog_slideshow_previous_next a:hover {
+    color: #238db1;
+}
+
+#blog_slideshow_previous_next a:active {
+    color: #d2d2d2;
+}

@@ -1,0 +1,387 @@
+body {
+	margin: 0;
+	padding: 1em 0 0 0;
+	background-color: #535384;
+	text-align: center;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.95em;
+	/* 
+		font-family: Verdana, sans-serif;
+		font-size: 0.85em;
+	*/
+}
+
+#joeclark {
+	margin: 0;
+	padding: 0;
+	background-color: #535384;
+}
+#joeclark img {
+	border: 0;
+}
+
+
+/**************************************************
+ *
+ * Default text styling
+ *
+ *************************************************/
+
+
+p {
+}
+
+h1 {
+	font-size: 1.6em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size : 1.2em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-bottom: 1em;
+}
+
+blockquote {
+	border-style: solid;
+	border-color: #666666;
+	border-width: 2px;
+	
+	border-left-width: 3em;
+	border-left-color: #c8c0d0;
+	border-top-width: 1px;
+	border-top-color: #c8c0d0;
+
+	margin-left: 0;
+	/* margin-right: 4em; */
+	padding: 0.25em 1em 0.25em 1em;
+}
+
+pre, code {
+	font-size: 1.2em;
+}
+
+pre {
+	border-style: solid;
+	border-color: #535384;
+	border-width: 1px;
+	
+	border-left-width: 2em;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	
+	padding: 1em;
+	background: #eeeeee;
+	color: Black;
+	margin: 0 2em 0 0;
+}
+
+pre code {
+	font-size: 1em;
+}
+
+hr {
+	clear: right;
+	height: 1px;
+	background-color: White;
+	color:Black;
+}
+
+abbr, acronym  {
+	border-bottom: 1px dotted #000;
+	font-style: normal;
+	cursor: help;
+}
+
+
+
+/**************************************************
+ *
+ * Main structures
+ *
+ *************************************************/
+
+div#header, div#container, div#topnav, div#footer {
+	width : 48em;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+}
+
+div#container {
+	background-image : url(img/left.gif);
+	background-repeat : repeat-x;	
+	background-color: #c8c0d0;
+	clear: both;
+}
+
+div#content {
+	background: #ffffff;
+	color: #000000;
+	border-left: 1px solid #666666;
+	margin: 0 0 0 78px;
+	padding: 0.4em 2em 2em 2em;
+	text-align: left;
+}
+div#footer {
+	padding: 0.5em 1.5em;
+	width: 45em;
+	color : White;
+	text-align : right;
+	
+}
+
+ul.footermenu {
+	margin: 0 0 2em 0;
+	padding: 0;
+}
+ul.footermenu li {
+	float: left;
+	margin-left: 1.5em;
+}
+
+
+/**************************************************
+ *
+ * Top navigation styles
+ *
+ *************************************************/
+
+#topnav ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+	list-style-type: none;
+	
+}
+
+#topnav li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 6.35em;
+	color: #000000;
+}
+
+#topnav li a, li#selected {
+	display: block;
+	padding: 4px 7px 3px 24px;
+	margin: 0 0 0 0;
+
+	font-size: 0.80em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#topnav li a {
+	border-bottom: 1px solid #63526b;
+	background-image: url(img/default_off.gif);
+	background-color: #d6cfd6;
+	color: #7b6984;
+}
+
+#topnav li a:hover, li#selected {
+	border-bottom: 1px solid #63526b;
+	background-image: url(img/default_on.gif);
+	background-color: #b5a2b5;
+	color: #ffffff;
+}
+
+/**************************************************
+ *
+ * Blog-specific styles
+ *
+ *************************************************/
+
+.action {
+	float: right;
+}
+
+img.bookPic {
+	float: right;
+	margin: 1em;
+	border: 0;
+}
+
+img.inset {
+	float: right;
+	margin: 0 1em 1em 1em;
+	border: 0;
+}
+
+img.button {
+	border: 0;
+}
+
+.blogHeader {
+	margin: 0;
+	padding: 0;
+}
+
+.blogHeader h2 {
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+.blogHeader span {
+
+}
+
+/**************************************************
+ *
+ * Blog comment-specific styles
+ *
+ *************************************************/
+
+.comment {
+	margin: 0;
+	padding: 0;
+}
+
+.comment div {
+	border-bottom: 1px solid Black;
+	border-left: 1px solid Black;
+	margin: 2px 0 1em 0;
+	padding: 0;
+}
+
+.comment div div {
+	/* border-bottom: 0; */
+	margin: 1em 0 0.5em 2em;
+}
+
+.comment div div.buttons {
+	margin: 0;
+	border: 0;
+	padding: 0.25em 0.5em;
+	/* float: right; */
+	text-align:left;
+	background-color: #c8c0d0;
+}
+
+.comment h4 {
+	margin: 0;
+	padding: 0.5em 1em;
+	background-color: #535384;
+	color: White;
+}
+
+.comment h4 span.date {
+	float: right;
+}
+
+.comment h4 a {
+	color: White;
+}
+
+.comment p {
+	padding: 0 1em;
+	margin: 0.5em 0 0.5em 0;
+}
+
+
+/**************************************************
+ *
+ * Tabulated data
+ *
+ *************************************************/
+
+div.sideBar {
+	clear: right;
+	float:right;
+	width: 12em;
+	border-left: 1px solid Black;
+	border-bottom: 2px solid Black;
+	margin: 0 -0.9em 1em 1em;
+	background-color: White;
+	color: Black;
+}
+
+div.articleList {
+	border-left: 1px solid Black;
+	border-bottom: 2px solid Black;
+	width: 90%;
+	margin: 1.5em auto 0 auto;
+}
+
+div.sideBar h2, div.articleList h2 {
+	text-align: center;
+	font-size: 1em;
+	padding: 2px 0.5em 2px 0.5em;
+	background-color: #535384;
+	color: White;
+	margin-top: 0;
+}
+
+div.sideBar ul {
+	margin: 0;
+	padding: 0 1em 1em 1em;
+	list-style-type: none;
+}
+
+div.sideBar ul li {
+	padding-bottom: 0.75em;
+	padding-top: 0.5em;
+	border-bottom: 1px dotted #cccccc;
+}
+
+div.sideBar p {
+	margin: 0 1em 0.5em 1em;
+	padding: 0;
+}
+
+div.articleList ul {
+	padding-right: 1em;
+}
+
+a.icon {
+	float: right;
+}
+a.icon img {
+	border: 0;
+}
+
+/**************************************************
+ *
+ * Form-specific
+ *
+ *************************************************/
+ 
+fieldset {
+	border: 1px solid Black;
+	background: White;
+}
+
+legend {
+	padding: 0.5em 1em;
+	background-color: #535384;
+	color: White;
+	font-weight: bold;
+	margin: 0 0.5em;
+}
+
+input, textarea {
+	border: 1px solid Black;
+	margin-bottom: 0.5em;
+}
+
+input {
+	padding: 1px 4px;
+}
+
+textarea {
+	width: 90%;
+}
+
+
+

@@ -16,3 +16,6 @@ include jdk
 include jpype
 include elasticsearch
 include rabbitmq
+include curl
+include nginx
+include nginx::site::archive

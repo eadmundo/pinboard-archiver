@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
+	<head>
+		<title>isolani - Web Standards: Web App Mistakes: Condemned to repeat</title>
+		<meta name="Author" content="Isofarro" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="../../isolani.css" />
+		<link rel="alternate" type="application/rss+xml" title="RSS feed for this site" href="http://www.isolani.co.uk/blog/index.rdf" />
+		<link rel="alternate" type="application/x.atom+xml" title="Atom 0.3 feed for this site" href="http://www.isolani.co.uk/blog/index.atom" />
+		<link rel="service.feed" type="application/x.atom+xml" href="http://www.isolani.co.uk/atom/" title="Isolani - AtomAPI entry point" />
+	</head>
+	<body>
+
+		<div id="header">
+			<img src="../../img/isolani.gif" width="266" height="56" alt="isolani" />
+		</div>
+		<div id="topnav">
+			<ul>
+				<li><a href="http://isolani.co.uk/">Home</a></li>
+				<li id="selected">Weblogs</li>
+				<li><a href="http://isolani.co.uk/projects/">Projects</a></li>
+				<li><a href="http://isolani.co.uk/interests/">Interests</a></li>
+				<li><a href="http://isolani.co.uk/experience/">Experience</a></li>
+				<li><a href="http://isolani.co.uk/contact/">Contact</a></li>
+			</ul>
+		</div>
+
+
+		<div id="container">
+			<div id="content">
+				
+				<h1><a href="http://isolani.co.uk/blog/">Weblogs</a>: <a href="http://isolani.co.uk/blog/standards.html">Web Standards</a></h1>
+
+<div class="blogHeader"><h2>Web App Mistakes: Condemned to repeat</h2><span>Tuesday, November 13, 2012</span></div>
+
+<p>The first two talks at this year's Full Frontal conference were extreme position pieces arguing about the relevance of HTML in building webapps. They were sparked by the growing number of web app frameworks that start off with an empty HTML document (or a series of nested empty div elements), such as the first version of SproutCore used prominently by Apple's failed MobileMe website. As my good friend <a href="http://statichtml.com/2008/the-problem-with-sproutcore.html">Steve Webster describes SproutCore's development approach</a> at that time:</p>
+
+<blockquote>
+  <p>SproutCore doesn't just ignore progressive enhancement - it hacks it into tiny little pieces, urinates all over them and then mails them back to you one by one</p>
+</blockquote>
+
+<p>(Note that these frameworks have a track record of ignoring established web development best practices, and then attempt to bolt them back in later. Meteor is also heading down the same cobbled path, they added <a href="http://meteor.com/faq/can-meteor-serve-static-html">Google crawlability as a feature</a> in later releases.)</p>
+
+<h3>Enforcing imperative development</h3>
+
+<p>The list of Web frameworks that perpetuate the empty-document technique grows; SenchaTouch and Meteor being two garnering attention today. John Allsopp notes the approach is about replacing a declarative set of technologies with an imperative model. Thus the idioms and patterns are quite different.</p>
+
+<p>The core of the argument is that apps built using web technologies are being left behind by app-specific development toolkits, and that web technologies need to improve to be better than these toolkits. Trying to succinctly express this runs headlong into absurdity, perhaps not through <a href="http://en.wikipedia.org/wiki/Reductio_ad_absurdum">reductio ad absurdum</a>: </p>
+
+<blockquote>
+  <p>Apps built with app-specific technology are better apps than those built with non-app-specific technology. </p>
+</blockquote>
+
+<p>Obvious? But more pertinent is the question: so what? The Web's declarative model is what keeps the barrier of building websites as low as possible. (And web apps are just websites, just with a lot more JavaScript.)</p>
+
+<h3>The shiny toy syndrome</h3>
+
+<p>And yet, James Pearce's talk at FullFrontal 2012 kept plugging in this direction, resulting in this particular example of HTML minimisation:</p>
+
+<pre><code>&lt;script src="app.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>That is the entire HTML document for a web application. It's hard to understand whether this is a tongue-in-cheek, or a foot-in-mouth argument. Claiming it as just an extreme example of a web app and not meant for real world use is disingenuous; people seem compelled to use these odd curiosities in real world products. </p>
+
+<p>Take the "lets reimplement the browser in Canvas from scratch" noodling of Bespin. As the HTML5 Editor (at that time) <a href="http://lists.w3.org/Archives/Public/public-html-a11y/2010Feb/0532.html">Ian Hickson noted</a>:</p>
+
+<blockquote>
+  <p>Bespin is a great demo, but it's a horrible misuse of &lt;canvas&gt;.</p>
+</blockquote>
+
+<p>Or Henri Svionen's less succinct, yet still brutally accurate:</p>
+
+<blockquote>
+  <p>I think Bespin can be taken as an example of using &lt;canvas&gt; being "doing it wrong" and the solution being not
+  using &lt;canvas&gt;.</p>
+</blockquote>
+
+<p>Despite this regular feedback, it still took the Bespin / SkyWriter developers a few years of fighting with performance and usability issues before they moved away from canvas. In that time, not least because of the initial attention Bespin received in tech circles, the "canvas as the browser" approache started to gain adoption as an acceptable way to build web applications. Bespin was no more than a proof-of-concept never intended to be used in a production setting (according to its developers).</p>
+
+<h3>Doing it right the hard way</h3>
+
+<p>Of course, modern web developers using new fangled content-less HTML aren't making the same mistakes as Bespin and SproutCore. Their conceptions reflect web development best practice; of a separation of concerns (for stability), progressive enhancement (for wide device compatibility), graceful degradation (for robustness), accessibility (as an extreme usability utility). Right?</p>
+
+<p>In the far-too recent past, web app developers jumped on the <a href="http://isolani.co.uk/blog/javascript/BreakingTheWebWithHashBangs">HashBang URLs</a> as the technique that exemplifies the applification of the Web. Despite it being contrary to web development best practice, single-page webapp developers persisted with this technique in the name of better performance and more robust code. </p>
+
+<p>Yet Twitter backtracked back to progressive enhancement (in the name of better performance, <a href="http://engineering.twitter.com/2012/05/improving-performance-on-twittercom.html">reducing the time to first tweet</a>), and Gawker Media quietly reverted on their hashbang-dependent implementation in the name of customer experience and robustness.</p>
+
+<p>Both companies recognised that the problems of Hashbang URLs weren't in the URLs themselves, but the complete dependence on a JavaScript bootstrap for the content experience. That means instead of one document loading before content appears, it now requires one document, plus a chunk of JavaScript that simulates a browser to load in, initialise itself, call its required content and template assets and then render them in the content window.</p>
+
+<h3>Death by first impression</h3>
+
+<p>Where HashBang URL using web apps fell down is the overhead before a user experiences the first chunk of content (Twitter's "time to first tweet" metric) is too high for a responsive web experience. Yes, the single page website is fractionally more responsive to customer interactions after the core application infrastructure has finally loaded up and run; the duration to first content visible turns out to be a more important metric. </p>
+
+<p>It's the first impression, folks. Despite the empirical fallaciousness on the importance of a first impression, customers tend towards experiences that get them to their content and utility quicker. We've know this since the beginning of the web; a two-page form converts better than a three-page form, despite requesting the same information.</p>
+
+<p>It's probably an urban legend, but makes a good story nevertheless, that Twitter brought in the high-priest of High Performance JavaScript (Steve Souders) to advise them on how to make their web application faster and he replied with: "Have you though about putting the Tweets in the HTML instead of loading them through JavaScript?" </p>
+
+<p>It turns out progressive enhancement isn't dead. It's actually still the primary technique for getting content to the customer fast. It's just continually ignored, and web apps eventually get there when they run out of non-best-practice techniques to throw at the bootstrap-time problem. </p>
+
+<p>(It does make me chuckle when web developers claim progressive enhancement is hard as a reason for skipping it, and a little time later after the diminishing returns of that short-sightedness has worn off, they undertake the far more difficult approach to bolting progressive enhancement back in because the alternatives are even harder. All high-quality and efficient web development paths go through the forest of progressive enhancement eventually.)</p>
+
+<h3>Building applications with the web stack</h3>
+
+<p>Building applications using web technologies isn't new. We've been doing it for at least a decade. Sometimes you don't really notice.</p>
+
+<p>Firefox and Thunderbird are two quintessential examples of applications being built with web technologies. The entire user interfaces of both products are a collaboration of markup, CSS and JavaScript displayed by the Gecko rendering engine. Firefox is thus the inception point, since it's a web application that runs other web applications.</p>
+
+<p>We had a steady stream of <a href="https://developer.mozilla.org/en/docs/XULRunner_Hall_of_Fame">applications built on Mozilla's XUL framework</a> beyond mere proof-of-concepts (and Twitter clients): Songbird, Komodo Edit IDE, Cyclone3 CMS, Flickr Uploader, ChatZilla IRC Chat, InstaBird IM Client, Blue Griffon ePub editor, StreamBase.</p>
+
+<p>XUL is an XML vocabulary, but it works with HTML so cleanly that at times it can be mistaken for just being extra tags bolted on top of HTML. Even the extension mechanism XBL allows you to create extra tags that can be used as first class elements in your structural (or declarative) documents.</p>
+
+<p>The Mozilla approach to connecting the web surface to the computer interfaces is to create an entire series of APIs that expose the inner workings of a computer and make them available through JavaScript. And the developer can chose to surface that right up to an actual custom element.</p>
+
+<p>We've sunk countless hours working within the XUL framework, some of the best developer tools came through that route. For example Joe Hewitt's Firebug, a tool that effectively brought web development out of the Stone Age, and its little cousin Chris Pederick's Web Developer Toolbar.</p>
+
+<p>The second still-growing framework for web technology based apps is Adobe Air. I still regularly see new software being built by and sold to small and medium-sized business, as a simple way of encapsulating expert knowledge into a handy tool. I think I've bought at least three Adobe Air based applications (not including Twitter clients) this year alone. For example <a href="http://keywordblaze.com/">Keyword Blaze</a> helps small businesses explore and find online niches and assist in Keyword Research. It's lowering the bar for entrepreneurs to handle and manage their own SEO strategy.</p>
+
+<p>While webapp ninjas complain about their tools and environment, entrepreneurs create these applications with the web stack.</p>
+
+<p>As an aside: there was a movement running in parallel to Mozilla's effort that focused on the idea of Rich Internet Applications (largely driven by the <a href="http://xul.sourceforge.net/">Open XUL Alliance</a>), where developers collaborated on building declarative interface bindings to their pet languages. For a brief while that's where web application development sparked. That produced toolkits like <a href="http://luxor-xul.sourceforge.net/">Luxor-XUL</a> for client-side Python bindings as one notable example.</p>
+
+<h3>Web application stack drawbacks</h3>
+
+<p>The typical counter-argument to these approaches is the visual look and feel. Clearly none of the platforms above look exactly like custom iPhone apps on the iPhone. They don't feel like native iPhone apps.</p>
+
+<p>Developers who find this particular feature galling then go to extraordinary lengths to duplicate the feel of the iPhone interface inside their web apps. This has the side-effect of the app feeling ridiculous on an Android phone of the same technical specifications because you get an Android experience on the outside, and a sub-par iPhone emulated experience on the inside of the app. It's common to land in a situation of having two back buttons in this scenario each doing something different.</p>
+
+<p>The crux here isn't that web technologies don't make good enough application platforms, they don't match perfectly with the native apps look and feel. Because every native platform is different, whether it's in the design or the establishment of the idioms and metaphors that are the heart of it, or just subtle differences in definitions and interfaces. </p>
+
+<p>The Web is platform agnostic, its success isn't chained to the continued success of a specific platform. And so they do not conform to individual platform expectations. Much like their cousins the cross-platform application toolkits (Java, QT, Lazarus), they don't exactly match the Operating System native widgets because there isn't a clean mapping across the range of platforms they support.</p>
+
+<p>This platform independent characteristic is a feature of the Web, not a shortcoming. It's not meant to emulate Operating System graphical widgets. That's the browser's job (or the operating system's job), not the web stack's.</p>
+
+<p>And you know what, it doesn't matter. Applications written for a specific platform also don't always look the same as other apps on the same platform. WinAmp, QuickTime, Twitterific, Chrome and StickyNotes are just five applications I'm running right now that don't look like the default visual standard of the Operating Systems they are running on.</p>
+
+<p>If an application's success is primarily based on looking and feeling like a native application for that platform, you really have to be an idiot to build that application using something other than a toolkit or framework designed with that goal as the primary endpoint.</p>
+
+<p>GMail continues being a pioneering success for web applications. It remains steadfastly popular for its features and information management, not because it looks like a native iPhone app on the iPhone.</p>
+
+<h3>The Web platform</h3>
+
+<p>The Web's independence from the hardware and software platform people use is a feature. It's better than cross-platform frameworks which are constantly criticised for not producing exact native-feeling apps on the multitude of platforms they run on. The Web is above that pettiness.</p>
+
+<p>The Web isn't an application platform. It is really a data platform (or more precisely, a content platform). A data platform that has a very light visual and behaviour layer available: Cascading StyleSheets and JavaScript.</p>
+
+<p>Take a typical brand new iPhone. Make sure it doesn't touch the web in any way, so place it in an environment where it cannot make an HTTP Request or receive an HTTP Response.</p>
+
+<p>How useful are your native applications? Oh that's right, the only applications you can get to are the ones installed on the phone by default. The other applications are just data sitting on the Web waiting for you to request them.</p>
+
+<p>And the default applications you do use because of the value they provide are probably going to offer you less value without that lifeline to the Web. Yes, the value of the application isn't because it's a native application, but because of the data it uses, and that data is sitting on the Web.</p>
+
+<p>Smartphones are useful because they participate on the Web of content, as equal citizens to desktop browsers and tablets. Applications are just a shell that offers interaction with the data. Without the data, the interactions are worthless.</p>
+
+<h3>The Web is ubiquitous</h3>
+
+<p>Native apps need the Web, the Web doesn't need native apps.</p>
+
+<p>If your primary requirement is a seamless native app experience, then you need to build a native app for each platform you want to support.</p>
+
+<p>If you are content to abstract away the nativeness of a platform to a wrapper (like a browser), then a web application is perfectly adequate.</p>
+
+<p>But there's also a third alternative: a hybrid of both approaches, since the Web isn't (just) an application platform, it's the primary globally available data platform in your application.</p>
+
+<p>We who cannot remember the past...</p>
+
+<hr />
+
+
+
+
+
+<p>[ <a href="http://isolani.co.uk/blog/">Weblog</a> | <a href="http://isolani.co.uk/blog/categories.html">Categories and feeds</a> | <a href="http://isolani.co.uk/blog/2011/">2011</a> | <a href="http://isolani.co.uk/blog/2010/">2010</a> | <a href="http://isolani.co.uk/blog/2009/">2009</a> | <a href="http://isolani.co.uk/blog/2008/">2008</a> | <a href="http://isolani.co.uk/blog/2007/">2007</a> | <a href="http://isolani.co.uk/blog/2006/">2006</a> | <a href="http://isolani.co.uk/blog/2005/">2005</a> | <a href="http://isolani.co.uk/blog/2004/">2004</a> | <a href="http://isolani.co.uk/blog/2003/">2003</a> | <a href="http://isolani.co.uk/blog/2002/">2002</a> ]</p>
+
+
+
+			</div></div>
+		<div id="footer">Copyright &copy; 2001-2009, isolani</div>
+
+	</body>
+</html>

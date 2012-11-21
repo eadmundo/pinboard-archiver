@@ -1,0 +1,1 @@
+div.inner_text{height:0;overflow:hidden;visibility:collapse}div.inner_text.show{height:auto;visibility:visible}a.showmore{display:block;font-size:14px;height:20px;line-height:20px}a.showmore>span.view_modifier{background:url("plus.gif") left center no-repeat;padding-left:10px}a.showmore>span.view_modifier.show{background:url("minus.gif") left center no-repeat}

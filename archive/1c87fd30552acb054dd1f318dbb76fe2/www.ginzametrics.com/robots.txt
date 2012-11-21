@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://www.ginzametrics.com/sitemap.xml.gz

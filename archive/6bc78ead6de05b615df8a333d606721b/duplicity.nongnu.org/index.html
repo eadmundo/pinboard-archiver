@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>duplicity: Main</title>
+  </head>
+
+<body>
+<div id="navbar">
+<h2><a name="ToC1">duplicity</a></h2>
+<p>Main</p>
+<p><a href="http://duplicity.nongnu.org/features.html">Features</a></p>
+<p><a href="http://duplicity.nongnu.org/FAQ.html">FAQ</a></p>
+<p><a href="http://duplicity.nongnu.org/docs.html">Documentation</a></p>
+<p><a href="http://duplicity.nongnu.org/savannah.html">Hosting</a></p>
+<p><a href="http://duplicity.nongnu.org/contrib.html">User Contrib</a></p>
+<p><a href="http://duplicity.nongnu.org/acknowledgments.html">Acknowledgments</a></p>
+<p><a href="http://duplicity.nongnu.org/rdiff-backup.html">rdiff-backup</a></p>
+<p><a href="http://duplicity.nongnu.org/new_format.html">Replace tar?</a></p>
+<p><a href="http://duplicity.nongnu.org/links.html">Links</a></p>
+</div>
+<div id="main">
+<h1 id="big-title"><a name="ToC2">duplicity</a></h1>
+<p class="catchphrase">Encrypted bandwidth-efficient backup using the rsync algorithm</p>
+<h2><a name="ToC3">What is it?</a></h2>
+<p>Duplicity backs directories by producing encrypted tar-format
+volumes and uploading them to a remote or local file server. Because
+duplicity uses
+<a href="http://sourceforge.net/projects/librsync">librsync</a>, the
+incremental archives are space efficient and only record the parts of
+files that have changed since the last backup. Because duplicity uses
+<a href="http://www.gnupg.org/">GnuPG</a> to encrypt and/or sign these
+archives, they will be safe from spying and/or modification by the
+server.</p>
+<p>The duplicity package also includes the <strong>rdiffdir</strong>
+utility. Rdiffdir is an extension of librsync's
+<strong>rdiff</strong> to directories---it can be used to produce
+signatures and deltas of directories as well as regular files. These
+signatures and deltas are in GNU tar format.</p>
+<h2><a name="ToC4">Current development status</a></h2>
+<p>Duplicity is still in Beta. As any software, it may still have a few bugs, but
+will work for normal usage and is in use now for large personal and corporate backups.
+If you have questions try the
+<a href="http://lists.nongnu.org/mailman/listinfo/duplicity-talk">mailing list</a>.
+Bug reports and bug fixes can be entered through the
+<a href="https://launchpad.net/duplicity">Launchpad project page</a>.
+<p>In theory many protocols for connecting to a file server could be
+supported; so far ssh/scp, local file access, rsync, ftp, HSI, WebDAV, Tahoe-LAFS,
+and Amazon S3 have been written. Currently duplicity supports deleted files,
+full unix permissions, directories, and symbolic links, fifos, and
+device files, but not hard links.</p>
+<h2><a name="ToC5">Download</a></h2>
+<p>Refer to the <a href="http://duplicity.nongnu.org/CHANGELOG">Changelog</a> for overview of the recent changes
+and to <a href="http://duplicity.nongnu.org/Changelog.GNU">GNU Changelog</a> for the gory details from Bazaar.</p>
+<p>The current stable release is <strong>0.6.20</strong>, released October 28, 2012.</p>
+<ul>
+<li>Tarball: <a href="http://code.launchpad.net/duplicity/0.6-series/0.6.20/+download/duplicity-0.6.20.tar.gz">duplicity-0.6.20.tar.gz</a></li>
+<li>i386 RPM: <a href="http://code.launchpad.net/duplicity/0.6-series/0.6.20/+download/duplicity-0.6.20-0.fdr.6.i386.rpm">duplicity-0.6.20-0.fdr.6.i386.rpm</a></li>
+<li>Source RPM: <a href="http://code.launchpad.net/duplicity/0.6-series/0.6.20/+download/duplicity-0.6.20-0.fdr.6.src.rpm">duplicity-0.6.20-0.fdr.6.src.rpm</a></li>
+</ul>
+<p>Older versions are also available for the budding historians in the downloads area.</p>
+<p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#105;&#107;&#101;&#64;&#109;&#116;&#101;&#114;&#114;&#121;&#46;&#110;&#97;&#109;&#101;">Michael Terry</a>
+maintains the
+<a href="https://launchpad.net/~duplicity-team/+archive/ppa">duplicity PPA</a> for
+duplicity and
+<a href="https://launchpad.net/~deja-dup-team/+archive/ppa">deja-dup PPA</a> for
+<a href="http://mterry.name/deja-dup/">deja-dup</a>.
+Updates to the PPA will sometimes lag behind the above updates, so please be patient.</p>
+<p><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#101;&#100;&#115;&#111;&#64;&#117;&#115;&#101;&#114;&#115;&#46;&#115;&#111;&#117;&#114;&#99;&#101;&#102;&#111;&#114;&#103;&#101;&#46;&#110;&#101;&#116;">Edgar Soldin</a>
+maintains <a href="http://duply.net">duply</a> (formerly known as ftplicity), a shell front end that simplifies the usage by keeping settings for backup jobs in profiles.
+It supports pre/post backup scripts and executing multiple commands in a batch mode.</p>
+<p>All the
+code here is GPLed (free software). Duplicity is also part of the
+<a href="http://fedoraproject.org">Fedora</a>,
+<a href="http://www.debian.org">Debian</a>, and
+<a href="http://www.ubuntu.com">Ubuntu</a>
+distributions of GNU/Linux.</p>
+<h2><a name="ToC6">Requirements</a></h2>
+<p>Duplicity requires a POSIX-like operating system. It is best used
+under GNU/Linux. It also requires:</p>
+<ul>
+<li>Python v2.4 or later (<a href="http://www.python.org">Python Home</a>)</li>
+<li>librsync v0.9.6 or later (<a href="http://librsync.sourceforge.net">librsync Home</a>)
+<li>GnuPG for encryption (<a href="http://www.gnupg.org">GnuPG Home</a>)</li>
+<li>NcFTP version 3.1.9 or later (<a href="http://www.ncftp.com">NcFTP Home</a>)</li>
+<li>Boto 1.6a or later (<a href="http://code.google.com/p/boto">Boto Home</a>)</li>
+</ul>
+<p>If you install from the source package, you will also need:</p>
+<ul>
+<li>Python development files, normally found in module 'python-dev'</li>
+<li>librsync development files, normally found in module 'librsync-dev'</li>
+</ul>
+</div>
+<div id="footer">
+
+<hr/>
+A standards (CSS) compliant web browser will display this page correctly.<br/>
+Last modified Sun Oct 28 07:43:52 2012
+</div>
+</body>
+</html>

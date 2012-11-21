@@ -1,0 +1,107 @@
+/* Social Bookmarking Icons ***************************************************/
+
+.social_bookmarking_module {
+    position: relative;
+    font-size: 10px !important;
+    min-height: 20px;
+}
+    .social_bookmarking_module .left {
+        left: 0pt;
+        min-height: 20px;
+        position: absolute;
+    }
+    .social_bookmarking_module .right {
+        min-height: 20px;
+        position: absolute;
+        right: 0pt;
+    }
+
+.social_bookmarking_module ul {
+    list-style-type: none;
+}
+.social_bookmarking_module li {
+    display: inline;
+    margin-right: 5px;
+    vertical-align: top;
+}
+    .social_bookmarking_module li a {
+        background-position: 0pt 0pt;
+        background-repeat: no-repeat;
+        display: inline-block;
+        font-size: 0pt;
+        height: 24px;
+        overflow: hidden;
+        text-indent: -9999em;
+    }
+
+.social_bookmarking_module div.clear {
+    clear: both;
+    height: 1px;
+    width: 1px;
+}
+
+.social_bookmarking_module li.sb_digg a,
+.social_bookmarking_module li.sb_facebook a,
+.social_bookmarking_module li.sb_twitter a,
+.social_bookmarking_module li.sb_stumbleupon a,
+.social_bookmarking_module li.sb_reddit a,
+.social_bookmarking_module li.sb_sharethis a,
+.social_bookmarking_module li.sb_email a {
+    background: url("../images/social-icons-sprite.png") no-repeat top left;
+    width: 24px;
+    opacity:0.4;
+}
+.social_bookmarking_module li.sb_digg a:hover,
+.social_bookmarking_module li.sb_facebook a:hover,
+.social_bookmarking_module li.sb_twitter a:hover,
+.social_bookmarking_module li.sb_stumbleupon a:hover,
+.social_bookmarking_module li.sb_reddit a:hover,
+.social_bookmarking_module li.sb_sharethis a:hover,
+.social_bookmarking_module li.sb_email a:hover {
+    opacity: 1;
+}
+
+.social_bookmarking_module li.sb_digg a {
+    background-position: 0 0;
+}
+.social_bookmarking_module li.sb_email a {
+    background-position: 0 -44px;
+}
+.social_bookmarking_module li.sb_facebook a {
+    background-position: 0 -88px;
+}
+.social_bookmarking_module li.sb_reddit a {
+    background-position: 0 -132px;
+}
+.social_bookmarking_module li.sb_sharethis a {
+    background-position: 0 -176px;
+}
+.social_bookmarking_module li.sb_stumbleupon a {
+    background-position: 0 -220px;
+}
+.social_bookmarking_module li.sb_twitter a {
+    background-position: 0 -264px;
+}
+
+.sb_button.sb_facebook div {
+    max-width: 380px;
+    overflow: visible;
+}
+
+.social_bookmarking_module.byline ul {
+    min-height: 30px;
+}
+    .social_bookmarking_module.byline ul li {
+        display: inline;
+    }
+
+#twitter-widget {
+    padding-bottom:20px;
+    margin-bottom:10px;
+}
+    #twitter-widget .twtr-doc {
+        -moz-border-radius: 0;
+    }
+    #twitter-widget .twtr-timeline {
+        -moz-border-radius: 0;
+    }

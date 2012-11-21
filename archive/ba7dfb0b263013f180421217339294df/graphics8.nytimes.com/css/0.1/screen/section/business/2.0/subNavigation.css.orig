@@ -1,0 +1,90 @@
+/* $Id: subNavigation.css 110423 2012-09-11 15:59:40Z benjamin.morss $
+/css/0.1/screen/section/business/2.0/subNavigation.css
+(c)2006 - 2010 The New York Times Company  */
+
+.navigation ul li.selected {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.subNavigation {
+  padding: 8px 4px;
+  background: #f8f8f8 url(/images/section/business/subnav_bg.gif) repeat-x left bottom;
+}
+
+.subNavigation .horizontalMenu {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+.subNavigation .horizontalMenu li {
+  padding: 0 8px;
+  line-height: 1.545em; /* 17px */
+}
+
+.subNavigation horizontalMenu .firstItem {
+  padding-left: 0;
+}
+
+.subNavigation horizontalMenu .lastItem {
+  padding-right: 0;
+}
+
+.subNavigation .column {
+  height: auto;
+  min-height: 0;
+  border-right: none;
+}
+
+.subNavigation #searchWidget {
+  float: left;
+  display: inline;
+  margin-right: 14px;
+}
+
+.subNavigation .inlineSearchControl .text {
+  width: 186px;
+  margin-right: 2px;
+}
+
+/* query suggestions autocomplete */
+
+.subNavigation .searchForm {
+  position: relative;
+}
+
+.subNavigation .querySuggestions {
+  width: 360px !important;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  padding-top: 2px;
+  padding-bottom: 6px;
+}
+
+.subNavigation .querySuggestions li {
+  padding: 1px 5px 1px 5px;	
+  font-size: 1.2em;
+  border-left: none;
+  width: 100%;
+}
+
+.subNavigation .querySuggestions li a {
+  font-weight: normal;
+  color: #000;
+  text-decoration: none;
+}
+
+.subNavigation .querySuggestions li.selectedItem {
+  background-color: #eee;
+}
+
+.subNavigation .querySuggestions span {
+  float: left; 
+  width: 80px;
+  display: block;
+}
+
+.subNavigation input.greyed {
+  color: #888;
+}

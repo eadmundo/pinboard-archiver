@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'GoodDogRegular';
+	src: url('../fonts/GoodDog.eot');
+	src: url('../fonts/GoodDog.eot%3Fiefix') format('eot'), 
+	     url('../fonts/GoodDog.woff') format('woff'), 
+	     url('../fonts/GoodDog.ttf')  format('truetype'),
+	     url('../fonts/GoodDog.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.polaroid-gallery {
+	clear: both !important;
+	position: relative !important;
+	margin: 40px !important;
+	padding: 0 !important;
+	visibility: hidden;
+	zoom: 1;
+}
+.polaroid-gallery a.polaroid-gallery-item {
+	position: relative !important;
+	display: block !important;
+	float: left !important;
+	padding: 10px !important;
+	margin: 0 !important;
+	background: #fff !important;
+	text-decoration: none !important;
+	color: #000;
+}
+.polaroid-gallery a.polaroid-gallery-item:after,
+.polaroid-gallery a.polaroid-gallery-item:before { 
+	z-index: -2; 
+	position: absolute; 
+	background: transparent; 
+	width: 70%; 
+	height: 55%; 
+	content: ''; 
+	right: 13px; 
+	bottom: 8px; 
+	-webkit-transform: skew(15deg) rotate(6deg);
+	-moz-transform: skew(15deg) rotate(6deg);
+	-ms-transform: skew(15deg) rotate(6deg);
+	-o-transform: skew(15deg) rotate(6deg);
+	transform: skew(15deg) rotate(6deg);
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+} 
+.polaroid-gallery a.polaroid-gallery-item:before { 
+	z-index: -3; 
+	left: 13px;
+	right: auto;
+	-webkit-transform: skew(-15deg) rotate(-6deg);
+	-moz-transform: skew(-15deg) rotate(-6deg);
+	-ms-transform: skew(-15deg) rotate(-6deg);
+	-o-transform: skew(-15deg) rotate(-6deg);
+	transform: skew(-15deg) rotate(-6deg);
+}
+.polaroid-gallery a.polaroid-gallery-item .polaroid-gallery-image:before {
+	z-index: -1;
+	position: absolute;
+	background: #fff;
+	content: ''; 
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; 
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-webkit-border-radius: 0 0 100px 100px / 0 0 3px 3px;
+	-moz-border-radius: 0 0 100px 100px / 0 0 2px 2px;
+	border-radius: 0 0 100px 100px / 0 0 3px 3px;
+}
+.polaroid-gallery a.polaroid-gallery-item:hover .polaroid-gallery-image:before {
+	-webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.1) inset;  
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.polaroid-gallery a.polaroid-gallery-item .polaroid-gallery-image {
+	display: block !important;
+	margin: 0 0 5px 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	max-width: auto !important;
+	min-width: auto !important;
+	background-position: 0 0;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4) inset;
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4) inset;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4) inset;
+}
+.polaroid-gallery a.polaroid-gallery-item .polaroid-gallery-scratches {
+	z-index: 1997 !important;
+	position: absolute !important;
+	display: block !important;
+	top: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	max-width: auto !important;
+	min-width: auto !important;
+	background: transparent url(../images/scratches.png) 0 0 repeat;
+}
+.polaroid-gallery a.polaroid-gallery-item .polaroid-gallery-text {
+	position: relative !important;
+	display: block !important;
+	font-size: 22px !important;
+	line-height: 26px !important;
+	height: 26px !important; 
+	padding: 0 5px !important;
+	margin: 0 -5px !important;
+	max-width: auto !important;
+	min-width: auto !important;
+	overflow: hidden !important;
+	visibility: hidden !important;
+	font-family: "GoodDogRegular", Georgia, serif;
+}
+.polaroid-gallery a.polaroid-gallery-item:hover .polaroid-gallery-text {
+	visibility: visible !important;
+	height: auto !important;
+}
+.polaroid-gallery a.showcaption .polaroid-gallery-text,
+.polaroid-gallery a.showcaption:hover .polaroid-gallery-text {
+	visibility: visible !important;
+}

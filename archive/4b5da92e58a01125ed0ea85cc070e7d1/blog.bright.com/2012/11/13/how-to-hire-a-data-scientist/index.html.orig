@@ -1,0 +1,883 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!--
+	generated in 0.367 seconds
+	61705 bytes batcached for 300 seconds
+-->
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>How To Hire A Data Scientist &laquo; Bright Insights</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="http://s0.wp.com/wp-content/themes/pub/k2/style.css?m=1351818682g" />
+	<link rel="stylesheet" type="text/css" media="print" href="http://s0.wp.com/wp-content/themes/pub/k2/css/print.css?m=1160419208g" />
+	<link rel="pingback" href="http://blog.bright.com/xmlrpc.php" />
+			<script src='http://r-login.wordpress.com/remote-login.php?action=js&amp;host=blog.bright.com&amp;id=35031146&amp;t=1353496277&amp;back=blog.bright.com%2F2012%2F11%2F13%2Fhow-to-hire-a-data-scientist%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="Bright Insights &raquo; Feed" href="http://blog.bright.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bright Insights &raquo; Comments Feed" href="http://blog.bright.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bright Insights &raquo; How To Hire A Data&nbsp;Scientist Comments Feed" href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/_static/??-eJyNjtEOgjAMRX9IbESM8mD8FjbGKJR1sV2Qv3dG5YXE+NTb9J7eC3MsMFhKrRMYBLRHOxp+rGJvRXaAEFjRcpBVvA8Zz4u6oGCIfREpecyurL1rOWnRMRHPMGPrnW6gKa0Ihg4D6pKj3ZTbxGRgLH8RkSX/pwbvILqQ+9fbN3cM/js31Ce/r8ATm4Zehtt0PRxPZVWf60s9PAFOn3NM' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s0.wp.com/_static/??/wp-includes/js/jquery/jquery.js,/wp-content/blog-plugins/loggedout-follow/widget.js,/wp-includes/js/comment-reply.min.js?m=1349903959j'></script>
+<link rel='stylesheet' id='all-css-0' href='http://s1.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1343991657g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://brightemployers.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://brightemployers.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Increase Your Quality of Hire with Employer Branding [webinar&nbsp;recording]' href='http://blog.bright.com/2012/11/08/increase-your-quality-of-hire-with-employer-branding-webinar-recording/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/' />
+<link rel='shortlink' href='http://wp.me/p2mZcu-9p' />
+<link rel="alternate" type="application/json+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fblog.bright.com%2F2012%2F11%2F13%2Fhow-to-hire-a-data-scientist%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fblog.bright.com%2F2012%2F11%2F13%2Fhow-to-hire-a-data-scientist%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How To Hire A Data&nbsp;Scientist" />
+<meta property="og:url" content="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/" />
+<meta property="og:description" content="The most challenging positions to recruit for are often the newest hot profession.  It must have been fun to find a silicon semiconductor specialist in 1954 &#8212; who wanted to study sand before ..." />
+<meta property="og:site_name" content="Bright Insights" />
+<meta property="og:image" content="http://1.gravatar.com/blavatar/d0c669e7e51f589cf0f80fd814351a08?s=200" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:card" content="summary" />
+<link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/2b0a7eaba5b518ce67e2d5d946384eb7?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/2b0a7eaba5b518ce67e2d5d946384eb7?s=16" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="http://1.gravatar.com/blavatar/d0c669e7e51f589cf0f80fd814351a08?s=114" />
+<link rel='openid.server' href='http://brightemployers.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://brightemployers.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://blog.bright.com/osd.xml" title="Bright Insights" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style>
+		/* <![CDATA[ */
+		/* Block: reblog */
+		
+		.reblog-from img                   { margin: 0 10px 0 0; vertical-align: middle; padding: 0; border: 0; }
+		.reblogger-note img.avatar         { float: left; padding: 0; border: 0; }
+		.reblogger-note-content            { margin: 0 0 20px; }
+		.reblog-post .wpcom-enhanced-excerpt-content { border-left: 3px solid #eee; padding-left: 15px; }
+		.reblog-post ul.thumb-list         { display: block; list-style: none; margin: 2px 0; padding: 0; clear: both; }
+		.reblog-post ul.thumb-list li      { display: inline; margin: 0; padding: 0 1px; border: 0; }
+		.reblog-post ul.thumb-list li a    { margin: 0; padding: 0; border: 0; }
+		.reblog-post ul.thumb-list li img  { margin: 0; padding: 0; border: 0; }
+		
+		.reblog-post .wpcom-enhanced-excerpt { clear: both; }
+		
+		.reblog-post .wpcom-enhanced-excerpt address,
+		.reblog-post .wpcom-enhanced-excerpt li,
+		.reblog-post .wpcom-enhanced-excerpt h1,
+		.reblog-post .wpcom-enhanced-excerpt h2,
+		.reblog-post .wpcom-enhanced-excerpt h3,
+		.reblog-post .wpcom-enhanced-excerpt h4,
+		.reblog-post .wpcom-enhanced-excerpt h5,
+		.reblog-post .wpcom-enhanced-excerpt h6,
+		.reblog-post .wpcom-enhanced-excerpt p { font-size: 100% !important; }
+		
+		.reblog-post .wpcom-enhanced-excerpt blockquote,
+		.reblog-post .wpcom-enhanced-excerpt pre,
+		.reblog-post .wpcom-enhanced-excerpt code,
+		.reblog-post .wpcom-enhanced-excerpt q { font-size: 98% !important; }
+		
+
+		/* ]]> */		
+		</style>
+		<script type="text/javascript" src="//use.typekit.net/aib4mmx.js"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<meta name="application-name" content="Bright Insights" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Evaluating Employment with Bright.com" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://blog.bright.com/feed/;icon-uri=http://0.gravatar.com/blavatar/2b0a7eaba5b518ce67e2d5d946384eb7?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="How To Hire A Data&nbsp;Scientist | Bright Insights on WordPress.com" />
+<meta name="description" content="The most challenging positions to recruit for are often the newest hot profession.  It must have been fun to find a silicon semiconductor specialist in 1954 &#8212; who wanted to study sand before the transistor was invented?  An HTML expert in 1996? SGML experts all had cushy government jobs or worked for publishers.  In the&hellip;" />
+<style type="text/css">
+#header {
+	background:#3371a3 url(http://brightemployers.files.wordpress.com/2012/06/bright_blog2.png) center repeat-y;
+}
+#header h1 a, #header .description {
+	display: none;
+}
+</style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+<script type='text/javascript'>/*<![CDATA[*/if(typeof(addLoadEvent)!='undefined'){addLoadEvent(function(){if(top==self){i=document.createElement('img');i.src='http://botd2.wordpress.com/botd.gif?blog=35031146&post=583&lang=en&date=1352829732&ip=178.255.65.104&url=http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/';i.style.width='0px';i.style.height='0px';i.style.overflow='hidden';document.body.appendChild(i);}});}/*]]>*/</script>
+
+	<link rel="stylesheet" type="text/css" href="http://s1.wp.com/?custom-css=1&#038;csblog=2mZcu&#038;cscache=6&#038;csrev=33" />
+</head>
+
+<body class="single single-post postid-583 single-format-standard custom-background typekit-enabled  highlander-enabled highlander-light">
+<div id="page">
+	<div id="header">
+		<h1><a href="http://blog.bright.com/">Bright Insights</a></h1>
+		<p class="description">Evaluating Employment with Bright.com</p>
+
+		<div class="menu-custom-container"><ul id="nav" class="menu"><li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-53"><a href="http://blog.bright.com/">Blog Home</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54"><a href="http://www.bright.com/main/employers">Bright Recruiting</a></li>
+<li id="menu-item-249" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-249"><a href="http://www.bright.com">Bright.com »</a></li>
+</ul></div>
+	</div>
+		<hr />
+
+<div class="content">
+
+	<div id="primary">
+		<div id="current-content">
+			<div id="primarycontent" class="hfeed">
+
+				
+	
+		
+	
+		
+	<hr />
+
+	
+	<div class="navigation">
+		<div class="left"><span>&laquo;</span> <a href="http://blog.bright.com/2012/11/08/increase-your-quality-of-hire-with-employer-branding-webinar-recording/">Increase Your Quality of Hire with Employer Branding [webinar&nbsp;recording]</a></div>				<div class="clear"></div>
+	</div>
+
+	
+	<hr />
+
+	
+		<div id="post-583" class="post-583 post type-post status-publish format-standard hentry category-recruiting-2">
+			<div class="entry-head">
+				<h3 class="entry-title">
+									How To Hire A Data&nbsp;Scientist								</h3>
+
+				<small class="entry-meta">
+					<span class="chronodata">
+						Published <abbr class="published" title="2012-11-13T10:02:12-0800">November 13, 2012</abbr>					</span>
+
+					<span class="entry-category"> <a href="http://blog.bright.com/category/recruiting-2/" title="View all posts in Recruiting" rel="category tag">Recruiting</a></span>
+
+					<a href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/#comments" class="commentslink"  title="Comment on How To Hire A Data&nbsp;Scientist">8&nbsp;<span>Comments</span></a>
+					
+					<br />
+				</small> <!-- .entry-meta -->
+			</div> <!-- .entry-head -->
+
+			<div class="entry-content">
+				<p>The most challenging positions to recruit for are often the newest hot profession.  It must have been fun to find a silicon semiconductor specialist in 1954 &#8212; who wanted to study sand before the transistor was invented?  An HTML expert in 1996? SGML experts all had cushy government jobs or worked for publishers.  In the last two years, a new creature known as the &#8220;data scientist&#8221; has emerged as one of the must have hires for many firms.  Here at Bright we have assembled an outstanding Data Science group that built our <a title="Bright Score" href="http://www.bright.com/bright/brightscore/overview">Bright Score</a>, provides interesting data to the media and general public via <a title="Bright Labs" href="http://www.bright.com/labs">Bright Labs</a>, and causes endless grief for the engineering team that needs to scale our ideas to our users.</p>
+<p>Let’s take a look at our science team on paper.  The team is an eclectic mix, consisting of one former nuclear physicist, one neuroscientist, one geophysicist, one astrophysicist, and a mechanical engineer.  At a glance, you may think we are trying to invent <a href="http://en.wikipedia.org/wiki/Warp_drive">Warp Drive</a>, and on top of that, not ONE of them had Data Scientist as their last job title.  However, each and every one of them have had years of extensive training from some of the brightest minds in the world, have conducted a countless number of hours researching, experimenting, analyzing, and documenting solutions to real world problems, and have had their work critiqued by their peers and published in academic publications.  As the old adage goes, “sometimes things are not always what they appear to be,” a statement very true when it comes to finding Data Scientists.</p>
+<p>How does one go about hunting these camouflaged “purple squirrel” scientists?</p>
+<p>To begin, what is a Data Scientist?  It depends who you ask.  Common (incorrect) definitions are:</p>
+<ol start="1">
+<li><b>A Hadoop expert.</b>  To those hiring managers that are certain they need a Hadoop expert I submit <a title="DevOps Borat Hadoop" href="https://twitter.com/DEVOPS_BORAT/status/199900759662407680">@DevOps_Borat</a></li>
+<li><b>A Machine Learning expert.</b>  <a title="Law of the Instrument" href="http://en.wikipedia.org/wiki/Law_of_the_instrument">Every construction project does not need a hammer.</a></li>
+<li><a title="kaggle" href="http://www.kaggle.com/">Kagglers</a></li>
+</ol>
+<p>I define a Data Scientist as someone who knows just enough programming, system administration, and statistics to transform a large, possibly heterogeneous set of unstructured data into actionable intelligence or an actual product.  The Data Scientist must also have sufficient visualization and communication skills to be able to convince someone that they did it correctly.</p>
+<p>We’ve found that one of the least effective methods for finding a Data Scientist is to log into LinkedIn and search for &#8220;Data Scientist.&#8221;  There aren&#8217;t that many, as Data Science is an emergent field.  There are little to no Data Scientists with 5 years experience, because the job simply did not exist (at least not in its current form).</p>
+<p>Where, then, does one find the elusive Data Scientist?  As famed bank robber <a href="http://en.wikipedia.org/wiki/Willie_Sutton">Willie Sutton</a> once said, he robbed banks “because that&#8217;s where the money is.”  If you want to find a Data Scientist, find yourself a disgruntled postdoc toiling away on brilliant scientific research, but failing to land a professorship because &#8230; all the professor jobs are taken!  (For those of you not familiar with academia, after earning your Ph.D., you typically work for 2-6 years as a postdoctoral research fellow.  You are a semi-autonomous, but typically work under a professor that was fortunate enough to get their Ph.D. in the good old days when there were actually professorships to be had.)</p>
+<p>Private companies that are detached from the world of academia sometimes give candidates, such as these postdocs, a hard time – having the perception that they must not be hard workers and won’t be able to keep up in fast-paced environments, because they haven’t had a “real” job.  The opposite is true, in many cases, people in academia often have to work twice as hard.  The grant funding they receive is insufficient to pay for tools that many take for granted (&#8220;You don&#8217;t need that $1000 software license! Write that code yourself!&#8221;).  Yes, like any other profession, there are a few slackers in academia.  There are some questions you can ask to identify and eliminate them early enough in your selection process:</p>
+<ol start="1">
+<li><b>&#8220;Tell me about some peer reviewed papers that you published as first author?&#8221;</b>  I want people that can finish long, complicated tasks.  Nothing takes longer, or is more complicated than publishing a peer reviewed paper.  To give you an idea of what that entails, imagine all of the backstabbing people competing with you at work and in your profession, put them behind a wall of anonymity where they critique and criticize every little detail of the project you have been slaving over &#8212; that is a peer reviewer.</li>
+<li><b>&#8220;Tell me about some code you&#8217;ve written that other people use?&#8221; </b>Academics tend to be &#8220;good enough&#8221; programmers.  I don&#8217;t need it to be elegant, but I do need it to work.  The best test of whether code is &#8220;good enough&#8221; is whether at least two other people use it.</li>
+<li><b>&#8220;Explain to me the statistical analysis you used in your thesis&#8221; </b>Statistics are like music.  Some people play notes, some people make music.  People that really understand statistical concepts at a fundamental level usually make the best Data Scientists.  Anyone can run an Analysis of Variance in Excel, but is that really the best approach?  Ultimately, the worst thing your Data Scientist can do is get fooled by the data.</li>
+</ol>
+<p>LinkedIn can still be helpful, and is particularly useful for finding a Data Scientist you respect.  Once you identify one, find their connections that are still toiling away in academia, look up their emails on the university web site (yes, they make it that easy for you), and send them an email.</p>
+<p>What is true in sports is also true in hiring &#8212; it is better to find a superstar in the draft than it is to find them as a free agent.  They are cheaper, and you get them during their most productive years.</p>
+<p>David Hardtke, Ph.D., Chief Scientist</p>
+<p>Josh Barger, PHR, Director of People Operations</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon no-text" href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/?share=twitter" target="_blank" title="Click to share on Twitter" id="sharing-twitter-583"><span></span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon no-text" href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/?share=facebook" target="_blank" title="Share on Facebook" id="sharing-facebook-583"><span></span></a></li><li><a href="#" class="sharing-anchor sd-button share-more"><span>More</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon no-text" href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span></a></li><li class="share-pinterest"><a rel="nofollow" class="share-pinterest sd-button share-icon no-text" href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span></span></a></li><li class="share-end"></li><li class="share-tumblr"><a rel="nofollow" class="share-tumblr sd-button share-icon no-text" href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/?share=tumblr" target="_blank" title="Click to share on Tumblr"><span></span></a></li><li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon no-text" href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/?share=linkedin" target="_blank" title="Click to share on LinkedIn" id="sharing-linkedin-583"><span></span></a></li><li class="share-end"></li><li class="share-email"><a rel="nofollow" class="share-email sd-button share-icon no-text" href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/?share=email" target="_blank" title="Click to email this to a friend"><span></span></a></li><li class="share-print"><a rel="nofollow" class="share-print sd-button share-icon no-text" href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/#print" target="_blank" title="Click to print"><span></span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div><div class="sharing-clear"></div></div></div></div><div class="wpl-likebox sd-block sd-like"><h3 class="sd-title">Like this:</h3><div class="sd-content"><div id="like-583" class="wpl-button "><a href='http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/?like=1&amp;_wpnonce=9f9b134b29' title='I like this.' class='like needs-login sd-button' rel='nofollow'><span>Like</span></a></div><div class="wpl-count sd-like-count"><span class="wpl-count-number">2</span> bloggers like this.</div><ul class="wpl-avatars sd-like-gravatars"><li><a href="http://gravatar.com/evandrix" title="Lee Wei" class="wpl-liker" rel="nofollow"><img src='http://1.gravatar.com/avatar/79082c22d49ed5d836e3eae8da00dada?s=30&amp;d=identicon&amp;r=G' class='avatar avatar-30' alt='Lee Wei' width='30' height='30' /></a></li><li><a href="http://gravatar.com/sarawritestoomuch" title="sarawritestoomuch" class="wpl-liker" rel="nofollow"><img src='http://0.gravatar.com/avatar/c8487f5e9fe3a53b5b4da910cdae735a?s=30&amp;d=identicon&amp;r=G' class='avatar avatar-30' alt='sarawritestoomuch' width='30' height='30' /></a></li></ul></div></div></div>
+							</div> <!-- .entry-content -->
+			<div class="clear"></div>
+		</div> <!-- #post-ID -->
+
+	
+	
+				
+	<div class="comments">
+
+		<h4><span id="comments">8</span> Responses to &#8220;How To Hire A Data&nbsp;Scientist&#8221;</h4>
+
+		<div class="metalinks">
+			<span class="commentsrsslink"><a href='http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/feed/'>Feed for this Entry</a></span>
+			<span class="trackbacklink"><a href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/trackback/" title="Copy this URI to trackback this entry.">Trackback Address</a></span>		</div>
+	<hr />
+
+	<ol id="commentlist">
+	<li class="comment even thread-even depth-1 highlander-comment" id="comment-455">
+	<div id="div-comment-455">
+	<span class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/1088f78877e0e213d13d1e13eecf4a2f?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' />		<a href="#comment-455" class="counter" title="Permanent Link to this Comment">1</a>
+		<span class="commentauthor fn">sonali</span>
+	</span>
+	<small class="comment-meta">
+	<a href="#comment-455" title="1 week ago.">November 13, 2012 at 11:59 am</a>	</small>
+
+	<div class="comment-content">
+		<p>I like your definition of data scientist. There are certainly many fields where research has been devoted to data mining. For practicing data scientists, 80-90% of our work is putting together petabytes of log files and finding actionable results. Indeed, we want someone who is willing to take a hacker&#8217;s attitude to new approaches to solving problems. A researcher with a knowledge of sed and awk and hacky python would be a dream.<br />
+I am not sure about whether PhDs are the best source&#8211;at least it hasn&#8217;t been reliable. Sometimes there is dismay that we don&#8217;t have a SAS license. More typically, the data is not scrubbed and primed for more interesting analysis beyond histograms or maybe some regressions. I think there is a necessary distinction between research scientist and data scientist. Often times people are hiring research scientists for the role of a data scientist, and retention is an issue because the intersection of intellectual stimulation does not necessarily lie with playing with data in the raw sense and creating some type of automated visualization or summary of the data.<br />
+What is the best source? It varies. Industry experience is limited to those who have actually worked with lots of data. In the end, you need to love data and have the ability to read graduate level math. They can understand and apply stochastic gradient descent, implement it in python and have it run independent of a developer- they can source the data and do something actionable with minimal supervision all from a command line. Add in cool stuff with R or D3- there&#8217;s your data scientist.</p>
+	</div>
+
+	
+	<div class="reply">
+		<a class='comment-reply-link' href='/2012/11/13/how-to-hire-a-data-scientist/?replytocom=455#respond' onclick='return addComment.moveForm("div-comment-455", "455", "respond", "583")'>Reply</a>	</div>
+	</div>
+</li>
+<li class="comment byuser comment-author-davimack odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-456">
+	<div id="div-comment-456">
+	<span class="comment-author vcard">
+		<img alt='' src='http://0.gravatar.com/avatar/9154a88a7e5980a9b9398f0bdead6667?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' />		<a href="#comment-456" class="counter" title="Permanent Link to this Comment">2</a>
+		<span class="commentauthor fn"><a href='http://davimack.members.sonic.net/blog/' rel='external nofollow' class='url'>David T Macknet</a></span>
+	</span>
+	<small class="comment-meta">
+	<a href="#comment-456" title="1 week ago.">November 13, 2012 at 12:17 pm</a>	</small>
+
+	<div class="comment-content">
+		<p>For those of us toiling away in the trenches, though, there seems to be very little in the way of advertising.  It&#8217;s nice to say that they should be found &#8230; and some of us WANT to be found &#8230; so, how to make that crucial connection seems to be the problem.</p>
+	</div>
+
+	
+	<div class="reply">
+		<a class='comment-reply-link' href='/2012/11/13/how-to-hire-a-data-scientist/?replytocom=456#respond' onclick='return addComment.moveForm("div-comment-456", "456", "respond", "583")'>Reply</a>	</div>
+	</div>
+</li>
+<li class="comment even thread-even depth-1 highlander-comment" id="comment-460">
+	<div id="div-comment-460">
+	<span class="comment-author vcard">
+		<img alt='' src='http://i2.wp.com/a0.twimg.com/profile_images/2244631073/justin_glasses_woods_norml_normal.jpg?resize=48%2C48' class='avatar avatar-48' height='48' width='48' />		<a href="#comment-460" class="counter" title="Permanent Link to this Comment">3</a>
+		<span class="commentauthor fn"><a href='http://twitter.com/justizin' rel='external nofollow' class='url'>Justizin (@justizin)</a></span>
+	</span>
+	<small class="comment-meta">
+	<a href="#comment-460" title="1 week ago.">November 13, 2012 at 4:59 pm</a>	</small>
+
+	<div class="comment-content">
+		<p>Actually, I&#8217;m just going to say, Data Science is not a new thing.  In today&#8217;s world, everyone who does any job should have a good amount of computer literacy, more than people in the past, and longer than two years ago I worked with some people called &#8220;Analysts&#8221; who crunched numbers to try and form projections.  Information Science is older than Dewey Decimal and the notion that Data Science is a new thing because it&#8217;s more common to have lots of data is just plain silly.</p>
+<p>Realistically, if you have someone called a Data Scientist who lacks any of that true grit, they aren&#8217;t qualified to do their job.  The same was true of analysts ten and twenty years ago, but companies like Microsoft, Lotus, and Corel gave them training wheels, which they typically used for their entire career.</p>
+	</div>
+
+	
+	<div class="reply">
+		<a class='comment-reply-link' href='/2012/11/13/how-to-hire-a-data-scientist/?replytocom=460#respond' onclick='return addComment.moveForm("div-comment-460", "460", "respond", "583")'>Reply</a>	</div>
+	</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-485">
+	<div id="div-comment-485">
+	<span class="comment-author vcard">
+		<img alt='' src='http://i2.wp.com/graph.facebook.com/1294561077/picture?q=type%3Dlarge%26_md5%3D42b634788d5b5d6f9aa0bc8686956b0e&#038;resize=48%2C48' class='avatar avatar-48' height='48' width='48' />		<a href="#comment-485" class="counter" title="Permanent Link to this Comment">4</a>
+		<span class="commentauthor fn"><a href='http://www.facebook.com/celine.van.damme' rel='external nofollow' class='url'>Céline Van Damme</a></span>
+	</span>
+	<small class="comment-meta">
+	<a href="#comment-485" title="6 days, 16 hours ago.">November 14, 2012 at 11:10 am</a>	</small>
+
+	<div class="comment-content">
+		<p>I totally agree with @Justizin. Data science is indeed something that<br />
+exists for a very long time. The only difference is that we&#8217;re now<br />
+thinking about data science and a data scientist in a different way.<br />
+The same holds for big data. Big data is not something new, it exists<br />
+already for a very long time. Most large companies have a huge<br />
+database of unstructured data which they collected many years ago.<br />
+They simply didn&#8217;t realize they had so much data, and were just<br />
+storing the data in mysql databases. Social media has made big data<br />
+become popular. Most companies now realize that there might be quite<br />
+some value stored in this unstructured data set, and they now need<br />
+data scientists to unlock hidden knowledge stored in their databases.</p>
+	</div>
+
+	
+	<div class="reply">
+		<a class='comment-reply-link' href='/2012/11/13/how-to-hire-a-data-scientist/?replytocom=485#respond' onclick='return addComment.moveForm("div-comment-485", "485", "respond", "583")'>Reply</a>	</div>
+	</div>
+</li>
+<li class="comment byuser comment-author-jbusuttil even thread-even depth-1 highlander-comment" id="comment-540">
+	<div id="div-comment-540">
+	<span class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/758b1689d64ce1fb06b879069c467dff?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' />		<a href="#comment-540" class="counter" title="Permanent Link to this Comment">5</a>
+		<span class="commentauthor fn"><a href='http://imanageproducts.co.uk/' rel='external nofollow' class='url'>Jock Busuttil</a></span>
+	</span>
+	<small class="comment-meta">
+	<a href="#comment-540" title="4 days, 20 hours ago.">November 16, 2012 at 6:38 am</a>	</small>
+
+	<div class="comment-content">
+		<p>You&#8217;ve certainly nailed the technical skills to look for in a data scientist, but I think there are other facets that companies are looking for in an outstanding data scientist.  I&#8217;m by no means a data scientist myself, these are purely observations.</p>
+<p>So first of all, a data scientist needs to have the technical skills to do the job and David&#8217;s summarised those above.</p>
+<p>Secondly, a data scientist needs creativity to consider how to derive insight from the data in possibly unexpected ways.  Particularly now that it is possible to analyse whole populations of data, rather than samples and models, I would argue that the conventional techniques may not always be the best approach.</p>
+<p>Thirdly, a data scientist needs to be able to communicate.  This means being able to translate the complex, statistical analysis into simple pieces of insight that non-statisticians will understand, whether expressed verbally or visually.</p>
+<p>Data science may well have been around for a while, but I think that today&#8217;s Data Scientists need these extra strings to their bows because that is typically what organisations are demanding of them.</p>
+<p>Would you agree?</p>
+	</div>
+
+	
+	<div class="reply">
+		<a class='comment-reply-link' href='/2012/11/13/how-to-hire-a-data-scientist/?replytocom=540#respond' onclick='return addComment.moveForm("div-comment-540", "540", "respond", "583")'>Reply</a>	</div>
+	</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-621">
+	<div id="div-comment-621">
+	<span class="comment-author vcard">
+		<img alt='' src='http://1.gravatar.com/avatar/73a8f18190b53138a85dc8d03e982200?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' />		<a href="#comment-621" class="counter" title="Permanent Link to this Comment">6</a>
+		<span class="commentauthor fn"><a href='http://www.silverkeyinc.com' rel='external nofollow' class='url'>Mike Lee</a></span>
+	</span>
+	<small class="comment-meta">
+	<a href="#comment-621" title="1 day, 11 hours ago.">November 19, 2012 at 4:07 pm</a>	</small>
+
+	<div class="comment-content">
+		<p>I love your last line in the article. As a recruiter, I tend to look for hiring managers who &#8220;draft for talent rather than need&#8221; &#8230; yet another phrase to help articulate your point.</p>
+	</div>
+
+	
+	<div class="reply">
+		<a class='comment-reply-link' href='/2012/11/13/how-to-hire-a-data-scientist/?replytocom=621#respond' onclick='return addComment.moveForm("div-comment-621", "621", "respond", "583")'>Reply</a>	</div>
+	</div>
+</li>
+	</ol> <!-- END #commentlist -->
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+	<br />
+
+	<ol id="pinglist">
+	<li class="pingback even thread-even depth-1 highlander-comment" id="comment-450">
+		<a href="#comment-450" title="Permanent Link to this Comment" class="counter">1</a>
+	<span class="commentauthor"><a href='http://mydailyfeeds.x10.mx/2012/11/13/how-to-hire-a-data-scientist/' rel='external nofollow' class='url'>How To Hire A Data Scientist | My Daily Feeds</a></span>
+	<small class="comment-meta">
+	<span class="pingtype">Trackback</span> on <a href="#comment-450" title="1 week ago.">November 13, 2012 at 10:57 am</a>		</small>
+</li>
+<li class="pingback odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-502">
+		<a href="#comment-502" title="Permanent Link to this Comment" class="counter">2</a>
+	<span class="commentauthor"><a href='http://yundongtai.com/?p=11942' rel='external nofollow' class='url'>如何聘请一个数据分析大牛？ | 云动态</a></span>
+	<small class="comment-meta">
+	<span class="pingtype">Trackback</span> on <a href="#comment-502" title="6 days, 1 hour ago.">November 15, 2012 at 1:16 am</a>		</small>
+</li>
+	</ol> <!-- END #pinglist -->
+
+	
+	
+	</div> <!-- END .comments 1 -->
+
+	
+	
+									<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2012/11/13/how-to-hire-a-data-scientist/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://blog.bright.com/wp-comments-post.php" method="post" id="commentform">
+																										
+
+
+												
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment"></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div> 
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://s2.wp.com/wp-content/mu-plugins/highlander-comments/images/wplogo.png?m=1289230950g" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+	
+	
+</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+});
+</script>
+
+<div id="comment-form-subscribe"> 
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe">Notify me of follow-up comments via email.</label></p></div>
+
+												<p class="form-submit">
+							<input name="submit" type="submit" id="comment-submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='583' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						
+<input type="hidden" name="genseq" value="1353496277" />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="c206228425" /></p><script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/akismet-2.5/form.js?m=1308783962g'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="192"/></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>			
+	
+		
+	<hr />
+
+	
+	<div class="navigation">
+		<div class="left"><span>&laquo;</span> <a href="http://blog.bright.com/2012/11/08/increase-your-quality-of-hire-with-employer-branding-webinar-recording/">Increase Your Quality of Hire with Employer Branding [webinar&nbsp;recording]</a></div>				<div class="clear"></div>
+	</div>
+
+	
+	<hr />
+
+			</div> <!-- #primarycontent .hfeed -->
+		</div> <!-- #current-content -->
+
+		<div id="dynamic-content"></div>
+	</div> <!-- #primary -->
+
+	<hr />
+
+<div class="secondary">
+
+<div id="search-2" class="widget widget_search">
+<form method="get" id="searchform" action="/">
+	<input type="text" id="s" name="s" onblur="this.value=(this.value=='') ? 'search' : this.value;" onfocus="this.value=(this.value=='search') ? '' : this.value;" id="supports" name="s" value="search" />
+	<input type="submit" id="searchsubmit" value="go" />
+</form>
+
+
+</div>		<div id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>
+		<ul>
+					<li>
+				<a href="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/" title="How To Hire A Data&nbsp;Scientist">How To Hire A Data&nbsp;Scientist</a>
+						</li>
+					<li>
+				<a href="http://blog.bright.com/2012/11/08/increase-your-quality-of-hire-with-employer-branding-webinar-recording/" title="Increase Your Quality of Hire with Employer Branding [webinar&nbsp;recording]">Increase Your Quality of Hire with Employer Branding [webinar&nbsp;recording]</a>
+						</li>
+					<li>
+				<a href="http://blog.bright.com/2012/11/03/new-bright-score-release/" title="New Bright Score&nbsp;Release">New Bright Score&nbsp;Release</a>
+						</li>
+					<li>
+				<a href="http://blog.bright.com/2012/11/01/bright-employment-index-october-2012/" title="Bright Employment Index: October&nbsp;2012">Bright Employment Index: October&nbsp;2012</a>
+						</li>
+					<li>
+				<a href="http://blog.bright.com/2012/10/24/recruiting-active-vs-passive-candidates/" title="Recruiting Active vs Passive&nbsp;Candidates">Recruiting Active vs Passive&nbsp;Candidates</a>
+						</li>
+				</ul>
+		</div><div id="archives-2" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+		<ul>
+			<li><a href='http://blog.bright.com/2012/11/' title='November 2012'>November 2012</a></li>
+	<li><a href='http://blog.bright.com/2012/10/' title='October 2012'>October 2012</a></li>
+	<li><a href='http://blog.bright.com/2012/09/' title='September 2012'>September 2012</a></li>
+	<li><a href='http://blog.bright.com/2012/08/' title='August 2012'>August 2012</a></li>
+	<li><a href='http://blog.bright.com/2012/07/' title='July 2012'>July 2012</a></li>
+	<li><a href='http://blog.bright.com/2012/06/' title='June 2012'>June 2012</a></li>
+		</ul>
+</div><div id="categories-2" class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+		<ul>
+			<li class="cat-item cat-item-34918105"><a href="http://blog.bright.com/category/recruiting-2/" title="View all posts filed under Recruiting">Recruiting</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://blog.bright.com/category/technology/" title="View all posts filed under Technology">Technology</a>
+</li>
+	<li class="cat-item cat-item-97042408"><a href="http://blog.bright.com/category/the-bright-score/" title="View all posts filed under The Bright Score">The Bright Score</a>
+</li>
+	<li class="cat-item cat-item-1788"><a href="http://blog.bright.com/category/tips/" title="View all posts filed under Tips">Tips</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://blog.bright.com/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+		</ul>
+</div>
+</div>
+<div class="clear"></div>
+
+</div> <!-- .content -->
+
+	<div class="clear"></div>
+
+	
+
+</div> <!-- Close Page -->
+
+<hr />
+
+<p id="footer"><small>
+	Theme: <a href="http://theme.wordpress.com/credits/blog.bright.com/" title="Learn more about how this site is customized with the Custom Design upgrade">Customized K2-lite</a> by <a href="http://getk2.com/" rel="designer">k2 team</a>. <a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>.
+	<br />
+	<a href="http://blog.bright.com/feed/">RSS Entries</a> and <a href="http://blog.bright.com/comments/feed/">RSS Comments</a></small></p>
+
+	
+<script type="text/javascript">
+var _qevents = _qevents || [], wpcomQuantcastData = {"qacct":"p-18-mFEk4J448M","labels":",language.en,type.wpcom"};
+function wpcomQuantcastPixel( labels, options ) {
+	var i, defaults = wpcomQuantcastData, data = { event: 'ajax' };
+
+	labels  = labels  || '';
+	options = options || {};
+
+	if ( typeof labels != 'string' )
+		options = labels;
+
+	for ( i in defaults ) {
+		data[i] = defaults[i];
+	}
+
+	for ( i in options ) {
+		data[i] = options[i];
+	}
+
+	if ( data.labels ) {
+		data.labels += ',' + labels;
+	} else {
+		data.labels = labels;
+	}
+
+	_qevents.push( data );
+};
+(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);  })();
+_qevents.push( wpcomQuantcastData );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom" height="1" width="1" alt="" /></div></noscript>
+
+
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	(function($){
+		$(document).on( 'ready post-load', function() {
+
+			// Remove the login box when clicking the page
+			$( document ).mousedown( function( e ) {
+				if ( null == $( e.target ).closest( '#wpl-mustlogin' ).get( 0 ) ) {
+					$( '#wpl-mustlogin' ).remove();
+				}
+			});
+
+			// Handle clicking the like button itself
+			$('.wpl-button > a.like').click( function(e) {
+				e.preventDefault();
+
+				var postid = $(this).parent().attr('id').split('like-')[1];
+				$.post( 'http://blog.bright.com/wp-admin/admin-ajax.php', {
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_like_click'
+				} );
+
+				var tenMins = new Date();
+				tenMins.setTime( tenMins.getTime() + 600000 );
+				document.cookie = 'wpl_rand=7c6be361b1; expires=' + tenMins.toGMTString() + '; domain=wordpress.com; path=/;';
+
+				$(this).parent().siblings('.wpl-count').after( '\
+					<div id="wpl-mustlogin"> \
+						<form action="https://brightemployers.wordpress.com/wp-login.php" method="post"> \
+							<p>Just one more step to like this:</p> \
+							<label><span>Username</span> <input type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="80" /></label> \
+							<label><span>Password</span> <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="81" /></label> \
+							<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In" tabindex="82" /> \
+							<input type="hidden" name="postid" value="' + postid + '" /> \
+							<input type="hidden" name="redirect_to" value="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist?year=2012&#038;monthnum=11&#038;day=13&#038;name=how-to-hire-a-data-scientist&#038;like=1" /> \
+							<input type="hidden" name="wpl_rand" value="7c6be361b1" /> \
+							<p>Not a member yet? <a href="http://wordpress.com/signup/?ref=likebox&user=1" id="wpl-signup-link">Sign up with WordPress.com for free</a></p> \
+						</form> \
+					</div> \
+				');
+
+				$('#wpl-mustlogin').hide().slideDown('fast');
+			} );
+
+			$('#wpl-mustlogin input.input').live( 'focus', function() {
+				$(this).prev().hide();
+			}).live( 'blur', function() {
+				if ( $(this).val() == '' ) {
+					$(this).prev().show();
+				}
+			});
+
+			$('#wpl-mustlogin input#wp-submit').live( 'click', function(e) {
+				e.preventDefault();
+
+				$.post( 'http://blog.bright.com/wp-admin/admin-ajax.php', {
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_login_submit'
+				}, function() {
+					$('#wpl-mustlogin form').submit();
+				} );
+			});
+
+			$('#wpl-mustlogin a#wpl-signup-link').live( 'click', function(e) {
+				e.preventDefault();
+
+				var link = $(this).attr('href');
+
+				$.post( 'http://blog.bright.com/wp-admin/admin-ajax.php', {
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_signup_click'
+				}, function() {
+					location.href = link;
+				} );
+			});
+		})
+	})(jQuery);
+	/* ]]> */
+	</script>
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201247ab'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1351637563g'></script>
+<script>jQuery(document).ready(function($){ Gravatar.profile_cb = function( h, d ) { WPGroHo.syncProfileData( h, d );	}; Gravatar.my_hash = WPGroHo.my_hash; Gravatar.init( 'body', '#wp-admin-bar-my-account' ); });</script>	<div style="display:none">
+	<div class="grofile-hash-map-1088f78877e0e213d13d1e13eecf4a2f">
+	</div>
+	<div class="grofile-hash-map-9154a88a7e5980a9b9398f0bdead6667">
+	</div>
+	<div class="grofile-hash-map-f4bb755a5f6a6e4c3d8087962e054188">
+	</div>
+	<div class="grofile-hash-map-30b313357ebf7afa5e995323afe0d784">
+	</div>
+	<div class="grofile-hash-map-758b1689d64ce1fb06b879069c467dff">
+	</div>
+	<div class="grofile-hash-map-73a8f18190b53138a85dc8d03e982200">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/brightemployers.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/brightemployers.wordpress.com\/wp-login.php?action=logout&_wpnonce=c7c8a8ce21","homeURL":"http:\/\/blog.bright.com\/","postID":"583","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/mu-plugins/highlander-comments/script.js?m=1352785702g'></script>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)"><span id='bsub-text'>Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow &ldquo;Bright Insights&rdquo;</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+			
+			<p><input type="email" name="email" style="width: 95%; padding: 1px 2px" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter email address" : this.value;'  id="loggedout-follow-field"/></p>
+
+			<input type="hidden" name="action" value="subscribe"/>
+			<input type="hidden" name="blog_id" value="35031146"/>
+			<input type="hidden" name="source" value="http://blog.bright.com/2012/11/13/how-to-hire-a-data-scientist/"/>
+			<input type="hidden" name="sub-type" value="loggedout-follow"/>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="e07434c737" /><input type="hidden" name="_wp_http_referer" value="/2012/11/13/how-to-hire-a-data-scientist/" />
+			<p id='bsub-subscribe-button'><input type="submit" value="Sign me up" /></p>
+			</form>
+					<div id='bsub-credit'><a href="http://wordpress.com/signup/?ref=lof">Powered by WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/post-flair/sharing/sharing.js?m=1349904728g'></script>
+		<script type="text/javascript" charset="utf-8">
+		jQuery(document).ready(function(){
+			jQuery( 'a.share-twitter' ).click(function(){
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript" charset="utf-8">
+		jQuery(document).ready(function(){
+			jQuery( 'a.share-facebook' ).click(function(){
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript" charset="utf-8">
+		jQuery(document).ready(function(){
+			jQuery( 'a.share-pinterest' ).click(function(){
+				window.open( jQuery(this).attr( 'href' ), 'wpcompinterest', 'menubar=1,resizable=1,width=650,height=280' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript" charset="utf-8">
+		jQuery(document).ready(function(){
+			jQuery( 'a.share-tumblr' ).click(function(){
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtumblr', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript" charset="utf-8">
+		jQuery(document).ready(function(){
+			jQuery( 'a.share-linkedin' ).click(function(){
+				window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+			<div id="sharing_email" style="display: none;">
+		<form action="" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="text" name="target_email" id="target_email" value="" />
+			
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+				
+				<label for="source_email">Your Email Address</label>
+				<input type="text" name="source_email" id="source_email" value="" />
+
+						
+			<div class="recaptcha" id="sharing_recaptcha"></div><input type="hidden" name="recaptcha_public_key" id="recaptcha_public_key" value="6LcYW8MSAAAAADBAuEH9yaPcF7lWh11Iq62ZKtoo" />
+			<img style="float: right; display: none" class="loading" src="http://s2.wp.com/wp-content/mu-plugins/post-flair/sharing/images/loading.gif?m=1315610318g" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a href="#cancel" class="sharing_cancel">Cancel</a>
+			
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+			
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+<script type="text/javascript" src="http://b.scorecardresearch.com/beacon.js"></script><script type="text/javascript">try{COMSCORE.beacon({c1:2,c2:7518284});}catch(e){}</script><noscript><p class="robots-nocontent"><img src="http://b.scorecardresearch.com/p?cj=1c1=2&#038;c2=7518284" alt="" style="display:none" width="1" height="1" /></p></noscript><script type='text/javascript'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/brightemployers.wordpress.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif","closeImage":"http:\/\/brightemployers.wordpress.com\/wp-includes\/js\/thickbox\/tb-close.png"};
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/brightemployers.wordpress.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif","closeImage":"http:\/\/brightemployers.wordpress.com\/wp-includes\/js\/thickbox\/tb-close.png"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s0.wp.com/_static/??/wp-content/js/devicepx.js,/wp-includes/js/thickbox/thickbox.js?m=1351786180j'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'35031146','v':'wpcom','user_id':'0','post':'583','subd':'brightemployers'});
+ex_go({'crypt':'UE40eW5QN0p8M2Y/RE1TaVhzUzFMbjdWNHpwZGhTayxPSUFCMGRVYVNrSFguN3FwSmQ5RGtNX3VQcj1yVzhiflM1THQtLGFdQ2toOXYlSTk9SVRMNklYNG53Jmp+PUFPcnhMP2JHcj1WKz1Oek80Jls4NSU2RHpSSWh+UUZ4cU5Hb345Ly9SM1Y4dDJuL0Y9N0hDVzgvcz1JK0J8dGNEaXBpWnwlNkFJNTlCRz8tN189MH54dmlqLD94S21zcENzRj1qJnNDSGdmYWdWUG9XfE1YVkdwb09hSkMsRkpTVSxLNURdcEtYSl1DODkyOD1ydGZ2RUxzdV8lcj05fj9PaVklNFhjTEtvWXlVSnhrczBqTklISzNEXWFmcC5K'});
+addLoadEvent(function(){linktracker_init('35031146',583);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+</body>
+</html>

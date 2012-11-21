@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>ISC license - Wikipedia, the free encyclopedia</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21wmf3" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=ISC_license&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=ISC_license&amp;action=edit" />
+<link rel="apple-touch-icon" href="//en.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.DRN-wizard%2CReferenceTooltips%2Ccharinsert%2Cteahouse%7Cext.wikihiero%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmw.PopUpMediaTransform%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: enwiki:resourceloader:filter:minify-css:7:d11e4771671c2d6cdedf7c90d8131cd5 */</style>
+
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"ISC_license","wgTitle":"ISC license","wgCurRevisionId":520057086,"wgArticleId":5543542,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Free and open-source software licenses","Free software stubs"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"ISC_license","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVectorEnabledModules":{"collapsiblenav":true,"collapsibletabs":true,"editwarning":true,"expandablesearch":false,"footercleanup":true,"sectioneditlinks":false,"experiments":true},"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false},"wgTrackingToken":"bdcd2658746f7b32cd0419f9ba78aed3","wgArticleFeedbackv5Permissions":{"aft-reader":true,"aft-member":false,"aft-editor":false,"aft-monitor":false,"aft-administrator":false,"aft-oversighter":false},"wgVisualEditor":{"isPageWatched":false},"wikilove-recipient":"","wikilove-anon":0,"mbEmailEnabled":true,"mbUserEmail":false,"mbIsEmailConfirmationPending":false,"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","Geo":{"city":"","country":""},"wgNoticeProject":"wikipedia","aftv5Article":{"id":5543542,"title":"ISC license","namespace":0,"categories":["Free and open-source software licenses","Free software stubs"],"permissionLevel":"aft-reader"}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":0,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":false,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":3
+,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"flaggedrevssimpleui":1,"flaggedrevsstable":0,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"vector-simplesearch":1,"useeditwarning":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"wikilove-enabled":1,"ep_showtoplink":false,"ep_bulkdelorgs":false,"ep_bulkdelcourses":true,"ep_showdyk":true,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false,"searchNs108":false,"searchNs109":false,"searchNs446":false,"searchNs447":false,"searchNs710":false,"searchNs711":false,"gadget-teahouse":1,
+"gadget-ReferenceTooltips":1,"gadget-HotCat":1,"gadget-DRN-wizard":1,"gadget-charinsert":1,"gadget-mySandbox":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+/* cache key: enwiki:resourceloader:filter:minify-js:7:013a65dbaca8076556d129e802aa8c3c */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","ext.vector.footerCleanup","ext.wikimediaShopLink.core","ext.centralNotice.bannerController"]);
+}</script>
+<script src="//bits.wikimedia.org/geoiplookup"></script><link rel="dns-prefetch" href="//meta.wikimedia.org" /><!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.21wmf3/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-ISC_license skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- CentralNotice --><script>
+	mw.loader.using( 'ext.centralNotice.bannerController', function() { mw.centralNotice.initialize(); } );
+</script>
+</div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading"><span dir="auto">ISC license</span></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="" style="">ISC license</caption>
+<tr class="">
+<th scope="row" style="text-align:left; width:45%;">Author</th>
+<td class="" style="width:55%;"><a href="/wiki/Internet_Systems_Consortium" title="Internet Systems Consortium">Internet Systems Consortium</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; width:45%;"><a href="/wiki/Debian_Free_Software_Guidelines" title="Debian Free Software Guidelines">DFSG</a> compatible</th>
+<td class="" style="width:55%;">Yes</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; width:45%;"><a href="/wiki/List_of_FSF-approved_software_licenses" title="List of FSF-approved software licenses">FSF approved</a></th>
+<td class="" style="width:55%;">Yes</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; width:45%;"><a href="/wiki/Open-source_license#OSI_approved_licenses" title="Open-source license">OSI approved</a></th>
+<td class="" style="width:55%;">Yes</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; width:45%;"><a href="/wiki/License_compatibility#GPL_compatibility" title="License compatibility">GPL compatible</a></th>
+<td class="" style="width:55%;">Yes</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; width:45%;"><a href="/wiki/Copyleft" title="Copyleft">Copyleft</a></th>
+<td class="" style="width:55%;">No</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; width:45%;"><a href="/wiki/Copyfree" title="Copyfree" class="mw-redirect">Copyfree</a></th>
+<td class="" style="width:55%;">Yes<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; width:45%;"><a href="/wiki/GNU_Lesser_General_Public_License#Choosing_to_license_a_library_under_the_GPL_or_the_LGPL" title="GNU Lesser General Public License">Linking from code with a different license</a></th>
+<td class="" style="width:55%;">Yes</td>
+</tr>
+</table>
+<p>The <b>ISC license</b> is a <a href="/wiki/Permissive_free_software_license" title="Permissive free software license" class="mw-redirect">permissive free software license</a> written by the <a href="/wiki/Internet_Systems_Consortium" title="Internet Systems Consortium">Internet Systems Consortium</a> (ISC). It is functionally equivalent to the <a href="/wiki/BSD_licenses#2-clause" title="BSD licenses">Simplified BSD License</a>, with language that was made unnecessary by the <a href="/wiki/Berne_Convention_for_the_Protection_of_Literary_and_Artistic_Works" title="Berne Convention for the Protection of Literary and Artistic Works">Berne convention</a> removed.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> Initially used for the ISC's own software releases, it has since become the preferred license of <a href="/wiki/OpenBSD" title="OpenBSD">OpenBSD</a> (starting June 2003<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup>), among other projects.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>Before accepting the license as a <a href="/wiki/Free_software_license" title="Free software license" class="mw-redirect">free software license</a>, the <a href="/wiki/Free_Software_Foundation" title="Free Software Foundation">Free Software Foundation</a> (FSF) asked for clarification of the text. In July 2007, as a result, "and distribute" was changed to "<a href="/wiki/And/or" title="And/or">and/or</a> distribute".<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>A template of this license is:</p>
+<blockquote class="toccolours" style="float:none; padding: 10px 15px 10px 15px; display:table;">
+<p>Copyright (c) <i>Year(s)</i>, <i>Company or Person's Name</i> &lt;<i>E-mail address</i>&gt;<br />
+<br />
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.<br />
+<br />
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
+</blockquote>
+<h2><span class="editsection">[<a href="/w/index.php?title=ISC_license&amp;action=edit&amp;section=1" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;">
+<tr>
+<td style="text-align: center;"><a href="/wiki/File:Computer-aj_aj_ashton_01.svg" class="image"><img alt="Portal icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x" /></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="/wiki/Portal:Free_Software" title="Portal:Free Software" class="mw-redirect">Free Software  portal</a></td>
+</tr>
+</table>
+</div>
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text">Certified <a rel="nofollow" class="external text" href="http://copyfree.org/licenses">Copyfree Licenses</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.openbsd.org/policy.html">"OpenBSD license policy"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.openbsd.org/policy.html">http://www.openbsd.org/policy.html</a></span>. "The ISC copyright is functionally equivalent to a two-term BSD copyright with language removed that is made unnecessary by the Berne convention."</span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.openbsd.org/cgi-bin/cvsweb/src/share/misc/license.template">"CVS log for src/share/misc/license.template"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.openbsd.org/cgi-bin/cvsweb/src/share/misc/license.template">http://www.openbsd.org/cgi-bin/cvsweb/src/share/misc/license.template</a></span>. "Tue Jun 3 17:45:38 2003 UTC by millert Add a license template; deraadt@ OK"</span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.openbsd.org/cgi-bin/cvsweb/~checkout~/src/share/misc/license.template">"OpenBSD license template"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.openbsd.org/cgi-bin/cvsweb/~checkout~/src/share/misc/license.template">http://www.openbsd.org/cgi-bin/cvsweb/~checkout~/src/share/misc/license.template</a></span>.</span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation newsgroup"><a href="/wiki/Paul_Vixie" title="Paul Vixie">Paul Vixie</a> (2007-07-20). "<a rel="nofollow" class="external text" href="news:f7pemd$1557$1@sf1.isc.org">BIND covered under which license and does it contain any cryptographic content&#160;?</a>". <a rel="nofollow" class="external text" href="news:comp.protocols.dns.bind">comp.protocols.dns.bind</a>. <a rel="nofollow" class="external text" href="http://groups.google.com/group/comp.protocols.dns.bind/msg/e709d108c81e2ce3">Web link</a><span class="reference-accessdate">. Retrieved 2007-09-25</span>.</span></span></li>
+</ol>
+<h2><span class="editsection">[<a href="/w/index.php?title=ISC_license&amp;action=edit&amp;section=2" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.isc.org/software/license">Internet Systems Consortium's License Text</a></li>
+<li><a rel="nofollow" class="external text" href="http://opensource.org/licenses/isc-license.txt">License template at the Open Source Initiative</a></li>
+<li><a rel="nofollow" class="external text" href="http://spdx.org/licenses/ISC">SPDX License List entry for ISC</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.fsf.org/licensing/licenses#ISC">FSF's view on ISC License</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;">
+<tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:FOSS" title="Template:FOSS"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:FOSS" title="Template talk:FOSS"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:FOSS&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="/wiki/Free_and_open-source_software" title="Free and open-source software">Free and open-source software</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">General</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Copyleft" title="Copyleft">Copyleft</a></li>
+<li><a href="/wiki/Free_software" title="Free software">Free software</a></li>
+<li><a href="/wiki/The_Free_Software_Definition" title="The Free Software Definition">Free Software Definition</a></li>
+<li><a href="/wiki/Gratis_versus_libre" title="Gratis versus libre">Gratis versus libre</a></li>
+<li><a href="/wiki/List_of_free_and_open-source_software_packages" title="List of free and open-source software packages">List of free and open-source software packages</a></li>
+<li><a href="/wiki/List_of_open_source_Android_applications" title="List of open source Android applications">List of open source Android applications</a></li>
+<li><a href="/wiki/List_of_free_software_web_applications" title="List of free software web applications">List of free software web applications</a></li>
+<li><a href="/wiki/List_of_free_software_project_directories" title="List of free software project directories">List of project directories</a>/<a href="/wiki/Comparison_of_open_source_software_hosting_facilities" title="Comparison of open source software hosting facilities">Comparison of hosting facilities</a></li>
+<li><a href="/wiki/List_of_formerly_proprietary_software" title="List of formerly proprietary software">List of formerly proprietary software</a></li>
+<li><a href="/wiki/Open-source_software" title="Open-source software">Open-source software</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="/wiki/Comparison_of_open_source_operating_systems" title="Comparison of open source operating systems">Operating system families</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/AROS_Research_Operating_System" title="AROS Research Operating System">AROS</a></li>
+<li><a href="/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a></li>
+<li><a href="/wiki/Darwin_(operating_system)" title="Darwin (operating system)">Darwin</a></li>
+<li><a href="/wiki/ECos" title="ECos">eCos</a></li>
+<li><a href="/wiki/FreeDOS" title="FreeDOS">FreeDOS</a></li>
+<li><a href="/wiki/GNU" title="GNU">GNU</a></li>
+<li><a href="/wiki/Haiku_(operating_system)" title="Haiku (operating system)">Haiku</a></li>
+<li><a href="/wiki/Inferno_(operating_system)" title="Inferno (operating system)">Inferno</a></li>
+<li><a href="/wiki/Linux" title="Linux">Linux</a></li>
+<li><a href="/wiki/Mach_(kernel)" title="Mach (kernel)">Mach</a></li>
+<li><a href="/wiki/MINIX" title="MINIX">MINIX</a></li>
+<li><a href="/wiki/OpenSolaris" title="OpenSolaris">OpenSolaris</a></li>
+<li><a href="/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9</a></li>
+<li><a href="/wiki/ReactOS" title="ReactOS">ReactOS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="/wiki/Open_source_software_development" title="Open source software development">Development</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="/wiki/FreeBASIC" title="FreeBASIC">FreeBASIC</a></li>
+<li><a href="/wiki/Free_Pascal" title="Free Pascal">Free Pascal</a></li>
+<li><a href="/wiki/GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="/wiki/Gambas" title="Gambas">Gambas</a></li>
+<li><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="/wiki/Low_Level_Virtual_Machine" title="Low Level Virtual Machine" class="mw-redirect">LLVM</a></li>
+<li><a href="/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></li>
+<li><a href="/wiki/NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="/wiki/Open64" title="Open64">Open64</a></li>
+<li><a href="/wiki/Perl" title="Perl">Perl</a></li>
+<li><a href="/wiki/PHP" title="PHP">PHP</a></li>
+<li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/ROSE_compiler_framework" title="ROSE compiler framework" class="mw-redirect">ROSE</a></li>
+<li><a href="/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="/wiki/Tcl" title="Tcl">Tcl</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="/wiki/History_of_free_and_open-source_software" title="History of free and open-source software">History</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/GNU#History" title="GNU">GNU</a></li>
+<li><a href="/wiki/History_of_Haiku_(operating_system)" title="History of Haiku (operating system)">Haiku</a></li>
+<li><a href="/wiki/History_of_Linux" title="History of Linux">Linux</a></li>
+<li><a href="/wiki/Mozilla" title="Mozilla">Mozilla</a>
+<ul>
+<li><a href="/wiki/History_of_Mozilla_Application_Suite" title="History of Mozilla Application Suite">Application Suite</a></li>
+<li><a href="/wiki/History_of_Firefox" title="History of Firefox">Firefox</a></li>
+<li><a href="/wiki/History_of_Mozilla_Thunderbird" title="History of Mozilla Thunderbird">Thunderbird</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Organizations</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Apache_Software_Foundation" title="Apache Software Foundation">Apache Software Foundation</a></li>
+<li><a href="/wiki/Android_Open_Source_Project" title="Android Open Source Project" class="mw-redirect">Android Open Source Project</a></li>
+<li><a href="/wiki/Blender_Foundation" title="Blender Foundation">Blender Foundation</a></li>
+<li><a href="/wiki/Eclipse_Foundation" title="Eclipse Foundation">Eclipse Foundation</a></li>
+<li><a href="/wiki/FreeBSD_Foundation" title="FreeBSD Foundation">FreeBSD Foundation</a></li>
+<li><a href="/wiki/Freedesktop.org" title="Freedesktop.org">freedesktop.org</a></li>
+<li><a href="/wiki/Free_Software_Foundation" title="Free Software Foundation">Free Software Foundation</a>
+<ul>
+<li><a href="/wiki/Free_Software_Foundation_Europe" title="Free Software Foundation Europe">Europe</a></li>
+<li><a href="/wiki/Free_Software_Foundation_of_India" title="Free Software Foundation of India">India</a></li>
+<li><a href="/wiki/Free_Software_Foundation_Latin_America" title="Free Software Foundation Latin America">Latin America</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Free_Software_Movement_of_India" title="Free Software Movement of India">FSMI</a></li>
+<li><a href="/wiki/GNOME_Foundation" title="GNOME Foundation">GNOME Foundation</a></li>
+<li><a href="/wiki/GNU_Project" title="GNU Project">GNU Project</a></li>
+<li><a href="/wiki/Google_Code" title="Google Code">Google Code</a></li>
+<li><a href="/wiki/KDE_e.V." title="KDE e.V.">KDE e.V.</a></li>
+<li><a href="/wiki/Linux_Foundation" title="Linux Foundation">Linux Foundation</a></li>
+<li><a href="/wiki/Mozilla_Foundation" title="Mozilla Foundation">Mozilla Foundation</a></li>
+<li><a href="/wiki/Open_Source_Geospatial_Foundation" title="Open Source Geospatial Foundation">Open Source Geospatial Foundation</a></li>
+<li><a href="/wiki/Open_Source_Initiative" title="Open Source Initiative">Open Source Initiative</a></li>
+<li><a href="/wiki/Software_Freedom_Conservancy" title="Software Freedom Conservancy">Software Freedom Conservancy</a></li>
+<li><a href="/wiki/SourceForge" title="SourceForge">SourceForge</a></li>
+<li><a href="/wiki/Symbian_Foundation" title="Symbian Foundation">Symbian Foundation</a></li>
+<li><a href="/wiki/The_Document_Foundation" title="The Document Foundation">The Document Foundation</a></li>
+<li><a href="/wiki/Xiph.Org_Foundation" title="Xiph.Org Foundation">Xiph.Org Foundation</a></li>
+<li><a href="/wiki/XMPP_Standards_Foundation" title="XMPP Standards Foundation">XMPP Standards Foundation</a></li>
+<li><a href="/wiki/X.Org_Foundation" title="X.Org Foundation">X.Org Foundation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="/wiki/Free_software_licence" title="Free software licence" class="mw-redirect">Licences</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Apache_License" title="Apache License">Apache</a></li>
+<li><a href="/wiki/Artistic_License" title="Artistic License">Artistic</a></li>
+<li><a href="/wiki/Beerware" title="Beerware">Beerware</a></li>
+<li><a href="/wiki/BSD_licenses" title="BSD licenses">BSD</a></li>
+<li><a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU GPL</a></li>
+<li><a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU LGPL</a></li>
+<li><strong class="selflink">ISC</strong></li>
+<li><a href="/wiki/MIT_License" title="MIT License">MIT</a></li>
+<li><a href="/wiki/Mozilla_Public_License" title="Mozilla Public License">MPL</a></li>
+<li><a href="/wiki/Shared_source#Open_Source_licenses" title="Shared source">Ms-PL/RL</a></li>
+<li><a href="/wiki/Zlib_License" title="Zlib License">zlib</a></li>
+<li><a href="/wiki/Public_domain" title="Public domain">Public domain</a>/<a href="/wiki/CC0#Public_domain_tools" title="CC0" class="mw-redirect">CC0</a></li>
+<li><a href="/wiki/WTFPL" title="WTFPL">WTFPL</a></li>
+<li><a href="/wiki/List_of_FSF_approved_software_licenses" title="List of FSF approved software licenses" class="mw-redirect">FSF approved licenses</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Licence standards</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Open_Source_Definition" title="Open Source Definition" class="mw-redirect">Open Source Definition</a></li>
+<li><a href="/wiki/The_Free_Software_Definition" title="The Free Software Definition">The Free Software Definition</a></li>
+<li><a href="/wiki/Debian_Free_Software_Guidelines" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a></li>
+<li><a href="/wiki/Definition_of_Free_Cultural_Works" title="Definition of Free Cultural Works">Definition of Free Cultural Works</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Challenges</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Binary_blob" title="Binary blob">Binary blob</a></li>
+<li><a href="/wiki/Contributor_License_Agreement" title="Contributor License Agreement">Contributor License Agreement</a></li>
+<li><a href="/wiki/Digital_rights_management" title="Digital rights management">Digital rights management</a></li>
+<li><a href="/wiki/Graphics_hardware_and_FOSS" title="Graphics hardware and FOSS">Graphics hardware compatibility</a></li>
+<li><a href="/wiki/License_proliferation" title="License proliferation">License proliferation</a></li>
+<li><a href="/wiki/Mozilla_Corporation_software_rebranded_by_the_Debian_project" title="Mozilla Corporation software rebranded by the Debian project">Mozilla software rebranding</a></li>
+<li><a href="/wiki/Proprietary_software" title="Proprietary software">Proprietary software</a></li>
+<li><a href="/wiki/SCO-Linux_controversies" title="SCO-Linux controversies" class="mw-redirect">SCO-Linux controversies</a></li>
+<li><a href="/wiki/Open_source_software_security" title="Open source software security">Security</a></li>
+<li><a href="/wiki/Software_patents_and_free_software" title="Software patents and free software">Software patents</a></li>
+<li><a href="/wiki/Hardware_restrictions" title="Hardware restrictions">Hardware restrictions</a></li>
+<li><a href="/wiki/Trusted_Computing" title="Trusted Computing">Trusted Computing</a></li>
+<li><a href="/wiki/Windows_8#Secure_boot" title="Windows 8">Secure Boot</a></li>
+<li><a href="/wiki/Viral_license" title="Viral license">Viral license</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other topics</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Alternative_terms_for_free_software" title="Alternative terms for free software">Alternative terms</a></li>
+<li><a href="/wiki/Free_software_community" title="Free software community">Community</a></li>
+<li><a href="/wiki/Linux_distribution" title="Linux distribution">Linux distribution</a></li>
+<li><a href="/wiki/Fork_(software_development)" title="Fork (software development)">Forking</a></li>
+<li><a href="/wiki/Free_software_movement" title="Free software movement">Movement</a></li>
+<li><a href="/wiki/Microsoft_Open_Specification_Promise" title="Microsoft Open Specification Promise">Microsoft Open Specification Promise</a></li>
+<li><i><a href="/wiki/Revolution_OS" title="Revolution OS">Revolution OS</a></i></li>
+<li><i><a href="/wiki/The_Cathedral_and_the_Bazaar" title="The Cathedral and the Bazaar">The Cathedral and the Bazaar</a></i></li>
+<li><a href="/wiki/Comparison_of_open_source_and_closed_source" title="Comparison of open source and closed source">Comparison with closed source</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<ul>
+<li><b><img alt="Wikipedia book" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/16px-Symbol_book_class2.svg.png" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/24px-Symbol_book_class2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/32px-Symbol_book_class2.svg.png 2x" /> <a href="/wiki/Book:Free_and_Open_Source_Software" title="Book:Free and Open Source Software">Book:Free and Open Source Software</a></b></li>
+<li><b><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" /> <a href="/wiki/Category:Free_software" title="Category:Free software">Category:Free software</a></b></li>
+<li><b><img alt="Portal" src="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/16px-Portal-puzzle.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/24px-Portal-puzzle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png 2x" /> <a href="/wiki/Portal:Free_software" title="Portal:Free software">Portal:Free software</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p><br /></p>
+<table class="metadata plainlinks stub" style="background: transparent;">
+<tr>
+<td><a href="/wiki/File:Nuvola_apps_emacs.png" class="image"><img alt="Stub icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_emacs.png/30px-Nuvola_apps_emacs.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_emacs.png/45px-Nuvola_apps_emacs.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_emacs.png/60px-Nuvola_apps_emacs.png 2x" /></a></td>
+<td><i>This <a href="/wiki/Free_software" title="Free software">free software</a>-related article is a <a href="/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="//en.wikipedia.org/w/index.php?title=ISC_license&amp;action=edit">expanding it</a>.</i>
+<div class="noprint plainlinks hlist navbar mini" style="position: absolute; right: 15px; display: none;">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Free-software-stub" title="Template:Free-software-stub"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:Free-software-stub&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Free-software-stub (page does not exist)"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Free-software-stub&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 5256/1000000
+Preprocessor generated node count: 38815/1500000
+Post-expand include size: 49156/2048000 bytes
+Template argument size: 19455/2048000 bytes
+Highest expansion depth: 13/40
+Expensive parser function count: 1/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:5543542-0!*!0!!*!4!* and timestamp 20121116090855 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://en.wikipedia.org/w/index.php?title=ISC_license&amp;oldid=520057086">http://en.wikipedia.org/w/index.php?title=ISC_license&amp;oldid=520057086</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Free_and_open-source_software_licenses" title="Category:Free and open-source software licenses">Free and open-source software licenses</a></li><li><a href="/wiki/Category:Free_software_stubs" title="Category:Free software stubs">Free software stubs</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+		<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=ISC+license&amp;type=signup">Create account</a></li>
+		<li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=ISC+license" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/ISC_license"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+					<li  id="ca-talk"><span><a href="/wiki/Talk:ISC_license"  title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+	<h4>
+		</h4>
+	<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/wiki/ISC_license" >Read</a></span></li>
+					<li id="ca-edit"><span><a href="/w/index.php?title=ISC_license&amp;action=edit"  title="You can edit this page. &#10;Please use the preview button before saving. [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=ISC_license&amp;action=history"  title="Past versions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+				<div id="simpleSearch">
+						<input name="search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" />						<button name="button" title="Search Wikipedia for this text" id="searchButton"><img src="//bits.wikimedia.org/static-1.21wmf3/skins/vector/images/search-ltr.png?303-4" alt="Search" width="12" height="13" /></button>								<input type='hidden' name="title" value="Special:Search"/>
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(//upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+			<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li>
+			<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+			<li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C12_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- interaction -->
+<div class="portal" id='p-interaction'>
+	<h5>Interaction</h5>
+	<div class="body">
+		<ul>
+			<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			<li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li>
+			<li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /interaction -->
+
+<!-- TOOLBOX -->
+<div class="portal" id='p-tb'>
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/ISC_license" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/ISC_license" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+			<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-permalink"><a href="/w/index.php?title=ISC_license&amp;oldid=520057086" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="/w/index.php?title=ISC_license&amp;action=info">Page information</a></li>
+<li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=ISC_license&amp;id=520057086" title="Information on how to cite this page">Cite this page</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- coll-print_export -->
+<div class="portal" id='p-coll-print_export'>
+	<h5>Print/export</h5>
+	<div class="body">
+		<ul id="collectionPortletList"><li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=ISC+license" title="Create a book or page collection" rel="nofollow">Create a book</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=ISC+license&amp;oldid=520057086&amp;writer=rl" title="Download a PDF version of this wiki page" rel="nofollow">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=ISC_license&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>	</div>
+</div>
+
+<!-- /coll-print_export -->
+
+<!-- LANGUAGES -->
+<div class="portal" id='p-lang'>
+	<h5>Languages</h5>
+	<div class="body">
+		<ul>
+			<li class="interwiki-da"><a href="//da.wikipedia.org/wiki/ISC-licensen" title="ISC-licensen" lang="da" hreflang="da">Dansk</a></li>
+			<li class="interwiki-de"><a href="//de.wikipedia.org/wiki/ISC-Lizenz" title="ISC-Lizenz" lang="de" hreflang="de">Deutsch</a></li>
+			<li class="interwiki-es"><a href="//es.wikipedia.org/wiki/Licencia_ISC" title="Licencia ISC" lang="es" hreflang="es">Español</a></li>
+			<li class="interwiki-fr"><a href="//fr.wikipedia.org/wiki/Licence_ISC" title="Licence ISC" lang="fr" hreflang="fr">Français</a></li>
+			<li class="interwiki-it"><a href="//it.wikipedia.org/wiki/Licenza_ISC" title="Licenza ISC" lang="it" hreflang="it">Italiano</a></li>
+			<li class="interwiki-ja"><a href="//ja.wikipedia.org/wiki/ISC%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9" title="ISCライセンス" lang="ja" hreflang="ja">日本語</a></li>
+			<li class="interwiki-pt"><a href="//pt.wikipedia.org/wiki/Licen%C3%A7a_ISC" title="Licença ISC" lang="pt" hreflang="pt">Português</a></li>
+			<li class="interwiki-ru"><a href="//ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F_ISC" title="Лицензия ISC" lang="ru" hreflang="ru">Русский</a></li>
+			<li class="interwiki-zh"><a href="//zh.wikipedia.org/wiki/ISC%E8%A8%B1%E5%8F%AF%E8%AD%89" title="ISC許可證" lang="zh" hreflang="zh">中文</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 27 October 2012 at 02:50.<br /></li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.
+See <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> for details.<br/>
+Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.<br /></li><li class="noprint"><a class='internal' href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/w/index.php?title=ISC_license&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="//wikimediafoundation.org/"><img src="//bits.wikimedia.org/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="//bits.wikimedia.org/static-1.21wmf3/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=skins.vector&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mobile.desktop","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","mw.MwEmbedSupport.style","ext.vector.collapsibleNav","ext.vector.collapsibleTabs","ext.vector.editWarning","ext.UserBuckets","ext.articleFeedback.startup","ext.articleFeedbackv5.startup","ext.markAsHelpful","ext.Experiments.lib","ext.Experiments.experiments","mw.PopUpMediaTransform"], null, true);
+}</script>
+<script src="/w/index.php?title=MediaWiki:Gadget-ReferenceTooltips.js&amp;action=raw&amp;ctype=text/javascript&amp;508635914"></script>
+<script src="//bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<!-- Served by srv207 in 0.136 secs. -->
+	</body>
+</html>

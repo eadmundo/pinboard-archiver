@@ -1,0 +1,217 @@
+.pristine-slides-wrap { -webkit-transition: left 5s ; -moz-transition: left 5s ; transition: left 5s ;  }
+#pristine-pager-1 { background: #888; }
+
+.pristine-arrow-slide-one { width: 0; height: 0; }
+.pristine-arrow-slide-two { width: 0; height: 0; }
+.pristine-arrow-slide-three { width: 0; height: 0; }
+#pristine-slide-1-target:target ~ #pristine-play { opacity: 1; }
+#pristine-slide-2-target:target ~ #pristine-play { opacity: 1; }
+#pristine-slide-3-target:target ~ #pristine-play { opacity: 1; }
+
+
+#pristine-slide-1-target:target ~ .pristine-overflow-wrap .pristine-slides-wrap { left: -0px; }
+#pristine-slide-1-target:target ~ .pristine-pager-wrap #pristine-pager-1 { background: #888; }
+
+#pristine-slide-1-target:target ~ .pristine-arrow-slide-one { width: 40px !important; height: 42px !important; }
+#pristine-slide-1-target:target ~ .pristine-arrow { width: 0; height: 0; }
+
+
+#pristine-slide-2-target:target ~ .pristine-overflow-wrap .pristine-slides-wrap { left: -470px; }
+#pristine-slide-2-target:target ~ .pristine-pager-wrap #pristine-pager-2 { background: #888; }
+#pristine-slide-2-target:target ~ .pristine-pager-wrap #pristine-pager-1 { background: #ccc; }
+
+#pristine-slide-2-target:target ~ .pristine-arrow-slide-two { width: 40px !important; height: 42px !important; }
+#pristine-slide-2-target:target ~ .pristine-arrow { width: 0; height: 0; }
+
+
+#pristine-slide-3-target:target ~ .pristine-overflow-wrap .pristine-slides-wrap { left: -940px; }
+#pristine-slide-3-target:target ~ .pristine-pager-wrap #pristine-pager-3 { background: #888; }
+#pristine-slide-3-target:target ~ .pristine-pager-wrap #pristine-pager-1 { background: #ccc; }
+
+#pristine-slide-3-target:target ~ .pristine-arrow-slide-three { width: 40px !important; height: 42px !important; }
+#pristine-slide-3-target:target ~ .pristine-arrow { width: 0; height: 0; }
+
+
+.pristine-slides-wrap { -webkit-animation: slides-wrap 9s infinite; -moz-animation: slides-wrap 9s infinite; animation: slides-wrap 9s infinite; }
+#pristine-pager-1 { -webkit-animation: slide-one-pager 9s infinite; -moz-animation: slide-one-pager 9s infinite; animation: slide-one-pager 9s infinite; }
+#pristine-pager-2 { -webkit-animation: slide-two-pager 9s infinite; -moz-animation: slide-two-pager 9s infinite; animation: slide-two-pager 9s infinite; }
+#pristine-pager-3 { -webkit-animation: slide-three-pager 9s infinite; -moz-animation: slide-three-pager 9s infinite; animation: slide-three-pager 9s infinite; }
+
+.pristine-arrow-slide-one { -webkit-animation: slide-one-arrows 9s infinite; -moz-animation: slide-one-arrows 9s infinite; animation: slide-one-arrows 9s infinite; }
+.pristine-arrow-slide-two { -webkit-animation: slide-two-arrows 9s infinite; -moz-animation: slide-two-arrows 9s infinite; animation: slide-two-arrows 9s infinite; }
+.pristine-arrow-slide-three { -webkit-animation: slide-three-arrows 9s infinite; -moz-animation: slide-three-arrows 9s infinite; animation: slide-three-arrows 9s infinite; }
+
+@-webkit-keyframes slides-wrap {
+	0% { left: 0; }
+	31.4814814815% { left: -0px; }
+	37.037037037% { left: -940px; }
+	62.962962963% { left: -940px; }
+	68.5185185185% { left: -1880px; }
+	94.4444444444% { left: -1880px; }
+	100% { left: 0; }
+}
+
+@-moz-keyframes slides-wrap {
+	0% { left: 0; }
+	31.4814814815% { left: -0px; }
+	37.037037037% { left: -940px; }
+	62.962962963% { left: -940px; }
+	68.5185185185% { left: -1880px; }
+	94.4444444444% { left: -1880px; }
+	100% { left: 0; }
+}
+
+@keyframes slides-wrap {
+	0% { left: 0; }
+	31.4814814815% { left: -0px; }
+	37.037037037% { left: -940px; }
+	62.962962963% { left: -940px; }
+	68.5185185185% { left: -1880px; }
+	94.4444444444% { left: -1880px; }
+	100% { left: 0; }
+}
+
+@-webkit-keyframes slide-one-pager {
+	0% { background: #888; }
+	31.4814814815% { background: #888; }
+	37.037037037% { background: #ccc; }
+	94.4444444444% { background: #ccc; }
+	100% { background: #888; }
+}
+@-webkit-keyframes slide-one-arrows {
+	0% { width: 40px; height: 42px; }
+	33.3323333333% { width: 40px; height: 42px; }
+	33.3333333333% { width: 0; height: 0; }
+	100% { width: 0; height: 0; }
+}
+@-moz-keyframes slide-one-pager {
+	0% { background: #888; }
+	31.4814814815% { background: #888; }
+	37.037037037% { background: #ccc; }
+	94.4444444444% { background: #ccc; }
+	100% { background: #888; }
+}
+@-moz-keyframes slide-one-arrows {
+	0% { width: 40px; height: 42px; }
+	33.3323333333% { width: 40px; height: 42px; }
+	33.3333333333% { width: 0; height: 0; }
+	100% { width: 0; height: 0; }
+}
+@keyframes slide-one-pager {
+	0% { background: #888; }
+	31.4814814815% { background: #888; }
+	37.037037037% { background: #ccc; }
+	94.4444444444% { background: #ccc; }
+	100% { background: #888; }
+}
+@keyframes slide-one-arrows {
+	0% { width: 40px; height: 42px; }
+	33.3323333333% { width: 40px; height: 42px; }
+	33.3333333333% { width: 0; height: 0; }
+	100% { width: 0; height: 0; }
+}
+@-webkit-keyframes slide-two-pager {
+	0% { background: #ccc; }
+	31.4814814815% { background: #ccc; }
+	37.037037037% { background: #888; }
+	62.962962963% { background: #888; }
+	68.5185185185% { background: #ccc; }
+	100% { background: #ccc; }
+}
+@-webkit-keyframes slide-two-arrows {
+	0% { width: 0; height: 0; }
+	33.3323333333% { width: 0; height: 0; }
+	33.3333333333% { width: 40px; height: 42px; }
+	66.6656666667% { width: 40px; height: 42px; }
+	66.6666666667% { width: 0; height: 0; }
+	100% { width: 0; height: 0; }
+}
+@-moz-keyframes slide-two-pager {
+	0% { background: #ccc; }
+	31.4814814815% { background: #ccc; }
+	37.037037037% { background: #888; }
+	62.962962963% { background: #888; }
+	68.5185185185% { background: #ccc; }
+	100% { background: #ccc; }
+}
+@-moz-keyframes slide-two-arrows {
+	0% { width: 0; height: 0; }
+	33.3323333333% { width: 0; height: 0; }
+	33.3333333333% { width: 40px; height: 42px; }
+	66.6656666667% { width: 40px; height: 42px; }
+	66.6666666667% { width: 0; height: 0; }
+	100% { width: 0; height: 0; }
+}
+@keyframes slide-two-pager {
+	0% { background: #ccc; }
+	31.4814814815% { background: #ccc; }
+	37.037037037% { background: #888; }
+	62.962962963% { background: #888; }
+	68.5185185185% { background: #ccc; }
+	100% { background: #ccc; }
+}
+@keyframes slide-two-arrows {
+	0% { width: 0; height: 0; }
+	33.3323333333% { width: 0; height: 0; }
+	33.3333333333% { width: 40px; height: 42px; }
+	66.6656666667% { width: 40px; height: 42px; }
+	66.6666666667% { width: 0; height: 0; }
+	100% { width: 0; height: 0; }
+}
+@-webkit-keyframes slide-three-pager {
+	0% { background: #ccc; }
+	62.962962963% { background: #ccc; }
+	68.5185185185% { background: #888; }
+	94.4444444444% { background: #888; }
+	100% { background: #ccc; }
+}
+@-webkit-keyframes slide-three-arrows {
+	0% { width: 0; height: 0; }
+	66.6656666667% { width: 0; height: 0; }
+	66.6666666667% { width: 40px; height: 42px; }
+	99.999% { width: 40px; height: 42px; }
+	100% { width: 0; height: 0; }
+}
+@-moz-keyframes slide-three-pager {
+	0% { background: #ccc; }
+	62.962962963% { background: #ccc; }
+	68.5185185185% { background: #888; }
+	94.4444444444% { background: #888; }
+	100% { background: #ccc; }
+}
+@-moz-keyframes slide-three-arrows {
+	0% { width: 0; height: 0; }
+	66.6656666667% { width: 0; height: 0; }
+	66.6666666667% { width: 40px; height: 42px; }
+	99.999% { width: 40px; height: 42px; }
+	100% { width: 0; height: 0; }
+}
+@keyframes slide-three-pager {
+	0% { background: #ccc; }
+	62.962962963% { background: #ccc; }
+	68.5185185185% { background: #888; }
+	94.4444444444% { background: #888; }
+	100% { background: #ccc; }
+}
+@keyframes slide-three-arrows {
+	0% { width: 0; height: 0; }
+	66.6656666667% { width: 0; height: 0; }
+	66.6666666667% { width: 40px; height: 42px; }
+	99.999% { width: 40px; height: 42px; }
+	100% { width: 0; height: 0; }
+}
+
+
+
+#pristine-slide-1-target:target ~ .pa, #pristine-slide-1-target:target ~ .pa .pa  { -webkit-animation: none; -moz-animation: none; animation: none; }
+#pristine-slide-2-target:target ~ .pa, #pristine-slide-2-target:target ~ .pa .pa  { -webkit-animation: none; -moz-animation: none; animation: none; }
+#pristine-slide-3-target:target ~ .pa, #pristine-slide-3-target:target ~ .pa .pa  { -webkit-animation: none; -moz-animation: none; animation: none; }
+
+#pristine-play:target ~ .pristine-pager-wrap #pristine-pager-1 { -webkit-animation: slide-one-pager 9s infinite linear; -moz-animation: slide-one-pager 9s infinite linear; animation: slide-one-pager 9s infinite linear; }
+#pristine-play:target ~ .pristine-pager-wrap #pristine-pager-2 { -webkit-animation: slide-two-pager 9s infinite linear; -moz-animation: slide-two-pager 9s infinite linear; animation: slide-two-pager 9s infinite linear; }
+#pristine-play:target ~ .pristine-pager-wrap #pristine-pager-3 { -webkit-animation: slide-three-pager 9s infinite linear; -moz-animation: slide-three-pager 9s infinite linear; animation: slide-three-pager 9s infinite linear; }
+
+#pristine-play:target ~ .pristine-arrow-slide-one { -webkit-animation: slide-one-arrows 9s infinite linear; -moz-animation: slide-one-arrows 9s infinite linear; animation: slide-one-arrows 9s infinite linear; }
+#pristine-play:target ~ .pristine-arrow-slide-two { -webkit-animation: slide-two-arrows 9s infinite linear; -moz-animation: slide-two-arrows 9s infinite linear; animation: slide-two-arrows 9s infinite linear; }
+#pristine-play:target ~ .pristine-arrow-slide-three { -webkit-animation: slide-three-arrows 9s infinite linear; -moz-animation: slide-three-arrows 9s infinite linear; animation: slide-three-arrows 9s infinite linear; }
+

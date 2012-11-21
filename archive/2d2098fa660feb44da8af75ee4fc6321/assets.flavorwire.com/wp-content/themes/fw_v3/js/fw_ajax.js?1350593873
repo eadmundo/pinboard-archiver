@@ -1,0 +1,140 @@
+function FW_Ajax(options) {
+  var self = this;
+  var _options  =   {
+    container: $("div.ajaxNav"),
+    start: 1,
+    max: 10,
+    id: 0,
+    name: "string",
+    status: "publish"
+  }
+    
+  for (i in options) _options[i] = options[i];  
+    
+  this.init = function() {
+    self.currentPg = _options.start;
+    self.max = _options.max;
+    self.id = _options.id;
+    self.name = _options.name;
+    self.container = _options.container;
+    self.status = _options.status;
+        
+    self.container.css({
+      "background-color":"white",
+      "background-image": "url(/wp-content/themes/fw_v3/images/ajax_loading.gif)",
+      "background-repeat": "no-repeat",
+      "background-position": "-5000px center"
+    });
+    
+    self.url = (self.status=="draft") ? "?p=" + self.id + "&page={{ page }}&json=1" : "/" + self.id + "/" + self.name + "/{{ page }}?json=1"
+                
+    $.ajax({
+      url: self.url.replace("{{ page }}","1"),
+      success: function(data) {
+       for (var i = 0; i < (data.post.attachments.length > 15 ? 15 : data.post.attachments.length); i++) {
+        if (data.post.attachments[i].mime_type == "image/jpeg")
+          $("<img>")
+            .attr("src",data.post.attachments[i].url)
+       }
+      }
+    });      
+          
+    var links = _options.container.find("a");
+    var inputs = _options.container.find("input");
+    var item;
+
+    for(var i = 0; i < links.length; i++) {
+      item = $(links[i]);
+      item.bind('click', {link:item}, move)
+    }
+    
+    for(var i = 0; i < inputs.length; i++) {
+      item = $(inputs[i]);
+      item.bind('change', {input:item}, go)
+    }
+    
+    self.refresh();
+    
+    var hash = window.location.hash.substr(1);
+        
+    if(hash != "" && hash != self.currentPg && hash <= self.max && hash > 1) 
+      getAjaxPost(hash, "jump", true);
+  }
+  
+  this.refresh = function() {
+    if(self.currentPg==self.max)
+      self.container.find("div.right").removeClass("valid");
+    else 
+      self.container.find("div.right").addClass("valid");
+      
+    if(self.currentPg==1)
+      self.container.find("div.left").removeClass("valid");
+    else 
+      self.container.find("div.left").addClass("valid");
+      
+    self.container.find("input").val(self.currentPg);
+  }
+  
+  function move(e) {
+    if(!e.data.link.parent().hasClass("valid"))       return;
+
+    switch(e.data.link.attr("data-action")) {
+      case "next":
+        getAjaxPost(self.currentPg + 1, "next")
+        break;
+      case "previous":
+        getAjaxPost(self.currentPg - 1, "previous")
+        break;
+    }
+  }
+  
+  function go(e) {
+    var post = e.data.input.val();
+    e.data.input.blur();
+    if(post > self.max || post < 1)   return;
+    getAjaxPost(post, "jump");
+  }
+  
+  function getAjaxPost(post, dir, skipAdsAndTracking) {      
+    switch(dir) {
+    case "next": 
+      self.container.css("background-position", "500px center");
+      break;
+    case "previous":
+      self.container.css("background-position", "105px center");
+      break;
+    case "jump":
+      self.container.css("background-position", "350px center");
+      break;
+    }      
+  
+    $.ajax({
+      url: self.url.replace("{{ page }}",post),
+      success: function(data) {
+        populateDiv($("article#post div#post-content"), $(data.post.content), dir);
+        window.location.hash = post;
+        self.currentPg = parseInt(post);
+        self.refresh();
+      }
+    });
+
+    if (!skipAdsAndTracking) {
+      if(googletag!=undefined)
+      	googletag.pubads().refresh();
+      	
+      window._gaq.push(['_trackPageview', self.url + post])
+    }
+  }
+  
+  function populateDiv(div, content, dir) {          
+    if(content.find("img").length > 0) {
+      content.find("img").last().load(function() {
+	      div.html(content);
+	      self.container.css("background-position", "-5000px center");
+      });
+    } else {
+	    div.html(content);
+	    self.container.css("background-position", "-5000px center");
+    }
+  }
+}

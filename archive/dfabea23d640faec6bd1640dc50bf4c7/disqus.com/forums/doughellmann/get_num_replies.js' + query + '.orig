@@ -1,0 +1,545 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <link rel="shortcut icon" href="http://mediacdn.disqus.com/1353454289/img/favicon.ico" type="image/vnd.microsoft.icon">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta name="keywords" content="Disqus, disqus.com, comments, blog, blogs, discussion">
+    <meta name="description" content="Disqus is a global comment system that improves discussion on websites and connects conversations across the web.">
+    
+    <meta name="google" value="notranslate" />
+    
+    <title>
+    DISQUS Admin | Login
+    </title>
+
+    
+        <script type="text/javascript" charset="utf-8">
+    document.domain = 'disqus.com';
+    if (window.context === undefined) {
+        var context = {};
+    }
+    context.disqusUrl = 'http://disqus.com';
+    context.disqusDomain = 'disqus.com';
+    context.mediaUrl = 'http://mediacdn.disqus.com/1353454289';
+    context.loginUrl = 'https://disqus.com/profile/login/';
+    context.signupUrl = 'https://disqus.com/profile/signup/';
+    context.apiUrl = '//disqus.com/api/3.0/';
+    context.apiPublicKey = 'Y1S1wGIzdc63qnZ5rhHfjqEABGA4ZTDncauWFFWWTUBqkmLjdxloTb7ilhGnZ7z1';
+    
+    context.forum = null;
+    context.adminUrl = 'http://disqus.com';
+    
+    context.twitterFriendsUrl = 'http://disqus.com/_ax/twitter/connected_friends/';
+    context.switches = {
+  "use_rs_paginator_30m": false,
+  "fingerprint": true,
+  "algorithm_experiments": false,
+  "inline_defaults_css": false,
+  "digests:events:2": true,
+  "digests:events:3": true,
+  "postsort": true,
+  "phoenix_reputation": true,
+  "firehose": true,
+  "enable_entropy_filtering": false,
+  "new_toolbar": false,
+  "readonly": false,
+  "olark_admin_packages": true,
+  "click_tracking_on": false,
+  "website_addons": true,
+  "perflog": false,
+  "new_inbound_processor": false,
+  "switch_cdn": false,
+  "uploads:UserProfile:duplex": true,
+  "recurly_test": false,
+  "bespin": false,
+  "achievements_admin": false,
+  "firehose_chattr": false,
+  "digests:events": true,
+  "train_impermium": true,
+  "limit_get_posts_days_30d": true,
+  "olark_welcome": false,
+  "use_akismet": false,
+  "uploads:Integration:s3_only": false,
+  "use_impermium": true,
+  "use_meta_redirect": true,
+  "digests:render": true,
+  "shorten_notifications_links": false,
+  "usertransformer_reputation": true,
+  "new_sort_paginator": true,
+  "send_to_impermium": true,
+  "shardpost": true,
+  "discovery_next:truncate": true,
+  "uploads:Account": false,
+  "digests:send": true,
+  "website_base_template": true,
+  "es_index_threads": true,
+  "uploads": true,
+  "new_moderate": true,
+  "redis_threadcount": false,
+  "darkest_realtime": false,
+  "listactivity_replies": true,
+  "disable_moderate_ascending": false,
+  "uploads:AnonymousUser": true,
+  "postsort:index": false,
+  "digests:events:1": true,
+  "next_thread_sharing": true,
+  "debug_js": false,
+  "next_raven": false,
+  "new_embed_profile": false,
+  "postsort:paginator": false,
+  "send_to_akismet": false,
+  "originalauthor_switchover": true,
+  "next_activate": false,
+  "realtime": true,
+  "promoted_click_optimization": true,
+  "redis_notification_tokens": true,
+  "show_captcha_on_mentions": false,
+  "show_captcha_on_links": true,
+  "next_dragdrop_nag": true,
+  "olark_support": true,
+  "firehose_gnip": true,
+  "next_realtime": true,
+  "olark_addons": true,
+  "uploads:ScratchImage:s3_only": false,
+  "discovery_analytics": true,
+  "surveyNotice": false,
+  "promoted_discovery_random": true,
+  "discovery_community": true,
+  "uploads:Forum:duplex": true,
+  "lazy_embed": false,
+  "vip_read_slave": false,
+  "uploads:MediaEmbed:duplex": true,
+  "use_rs_paginator_5m": true,
+  "theme_editor_disabled": false,
+  "limit_textdigger": true,
+  "olark_about": false,
+  "phoenix_show_flag_spam": false,
+  "process_inbound_queue": false,
+  "next_realtime_cap": false,
+  "discovery_next:experiments": false,
+  "next_discard_low_rep": true,
+  "google_analytics": true,
+  "mentions": true,
+  "olark_install": true,
+  "next_streaming_realtime": false,
+  "disable_messagesx": false,
+  "olark_admin_addons": true,
+  "digests:add": true,
+  "next_translations": true,
+  "disable_achievements": false,
+  "html_email": true,
+  "dark_realtime": false,
+  "discovery_next:promoted": true,
+  "uploads:ScratchImage": true,
+  "next_logging": false,
+  "addons_ab_test": false,
+  "firehose_gnip_http": true,
+  "uploads:ScratchImage:duplex": true,
+  "textdigger_classification": true,
+  "uploads:TemporaryMedia:s3_only": false,
+  "next": false,
+  "uploads:Integration": true,
+  "shardpost:paginator": false,
+  "postsort:paginator:dark": false,
+  "next_theme_experimental": false,
+  "next_lazy_embed": false,
+  "next_realtime_anim_disabled": false,
+  "juggler_thread_onReady": true,
+  "firehose_realertime": false,
+  "uploads:Integration:duplex": true,
+  "loginas": false,
+  "juggler_enabled": false,
+  "promoted_discovery_budget": true,
+  "edits_to_spam": true,
+  "log_large_querysets": false,
+  "notifications": true,
+  "shardpost:index": true,
+  "discovery_click_optimization": false,
+  "firehose_push": true,
+  "enable_link_affiliation": true,
+  "show_unapproved": false,
+  "firehose_message_db_lookup": true,
+  "avatar_save_s3": false,
+  "digests": true,
+  "uploads:Forum": true,
+  "firehose_pubsub_throttle": true,
+  "discovery_next:dark_promoted": false,
+  "use_rs_paginator_60m": false,
+  "uploads:MediaEmbed:s3_only": false,
+  "firehose_realertime_logger": false,
+  "website_homepage_https_off": true,
+  "disable_realtime": false,
+  "community_icon": true,
+  "uploads:TemporaryMedia:duplex": true,
+  "use_master_for_api": true,
+  "next_realtime_indicators": true,
+  "limit_get_posts_days_7d": false,
+  "embed_category_display": false,
+  "discovery_jones": true,
+  "static_styles": true,
+  "uploads:MediaEmbed": true,
+  "discovery_next:logging": false,
+  "discovery_next": true,
+  "uploads:TemporaryMedia": true,
+  "google_translate": true,
+  "firehose_pubsub": true,
+  "uploads:AnonymousUser:duplex": true,
+  "phoenix_optout": true,
+  "avatar_duplex_save": true,
+  "phoenix": true,
+  "discovery_redirect_event": true,
+  "digests:dark": false,
+  "train_akismet": false,
+  "stats": false,
+  "textdigger_crawler": true,
+  "embed_labs": false,
+  "activate_2012_testing": false,
+  "listactivity_replies_30d": true,
+  "uploads:UserProfile": true,
+  "discovery_next:promoted_force": false
+};
+
+    context.urlMap = {
+        'signup': 'http://disqus.com/admin/register/',
+        'dashboard': 'http://disqus.com/dashboard/',
+        'admin': 'http://disqus.com/admin/',
+        'logout': 'http://disqus.com/logout/',
+        'home': 'http://disqus.com',
+        'addons': 'http://disqus.com/addons/',
+        'for_websites': 'http://disqus.com/for-websites/',
+        'showcase': 'http://disqus.com/showcase/',
+        'for_people': 'http://disqus.com/for-people/',
+        'login': 'http://disqus.com/profile/login/'
+    };
+    context.navMap = {
+        'signup': '',
+        'dashboard': '',
+        'admin': '',
+        'addons': ''
+    };
+</script>
+
+        <script src="http://mediacdn.disqus.com/1353454289/js/src/auth_context.js" type="text/javascript" charset="utf-8"></script>
+    
+
+    
+    <link rel="stylesheet" href="http://mediacdn.disqus.com/1353454289/build/css/e955af81c359.css" type="text/css" />
+
+
+    
+    
+
+    
+        
+          <script src="http://mediacdn.disqus.com/1353454289/build/system/core.js" type="text/javascript" charset="utf-8"></script>
+        
+    
+
+    
+        
+
+
+<script type="text/javascript" src="http://mediacdn.disqus.com/1353454289/build/js/bf86f51bdeac.js"></script>
+
+<script type="text/javascript">
+if (typeof Raven !== undefined) {
+    Raven.config({
+        "servers": ["http://disqus.com/raven/api/store/"],
+        "ignoreErrors": ["Script error."]
+    });
+    window.onerror = (function (existing){
+        return function (){
+            Raven.process.apply(this, arguments);
+            if (existing) existing.apply(this, arguments);
+            return true;
+        };
+    }(window.onerror));
+}
+</script>
+
+    
+
+    
+    <script src="http://mediacdn.disqus.com/1353454289/js/src/global.js" charset="utf-8"></script>
+    <script src="http://mediacdn.disqus.com/1353454289/js/src/ga_events.js" charset="utf-8"></script>
+
+<script src="http://mediacdn.disqus.com/1353454289/js/src/messagesx.js"></script>
+<script src="http://mediacdn.disqus.com/1353454289/js/src/mixpanel.js"></script>
+<script src="http://mediacdn.disqus.com/1353454289/js/src/funnelcake.js"></script>
+<script type="text/javascript">
+    if (window.AB_TESTS === undefined) {
+        var AB_TESTS = {};
+    }
+    $(function() {
+        if (context.auth.username !== undefined) {
+            disqus.messagesx.init(context.auth.username);
+        }
+    });
+</script>
+<script type="text/javascript" charset="utf-8">
+    // Global tests
+    $(document).ready(function() {
+        $('a[rel*=facebox]').facebox();
+    });
+</script>
+
+    <script type="text/x-underscore-template" data-template-name="global-nav">
+
+<% var has_custom_avatar = data.avatar_url && data.avatar_url.indexOf('noavatar') < 0; %>
+<% var has_custom_username = data.username && data.username.indexOf('disqus_') < 0; %>
+<% if (data.username) { %>
+    <li class="<%= data.forWebsitesClasses || '' %>" data-analytics="header for websites"><a href="<%= data.urlMap.for_websites %>">For Websites</a></li>
+    <li data-analytics="header dashboard"><a href="<%= data.urlMap.dashboard %>">Dashboard</a></li>
+    <% if (data.has_forums) { %>
+        <li class="admin<% if (has_custom_avatar || !has_custom_username) { %> avatar-menu-admin<% } %>" data-analytics="header admin"><a href="<%= data.urlMap.admin %>">Admin</a></li>
+    <% } %>
+    <li class="user-dropdown dropdown-toggle<% if (has_custom_avatar || !has_custom_username) { %> avatar-menu<% } else { %> username-menu<% } %>" data-analytics="header username dropdown" data-floater-marker="<% if (has_custom_avatar || !has_custom_username) { %>square<% } %>">
+        <a href="<%= data.urlMap.home %>/<%= data.username %>/">
+            <% if (has_custom_avatar) { %>
+                <img src="<%= data.avatar_url %>" class="avatar">
+            <% } else if (has_custom_username) { %>
+                <%= data.username %>
+            <% } else { %>
+                <img src="<%= data.avatar_url %>" class="avatar">
+            <% } %>
+            <span class="caret"></span>
+        </a>
+        <ul class="clearfix dropdown">
+            <li data-analytics="header view profile"><a href="<%= data.urlMap.home %>/<%= data.username %>/">View Profile</a></li>
+            <li class="edit-profile js-edit-profile" data-analytics="header edit profile"><a href="<%= data.urlMap.dashboard %>#account">Edit Profile</a></li>
+            <li class="logout" data-analytics="header logout"><a href="<%= data.urlMap.logout %>">Logout</a></li>
+        </ul>
+    </li>
+<% } else { %>
+    <li class="<%= data.forWebsitesClasses || '' %>" data-analytics="header for websites"><a href="<%= data.urlMap.for_websites %>">For Websites</a></li>
+    <li class="<%= data.showcaseClasses || '' %>" data-analytics="header showcase"><a href="<%= data.urlMap.showcase %>">Showcase</a></li>
+    <li data-analytics="header login"><a rel="login" href="<%= data.urlMap.login %>?next=<%= encodeURIComponent(document.location.href) %>">Login</a></li>
+<% } %>
+
+
+</script>
+
+    <!--[if lte IE 7]>
+  <script src="http://mediacdn.disqus.com/1353454289/js/src/border_box_model.js"></script>
+<![endif]-->
+<!--[if lte IE 8]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js"></script>
+  <script src="http://mediacdn.disqus.com/1353454289/js/src/selectivizr.js"></script>
+<![endif]-->
+
+    
+
+    
+    
+
+    
+        <script type="text/javascript" charset="utf-8">
+            // Global tests
+            $(document).ready(function() {
+                $('a[rel*=facebox]').facebox();
+            });
+        </script>
+        
+    
+    
+</head>
+<body class="">
+    
+    
+<header class="global-header">
+    <div>
+        <nav class="global-nav">
+            
+            <a href="/" class="logo" data-analytics="site logo"><img src="http://mediacdn.disqus.com/1353454289/img/disqus-logo-alt.png" alt="DISQUS" title="Disqus - Discover your community"/></a>
+            
+        </nav>
+        <h1>Sign in</h1>
+    </div>
+</header>
+
+
+    
+    <section class="login">
+        <form id="login-form" action="https://disqus.com/profile/login/?next=http://doughellmann.disqus.com/forums/doughellmann/admin/moderate/" method="post" accept-charset="utf-8">
+            
+            <label>Email or Username</label>
+            <input type="text" name="username" tabindex="20" />
+            <label>Password (<a href="http://disqus.com/forgot/" target="_blank">forgot?</a>)</label>
+            <input type="password" name="password" tabindex="21" />
+            <button type="submit" class="button large highlight" data-analytics="sign-in">Sign in</button>
+            <span class="create-account">or <a href="http://disqus.com/profile/signup/" data-analytics="create-account">create an account</a></span>
+        </form>
+    </section>
+    <div class="get-disqus">
+        <a href="http://disqus.com/api/register/" data-analytics="get-disqus">Get Disqus for your site</a>
+    </div>
+
+    
+
+
+
+    
+        
+        
+            
+<script>
+    /*jshint undef:true, browser:true, maxlen:100, strict:true, expr:true, white:true */
+
+// These must be global
+var _comscore,
+    _gaq;
+
+(function (doc) {
+    "use strict";
+
+    // Convert Django template variables to JS variables
+    var debug = false,
+        gaKey = '',
+        gaPunt = '',
+        gaCustomVars = {
+            component: 'website',
+            forum: '',
+            version: 'v5'
+        },
+        gaSlots = {
+            component: 1,
+            forum: 3,
+            version: 4
+        };
+    /**/
+
+    gaKey = gaCustomVars.component == 'website' ?
+            'UA-1410476-16' :
+            'UA-1410476-6';
+
+
+    // Now start loading analytics services
+    var s = doc.getElementsByTagName('script')[0],
+        p = s.parentNode;
+
+    var isSecure = doc.location.protocol == 'https:';
+
+    if (!debug) {
+        _comscore = _comscore || []; // comScore
+
+        // Load comScore
+        _comscore.push({ c1: '7', c2: '10137436', c3: '1' });
+        var cs = document.createElement('script');
+        cs.async = true;
+        cs.src = (isSecure ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';
+        p.insertBefore(cs, s);
+    }
+
+    // Set up Google Analytics
+    _gaq = _gaq || [];
+
+
+    if (!debug) {
+        _gaq.push(['_setAccount', gaKey]);
+        _gaq.push(['_setDomainName', '.disqus.com']);
+    }
+
+    if (!gaPunt) {
+        for (var v in gaCustomVars) {
+            if (!(gaCustomVars.hasOwnProperty(v) && gaCustomVars[v]))
+                continue;
+
+            _gaq.push(['_setCustomVar', gaSlots[v], gaCustomVars[v]]);
+        }
+
+        _gaq.push(['_trackPageview']);
+    }
+
+    // Load Google Analytics
+    var ga = doc.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    var prefix = isSecure ? 'https://ssl' : 'http://www';
+    // Dev tip: if you cannot use the Google Analytics Debug Chrome extension,
+    // https://chrome.google.com/webstore/detail/jnkmfdileelhofjcijamephohjechhna
+    // you can replace /ga.js on the following line with /u/ga_debug.js
+    // But if you do that, PLEASE DON'T COMMIT THE CHANGE! Kthxbai.
+    ga.src = prefix + '.google-analytics.com/ga.js';
+    p.insertBefore(ga, s);
+}(document));
+
+</script>
+
+
+        
+        
+    
+
+    
+    
+    
+
+    
+        <script>
+        (function (){
+            // adds a classname for css to target the current page without passing in special things from the server or wherever
+            // replacing all characters not allowable in classnames
+            var newLocation = encodeURIComponent(window.location.pathname).replace(/[\.!~*'\(\)]/g, '_');
+            // cleaning up remaining url-encoded symbols for clarity sake
+            newLocation = newLocation.replace(/%2F/g, '-').replace(/^-/, '').replace(/-$/, '');
+            if (newLocation === '') {
+                newLocation = 'homepage';
+            }
+            $('body').addClass('' + newLocation);
+        }());
+
+        $(function ($) {
+            // adds 'page-active' class to links matching the page url
+            $('a[href="' + window.location.pathname + '"]').addClass('page-active');
+        });
+
+        $(document).delegate('[data-toggle-selector]', 'click', function (e) {
+            var $this = $(this);
+            $($this.attr('data-toggle-selector')).toggle();
+            e.preventDefault();
+        });
+        </script>
+    
+
+    
+    <script type="text/javascript">
+      $(function() {
+          var options = {
+              authenticated: (context.auth.username !== undefined),
+              moderated_forums: context.auth.moderated_forums,
+              user_id: context.auth.user_id,
+              track_clicks: !!context.switches.website_click_analytics
+          };
+          
+          DISQUS.funnelcake.init("f6fcda8710871be3efb6da4e46ec68e2", options);
+        });
+    </script>
+    
+
+    
+    <!-- helper jQuery tmpl partials -->
+    <script type="text/x-jquery-tmpl" id="profile-metadata-tmpl">
+        
+        data-profile-username="${username}" data-profile-hash="${emailHash}"
+        
+    </script>
+    <script type="text/x-jquery-tmpl" id="profile-link-tmpl">
+        
+        <a class="profile-launcher" {{tmpl "#profile-metadata-tmpl"}} href="#">${name}</a>
+        
+    </script>
+
+    <script src="http://mediacdn.disqus.com/1353454289/js/src/templates.js"></script>
+    
+
+    <!-- Olark Chat -->
+    
+        
+    
+</body>
+</html>

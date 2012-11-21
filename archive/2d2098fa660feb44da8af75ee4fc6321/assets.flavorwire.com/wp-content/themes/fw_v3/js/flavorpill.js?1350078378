@@ -1,0 +1,68 @@
+var FP = Flavorpill = {};
+
+Flavorpill.init = function(options) {
+  FP.assetsPath = options["assetsPath"];
+  
+  window.console || (console = {}, console.log=function(){});  
+  
+  var paramCb = Math.floor(Math.random() * 999999999);
+
+  $(document).ready(function() {
+    FP.JS.load("{local}/js/flavorwire.js?" + paramCb);
+  });
+}
+
+Flavorpill.log = function(message) {
+  console.log(message);
+}
+
+Flavorpill.JS = function() {
+  var self = this;
+
+  self.load = function(url_or_array, callback) {
+    if (typeof url_or_array == "object") {
+      for (index in url_or_array) {
+        this.load(url_or_array[index]);
+      }
+    } else {
+      var url    = url_or_array;
+      var head   = document.getElementsByTagName("head")[0];
+      var script = document.createElement("script");
+      var done   = false;
+
+      script.src = url.replace("{local}", FP.assetsPath);
+      script.onload = script.onreadystatechange = function() {
+        if (!done && (!this.readyState ||
+                      this.readyState === "loaded" ||
+                      this.readyState === "complete")) {
+          done = true;
+          if (callback) callback();
+          script.onload = script.onreadystatechange = null;
+        }
+      }
+
+      head.appendChild(script);
+      return undefined;
+    }
+  }
+
+  return self;
+}();
+
+Flavorpill.Analytics = function() {
+  var self = this;
+  
+  self.test = function(e, link, category) {
+    e.preventDefault();
+    console.log(link + " " + category);
+    _gat._getTrackerByName()._trackEvent(category, link);
+    return false;
+  }
+  
+  self.trackOutboundClick = function(link, category) {
+    _gat._getTrackerByName()._trackEvent(category, link);
+    setTimeout('document.location = "' + link + '"', 300);
+  }
+  
+  return self;
+}();

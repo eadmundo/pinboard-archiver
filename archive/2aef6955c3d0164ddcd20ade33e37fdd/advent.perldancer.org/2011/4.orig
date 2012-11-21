@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title> How to safely store a password | PerlDancer Advent Calendar</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="alternate" type="application/rss+xml" title="All Articles " href="/feed/2011" /> 
+
+
+<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">/* <![CDATA[ */
+    !window.jQuery && document.write('<script src="/javascripts/jquery.js"><\/script>')
+/* ]]> */</script>
+
+<!-- Prettyfy -->
+<link href="/css/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/javascripts/prettify.js"></script>
+
+</head>
+<body onload="prettyPrint()">
+<div id="page">
+
+<div id="sidebar">
+<a href="/" class="homelink">Dancer Advent Calendar</a><br />
+
+<p>
+The PerlDancer Advent Calendar is a community-driven project that aims 
+to showcase the Dancer Perl web framework.
+</p>
+
+<p>
+Each day of December until Christmas, one article about Dancer. Stay tuned for new moves!
+</p>
+
+<ul id="sidebar-items">
+<li>
+    <h3>About Dancer</h3>
+    <ul class="links">
+        <li><a href="http://www.perldancer.org/">Dancer homepage</a></li>
+        <li><a href="http://twitter.com/PerlDancer">Official Twitter</a></li>
+        <li><a href="http://github.com/sukria/Dancer">Dancer on GitHub</a></li>
+        <li><a class="feed" href="/feed/2011">RSS</a></li>
+    </ul>
+</li>
+</ul>
+</div>
+
+
+<div id="content">
+<div class="pod-document"><h1><a name="how_to_safely_store_a_password"></a>How to safely store a password</h1>
+
+<p>Most developers will have to handle authentication at some point, and
+this usually means storing a password. Everyone knows that storing
+plain-text passwords is a Bad Idea, but this raises
+the question; how can I store the password safely?</p>
+<p>If you store passwords as plain-text, stop it! Right now. There is no
+good reason to store passwords as plain text, and it should never be
+done. Database security <i>will</i> be breached, no matter how secure you make
+your system. When that happens, an attacker has the login details for
+every user in your system. Knowing that people often use the same
+passwords for multiple systems, that plain-text password could open up
+your users to attacks on their social networks, email, or even bank
+accounts. This will land you as the system administrator in legal
+trouble, as most countries have very strict laws governing the storage
+of personal data.</p>
+<h1><a name="password_storage_basic_principles"></a>Password storage basic principles</h1>
+
+<p>The first step to safely storing a password is to not store the
+password at all. You should be storing a 
+<a href="http://en.wikipedia.org/wiki/Cryptographic_hash_function">cryptographic hash</a>
+of the password. A cryptographic hash is a one-way function; it is easy to
+create one for a password, but almost impossible to get the original
+password out.</p>
+<p>To authenticate against a stored hash, you take the plain-text password
+provided by your user, concatenate it with the salt for that user,
+generate a hash using the same algorithm as your stored hash, and if
+the newly generated hash matches the stored version, the password is
+valid. The concept of salt is discussed later in this article.</p>
+<p>There are password-less authentication schemes like OAuth that
+don&rsquo;t require you to store or transmit the password or a hash of
+it. But that is beyond the scope of this article.</p>
+<h1><a name="features_of_a_safely_stored_password"></a>Features of a safely stored password</h1>
+
+<h2><a name="1_password_is_hashed_using_a_secure_one_way_hash"></a>1 Password is hashed using a secure one-way hash</h2>
+
+<p>There are many cryptographic hash functions, and the next step is
+deciding which one to use. Historically MD5 was the algorithm of
+choice, but some clever maths geezers figured out how to reverse MD5
+very quickly and it should not be used now. SHA&ndash;1 is another
+popular choice, though it too is close to being broken in the same way
+as MD5.</p>
+<p>Next we have the SHA2 family of algorithms, SHA&ndash;256, and
+SHA&ndash;512 being the most popular variants. These are fine choices
+and are widely supported. They are not close to being broken, and
+provide an adequate level of security against most categories of
+attack.</p>
+<p>Alternatively, the Bcrypt (BlowfishCrypt) algorithm is at least as
+secure as the SHA2 family, but has one advantage - it is resistant to
+brute force attacks as it includes an extra &ldquo;cost&rdquo; that
+determines how computationally expensive it is to calculate the hash.
+It gets around the brute force problem by being purposefully slow to
+compute.</p>
+<p>There are other algorithms, and the SHA3 competition is underway.
+However these are the most commonly used, and are what this article
+focuses on.</p>
+<h2><a name="2_hashing_algorithm_should_be_resistant_to_brute_force_attack"></a>2 Hashing algorithm should be resistant to brute-force attack</h2>
+
+<p>All these hash algorithms have one flaw in common. They are designed to
+be quick, and are thus vulnerable to brute forcing.</p>
+<p>On standard desktop hardware with off-the-shelf software you can
+generate 2,300,000,000 SHA&ndash;1 hashes every second. That&rsquo;s
+not a typo, 2.3 billion hashes a second. Even using pure perl tools and
+using non-optimized code I can generate 1.3 million hashes a second on
+my year-old laptop.</p>
+<p>2.3 billion hashes a second means every single possible combination of
+alphanumeric passwords less than 8 characters can be brute forced in 23
+minutes. If your password is less than 8 characters and is stored as a
+salted SHA&ndash;1 hash (A common scenario) - it is effectively plain
+text.</p>
+<p>Bcrypt can mitigate this class of attack by setting the cost to a high
+value. A higher cost forces the algorithm to generate hashes at a
+slower rate, making brute force attacks take an unfeasibly long amount
+of time again.</p>
+<h2><a name="3_password_hash_has_a_unique__cryptographically_random_salt"></a>3 Password hash has a unique, cryptographically random salt</h2>
+
+<p>In addition to storing the hash of the password rather than the
+plain-text, you must add a salt to it. The purpose of a salt is to make
+sure that the same password does not always generate the same hash. A
+salt is a bunch of random characters that are concatenated with the
+password before hashing. You must use a different salt for every
+password hash you generate for it to be effective.</p>
+<p>There is widespread misunderstanding about what a salt is supposed to
+do. Some people treat a salt like a secret key, specific to their
+application and use the same salt with every password - meaning the
+original point of a salt, to stop the same passwords hashing to the
+same value - is lost.</p>
+<p>Salt isn&rsquo;t any more secret than the password hash itself and
+should be stored along with the password hash. It isn&rsquo;t a secret
+key, and doesn&rsquo;t help preventing brute force attacks. If someone
+has access to your database and the password hashes, they have access
+to your salt too. Don&rsquo;t treat salt like a secret key.</p>
+<p>An ideal salt should be cryptographically random, so the chance that
+two hashes having the same salt is minimal.</p>
+<h1><a name="recommended_best_practice"></a>Recommended Best Practice?</h1>
+
+<p>The bcrypt algorithm is recommended for all new development work. Its
+resistance to brute force attacks is a key factor, and is only going to
+increase it&rsquo;s appeal as computers get ever faster and start
+generating trillions of hashes per second.</p>
+<p>If your legacy code is using SHA&ndash;256 or SHA&ndash;512, AND uses
+a random salt for every password - you should be fine for the time
+being. Brute forcing a SHA&ndash;512 hash still takes a length of time
+that borders of practicality.</p>
+<p>If you use SHA&ndash;1, MD5, or store passwords as plain-text - you
+need to change your policy right away. Your passwords are insecure, and
+at serious risk when your database is breached.</p>
+<p>If you don&rsquo;t have a random salt for each user, you should start
+doing so right away. Modules like <a href="http://search.cpan.org/perldoc?Data::Entropy">Data::Entropy</a> provide easy
+ways to get good random-ness.</p>
+<h1><a name="common_questions"></a>Common Questions</h1>
+
+<h2><a name="1_no_one_will_breach_my_security_and_access_my_database"></a>1 No one will breach my security and access my database</h2>
+
+<p>That is a bad attitude to have. Recent news shows database compromises
+on the most secure systems, staffed by experts with lots of money.</p>
+<ul>
+<li><a name="item_Sony___a_href__http___blog_us_playstation_com_2011_04_26_update_on_playstation_network_and_qriocity__http___blog_us_playstation_com_2011_04_26_update_on_playstation_network_and_qriocity__a_"></a><b>Sony:
+<a href="http://blog.us.playstation.com/2011/04/26/update-on-playstation-network-and-qriocity">http://blog.us.playstation.com/2011/04/26/update-on-playstation-network-and-qriocity</a></b>
+</li>
+<li><a name="item_Steam___a_href__http___www_valvesoftware_com_news__id_6761__http___www_valvesoftware_com_news__id_6761__a_"></a><b>Steam:
+<a href="http://www.valvesoftware.com/news/?id=6761">http://www.valvesoftware.com/news/?id=6761</a></b>
+</li>
+<li><a name="item_RSA___a_href__http___www_bloomberg_com_news_2011_06_08_emc_s_rsa_security_breach_may_cost_bank_customers_100_million_html__http___www_bloomberg_com_news_2011_06_08_emc_s_rsa_security_breach_may_cost_bank_customers_100_million_html__a_"></a><b>RSA:
+<a href="http://www.bloomberg.com/news/2011-06-08/emc-s-rsa-security-breach-may-cost-bank-customers-100-million.html">http://www.bloomberg.com/news/2011-06-08/emc-s-rsa-security-breach-may-cost-bank-customers-100-million.html</a></b>
+</li>
+<li><a name="item_Citibank___a_href__http___www_ft_com_cms_s_0_eed31c7c_9857_11e0_ae45_00144feab49a_html__http___www_ft_com_cms_s_0_eed31c7c_9857_11e0_ae45_00144feab49a_html__a_"></a><b>Citibank:
+<a href="http://www.ft.com/cms/s/0/eed31c7c-9857-11e0-ae45-00144feab49a.html">http://www.ft.com/cms/s/0/eed31c7c-9857-11e0-ae45-00144feab49a.html</a></b>
+</li>
+<li><a name="item_Epsilon___a_href__http___www_guardian_co_uk_technology_2011_apr_04_epsilon_email_hack__http___www_guardian_co_uk_technology_2011_apr_04_epsilon_email_hack__a_"></a><b>Epsilon:
+<a href="http://www.guardian.co.uk/technology/2011/apr/04/epsilon-email-hack">http://www.guardian.co.uk/technology/2011/apr/04/epsilon-email-hack</a></b>
+</li>
+</ul>
+<p>Do you really believe that your system is inherently more secure than
+theirs?</p>
+<h2><a name="2_why_not_my_own_custom__secret_algorithm"></a>2 Why not my own custom, secret algorithm?</h2>
+
+<p>Just because you can&rsquo;t find a shortcut to your algorithm, it
+doesn&rsquo;t mean that there isn&rsquo;t one.</p>
+<p>The hashing algorithms above have had some of the greatest mathematical
+minds of the 20th century working on them for the past 40 years, and
+they still made mistakes - leaving MD5 and SHA&ndash;1 vulnerable.</p>
+<p>Hubris is a characteristic of a great programmer, but it is highly
+unlikely that you are better at crypto-algorithms than the people who
+created these general purpose hashing algorithms</p>
+<h2><a name="3_what_modules_should_i_use_to_hash_my_passwords"></a>3 What modules should I use to hash my passwords?</h2>
+
+<p>As with everything in perl, There Is More Than One Way To Do It.</p>
+<p>If you want to do everything manually, you can use the venerable <a href="http://search.cpan.org/perldoc?Digest">Digest</a> set
+of modules, or <a href="http://search.cpan.org/perldoc?Crypt::Eksblowfish::Bcrypt">Crypt::Eksblowfish::Bcrypt</a> if you are using
+bcrypt.</p>
+<p>If you want a nicer interface that manages the dangerous bits for you,
+the <a href="http://search.cpan.org/perldoc?Authen::Passphrase">Authen::Passphrase</a> set of modules is a good choice.</p>
+<p>If you are using Dancer, you can use my own
+<a href="http://search.cpan.org/perldoc?Dancer::Plugin::Passphrase">Dancer::Plugin::Passphrase</a> module. It has an interface
+similar to <a href="http://search.cpan.org/perldoc?Authen::Passphrase">Authen::Passphrase</a>, and manages all the common
+hashing algorithms</p>
+<h1><a name="dancer__plugin__passphrase"></a>Dancer::Plugin::Passphrase</h1>
+
+<p>The plugin exports the passphrase keyword, to which you pass a
+plaintext password. From this you can generate a hash using whatever
+algorithm you specify. It defaults to bcrypt with a work factor of 4.</p>
+<p>You can match a plaintext password to a stored hash by using the
+matches method.</p>
+<p>An example Dancer app is below. See the documentation of
+<a href="http://search.cpan.org/perldoc?Dancer::Plugin::Passphrase">Dancer::Plugin::Passphrase</a> for further details</p>
+<pre class="prettyprint">package MyWebService;
+use Dancer ':syntax';
+use Dancer::Plugin::Passphrase;
+ 
+post '/save_password' sub =&gt; {
+    my $hash = passphrase( param('password') )-&gt;generate_hash;
+ 
+    # [...] Store $hash in DB
+};
+ 
+get '/check_password' sub =&gt; {
+    # [...] Retrieve $stored_hash from the DB
+ 
+    if ( passphrase( param('password') )-&gt;matches( $stored_hash ) ) {
+        # Password matches!
+    }
+};</pre>
+
+<h1><a name="tl_dr"></a>TL;DR?</h1>
+
+<p>Use Bcrypt.</p>
+<h1><a name="references_and_further_reading"></a>References and Further Reading</h1>
+
+<ul>
+<li><a name="item__a_href__http___en_wikipedia_org_wiki_Cryptographic_hash_function__http___en_wikipedia_org_wiki_Cryptographic_hash_function__a_"></a><b><a href="http://en.wikipedia.org/wiki/Cryptographic_hash_function">http://en.wikipedia.org/wiki/Cryptographic_hash_function</a></b>
+</li>
+<li><a name="item__a_href__http___www_lockdown_co_uk__pg_combi__http___www_lockdown_co_uk__pg_combi__a_"></a><b><a href="http://www.lockdown.co.uk/?pg=combi">http://www.lockdown.co.uk/?pg=combi</a></b>
+</li>
+<li><a name="item__a_href__http___www_golubev_com_hashgpu_htm__http___www_golubev_com_hashgpu_htm__a_"></a><b><a href="http://www.golubev.com/hashgpu.htm">http://www.golubev.com/hashgpu.htm</a></b>
+</li>
+<li><a name="item__a_href__http___codahale_com_how_to_safely_store_a_password__http___codahale_com_how_to_safely_store_a_password__a_"></a><b><a href="http://codahale.com/how-to-safely-store-a-password">http://codahale.com/how-to-safely-store-a-password</a></b>
+</li>
+</ul>
+<p><a href="http://search.cpan.org/perldoc?Digest">Digest</a>
+<a href="http://search.cpan.org/perldoc?Data::Entropy">Data::Entropy</a>
+<a href="http://search.cpan.org/perldoc?Authen::Passphrase">Authen::Passphrase</a>
+<a href="http://search.cpan.org/perldoc?Crypt::Eksblowfish::Bcrypt">Crypt::Eksblowfish::Bcrypt</a>
+<a href="http://search.cpan.org/perldoc?Dancer::Plugin::Passphrase">Dancer::Plugin::Passphrase</a></p>
+<h1><a name="author"></a>AUTHOR</h1>
+
+<p>This article was written by James Aitken. LoonyPandora on Twitter/GitHub, 
+JAITKEN on CPAN</p>
+</div>
+
+<div id="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /**
+    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+    */
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://perldanceradventcalendar.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=perldanceradventcalendar">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  <script type="text/javascript">
+    var disqus_shortname = 'perldanceradventcalendar';
+    (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'http://disqus.com/forums/perldanceradventcalendar/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+  </script>
+</div>
+
+
+</div>
+
+
+
+<div id="footer">
+Powered by the  
+<a href="http://perldancer.org/" title="Perl Dancer - Perl web framework">
+Dancer Perl web framework</a>
+</div>
+</div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25174467-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

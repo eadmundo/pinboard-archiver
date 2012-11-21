@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /wiki/*?*
+Disallow: /wiki/Help*
+Disallow: /wiki/MediaWiki*
+Disallow: /wiki/Special:*
+Disallow: /wiki/Talk:*
+Disallow: /wiki/Template*
+Disallow: /skins/*

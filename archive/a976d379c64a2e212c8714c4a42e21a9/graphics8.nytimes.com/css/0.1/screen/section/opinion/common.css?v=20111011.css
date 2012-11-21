@@ -1,0 +1,215 @@
+/* $Id: common.css 81696 2011-11-11 22:01:48Z priya.ollapally $
+/css/0.1/screen/section/opinion/common.css
+(c)2006 - 2010 The New York Times Company
+*/
+
+/* Common css for opinion articles and interactives */
+
+a {
+	color: #00325b;
+}
+
+.spanAB {
+	background: none;
+}
+
+/* Header */
+
+#mainTabs li a {
+	color: #00325b !important;
+}
+
+#page {
+	border: none;
+	border-top: 1px solid #999;
+	width: auto;
+}
+
+.navigation .subNavigation {
+	display: none;
+}
+
+.singleRule {
+	border-top: 1px solid #000;
+}
+
+.doubleRule {
+	background: none;
+	border-top: 1px solid #000;
+	border-width: 1px !important;
+}
+
+#masthead h2,
+#masthead .globalEditionPageHeader {
+	margin: 0 0 13px 0;
+	position: static;
+	text-align: left;
+}
+
+#branding {
+	display: block;
+	float: none;
+	margin-top: 7px;
+	margin-bottom: 5px;
+}
+
+#searchWidget {
+	margin-top: 24px;
+}
+
+
+#mainTabs {
+	margin-left: 10px;
+}
+
+/* Navigation */
+
+.subNavigation {
+	display: none;
+}
+
+.navigation ul li {
+	border-color: white ;
+	border-bottom: none;
+}
+
+.navigation ul {
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #E6EFF8;
+}
+
+.navigation ul li.selected {
+	padding-bottom: 0;
+	border-bottom: none;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	background-color: #F4F4F4;
+}
+
+
+#navJobs,
+#navRealestate,
+#navAutomobiles {
+	font-weight: normal;
+	border-color: #E6EFF8;
+}
+
+
+/* article tools */
+
+.articleTools .box {
+	border: none;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.toolsList {
+	margin: 0 0 7px;
+}
+
+.toolsList li {
+	padding: 6px 8px;
+	margin-bottom: 0;
+}
+
+/* Inline */
+
+#readerscomment {
+	background: #F4F4F4;
+	border-top: 1px solid #000;
+}
+
+#readerscomment .RContent,
+#readerscomment .content {
+	background: none;
+	border-top: 1px solid #e2e2e2;
+}
+
+/* cColumn */
+
+.cColumn {
+	background: #F4F4F4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.cColumn .bigAd,
+.cColumn .singleAd,
+.cColumn .twoColumnAd {
+	border-top: 1px solid #000;
+}
+
+#mostPopWidget h4 {
+	text-align: center;
+}
+
+#mostPopWidget .tabs li {
+	background: #E8E8E8;
+}
+
+#mostPopWidget .tabs li.selected {
+	background: #f4f4f4;
+}
+
+#mostPopWidget div#tabsContainer {
+	left: 32px;
+}
+
+/* For OPA ad articles */
+.wideAd #mostPopWidget div#tabsContainer {
+	left: 111px;
+}
+
+#mostPopWidget .tabContent {
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+#mostPopWidget .tabContent li {
+	margin-bottom: 8px;
+}
+
+/* Article Moth */
+
+#insideNYTimes.doubleRule {
+	border-top: 2px solid black !important;
+}
+
+#insideNYTimesBrowser {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#insideNYTimesBrowser .kicker {
+	margin-top: 0;
+}
+
+/* Footer */
+
+#footer {
+	border-top: 5px solid #000;
+}
+
+/* ads */
+
+#Middle1C {
+	margin-top: 29px;
+}
+
+/* Threaded Comments */
+
+.commentsModule {
+  padding-top: 0;
+}
+
+.commentsContainer .doubleRule,
+.commentsContainer .doubleRuleDivider {
+  border-top: 2px solid #000 !important;
+  background: none;
+}
+
+.commentsContainer .singleRule,
+.commentsContainer .singleRuleDivider {
+  border-top: 1px solid #ccc;
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Storing Passwords Securely</title>
+   <meta name="description" content="Why &quot;SHA 256-bits enterprise-grade password encryption&quot; is only slightly better than storing passwords in plain text, and better ways to do it." />
+   <meta name="keywords" content="passwords, bcrypt, scrypt, PBKDF2, and Secure Remote Password" />
+   <meta name="author" content="Patrick Mylund Nielsen" />
+   <link href="http://feeds.throwingfire.com/throwingfire" rel="alternate" title="Throwing Fire RSS Feed" type="application/atom+xml" />
+   <link rel="stylesheet" href="/css/main-min.css?10" type="text/css" media="screen, projection" />
+   <link rel="canonical" href="http://throwingfire.com/storing-passwords-securely/" />
+   <link rel="SHORTCUT ICON" href="/favicon.ico" />
+   <meta property="fb:admins" content="1612621273" />
+   <script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-270876-19']);
+     _gaq.push(['_trackPageview']);
+
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script>
+</head>
+<body>
+<div class="site">
+  <div class="title">
+    <a href="/">Throwing Fire</a>
+  </div>
+  
+  <div class="post">
+<h1>Storing Passwords Securely</h1>
+
+<p class="meta">06 June 2012</p>
+
+
+<p>Time and time again you hear about a company having all of their users' passwords, or "password hashes", compromised, and often there's a press response including one or more prominent security researchers demonstrating how 1,000 users had the password "batman", and so on. It's surprising how often this happens considering we've had ways to do password authentication that don't expose users' passwords, or at least makes it significantly harder to crack them, for several decades.</p>
+
+<p>Personally, I think it boils down to a fundamental misunderstanding about what cryptographic hash functions are and what they are&mdash;or should be&mdash;used for, and a failure on the part of security researchers and advocates, myself included, to properly explain and emphasize the differences. So here's an attempt to explain why "SHA 256-bits enterprise-grade password encryption" is only slightly better than storing passwords in plain text.</p>
+
+<p>If you are familiar with cryptographic hash functions like MD5, SHA-1 and SHA-256, and perhaps even use them for password authentication, please jump to <a href="#notpasswordhashes">Cryptographic Hash Functions Are Not Password Hash Functions</a>.</p>
+
+<h2>Password Storage</h2>
+
+<p>Typically, system designers choose one of two ways to store their users' passwords: 1. in their original format, as plain text, or 2. as the digest (output) of a one-way hash function. It probably goes without saying that the first option is a bad idea considering that any kind of compromise of the users/password database immediately exposes login credentials clients may be using on many other sites&mdash;but would it surprise you that the latter, as implemented in the majority of web systems, only provides marginally stronger security?</p>
+
+<p>(The popular argument for storing passwords in plain text is that it reduces the required labor for help desk staff in that they'll easily be able to tell a person what their password is if they happen to forget it. This strikes me as very unconvincing. First, it's easy to design a page where the user can reset their password if they forget it&mdash;the "Forgot your password?" page&mdash;and second, if you use a more secure method like storing the output of a hash function instead of the password itself, help desk staff can still reset a user's password if they've forgotten it. It's probably also a bad idea for help desk staff to have access to the plain text password of a large corporations' CEO or CFO.)</p>
+
+<h2>One-way Hash Functions</h2>
+
+<p>The safe way (right?) of storing users' passwords is by running them through a one-way hash function. A one-way hash function is a series of mathematical operations that transform some input into a sort of "fingerprint" called a digest. If you run the password <code>hunter2</code> through the popular cryptographic hash function SHA-256, you get the following digest (in hex): <blockquote><code>f52fbd32b2b3b86ff88ef6c490628285f482af15ddcb29541f94bcf526a3f6c7</code></blockquote><br /> As the name implies, these functions are one-way, meaning you can turn something into a digest, but you can't turn the digest into what it originally was. When a user creates an account, the system stores their account information, but instead of storing their password on the disk, it runs the password through the one-way hash function and stores the digest instead. When a user wants to log in to the system in the future, the system takes the password that they provide, runs it through the one-way hash function, then compares it to the existing digest stored for that user. <em>The system only needs to be able to check if the output from the hash function is the same; it doesn't need to store any details about the password, and it doesn't need to remember the password itself.</em></p>
+
+<p>A good cryptographic hash function&mdash;the sort of one-way hash that we will be discussing&mdash;should produce digests that are very different when the input is altered even a little. (This is known as the <a href="http://en.wikipedia.org/wiki/Avalanche_effect" title="Avalanche effect - Wikipedia">avalanche effect</a>.) The SHA-256 digest of <code>hunter3</code>, although it is very close to <code>hunter2</code>, is very different: <blockquote><code>fb8c2e2b85ca81eb4350199faddd983cb26af3064614e737ea9f479621cfa57a</code></blockquote></p>
+
+<p>These properties make it a lot harder for someone to infer anything about the original input by e.g. changing a certain character at a time in their guesses. But do they make it harder to guess, or "crack", user passwords?</p>
+
+<div id="notpasswordhashes"></div>
+
+
+<h2>Cryptographic Hash Functions Are Not Password Hash Functions</h2>
+
+<p>In Python, we might write functions that get a SHA-256 digest of a password, and compare digests, like this, using functions from the standard library:</p>
+
+<div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">hashlib</span>
+
+<span class="k">def</span> <span class="nf">getDigest</span><span class="p">(</span><span class="n">password</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">password</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">isPassword</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">digest</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">getDigest</span><span class="p">(</span><span class="n">password</span><span class="p">)</span> <span class="o">==</span> <span class="n">digest</span>
+</code></pre>
+</div>
+
+
+<p>This is usually considered a finished password authentication mechanism (save for the storage of the digest) in most web systems. The password can't be deduced by looking at the digest, so what is to be gained by doing anything further?</p>
+
+<p>Well, there are many problems with simply hashing passwords. The two major ones are:</p>
+
+<ul>
+<li><p><strong>Recognizability</strong></p>
+
+<p>What is the major downside of the fact that a digest of a certain message always returns the same digest? Well, if an attacker spends a lot of resources pre-computing digests for as many passwords as possible, and they get access to your user database, they can check all of those digests against the ones you've stored. Furthermore, they can use the list of digests they've created to try to find matches in many different user databases that they've compromised. (This form of digest list is commonly called a rainbow table.)</p>
+
+<p>What's even worse is that, if the attacker guesses, or "cracks", a password, they can simply search your database to find all users with the same password digest&mdash;they'll know that anyone with the same password digest uses the same password as the user whose password they've guessed.</p></li>
+<li><p><strong>Speed</strong></p>
+
+<p>Hash functions are used for many things in cryptography, most commonly verifying messages&mdash;a message can be a block of data in an encrypted data stream&mdash;but they were not designed for password storage/to be used as stored secrets. They are designed to be very fast so the encryption process isn't slowed down, and that's a problem because, when used for storing passwords, an attacker can try to guess the password by hashing arbitrary strings and comparing the output to the stored digest at a very high speed. (For something like MD5, it's possible to make up to, and more than, 5.6 billion guesses per second using commodity hardware.) Even if the password cannot be deduced by looking directly at the digest, the password, if it is not very long or very complex, can be guessed very easily. The vast majority of user-chosen passwords are not very long, nor very complex. The speed ends up hurting the user instead of helping them.</p>
+
+<p>Password operations in web applications, for instance, are usually not time sensitive: Consider a person who has just spent 20 seconds entering their username and password to log in to your website. Would they mind very much if it took one second to generate the digest of their password (to check if their login details are valid) instead of a fraction of a millisecond?</p></li>
+</ul>
+
+
+<p>Fortunately, there are solutions to these problems:</p>
+
+<ul>
+<li><p><strong>Salting</strong></p>
+
+<p>A salt is a random sequence of bytes which is added to the hash function, or just to the password string itself, so you create a digest for e.g. <code>6zvz3ylalpkp03lua8r4yyzdoq7e2js2</code> + <code>sw0rdf1sh!</code> rather than just <code>sw0rdf1sh!</code>. Anyone who knows what the digest for <code>sw0rdf1sh!</code> is won't be able to match it against the salted digest. If each user has their own salt, there is no easy way to group users with identical digests to find users with the same passwords. This largely solves the recognizability problem.</p>
+
+<p>Every password should have its own salt, and that salt should be at least 32 bytes or more to make it much harder to guess both the correct salt and digest.</p>
+
+<p>To implement password salting, we can rewrite our functions to something like:</p></li>
+</ul>
+
+
+<div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">base64</span>
+<span class="kn">import</span> <span class="nn">hashlib</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">getDigest</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">salt</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">salt</span><span class="p">:</span>
+        <span class="n">salt</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">urandom</span><span class="p">(</span><span class="mi">32</span><span class="p">))</span>
+    <span class="n">digest</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">salt</span> <span class="o">+</span> <span class="n">password</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">salt</span><span class="p">,</span> <span class="n">digest</span>
+
+<span class="k">def</span> <span class="nf">isPassword</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">salt</span><span class="p">,</span> <span class="n">digest</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">getDigest</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">salt</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">digest</span>
+  
+</code></pre>
+</div>
+
+
+<p>  (Note: These examples are for demonstration purposes only.)</p>
+
+<p>  We then store the user's password salt and digest in the database, and run isPassword(providedPassword, storedSalt, storedDigest) on subsequent login attempts to check whether the provided password is the same.</p>
+
+<ul>
+<li><p><strong>Stretching</strong></p>
+
+<p>If you create a digest of a password, then create a digest of the digest, and a digest of that digest, and a digest of that digest, you've made a digest that is the result of four iterations of the hash function. You can no longer create a digest from the password and compare it to the iterated digest, since that is the digest of the third digest, and the third digest is the digest of the second digest. To compare passwords, you have to run the same number of iterations, then compare against the fourth digest. This is called stretching.</p>
+
+<p>A good password storage system takes so long to process a single input, e.g. 0.2 seconds on a modern computer, that guessing a password using a brute force will take significantly longer. (With a hash algorithm like SHA-256, this might be 100,000 iterations or more.) Where, previously, one might have been able to compare digests 5,6 billion times per second, it might now be 5 times per second on the same computer without parallelization; more, maybe a few hundred or thousand attempts per second using hardware like GPUs&mdash;but still significantly less than 5,600,000,000!</p>
+
+<p>As computers become more powerful, the number of iterations can be increased so it continues to take 0.2 seconds or more to generate each password digest. This might be accomplished like so:</p></li>
+</ul>
+
+
+<div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">hashlib</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">getDigest</span><span class="p">(</span><span class="n">password</span><span class="p">):</span>
+    <span class="n">digest</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">password</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100001</span><span class="p">):</span>
+        <span class="n">digest</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">digest</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">digest</span>
+  
+</code></pre>
+</div>
+
+
+<p>  (Note: This is an over-simplification. Iterating a hash function is significantly better than just running the input through a hash algorithm once, but still loses you a fairly significant amount of entropy.)</p>
+
+<p>Salting and stretching might then be implemented like this:</p>
+
+<div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">base64</span>
+<span class="kn">import</span> <span class="nn">hashlib</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">getDigest</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">salt</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">salt</span><span class="p">:</span>
+        <span class="n">salt</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">urandom</span><span class="p">(</span><span class="mi">32</span><span class="p">))</span>
+    <span class="n">digest</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">salt</span> <span class="o">+</span> <span class="n">password</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100001</span><span class="p">):</span>
+        <span class="n">digest</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">digest</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">salt</span><span class="p">,</span> <span class="n">digest</span>
+
+<span class="k">def</span> <span class="nf">isPassword</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">salt</span><span class="p">,</span> <span class="n">digest</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">getDigest</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">salt</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">digest</span>
+</code></pre>
+</div>
+
+
+<p>Now, we could implement a complete system that uses salts and multiple iterations, but it seems like a system for safely storing passwords should have already been implemented. If we could use a widespread, standardized system, we wouldn't have to risk getting the implementation wrong.</p>
+
+<p>(Implementing your own cryptographic functions is one of the riskiest things you can do: You can't test for vulnerabilities if you don't know what the vulnerabilities might be, and, most likely, you will be the only person to scrutinize and use the implementation. If it turns out that there are errors in your implementation, your users suffer, and you get some very bad press.)</p>
+
+<p>As it turns out, there are several such systems, and variations of them have been used in systems like BSD and Linux for many years.</p>
+
+<h2>Adaptive Key Derivation Functions</h2>
+
+<p>Adaptive key derivation functions are exactly what we've discussed above: Functions that generate digests from passwords whilst applying salting and stretching. They implement all of the above features, and often in a way that would be difficult to achieve using just a programming language's standard library. For instance, they might work such that the digest computation can't easily be parallellized&mdash;something that is very doable with plain MD5 and all members of the SHA family. In effect, attackers can't easily apply specialized hardware like GPUs or FPGAs to greatly improve the speed at which passwords can be guessed using a brute force approach.</p>
+
+<p>(Technically, key derivation functions derive strong keys to be used for subsequent encryption, however, since the functions we'll be discussing are one-way, they can be used for "password digests.")</p>
+
+<p>Some of the most prominent such functions are:</p>
+
+<ul>
+<li><p><strong>PBKDF2</strong></p>
+
+<p>Arguably the most widely-used key derivation function, PBKDF2 (Password-Based Key Derivation Function) is a container for a hash function, e.g. SHA-1 or RIPEMD-160, which, for each input, applies a salt and iterates the hash function many times (in a way that doesn't cause as much entropy to be lost), so it takes e.g. 1 second to generate a single digest rather than 0.01 milliseconds. <a href="http://csrc.nist.gov/publications/nistpubs/800-132/nist-sp800-132.pdf">Endorsed by NIST</a>, it is used in U.S. government systems for the purposes of generating strong encryption keys from user-supplied (i.e. weak) passwords. PBKDF2 has the advantages that it's very lightweight, easy to implement, and it uses only very strong, proven hash functions like the NSA's SHA.</p></li>
+<li><p><strong>bcrypt</strong></p>
+
+<p>bcrypt is an adaptive hash function designed specifically for password "storage." It uses a modified version of Blowfish by Bruce Schneier rather than iterating a hash function. Its designers, Niels Provos and David Mazières, first published their paper describing it, <a href="http://static.usenix.org/event/usenix99/provos/provos.pdf">A Future-Adaptable Password Scheme</a>, at the 1999 USENIX, yet it is still one of the strongest password hashing mechanisms thanks to its "work factor" which determines how much processing is needed to produce a single hash digest. It is also easy to use: the password salt and a number indicating the work factor are included in the output so that system designers can keep using bcrypt, but up the work factor over time, without worrying about users being unable to login. bcrypt is the default password authentication mechanism in OpenBSD, an operating system notorious for being "obsessed with security", and it is generally considered more future-proof than PBKDF2. Its major limitation is that, unlike PBKDF2 and scrypt (below), it places a hard size limit of 72 bytes/ASCII characters on the input.</p></li>
+<li><p><strong>scrypt</strong></p>
+
+<p>scrypt is an adaptive key derivation function like PBKDF2 <a href="http://www.tarsnap.com/scrypt/scrypt.pdf">designed by Colin Percival</a> for use in <a href="http://www.tarsnap.com/">Tarsnap</a>, a "backup solution for the truly paranoid." It is much stronger than PBKDF2 because it has a significant memory overhead, which means it's significantly harder to parallelize the function, and thus significantly harder to guess the original input for a key, or password digest, using a brute force approach. It is still steadily gaining library support, but is significantly more future-proof than both PBKDF2 and bcrypt.</p></li>
+</ul>
+
+
+<p>So, what can we gather from all of this?</p>
+
+<p>Here is my view:</p>
+
+<ol>
+<li>MD5, SHA-1, SHA-256, SHA-512, et al, are not "password hashes." By all means use them for message authentication and integrity checking, but not for password authentication.</li>
+<li>If you are a government contractor, want to be compliant with security certifications or regulations like ISO 27001 or FIPS 140-2, or don't want to depend on third-party or less-scrutinized libraries, use PBKDF2-HMAC-SHA-256/SHA-512 with a large number of iterations to generate digests of your users' passwords. (Ideally it should take a second or more to generate a single digest.)</li>
+<li>If you want very strong password digests, and a system that is very easy to use, use bcrypt. Simple, easy-to-use libraries exist for nearly every programming language. (Just google "bcrypt &lt;language name&gt;", and chances are you'll find a solid implementation.)</li>
+<li>If you are designing a new system which either relies on encryption to store very sensitive information using a weak secret (user passwords), or where it is imperative that nobody guesses any of the passwords in any reasonable amount of time, you should investigate if there is a solid implementation of scrypt for the language or framework you're using.</li>
+</ol>
+
+
+<p>It's easy to switch, too. You can use e.g. bcrypt for all new users, and generate a bcrypt digest for old users whenever they log in (and you have their passwords in memory) to migrate them to the new system.</p>
+
+<h2>Additional Measures</h2>
+
+<p>Adaptive key derivation and hash functions do worlds of difference, but they are not a silver bullet. The strength of a password digest still ultimately depends on the entropy (length and randomness) of a user's password. Therefore, try to enforce a sensible password policy that encourages users to pick strong passwords. By this I mean encourage users to pick long passwords, or passphrases, rather than telling them to include X or Y amount of special or uppercase letters. The former does far more, and users won't have as much difficulty remembering their password. (Ideally, users should have very long, all-random and unique passwords that they either write down or store in a password manager, but this is difficult to mandate.) Also, please do not enforce some arbitrary upper limit like 12, or even 8&mdash;can you believe some banks still do this?&mdash;characters, unless longer inputs cause your hash function to lose entropy that early (in which case you should change your hash, anyway.)</p>
+
+<p>(As an example, a brute force cracker like ighashgpu for MD5 can make 5,600,000,000 guesses per second. That's 5.6 billion, or 5,600 million, guesses at what your password, based on an MD5 digest, might be, <em>per second</em>. Using this tool, it would take approximately 3 million years to guess <code>great hunter</code>, and only around 3 hours to guess <code>Hun!er2</code> using a naive brute force approach. A long and random passphrase is often both easier to remember, and far more secure than a traditional password&mdash;the ones <a href="http://xkcd.com/936/">people have been telling you to use</a>. It is possible to make guesses that are combinations of words, of course, so a strong passphrase is typically longer and non-sensical so you can't guess it using common phrases/excerpts from literature. A good one might be <code>consider the army seahorse clicking the roof</code>. For more inspiration, check out <a href="http://world.std.com/~reinhold/diceware.html">Diceware</a>.)</p>
+
+<p>Although implementing any of the above will make your password digests more secure than those of many large businesses&mdash;sadly&mdash;there's more you can do relatively easily. Here are a few things:</p>
+
+<ul>
+<li><p><strong>Rate-limiting/Exponential backoff</strong></p>
+
+<p>In your web application, keep track of account names and IP addresses when a login attempt is unsuccessful, and block, or slow down responses to requests from a certain such combination after e.g. 5 failed attempts. This won't stop somebody from cracking your password digests if they are compromised, but it will make brute forcing an account password using your regular interface infeasible.</p></li>
+<li><p><strong>HMAC nonce on harddrive</strong></p>
+
+<p>If you are using an application which communicates with a database, and especially if there are other applications using the same database which you do not have control over, consider adding an extra secret: Generate a long, random value&mdash;or "pepper"&mdash;to use in HMAC(userpassword, pepper), and store the pepper (<em>not</em> the HMAC digest) on the disk or in your application itself, then store e.g. bcrypt(hmacdigest) in the database. Even if your database is compromised, or a weakness is found in bcrypt that might leak information about its password, an attacker won't be able to do much with your digests. This is described further <a href="https://wiki.mozilla.org/WebAppSec/Secure_Coding_Guidelines#Password_Storage">here</a>. Sample implementations: <a href="https://github.com/fwenzel/django-sha2">Python</a>, <a href="http://patrickmylund.com/projects/go-hmaccrypt/">Go</a>.</p></li>
+<li><p><strong>Secure Remote Passwords</strong></p>
+
+<p>If you control the client side of the connection, i.e. if you are not making a simple web application, it is absolutely worth looking into the <a href="http://srp.stanford.edu/">Secure Remote Password protocol</a>. Using assymetric key exchange protocols, this method lets you authenticate user passwords without ever receiving them&mdash;that is, without your users ever having to send their password over the Internet, and without you having to worry as much about their storage. Sounds magical? Well, it kinda is. It can be employed in conjunction with one of the key derivation functions (on the client-side) to make the password very hard to recover, even if you can listen in on network traffic.</p></li>
+</ul>
+
+
+<h2>Extra</h2>
+
+<p>Here is the equivalent of the salting and stretching hash example from above, implemented using <a href="http://www.mindrot.org/projects/py-bcrypt/">py-bcrypt</a>:</p>
+
+<div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">bcrypt</span>
+
+<span class="k">def</span> <span class="nf">getDigest</span><span class="p">(</span><span class="n">password</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">bcrypt</span><span class="o">.</span><span class="n">hashpw</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">bcrypt</span><span class="o">.</span><span class="n">gensalt</span><span class="p">())</span>
+
+<span class="k">def</span> <span class="nf">isPassword</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">digest</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">bcrypt</span><span class="o">.</span><span class="n">hashpw</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">digest</span><span class="p">)</span> <span class="o">==</span> <span class="n">digest</span>
+</code></pre>
+</div>
+
+
+<p>There is no reason not to do this for your users.</p>
+
+<hr />
+
+<p><strong>Update</strong>: Thanks to several readers who have pointed out that isPassword in my examples doesn't make use of a constant-time comparison function. To be clear, the code samples are not meant to be used, but serve to demonstrate how salting and stretching work. While timing attacks against a password digest comparison is less of a concern than in general&mdash;especially given a large salt&mdash;it deserves a mention.</p>
+
+<p>When you compare messages of <em>equal length</em>, e.g. digests, you may want to use a function that takes a constant amount of time to run so that an attacker can't learn anything about a digest by measuring how long it takes for the equality function, i.e. <code>==</code> to return. (<code>==</code> returns quickly because it's designed to be efficient, and so returns when it encounters the first different byte.) Here is an example for Python (based on passlib.utils.consteq):</p>
+
+<div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">inputMismatchError</span> <span class="o">=</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s">&quot;inputs must be both unicode or both bytes&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">constantTimeCompare</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="nb">unicode</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="nb">unicode</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">inputMismatchError</span>
+        <span class="n">isPy3Bytes</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">inputMismatchError</span>
+        <span class="n">isPy3Bytes</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">inputMismatchError</span>
+
+    <span class="k">if</span> <span class="n">isPy3Bytes</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+            <span class="n">result</span> <span class="o">|=</span> <span class="n">x</span> <span class="o">^</span> <span class="n">y</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+            <span class="n">result</span> <span class="o">|=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">^</span> <span class="nb">ord</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span> <span class="o">==</span> <span class="mi">0</span>
+</code></pre>
+</div>
+
+
+<p>And Go (from crypto/subtle):</p>
+
+<div class="highlight"><pre><code class="go"><span class="k">func</span> <span class="n">ConstantTimeCompare</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="p">[]</span><span class="nb">byte</span><span class="p">)</span> <span class="nb">int</span> <span class="p">{</span>
+        <span class="k">var</span> <span class="n">v</span> <span class="nb">byte</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="p">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">);</span> <span class="n">i</span><span class="p">++</span> <span class="p">{</span>
+                <span class="n">v</span> <span class="p">|=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">^</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="n">ConstantTimeByteEq</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">func</span> <span class="n">ConstantTimeByteEq</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="nb">uint8</span><span class="p">)</span> <span class="nb">int</span> <span class="p">{</span>
+        <span class="n">z</span> <span class="p">:=</span> <span class="p">^(</span><span class="n">x</span> <span class="p">^</span> <span class="n">y</span><span class="p">)</span>
+        <span class="n">z</span> <span class="p">&amp;=</span> <span class="n">z</span> <span class="p">&gt;&gt;</span> <span class="mi">4</span>
+        <span class="n">z</span> <span class="p">&amp;=</span> <span class="n">z</span> <span class="p">&gt;&gt;</span> <span class="mi">2</span>
+        <span class="n">z</span> <span class="p">&amp;=</span> <span class="n">z</span> <span class="p">&gt;&gt;</span> <span class="mi">1</span>
+
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+
+<p>My bcrypt example might be rewritten as:</p>
+
+<div class="highlight"><pre><code class="python"><span class="kn">import</span> <span class="nn">bcrypt</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">inputMismatchError</span> <span class="o">=</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s">&quot;inputs must be both unicode or both bytes&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">constantTimeCompare</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="nb">unicode</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="nb">unicode</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">inputMismatchError</span>
+        <span class="n">isPy3Bytes</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">inputMismatchError</span>
+        <span class="n">isPy3Bytes</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">inputMismatchError</span>
+
+    <span class="k">if</span> <span class="n">isPy3Bytes</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+            <span class="n">result</span> <span class="o">|=</span> <span class="n">x</span> <span class="o">^</span> <span class="n">y</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+            <span class="n">result</span> <span class="o">|=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">^</span> <span class="nb">ord</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span> <span class="o">==</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">getDigest</span><span class="p">(</span><span class="n">password</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">bcrypt</span><span class="o">.</span><span class="n">hashpw</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">bcrypt</span><span class="o">.</span><span class="n">gensalt</span><span class="p">())</span>
+
+<span class="k">def</span> <span class="nf">isPassword</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">digest</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">constantTimeCompare</span><span class="p">(</span><span class="n">bcrypt</span><span class="o">.</span><span class="n">hashpw</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">digest</span><span class="p">),</span> <span class="n">digest</span><span class="p">)</span>
+</code></pre>
+</div>
+
+
+<p>More reading <a href="http://codahale.com/a-lesson-in-timing-attacks/">here</a> and <a href="http://lists.randombit.net/pipermail/cryptography/2011-December/001848.html">here</a>.</p>
+
+<p>(Keep in mind that I only describe one timing attack: comparing the digests. An adversary may measure response times for different usernames, or determine which hash function or work factor is used based on the time spent processing different inputs. Timing and side channel attacks are a fairly complicated topic, and the above does not "solve the problem" by any means. However, you're still much better off by using one of the KDFs described even if you don't spend a lot of time worrying about doing things in constant time.)</p>
+
+<p><strong>Update 2</strong>: If this interested you, I strongly recommend taking a look at the <a href="http://throwingfire.com/the-history-of-password-security/">history of password security</a>.</p>
+
+<p><strong>Update 3</strong>: If you're planning to upgrade your existing, weak hash digests to something stronger, but you don't want to leave your MD5 or SHA-256 digests lying around in the interim, you can opt to do something <a href="http://blog.jgc.org/2012/06/one-way-to-fix-your-rubbish-password.html">more advanced</a>, then switch users over to the new mechanism the next time they log in.</p>
+
+</div>
+
+
+  
+  <div class="footer">
+    <div class="contact">
+      <p><a href="/" title="Throwing Fire">Throwing Fire</a> by <a href="http://patrickmylund.com/" title="PatrickMylund.com">Patrick Mylund Nielsen</a></p>
+    </div>
+    <div class="contact">
+
+    </div>
+    <div class="rss">
+      <a href="http://feeds.throwingfire.com/throwingfire" title="Throwing Fire RSS Feed"><img src="/images/feed-icon-14x14.png" width="14" height="14" /></a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

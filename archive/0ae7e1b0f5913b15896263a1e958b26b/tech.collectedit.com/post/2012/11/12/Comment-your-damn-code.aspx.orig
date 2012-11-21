@@ -1,0 +1,1162 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>
+	CollectedTech | Comment your damn code
+</title>
+    
+    <link rel="shortcut icon" href="/pics/blogengine.ico" type="image/x-icon"/>
+    <link href="/themes/AllTuts/style.css" rel="stylesheet" type="text/css" />
+    <link href="/themes/AllTuts/css/ddsmoothmenu.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/themes/AllTuts/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/themes/AllTuts/js/ddsmoothmenu.js"></script>
+    <!-- lightbox initialize script -->
+    <script type="text/javascript">
+        ddsmoothmenu.init({
+			mainmenuid: "topMenu",
+			orientation: 'h',
+			classname: 'ddsmoothmenu',
+			contentsource: "markup"
+		}); 
+    </script>
+
+<meta name="author" content="James Bright" />
+<link rel="last" title="Comment your damn code" href="/post/2012/11/12/Comment-your-damn-code.aspx" />
+<link rel="first" title="Technology doesn't matter in a tech start up!" href="/post/2012/08/05/Technology-doesnt-matter-in-a-tech-start-up.aspx" />
+<link rel="prev" title="iPhone Cloud Based Architecture, Part 3: Getting Started with ClientServices" href="/post/2012/09/17/iPhone-Cloud-Architecture-Getting-Started-with-ClientServices.aspx" />
+<link type="application/rss+xml" rel="alternate" title="Comment your damn code (RSS)" href="/post/feed/2012/11/12/Comment-your-damn-code.aspx?format=ATOM" />
+<link type="application/rss+xml" rel="alternate" title="Comment your damn code (ATOM)" href="/post/feed/2012/11/12/Comment-your-damn-code.aspx?format=ATOM" />
+<link rel="contents" title="Archive" href="/archive.aspx" />
+<link rel="start" title="CollectedTech" href="/" />
+<link type="application/rdf+xml" rel="meta" title="SIOC" href="http://tech.collectedit.com/sioc.axd" />
+<link type="application/apml+xml" rel="meta" title="APML" href="http://tech.collectedit.com/apml.axd" />
+<link type="application/rdf+xml" rel="meta" title="FOAF" href="http://tech.collectedit.com/foaf.axd" />
+<link type="application/rss+xml" rel="alternate" title="CollectedTech (RSS)" href="http://tech.collectedit.com/syndication.axd?format=rss" />
+<link type="application/atom+xml" rel="alternate" title="CollectedTech (ATOM)" href="http://tech.collectedit.com/syndication.axd?format=atom" />
+<link type="application/rsd+xml" rel="edituri" title="RSD" href="http://tech.collectedit.com/rsd.axd" /><meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="/Styles/css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/en-us.res.axd"></script>
+<script type="text/javascript" src="/Scripts/Header/js"></script>
+<script type="text/javascript" src="/Scripts/js" defer="defer" async="async"></script>
+<link type="application/opensearchdescription+xml" rel="search" title="CollectedTech" href="http://tech.collectedit.com/opensearch.axd" />
+<!-- Start custom code -->
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-26387801-1']);
+			_gaq.push(['_setDomainName', 'tech.collectedit.com']);
+			_gaq.push(['_trackPageview']);
+
+			(function () {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+
+<!-- End custom code -->
+</head>
+<body>
+
+  <form name="aspnetForm" method="post" action="/post/2012/11/12/Comment-your-damn-code.aspx" id="aspnetForm" class="body">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTIwODUxOTQ5OTMPZBYCZg9kFgICAQ9kFgICAw9kFggCAw8WAh4HVmlzaWJsZWcWAgIBDw8WBh4LTmF2aWdhdGVVcmwFUy9wb3N0LzIwMTIvMDkvMTcvaVBob25lLUNsb3VkLUFyY2hpdGVjdHVyZS1HZXR0aW5nLVN0YXJ0ZWQtd2l0aC1DbGllbnRTZXJ2aWNlcy5hc3B4HgRUZXh0BVUmbHQ7Jmx0OyBpUGhvbmUgQ2xvdWQgQmFzZWQgQXJjaGl0ZWN0dXJlLCBQYXJ0IDM6IEdldHRpbmcgU3RhcnRlZCB3aXRoIENsaWVudFNlcnZpY2VzHgdUb29sVGlwBQ1QcmV2aW91cyBwb3N0ZGQCCQ8WAh8AZ2QCCw9kFgQCAQ8WAh8AaGQCAg9kFgICDA8PFgIfAGhkZAINDxYCHwBoZGTU9exj6d/nMZnQ2qVP0I4bZWDTnQ==" />
+</div>
+
+    
+      
+    <!-- Begin #wrapper -->
+    <div id="wrapper">
+        <!-- Begin #header -->
+        <div id="header">
+            <div id="logo">
+                <h1>
+                    <a href="http://tech.collectedit.com/" class="siteTitle"><img 
+						src="/themes/AllTuts/images/CollectedTechLogo.png"
+						alt="CollectedTech, the CollectedIt! Technology Blog"
+						></a></h1>
+                <span style="margin-left: 20px;">How we build the Collective</span></div>
+            <!-- Begin #topMenu -->
+            <div id="topMenu" class="ddsmoothmenu">
+                <ul>
+					<li><a href="http://collectedit.com"><img 
+						src="/themes/AllTuts/images/CollectedIt-Top-Small.png"
+						alt="Return to CollectedIt.com"
+						></a></li>
+                    <li><a href="http://tech.collectedit.com/" rel="home">Tech Home</a></li>
+                    <li><a href="http://blog.collectedit.com">General Blog</a></li>
+                    <li><a href="http://tech.collectedit.com/archive.aspx">Archive</a></li>
+                    <li><a href="http://tech.collectedit.com/contact.aspx">Contact</a></li>
+                </ul>
+            </div>
+            <!-- End #topMenu -->
+            <!-- Begin #topMenuRight -->
+            <div id="topMenuRight">
+                <ul>
+                    <li><a href="/Account/login.aspx">Log in</a></li>
+                </ul>
+            </div>
+            <!-- End #topMenuRight -->
+            <!-- Begin #socialLinks -->
+            <div id="socialLinks">
+				<a href="http://www.facebook.com/CollectedIt" title="Find us on Facebook" class="facebook">Find us on Facebook!</a>
+				<a href="http://twitter.com/collectedit" title="Follow us on Twitter" class="twitter">Follow us on Twitter!</a>
+                <a href="http://tech.collectedit.com/syndication.axd" title="RSS" class="rss">Subscribe to our RSS Feed!</a>
+            </div>
+            <!-- End #socialLinks -->
+        </div>
+        <!-- End #header -->
+        <!-- Begin #content -->
+        <div id="content" class="clearfix">
+            <!-- Begin #colLeft -->
+            <div id="colLeft">
+                <!-- Begin .postBox -->
+                <div class="postBox">
+                    
+      
+  
+  
+
+  
+    <div id="postnavigation">
+      <a id="ctl00_cphBody_hlPrev" title="Previous post" href="/post/2012/09/17/iPhone-Cloud-Architecture-Getting-Started-with-ClientServices.aspx">&lt;&lt; iPhone Cloud Based Architecture, Part 3: Getting Started with ClientServices</a> | 
+      <a id="ctl00_cphBody_hlNext"></a>
+    </div>
+  
+  
+  
+<div class="postBoxTop">
+</div>
+<div class="postBoxMid">
+    <div class="postBoxMidInner clearfix  ">
+        <div class="date">
+            Nov
+            <br />
+            <span class="day">12</span>
+            <br />
+            2012
+        </div>
+        <div class="category">
+            <a href="/category/Coding.aspx">Coding</a> // <a href="/category/start-up.aspx">start-up</a>
+        </div>
+        <h1>
+            <a href="/post/2012/11/12/Comment-your-damn-code.aspx">Comment your damn code</a>
+            </h1>
+            <div class="postMetaSingle">
+				<img src="/pics/jbright.png" />
+                An article by <a href="/author/jbright.aspx">James Bright</a>
+                <img id="Img1" class="commentImage" src="/themes/AllTuts/images/ico_comments.png" />
+                <a rel="nofollow" href="/post/2012/11/12/Comment-your-damn-code.aspx#comment">21 Comments</a>
+                
+            </div>
+        <p>I'm just going to come right out and say it:</p>
+<blockquote>
+<p>Comment your damn code.</p>
+<p>&nbsp;</p>
+</blockquote>
+<p>Every now and then I run into an engineer--sometimes pretty high level--who thinks that you don't need to comment code. I'm going to call bullshit on this. I've been doing this a long time. Chances are, way longer than you. We are right in the middle of coding our asses off trying to launch something awesome, yet we still comment practically everything.&nbsp;There's no excuse not to. Every 3 to 7 lines of code you'll find some amount of editorializing. Maybe every few hundred lines you'll find a good joke too.</p>
+<p></p>
+<h2>Where the errors are</h2>
+<p>Look, there is what you <em>intend</em> and what you <em>write</em>. Your bugs are in between the two. When you write comments you are telling me what you <em>meant</em> to do. You code is telling me what you <em>did</em>. Either the flaw is in what you intended to do or, if your intent was correct, then it's in your code. Help me know which is which.</p>
+<h2>Don't be lazy</h2>
+<p>A common argument that I hear is that comments will get out of date because code will be updated but comments won't be. Are you not updating comments? Your coworkers?&nbsp;Stop being lazy and stop settling for a culture where it's okay to be lazy. Communicate how you work and let other people know that you'd like the same courtesy. Not commenting because someone, somewhere, in the future might do you wrong is just looking for excuses.</p>
+<h2>You're a Journeyman</h2>
+<p>Gender neutral of course, but you're a Journeyman. As such you have an obligation to teach others that are still learning. Your comments coach the Youngling who is reading your code. Tell them why you choose to use a Tuple in this case, but not the other (bonus points for links to stack overflow or dotnetperls ... you know you can do that in your comments, right?) What are you taking a shortcut here? If you're not taking shortcuts, then you're not shipping so you better tell the Youngling what was special about this case. Otherwise you'll end up with all of the wrong copy and pasted code everywhere. Look! Now your crappy code is a company pattern! No comments and all!</p>
+<h2>You can type</h2>
+<p>Part of my hiring process is whiteboard coding and keyboard coding. All good coders are touch typists. So you type 40 - 60 wpm. So then tell me again why aren't you writing comments while you blaze through your code? Because clearly the 30 seconds that you take now to tell me about what is going on in this icky mess that the biz dev guy had to have done this week to get a nice $75k this month needs to ship. But what are we going to do next month. Can we rip it out? Or is this code locked in stone. I know <em>what</em>&nbsp;the code says. But tell me the <em>intent</em>.</p>
+<h2>You're going to get old</h2>
+<p>I told you. I've been doing this for a while, probably before you entered middle school. I'm still slinging code and I still love it. And one day you'll be old like me too. And if you're like me (and I'm not an intellectual slouch mind you) the day will come when you know too many layers, too many abstractions, too many stacks that you can't remember it all, all of the time. Your code comments will guide you. They'll remind you that six months ago you did things this way, with this pattern and that it was pure awesomesause. And if you're really good--and still evolving as a coder--you'll realize that this code was crap and now you'd do it a completely different way. But you'd still have your comments to remind your own damn self what you were thinking and why. And you won't be so much as old as experienced, growing, and knowing where you were six months ago before you knew any better.</p>
+<p>So comment your damn code.&nbsp;</p>
+            <div class="postTags">
+                
+            </div>
+    </div>
+</div>
+<div class="potBoxBottom">
+</div>
+
+
+  
+  
+    <!-- 
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+      <rdf:Description rdf:about="http://tech.collectedit.com/post/2012/11/12/Comment-your-damn-code.aspx" dc:identifier="http://tech.collectedit.com/post/2012/11/12/Comment-your-damn-code.aspx" dc:title="Comment your damn code" trackback:ping="http://tech.collectedit.com/trackback.axd?id=63017e69-2e01-414f-a63e-c21dfdb17fe6" />
+    </rdf:RDF>
+    -->
+  
+  
+  <div id="relatedPosts"><h3>Related posts</h3><div><a href="/post/2012/09/04/iPhone-Cloud-Architecture-The-Web-API-Services.aspx">iPhone Cloud Based Architecture, Part 2: The Web API Services</a><span>Background
+If you haven't read Part 1, it might be a good idea to review that first to get an idea ...</span><a href="/post/2012/09/17/iPhone-Cloud-Architecture-Getting-Started-with-ClientServices.aspx">iPhone Cloud Based Architecture, Part 3: Getting Started with ClientServices</a><span>Now we're cooking with Crisco
+Okay, the last couple of blogs were really just a setup to being able...</span><a href="/post/2012/09/10/Tale-of-Two-Worker-Items-(dotNet-CSharp).aspx">Tale of Two Worker Items (.NET/C#)</a><span>Before .NET 4 the recommended way to create a new worker item thread was using the thread pool to qu...</span></div></div>
+  
+  
+<h3 id="comment">
+    Comments (21)
+    <a id="commenttoggle" style="float:right;width:20px;height:20px;border:1px solid #ccc;text-decoration:none;text-align:center" href="javascript:toggle_visibility('commentlist', 'commenttoggle');">-</a>
+</h3>
+
+
+<div id="commentlist" style="display:block">
+  <div id="id_f82033b9-9bfb-403c-8eaa-5b281f1b65d4" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/695e2a956b2dcb5ac45a7095b6ee338a.jpg?s=38&amp;d=wavatar" alt="John Sonmez" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('f82033b9-9bfb-403c-8eaa-5b281f1b65d4');">Reply</a></span>
+            <strong>
+                John Sonmez</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 8:28 AM
+                <a href="#id_f82033b9-9bfb-403c-8eaa-5b281f1b65d4">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                Better to write expressive code that is well named.<br />I&#39;ve hardly seen a pieces of well written code that needed comments.<br /><br /><a href="http://elegantcode.com/2010/04/18/eliminating-comments-the-road-to-clarity/" rel="nofollow">elegantcode.com/.../</a><br /><br />Almost everywhere there is a comment it cab be replaced by well named variables and methods that communicate the same point.</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_f82033b9-9bfb-403c-8eaa-5b281f1b65d4" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_303ccc8c-07be-4213-9cdd-d0d30378082e" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/f7d63b6dd7bb77b06224233341afea1f.jpg?s=38&amp;d=wavatar" alt="ImThinking...Superfluous" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('303ccc8c-07be-4213-9cdd-d0d30378082e');">Reply</a></span>
+            <strong>
+                ImThinking...Superfluous</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 9:05 AM
+                <a href="#id_303ccc8c-07be-4213-9cdd-d0d30378082e">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                Amen</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_303ccc8c-07be-4213-9cdd-d0d30378082e" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_bffe55dd-6a1a-4796-a7fc-fa5ae2c4fec5" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/9d445d5f15aa234369e9bce08abf4d65.jpg?s=38&amp;d=wavatar" alt="Darren Cauthon" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('bffe55dd-6a1a-4796-a7fc-fa5ae2c4fec5');">Reply</a></span>
+            <strong>
+                Darren Cauthon</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 9:25 AM
+                <a href="#id_bffe55dd-6a1a-4796-a7fc-fa5ae2c4fec5">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                What are your thoughts on idea of making readable code, even to the point of refactoring the code into small methods with very descriptive names?&nbsp;&nbsp;</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_bffe55dd-6a1a-4796-a7fc-fa5ae2c4fec5" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_47355e32-cad1-44de-9f7b-f5dc5e415103" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/ba7293bc007a99da592b9200110f1452.jpg?s=38&amp;d=wavatar" alt="Roland" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('47355e32-cad1-44de-9f7b-f5dc5e415103');">Reply</a></span>
+            <strong>
+                Roland</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 9:34 AM
+                <a href="#id_47355e32-cad1-44de-9f7b-f5dc5e415103">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                You make a good point that comments help to make your intent more clear, while the code itself just explains what the program does. Very good reason to have some comments here and there.<br /><br />However, I agree with the &quot;high-level engineer&quot; who says you don&#39;t need to comment code. Instead I say test your damn code! Testing brings all the benefits of commenting and more:<br /><br />Tests help document and clarify your intent. They convey your assumptions, expectations, and show you exactly how methods are expected to behave when you run the test.<br /><br />3 months later when you&#39;re adding new features, a failing test tells you that you introduced a bug before you ever run the new code.<br /><br />That said, comments have a place in the tests themselves. Much better than scattering comments all around the code base.<br /><br />The other place for comments is in the version control. Make small, frequent commits and set up your version control so that it forces you to comment each time.<br /><br />When you&#39;re doing these things, comments in the code just start to look redundant and noisy.<br /><br />I&#39;d rather see some tests that spell out the intended behaviors than a bunch of comments</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_47355e32-cad1-44de-9f7b-f5dc5e415103" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_c4e4b39e-307c-4b5f-89a1-bdd02951fbc9" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/63f651453ad563e28850c391d52d4da1.jpg?s=38&amp;d=wavatar" alt="Justin Koreska" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('c4e4b39e-307c-4b5f-89a1-bdd02951fbc9');">Reply</a></span>
+            <strong>
+                Justin Koreska</strong>
+            <span class="adr"><img src="/pics/flags/ca.png" class="country-name flag" width="16" height="11" title="Canada" alt="Canada" /></span><br />
+            <span>
+                November 12, 2012 at 9:46 AM
+                <a href="#id_c4e4b39e-307c-4b5f-89a1-bdd02951fbc9">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                <br /> Comments are a crutch for unreadable code.<br /><br /> With comments every 3 LoC - I can&#39;t even see the code from the comments!<br /><br /> You should be describing your intent with tests, class and method and variable names, separation of concerns, and readable code! Take that clever 1-liner and break it into sensible lines of code with descriptive variables. Or, take that monster function and break it into sensible methods with meaningful names. Then, the intent will be clear and your comment will be redundant.<br /><br /> Now, I&#39;ve been slinging code a long time, too, and I&#39;m getting old. I know sometimes you have to comment that crappy code so you can ship and refactor it later and later never comes. That&#39;s fine, use the crutch in those cases, but it&#39;s no substitute for readable code!<br /></p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_c4e4b39e-307c-4b5f-89a1-bdd02951fbc9" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_807b38ab-35f1-4e25-a6ea-535b542e2e5d" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/57f0ed571c1712e0f8cecf9c43db0665.jpg?s=38&amp;d=wavatar" alt="Dan Esparza" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('807b38ab-35f1-4e25-a6ea-535b542e2e5d');">Reply</a></span>
+            <strong>
+                Dan Esparza</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 9:47 AM
+                <a href="#id_807b38ab-35f1-4e25-a6ea-535b542e2e5d">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                Damn straight.&nbsp;&nbsp;One grumpy young man to another (I&#39;ve been doing this 20 years, myself) this is a good message.&nbsp;&nbsp;<br /><br />Please comment your damn code.</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_807b38ab-35f1-4e25-a6ea-535b542e2e5d" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_d53ba8e5-8ae3-43d1-bfff-d280ba8063c2" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/fa96def0f40a946968db0b48a0c4782a.jpg?s=38&amp;d=wavatar" alt="Chris Patti" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('d53ba8e5-8ae3-43d1-bfff-d280ba8063c2');">Reply</a></span>
+            <strong>
+                Chris Patti</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 9:51 AM
+                <a href="#id_d53ba8e5-8ae3-43d1-bfff-d280ba8063c2">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                Really love this article!<br /><br />I&#39;m in kind of an odd &#39;stuck in the middle&#39; position.&nbsp;&nbsp;I&#39;m a release engineer, and as such I end up working on large bodies of code around deployment.<br /><br />Deployment is the seedy back alley of the development world, it&#39;s the un-sexy work developers do when their hand is forced (generally speaking).<br /><br />I would *KILL* for a nice block of well commented code to maintain <img src="/editors/tiny_mce_3_4_3_1/plugins/emotions/img/smiley-smile.gif" class="flag" alt="Smile" /></p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_d53ba8e5-8ae3-43d1-bfff-d280ba8063c2" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_d60586b6-dc0b-4e20-9ec6-9f4ed262b89a" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/ff26d47d826ed25ed0a9f20904f4c707.jpg?s=38&amp;d=wavatar" alt="Nathan Alden, Sr." width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('d60586b6-dc0b-4e20-9ec6-9f4ed262b89a');">Reply</a></span>
+            <strong>
+                Nathan Alden, Sr.</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 9:57 AM
+                <a href="#id_d60586b6-dc0b-4e20-9ec6-9f4ed262b89a">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                Hey author, how about <em>refactoring</em> and <em>abiding by SOLID principles</em>? That does more than any massive block of commented code could ever do.<br /><br />I find comments to be rarely useful. Most of the time, I comment code that solves a domain-specific problem, such as the parsing of If-* headers according to the HTTP 1.1 specification, or perhaps how an interest rate calculation words. Mundane, boilerplate code--of which there tends to be a lot of--isn&#39;t worth commenting.<br /><br /><a href="http://projects.nathanalden.com/JuniorRoute" rel="nofollow">http://projects.nathanalden.com/JuniorRoute</a></p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_d60586b6-dc0b-4e20-9ec6-9f4ed262b89a" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_36301d0f-9574-437f-8bc2-a7586a8f5f7f" class="comment  self">
+    <img class="photo" src="http://www.gravatar.com/avatar/68c5480c4fe99898d4d4abeff411838c.jpg?s=38&amp;d=wavatar" alt="jbright" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('36301d0f-9574-437f-8bc2-a7586a8f5f7f');">Reply</a></span>
+            <strong>
+                jbright</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 9:57 AM
+                <a href="#id_36301d0f-9574-437f-8bc2-a7586a8f5f7f">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                I am in a rush at the moment, so I&#39;ll post more later. <br /><br />Absolutely you should try to write code that is easy to read. I agree 100%. But many (most?) of the time people assume that the next person picking up the code is as senior as you, the author. Typically that&#39;s not the case. Make it readable and explain the &quot;whys&quot; (and often the whys are business reasons, not technical).<br /></p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_36301d0f-9574-437f-8bc2-a7586a8f5f7f" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_e705e91f-ce82-4d3a-9ce4-ad7732c70d7f" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/906717b7eca0dd42d457439e1c0074a1.jpg?s=38&amp;d=wavatar" alt="name" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('e705e91f-ce82-4d3a-9ce4-ad7732c70d7f');">Reply</a></span>
+            <strong>
+                name</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 10:11 AM
+                <a href="#id_e705e91f-ce82-4d3a-9ce4-ad7732c70d7f">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                Give us some examples.</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_e705e91f-ce82-4d3a-9ce4-ad7732c70d7f" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_21348c38-2f2b-4230-b5b4-3ee1b95ce5af" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/c292b959ecf29c86e4c0d093a6f24e19.jpg?s=38&amp;d=wavatar" alt="Lucas Theisen" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('21348c38-2f2b-4230-b5b4-3ee1b95ce5af');">Reply</a></span>
+            <strong>
+                Lucas Theisen</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 10:16 AM
+                <a href="#id_21348c38-2f2b-4230-b5b4-3ee1b95ce5af">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                Comments are like sentences (sequences of words ending in a period) which try to convey (tell you) more information (discrete nuggets of knowledge) that should easily be deduced (reached a conclusion using logic) from the encompassing context (information surrounding the sentence) through the use of rhetorical parenthesis (<a href="http://en.wikipedia.org/wiki/Parenthesis_%28rhetoric%29" rel="nofollow">en.wikipedia.org/wiki/Parenthesis_%28rhetoric%29</a>).&nbsp;&nbsp;Annoying...&nbsp;&nbsp;I know!</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_21348c38-2f2b-4230-b5b4-3ee1b95ce5af" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_4c29aec2-a472-4c7e-b593-21be7ca090c1" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/116fb89d4b5d5089578e8ad6d87df2ab.jpg?s=38&amp;d=wavatar" alt="Tim" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('4c29aec2-a472-4c7e-b593-21be7ca090c1');">Reply</a></span>
+            <strong>
+                Tim</strong>
+            <span class="adr"><img src="/pics/flags/gb.png" class="country-name flag" width="16" height="11" title="United Kingdom" alt="United Kingdom" /></span><br />
+            <span>
+                November 12, 2012 at 11:54 AM
+                <a href="#id_4c29aec2-a472-4c7e-b593-21be7ca090c1">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                (sorry to use this tone btw, but I am mirroring the tone of your article)<br /><br /><cite title="Quote">Look, there is what you intend and what you write. Your bugs are in between the two. When you write comments you are telling me what you meant to do. You code is telling me what you did. Either the flaw is in what you intended to do or, if your intent was correct, then it&#39;s in your code. Help me know which is which.</cite><br /><br />You are confusing commenting with specification. The specification tells me what I intended to do, the code implements it. There are many ways to specify things; some of them are automatically checkable (e.g. full program specification + verification, or unit tests, or many other ways). Comments are not automatically checkable, they are imprecise and hard to manipulate with tools (e.g. refactoring tools) - in my opinion and experience only people that have not yet learned how to properly specify a program say things like you have about comments.<br /><br />Oh, and also it quite possible to have a bug in your specification (your intent) - this is in the gap between what you intend and what the customer actually wanted. So having a spec (at the most abstract level) that your customer can read and can also be automatically checked is a very powerful thing indeed.<br /><br /><cite title="Quote">Not commenting because someone, somewhere, in the future might do you wrong is just looking for excuses.</cite title="Quote"><br /><br />That misses the point entierly. The point is that we want to be efficient when writing programs, and there are better (lower cost, higher return) ways of getting the same result than commenting. For example having highly readable code, and a comprehensive executable specification (which forms an executable/checkable documentation at multiple levels of abstraction if done properly) is /much/ better than commenting - it does everything a comment does, and it is automatically checkable and you can run tools over it and it is precise and it doesn&#39;t take any longer to do well (poor comments are quicker, but good comments are at least as hard to write and maintain as proper specifications in my experience).<br /><br />Heck, if we use good enough tools (cucumber, fit, etc) we can even make the acceptance documentation executable and checkable. Even the performance (and other non-functional properties) can be specified and checked in this way if you really put in the effort.<br /><br />Commenting is unnessarily expensive; it can be replaced by other techniques that are almost completely better and also almost always cost less over time. I think there are, very, very few circumstances were writing a comment within the code is appropriate (it is typically a sign of a programmer who is not in control of their program). Typically when I have worked with or managed programmers who have resorted to writing comments I have found it to be an indication that they did not know about a technique that they could use to properly specify or otherwise simplify their code so as to remove the need for the comment.<br /><br />So, people in the future /won&#39;t/ maintain your comments - because they know that your comments are a waste of time. They will resent having their time wasted by having to read your comments, and sort out the ones that are &quot;teaching&quot; them how to code from the ones that are actually useful for the task at hand. They will be cussing you for writing code that needs so many comments; they will be cussing you for having to wade through and maintain stuff where you are trying to &quot;teach&quot; them things that they already know, or teach them things that are now hopelessly out of date (if your code is good enough to be still around after that long, that is); they will be cussing you for making it harder to use their tools when they have to manually go and move your comments or fix them after an automated refactoring, and they will be cussing you for wasting all that time writing and maintaining comments when you could (should) have been writing and improving your proper detailed+executable specifications.<br /><br />Oh, and by the way, try to write your code well enough in the first place so you don&#39;t have to make an icky mess when a deadline hits.<br /><br />So, please, remove your damm junk comments and write proper executable documentation (specifications).</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_4c29aec2-a472-4c7e-b593-21be7ca090c1" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_40601fe8-d93f-4da9-ab04-038766782e59" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/4eddef6a78dad0b44ccd255e5ccc3dff.jpg?s=38&amp;d=wavatar" alt="Nate" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('40601fe8-d93f-4da9-ab04-038766782e59');">Reply</a></span>
+            <strong>
+                Nate</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 1:54 PM
+                <a href="#id_40601fe8-d93f-4da9-ab04-038766782e59">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                If you don&#39;t think you need comments, chances are, you&#39;re thinking too much about dumb comments. There&#39;s no need to comment simple accessors or really any boilerplate code that should be obvious to even a newbie.&nbsp;&nbsp;However, there are plenty of places where comments make your code way more maintainable.<br /><br />Tests are all well and good. They can explain what the expected outcome is, and how to use the code, but the inner workings of the code can&#39;t and shouldn&#39;t be exposed to the outside, and therefore can&#39;t and shouldn&#39;t be explained by tests.<br /><br />There&#39;s three things you should put in comments.<br />#1 - WHY you&#39;re doing something. WHAT you&#39;re doing is hopefully obvious from the well-written code everyone else has commented about.<br />&nbsp;&nbsp;But WHY you&#39;re writing the code isn&#39;t always obvious. Why are you stripping off the last two characters of that string? Why are you making a copy of the array rather than just using the original? Why are you acquiring the locks in this particular order?<br />&nbsp;&nbsp;This is the type of information you can&#39;t possibly put into variable names or function names. Or if you did, your code would be completely unreadable.<br /><br />#2 - Coding notes for anyone else who might work on the code. For example, I often write comments warning future programmers about potential problems that they might not think of if they edit this particular code. This is quite similar to #1, where you note why you did (or did not) write some particular code, and how to maintain the code without breaking anything. Tests can tell you something is broken, but they can&#39;t always tell you why it broke.<br /><br />#3 - WHAT your code is doing. This should be very rare, but occasionally, for performance reasons, or while interacting with code you didn&#39;t write, you have to do some backflips in the code to get things to work right. This kind of obscure and arcane code comes up in nearly every job. This is a time to break from tradition and comment on what exactly the code is doing (and likely also why it needs to be done this way). Yes, it means you&#39;ll need to keep the comment up to date with the code... but with this type of code, you often need the comment to remind you exactly what the code is doing anyway.</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_40601fe8-d93f-4da9-ab04-038766782e59" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_077eaf88-2606-4167-a7f2-52bdf4a638bd" class="comment  self">
+    <img class="photo" src="http://www.gravatar.com/avatar/68c5480c4fe99898d4d4abeff411838c.jpg?s=38&amp;d=wavatar" alt="jbright" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('077eaf88-2606-4167-a7f2-52bdf4a638bd');">Reply</a></span>
+            <strong>
+                jbright</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 3:12 PM
+                <a href="#id_077eaf88-2606-4167-a7f2-52bdf4a638bd">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                Great comments BTW. And I definitely don&#39;t mind the tone matching my rant. <br /><br />Just browse any number of projects on github. There&#39;s some really good stuff, not so good stuff, and crap. Inevitably the really good stuff is <em>both</em> well written and well commented. I don&#39;t think I could say it any better than Nate did above. Hey, I really love all of the work that Miguel de Icaza has done and we use Xamarin to build the iPhone app. But if the earlier code examples for MonoTouch had say 15% more comments in the examples, I would have picked up on the intended pattern much, much quicker. (Still, in many cases the examples were much better than Apple provided!)<br /><br />Not to mention that if you&#39;re a full stack developer chances are you&#39;re not a expert in every layer in the stack. You need cues from comments. Or maybe you just can&#39;t write code like John prescribes because you&#39;re in javascript land. I&#39;d love to see more comments when I see this:<br /><br />.children(&#39;ul&#39;).click(function (event) {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (event.stopPropagation) { event.stopPropagation(); } event.cancelBubble = true;<br />&#160;&#160;&#160;&#160;&#160;&#160; })<br /><br />WTH? Why? Random (but real) example.<br /><br />You&#39;re going to READ code 100x more often than you WRITE it, including refactoring. Just like you use a Cliffs Notes or similar when reading Shakespeare, having a guide when you are reading code helps tremendously.</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_077eaf88-2606-4167-a7f2-52bdf4a638bd" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_0c74dbb3-c711-4f2b-a604-0d7b5cf4050d" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/9154a88a7e5980a9b9398f0bdead6667.jpg?s=38&amp;d=wavatar" alt="David T. Macknet" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('0c74dbb3-c711-4f2b-a604-0d7b5cf4050d');">Reply</a></span>
+            <strong>
+                David T. Macknet</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 12, 2012 at 5:33 PM
+                <a href="#id_0c74dbb3-c711-4f2b-a604-0d7b5cf4050d">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                I agree wholeheartedly with the rant, and also find some interest in the comments ... particularly in those who believe that good testing will somehow magically generate good code, or repeatability, or provide any of the other benefits of commenting.<br /><br />I&#39;ve been coding for around 20 years, full-time (at least, being paid for doing so).&nbsp;&nbsp;I&#39;ve never found a comment that stood out as garbage, at least, not that I can recall.&nbsp;&nbsp;Mostly, I&#39;ve found code where it was obvious that the developer was trying to do <strong>something</strong>, but so help me, I couldn&#39;t determine just <strong>what</strong>.<br /><br />Another good reason for comments is when things break with the expected pattern (say, because a library&#39;s implementation is counter-intuitive, or where that library has a fatal but difficult-to-find defect).&nbsp;&nbsp;Those places are where I find myself commenting the heaviest: if it&#39;s taken me a week to find out that there was a problem in a third-party code library, I certainly want to put some expletives around the work-around, so that 1) I don&#39;t have to do the same problem-solving again (or can remember what I did), and 2) so that some newbie doesn&#39;t encounter the code and &quot;fix&quot; it.<br /><br />Sad to say, some people just don&#39;t like to read comments.&nbsp;&nbsp;I had a manager who insisted that they be removed before release to the client.&nbsp;&nbsp;Needless to say, I don&#39;t work for that person any longer, and that company&#39;s projects frequently fail.</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_0c74dbb3-c711-4f2b-a604-0d7b5cf4050d" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_d5c70320-af59-48e4-a4d6-c9994e6723d6" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/116fb89d4b5d5089578e8ad6d87df2ab.jpg?s=38&amp;d=wavatar" alt="Tim" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('d5c70320-af59-48e4-a4d6-c9994e6723d6');">Reply</a></span>
+            <strong>
+                Tim</strong>
+            <span class="adr"><img src="/pics/flags/gb.png" class="country-name flag" width="16" height="11" title="United Kingdom" alt="United Kingdom" /></span><br />
+            <span>
+                November 12, 2012 at 6:36 PM
+                <a href="#id_d5c70320-af59-48e4-a4d6-c9994e6723d6">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                <cite title="Quote">will somehow magically generate good code, or repeatability, or provide any of the other benefits of commenting</cite><br /><br />Hopefully not too many people think that this will happen by magic! In my experience it is quite a specific process that produces both good code and matching good specifications (tests, etc). I can certainly see how programmers that were not able to follow such an engineering process or had difficulty applying the self disipline (or lacked the tools, training, support, etc) necessary to produce good code could lead themselves to believe that extensive commenting was good practice (and in this situation it is probably better than no commenting).<br /><br /><cite title="Quote">I&#39;ve never found a comment that stood out as garbage, at least, not that I can recall.</cite title="Quote"><br /><br />I have unfortunately seen quite a few. Where does this leave us? Usually I have seen comments left by programmers that thought that what they were doing was really difficult, but actually had simply not understood the problem correctly and had no concept of a reasonable algorithm to solve the misunderstood problem. The comments I see are generally just as confused as the code they are commenting. Complicated code, complicated comments. Or to put it another way, why would I expect a programmer who cannot write clear well specified code, to be able to write clear well specified comments? And if the code is clear, I have seen very few comments that added value.<br /><br /><cite title="Quote">Those places are where I find myself commenting the heaviest: if it&#39;s taken me a week to find out that there was a problem in a third-party code library</cite title="Quote"><br /><br />This is somewhere I have also used comments myself. Typically to document where the behaviour of a library differs from either its specification (bug), or is insufficently specified and counter-intuitive. In my experience, however, this is very rare compared to the total amount of code I have written and hardly comes under the general category &quot;comment your code&quot; - more &quot;comment extraordinary circumstances&quot;. Actually, more often I have come across confusing and confused comments made by programmers that have not understood the library and subsequently made a usage error. The content of the comments are typically useless (because of the confusion); although the presence of comments in code can act as a warning sign that the programmer was confused.<br /><br /><cite title="Quote">Why are you making a copy of the array rather than just using the original</cite title="Quote"> <br /><br />copy the array in a method that is named after why you need a copy? Even better, if your language has types and encapsulation (e.g an OO language) use them (wrap and encapsulate your raw arrays).<br /><br /><cite title="Quote">This kind of obscure and arcane code comes up in nearly every job.</cite title="Quote"><br /><br />If you absolutely cannot document it with tests (including performance tests - and if it is performance critical you should be testing its performance), others kinds of specification, code style techniques, etc. then you could put in comments - but I have typically found that the number of cases where I have to do something like this have been quite rare and the number of times I could not communicate it by some other (exact) means even rarer. I have worked quite a bit on performance critical code. I prefer to use well known algorithms and data structures where possible, and use technical names. I don&#39;t want to troll, but have you considered that it might be your own skills that are leading you to write at least some &quot;obscure and arcane code&quot; on nearly every job that you do?</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_d5c70320-af59-48e4-a4d6-c9994e6723d6" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_b7bfdd3d-2625-40e4-b944-085e5cc9988c" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/4eddef6a78dad0b44ccd255e5ccc3dff.jpg?s=38&amp;d=wavatar" alt="Nate" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('b7bfdd3d-2625-40e4-b944-085e5cc9988c');">Reply</a></span>
+            <strong>
+                Nate</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 13, 2012 at 10:19 AM
+                <a href="#id_b7bfdd3d-2625-40e4-b944-085e5cc9988c">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                <cite title="Quote">document it with tests</cite><br /><br />As I said before, the specific implementation cannot and should not be documented with tests. Tests document *what* the code does. They cannot document *how* the code does it, or why it does it.<br /><br />I can write a method that does the same thing in 100 different ways. The tests for that code would all look identical. The tests can&#39;t tell you why I chose one way over another. That&#39;s what comments are for.<br /><br /><cite title="Quote">copy the array in a method that is named after why you need a copy</cite title="Quote"><br /><br />So... instead of this:<br /><br />// copy the array so we keep the original pristine in case we have<br />// to roll back our changes due to a later error<br />copy = cloneArray(original)<br /><br />you want me to do this?<br /><br />copy = makeCopySoWeCanRollBackLater(original)<br /><br />and then make a method with that name that just calls cloneArray?&nbsp;&nbsp;That makes the code clearer?<br /><br /><cite title="Quote">have you considered that it might be your own skills that are leading you to write at least some &quot;obscure and arcane code&quot; on nearly every job that you do?</cite title="Quote"><br /><br />Do you not ever interact with wacky APIs from the OS, third party libraries, or just plain mediocre code from other individuals in the same company?<br /><br />Here&#39;s an example of actual comments I&#39;ve written at work to explain why in the hell I&#39;m doing something:<br /><br />// don&#39;t use double.parse, since that is locale-specific <br />// and this format is always static<br />-- fixing a bug by using a regex where we had been using a built-in parser that failed in non-US locales --<br /><br />// this causes Word to set the extension appropriately according <br />// to its default save format<br />-- explaining why we&#39;re removing the extension from a filename --<br /><br />// remove the current user from the list, since the server automatically<br />// adds the current user anyway<br />-- explaining a fix to a bug where the current user would be in a list twice... technically the server should handle it, but it&#39;s not fixable on the server without a huge rewrite --<br /><br />// this just means the file doesn&#39;t exist, which is<br />// fine, so we can ignore it<br />-- explaining an obscure exception error code, and why it&#39;s ok to swallow it --<br /><br />I really don&#39;t understand how people think they can write readable, maintainable code without comments. You may understand your code today, but you probably won&#39;t in 6 months, and someone else certainly won&#39;t. Unless your code is all boilerplate and doing the simplest things imaginable, somewhere there&#39;s going to be complexity, and you&#39;ll need to explain yourself in plain text, not in code.&nbsp;&nbsp;if you try to shoehorn these explanations into variable and function names, you&#39;ll often end up making your code *less* readable, not more readable.<br /><br />I understand that the world is not simple or perfect, and that anywhere there is imperfection or complexity, there is the chance for misunderstanding and error. Comments help convey the knowledge of the current programmer to future programmers working on the same code (even if that future programmer is actually the same person).<br /><br />Development is 10% creation and 90% maintenance. Comments make maintenance easier. Why avoid them? Do all those other things too, but don&#39;t think the lowly comment is beneath you just because it doesn&#39;t come with a framework, toolset, or have a fancy name.</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_b7bfdd3d-2625-40e4-b944-085e5cc9988c" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_86f34770-fb11-44db-b86c-6e89897aedcf" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/116fb89d4b5d5089578e8ad6d87df2ab.jpg?s=38&amp;d=wavatar" alt="Tim" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('86f34770-fb11-44db-b86c-6e89897aedcf');">Reply</a></span>
+            <strong>
+                Tim</strong>
+            <span class="adr"><img src="/pics/flags/gb.png" class="country-name flag" width="16" height="11" title="United Kingdom" alt="United Kingdom" /></span><br />
+            <span>
+                November 13, 2012 at 12:09 PM
+                <a href="#id_86f34770-fb11-44db-b86c-6e89897aedcf">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                Nate - don&#39;t read this if you don&#39;t want to read me critisising your approach to programming. You probably have better things to be getting on with! I have, however, heard all the arguments you are making before, I have worked with programmers who swore by the approach you are suggesting - but eventually found they had no need for it after learning the better, more modern techniques that I in turn have learned from some very excellent programmers. On to my point:<br /><br /><br /><cite title="Quote">Tests document *what* the code does.</cite><br /><br />They specify the meaning of the code.<br /><br /><cite title="Quote">They cannot document *how* the code does it</cite title="Quote"><br /><br />The code documents how it does what it does.<br /><br /><cite title="Quote">or why it does it.</cite title="Quote"><br /><br />Yes they can. I automate almost all my acceptance tests and create them in domain language that describes exactly and specifically the user or technical requirment that drives each feature.<br /><br /><cite title="Quote">you want me to do this?<br /><br />copy = makeCopySoWeCanRollBackLater(original)<br /></cite title="Quote"><br /><br />Sure, if you can&#39;t think of a better way of doing it. The fact that you have suggested this solution is kind of confirming my point that programmers use comments when they lack the techniques required to do something better than using comments. I imagine that I would encapsulate the array in an object which has methods something like &quot;startTransaction&quot; and &quot;rollbackTransaction&quot; (or generally something more domain specific, as I would actually know what the array was for if I was doing this for real). Your lack of familiarlity with the ways that complex program behaviours can be encapsulated, abstracted and named is probably the reason you need to use comments.<br /><br /><cite title="Quote"><br />// don&#39;t use double.parse, since that is locale-specific<br />// and this format is always static<br /></cite title="Quote"><br /><br />I&#39;m guessing what the code is doing a little, but I&#39;m probably going to create a class/type that encapculates this number parsing logic. The type is going to be used every-where this sepecially formated number is used within the program. I&#39;m going it write a bunch of tests that check that this class does the parsing correctly - there will be some tests that make sure that the parsing is not being done in a locale specific manner. If someone accidentally changes the implementation to be locale specific those tests are gonna fail. This is /way/ more robust and maintainable than writing a comment and using raw primitives.<br /><br /><br /><cite title="Quote">-- fixing a bug by using a regex where we had been using a built-in parser that failed in non-US locales --</cite title="Quote"><br /><br />I&#39;m going to write regression (unit) tests that check that the parser works in non-us locales. If someone changes it back accidentally or the tests will immediately fail. They probably won&#39;t make that mistake however however, because they will have looked at the test cases before they change the class, and they will have seen one called &quot;testParsingWorksInNonUsLocales&quot;. The reason that they will have looked at the tests cases is that they are doing TDD, so will always be writing a test before changing code behavior. If they however are careless or lazy and don&#39;t look at the tests - then no harm done, the tests will fail durring the CI build and the error will be caught.<br /><br /><cite title="Quote">this causes Word to set the extension appropriately according to its default save format</cite title="Quote"><br /><br />I going to create a type that encapsulates the file name; I&#39;m not passing around filename as a string, or as a &quot;File&quot; or whatever 2rd party type you have available. I&#39;m going to write an integration test that verifies that what you are saying is true. the test will be called &quot;testThatWordSetsTheExtensionAppropriatelyAccordingToItsDefaultSaveFormat&quot;. Its OK to have long test names, as they are never called from code. (only called automatically by the unit testing frame work). I am going to explicitly check, and any programmer that makes a mistake a violates this will be immediately told about it by the test failure (in the CI server if not locally). However - someone that misses, or misunderstands your comment is in big trouble.<br /><br /><cite title="Quote">remove the current user from the list, since the server automatically adds the current user anyway</cite title="Quote"><br /><br />Same as above. I&#39;m going to write an integration test that forces the program to have this beahviour. I sometimes include the issue tracking number in the test name: testUserIsNotAddedTwiceByTheServer_12543(), I might also abstract the part of the code that removes the user in a procedure called &quot;preventDuplicateUserAddition()&quot;<br /><br /><cite title="Quote">this just means the file doesn&#39;t exist, which is fine, so we can ignore it -- explaining an obscure exception error code</cite title="Quote"><br /><br />I am going to encapsulate the error code (I assume it is a primitive or 3rd party type that you cannot change). I&#39;m going to have a method that is &quot;errorCode.isFileDoesNotExist()&quot; or if for some reason I cannot do that I am going to have isFileDoesNotExist(errorCode) in my conditional. <br /><br /><br />So, essentially, I think that none of the comments you have suggested are appropriate places to have comments. I have come across many programmers who write comments like this. In my experience their code is not particularly well decomposed because they lack the techiniques of abstraction, encapsulation and specification that allows them to write simple, clean, understandable code.<br /><br /><br /><cite title="Quote">don&#39;t think the lowly comment is beneath you</cite title="Quote"> <br /><br />Far from it. I argue that the comment is harmful when put alongside modern programming techniques. I don&#39;t think it does what you claim for it, at least it does it nowhere near as well as the other techiniques that you could use. And, if you use those techniques then almost all comments become mear duplication and are redundant.<br /><br />In short: comments are fine if you don&#39;t know any better, but when you do learn better they are pointless at best. If you are stuck in a situation where you can&#39;t do it right (where you lack tools, or support from the person paying you, or whatever), then comments are a substitute that you can fall back on, but that is all they are.</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_86f34770-fb11-44db-b86c-6e89897aedcf" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_7cd4474e-17b5-45dc-a76d-24c4172fc4fa" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/116fb89d4b5d5089578e8ad6d87df2ab.jpg?s=38&amp;d=wavatar" alt="Tim" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('7cd4474e-17b5-45dc-a76d-24c4172fc4fa');">Reply</a></span>
+            <strong>
+                Tim</strong>
+            <span class="adr"><img src="/pics/flags/gb.png" class="country-name flag" width="16" height="11" title="United Kingdom" alt="United Kingdom" /></span><br />
+            <span>
+                November 13, 2012 at 12:24 PM
+                <a href="#id_7cd4474e-17b5-45dc-a76d-24c4172fc4fa">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                You should try to avoid writing comments. This doesn&#39;t mean: &quot;don&#39;t write a comment where it is needed&quot; it means &quot;make the comment not needed&quot;. If you really can&#39;t make it not needed, then you should put in the comment. The comment is better than nothing, but its not better than doing it in a way that does not need a comment.<br /><br />I mean, appreciate that needing to writing comments is a sign that there is something unclear about your code/specification. And try to, over time, work to learn how you can eliminate them.</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_7cd4474e-17b5-45dc-a76d-24c4172fc4fa" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_edec3bb6-9f2f-40fc-86ca-d674b293994a" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/116fb89d4b5d5089578e8ad6d87df2ab.jpg?s=38&amp;d=wavatar" alt="Tim" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('edec3bb6-9f2f-40fc-86ca-d674b293994a');">Reply</a></span>
+            <strong>
+                Tim</strong>
+            <span class="adr"><img src="/pics/flags/gb.png" class="country-name flag" width="16" height="11" title="United Kingdom" alt="United Kingdom" /></span><br />
+            <span>
+                November 13, 2012 at 12:33 PM
+                <a href="#id_edec3bb6-9f2f-40fc-86ca-d674b293994a">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                Also, don&#39;t forget about assertions. You can often add checkable assertions to your code if you /really/ need to. e.g.<br /><br />assert errorCode == FILE_NOT_EXISTS<br /><br />This is way better than a comment, although is not as good as writing code that doesn&#39;t need the assertion. i.e. try to structure the code so that the condition is avoided, but if you can&#39;t then document it using an assertion. At least they can be checked, and are likely to be refactored correctly by tools.<br /><br />So:<br />&nbsp;&nbsp;&nbsp;&nbsp;checkable specifications (tests, etc) and clean code are the best<br />&nbsp;&nbsp;&nbsp;&nbsp;then assertions if you really can&#39;t think of a way to clean up your code<br />&nbsp;&nbsp;&nbsp;&nbsp;then comments if you really can&#39;t do either of the above <br /><br />Try to learn from each situation where you end up having to comment and think &quot;how could I do this better?&quot;<br /><br /></p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_edec3bb6-9f2f-40fc-86ca-d674b293994a" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+<div id="id_41b560b4-af9a-496e-81f8-a1d92a15553e" class="comment ">
+    <img class="photo" src="http://www.gravatar.com/avatar/158c1bc1a6516ae374d9bcadb6da70fc.jpg?s=38&amp;d=wavatar" alt="Mike" width="38" height="38" />
+    <div  class="comment-content">
+        <div class="comment-meta commentmetadata clearfix">
+        <span class="reply-to"><a href="javascript:void(0);" class="reply-to-comment" onclick="BlogEngine.replyToComment('41b560b4-af9a-496e-81f8-a1d92a15553e');">Reply</a></span>
+            <strong>
+                Mike</strong>
+            <span class="adr"><img src="/pics/flags/us.png" class="country-name flag" width="16" height="11" title="United States" alt="United States" /></span><br />
+            <span>
+                November 14, 2012 at 1:28 AM
+                <a href="#id_41b560b4-af9a-496e-81f8-a1d92a15553e">#</a></span>
+        </div>
+        <div class="text">
+            <p>
+                I&#39;ve been coding professionally for over thirty years, and find this trend away from commenting to be extremely ill-conceived.&nbsp;&nbsp;Of course you should write code that is easy to read, of course you should do all of the other things cited as reasons why commenting shouldn&#39;t be necessary, but <strong>you should still comment</strong>. As pointed out by the author, commenting tells me what your intent was, while the code only tells me what you actually did. Not commenting is like entering into a business deal without a contract- the contract is there to record your intentions, and can be used as a reference to bring behavior back in to alignment and prevent things from falling apart. Everyone should act like contracts are not necessary, but in reality they are.<br /><br />In thirty years I have never seen a program and said, &quot;Wow, there are really too many comments here. I wish they hadn&#39;t done this.&quot; But several times I&#39;ve used comments to find and correct errors. <br /><br />Professionals comment their damn code.</p>
+            <p class="author">
+            
+            </p>
+        </div>
+        <div id="replies_41b560b4-af9a-496e-81f8-a1d92a15553e" class="children"  style=&quot;display:none;&quot;>
+            
+
+
+        </div>
+    </div>
+</div>
+  
+</div>
+
+
+
+
+
+<div id="comment-form">
+
+	<img src="/pics/ajax-loader.gif" width="24" height="24" alt="Saving the comment" style="display:none" id="ajaxLoader" />  
+	<span id="status"></span>
+
+	<div class="commentForm">
+	  <h3 id="addcomment">Add comment</h3>
+
+	  <input type="hidden" name="ctl00$cphBody$CommentView1$hiddenReplyTo" id="ctl00_cphBody_CommentView1_hiddenReplyTo" />
+		<p id="cancelReply" style="display:none;"><a href="javascript:void(0);" onclick="BlogEngine.cancelReply();">Cancel reply to comment</a></p>
+	  
+      <p>
+	      <label for="txtName634890751164734255" class="lbl-user">Name*</label>
+	      <input type="text" class="txt-user" name="txtName634890751164734255" id="txtName634890751164734255" tabindex="2" value="" />
+	      <span id="spnNameRequired" style="color:Red;display:none;"> Required</span>
+	      <span id="spnChooseOtherName" style="color:Red;display:none;"> Please choose another name</span>
+      </p>
+      <p>
+	      <label for="ctl00_cphBody_CommentView1_txtEmail" class="lbl-email">E-mail*</label>
+	      <input name="ctl00$cphBody$CommentView1$txtEmail" type="text" id="ctl00_cphBody_CommentView1_txtEmail" tabindex="3" class="txt-email" />
+	      <span id="gravatarmsg"></span>
+	      
+      </p>
+      
+	  <p>
+          <label for="ctl00_cphBody_CommentView1_ddlCountry" class="lbl-country">Country</label>
+	      <select name="ctl00$cphBody$CommentView1$ddlCountry" id="ctl00_cphBody_CommentView1_ddlCountry" tabindex="5" class="txt-country" onchange="BlogEngine.setFlag(value)">
+	<option value="">[Not specified]</option>
+	<option value="af">Afghanistan</option>
+	<option value="al">Albania</option>
+	<option value="dz">Algeria</option>
+	<option value="ar">Argentina</option>
+	<option value="am">Armenia</option>
+	<option value="au">Australia</option>
+	<option value="at">Austria</option>
+	<option value="az">Azerbaijan</option>
+	<option value="bh">Bahrain</option>
+	<option value="bd">Bangladesh</option>
+	<option value="by">Belarus</option>
+	<option value="be">Belgium</option>
+	<option value="bz">Belize</option>
+	<option value="bm">Bermuda</option>
+	<option value="ve">Bolivarian Republic of Venezuela</option>
+	<option value="bo">Bolivia</option>
+	<option value="ba">Bosnia and Herzegovina</option>
+	<option value="br">Brazil</option>
+	<option value="bn">Brunei Darussalam</option>
+	<option value="bg">Bulgaria</option>
+	<option value="kh">Cambodia</option>
+	<option value="ca">Canada</option>
+	<option value="029">Caribbean</option>
+	<option value="cl">Chile</option>
+	<option value="co">Colombia</option>
+	<option value="cr">Costa Rica</option>
+	<option value="hr">Croatia</option>
+	<option value="cz">Czech Republic</option>
+	<option value="dk">Denmark</option>
+	<option value="do">Dominican Republic</option>
+	<option value="ec">Ecuador</option>
+	<option value="eg">Egypt</option>
+	<option value="sv">El Salvador</option>
+	<option value="ee">Estonia</option>
+	<option value="et">Ethiopia</option>
+	<option value="fo">Faroe Islands</option>
+	<option value="fi">Finland</option>
+	<option value="fr">France</option>
+	<option value="ge">Georgia</option>
+	<option value="de">Germany</option>
+	<option value="gr">Greece</option>
+	<option value="gl">Greenland</option>
+	<option value="gt">Guatemala</option>
+	<option value="hn">Honduras</option>
+	<option value="hk">Hong Kong S.A.R.</option>
+	<option value="hu">Hungary</option>
+	<option value="is">Iceland</option>
+	<option value="in">India</option>
+	<option value="id">Indonesia</option>
+	<option value="ir">Iran</option>
+	<option value="iq">Iraq</option>
+	<option value="ie">Ireland</option>
+	<option value="pk">Islamic Republic of Pakistan</option>
+	<option value="il">Israel</option>
+	<option value="it">Italy</option>
+	<option value="jm">Jamaica</option>
+	<option value="jp">Japan</option>
+	<option value="jo">Jordan</option>
+	<option value="kz">Kazakhstan</option>
+	<option value="ke">Kenya</option>
+	<option value="kr">Korea</option>
+	<option value="kw">Kuwait</option>
+	<option value="kg">Kyrgyzstan</option>
+	<option value="la">Lao P.D.R.</option>
+	<option value="lv">Latvia</option>
+	<option value="lb">Lebanon</option>
+	<option value="ly">Libya</option>
+	<option value="li">Liechtenstein</option>
+	<option value="lt">Lithuania</option>
+	<option value="lu">Luxembourg</option>
+	<option value="mo">Macao S.A.R.</option>
+	<option value="mk">Macedonia (FYROM)</option>
+	<option value="my">Malaysia</option>
+	<option value="mv">Maldives</option>
+	<option value="mt">Malta</option>
+	<option value="mx">Mexico</option>
+	<option value="mn">Mongolia</option>
+	<option value="me">Montenegro</option>
+	<option value="ma">Morocco</option>
+	<option value="np">Nepal</option>
+	<option value="nl">Netherlands</option>
+	<option value="nz">New Zealand</option>
+	<option value="ni">Nicaragua</option>
+	<option value="ng">Nigeria</option>
+	<option value="no">Norway</option>
+	<option value="om">Oman</option>
+	<option value="pa">Panama</option>
+	<option value="py">Paraguay</option>
+	<option value="cn">People&#39;s Republic of China</option>
+	<option value="pe">Peru</option>
+	<option value="ph">Philippines</option>
+	<option value="pl">Poland</option>
+	<option value="pt">Portugal</option>
+	<option value="mc">Principality of Monaco</option>
+	<option value="pr">Puerto Rico</option>
+	<option value="qa">Qatar</option>
+	<option value="ph">Republic of the Philippines</option>
+	<option value="ro">Romania</option>
+	<option value="ru">Russia</option>
+	<option value="rw">Rwanda</option>
+	<option value="sa">Saudi Arabia</option>
+	<option value="sn">Senegal</option>
+	<option value="rs">Serbia</option>
+	<option value="cs">Serbia and Montenegro (Former)</option>
+	<option value="sg">Singapore</option>
+	<option value="sk">Slovakia</option>
+	<option value="si">Slovenia</option>
+	<option value="za">South Africa</option>
+	<option value="es">Spain</option>
+	<option value="lk">Sri Lanka</option>
+	<option value="se">Sweden</option>
+	<option value="ch">Switzerland</option>
+	<option value="sy">Syria</option>
+	<option value="tw">Taiwan</option>
+	<option value="tj">Tajikistan</option>
+	<option value="th">Thailand</option>
+	<option value="tt">Trinidad and Tobago</option>
+	<option value="tn">Tunisia</option>
+	<option value="tr">Turkey</option>
+	<option value="tm">Turkmenistan</option>
+	<option value="ae">U.A.E.</option>
+	<option value="ua">Ukraine</option>
+	<option value="gb">United Kingdom</option>
+	<option selected="selected" value="us">United States</option>
+	<option value="uy">Uruguay</option>
+	<option value="uz">Uzbekistan</option>
+	<option value="vn">Vietnam</option>
+	<option value="ye">Yemen</option>
+	<option value="zw">Zimbabwe</option>
+
+</select>&nbsp;
+	      <span class="CommentFlag">
+	          <img id="imgFlag" src="/pics/flags/us.png" alt="Country flag" width="16" height="11" />
+	      </span>
+	  </p>
+      <p><label for="simpleCaptchaValue">5+5 = </label><input id="simpleCaptchaValue" name="simpleCaptchaValue" type="text" tabindex="6" maxlength="30" value="" /><span id="spnSimpleCaptchaIncorrect" style="display:none;color:Red;">The captcha value you provided is incorrect.
+</span></p>
+	  <span class="bbcode" title="BBCode tags"><a title="[b][/b]" href="javascript:void(BlogEngine.addBbCode('b'))">b</a><a title="[i][/i]" href="javascript:void(BlogEngine.addBbCode('i'))">i</a><a title="[u][/u]" href="javascript:void(BlogEngine.addBbCode('u'))">u</a><a title="[quote][/quote]" href="javascript:void(BlogEngine.addBbCode('quote'))">quote</a></span>
+	  <br />
+
+	    
+	  <ul id="commentMenu">
+		<li id="compose" class="selected" onclick="BlogEngine.composeComment()">Comment</li>
+		<li id="preview" onclick="BlogEngine.showCommentPreview()">Preview</li>
+	  </ul>
+	  
+	  <div id="commentCompose">
+		<label for="ctl00_cphBody_CommentView1_txtContent" class="lbl-content" style="display:none">Comment</label>
+		<textarea name="ctl00$cphBody$CommentView1$txtContent" rows="10" cols="50" id="ctl00_cphBody_CommentView1_txtContent" tabindex="7" class="txt-content">
+</textarea>
+	  </div>
+	  <div id="commentPreview">
+		<img src="/pics/ajax-loader.gif" width="24" height="24" style="display:none" alt="Loading" />  
+	  </div>
+	  
+	  <p>
+	      <input type="checkbox" id="cbNotify" class="cmnt-frm-notify" style="width: auto" tabindex="8" />
+	      <label for="cbNotify" style="width:auto;float:none;display:inline;padding-left:5px">Notify me when new comments are added</label>
+      </p>
+	  
+      
+
+      <p>
+	    <input type="button" id="btnSaveAjax" class="btn-save" style="margin-top:10px" value="Save comment" onclick="return BlogEngine.validateAndSubmitCommentForm()" tabindex="10" />
+	    <input type="hidden" name="ctl00$cphBody$CommentView1$hfCaptcha" id="ctl00_cphBody_CommentView1_hfCaptcha" value="03658e09-f0af-4f7d-a4a9-010bece27a2c" />
+      </p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+<!--//
+	BlogEngine.comments.flagImage = BlogEngine.$("imgFlag");
+	BlogEngine.comments.contentBox = BlogEngine.$("ctl00_cphBody_CommentView1_txtContent");
+	BlogEngine.comments.moderation = true;
+	BlogEngine.comments.checkName = true;
+	BlogEngine.comments.postAuthor = "jbright";
+	BlogEngine.comments.nameBox = BlogEngine.$("txtName634890751164734255");
+	BlogEngine.comments.emailBox = BlogEngine.$("ctl00_cphBody_CommentView1_txtEmail");
+	BlogEngine.comments.websiteBox = BlogEngine.$("ctl00_cphBody_CommentView1_txtWebsite");
+	BlogEngine.comments.countryDropDown = BlogEngine.$("ctl00_cphBody_CommentView1_ddlCountry"); 
+	BlogEngine.comments.captchaField = BlogEngine.$('ctl00_cphBody_CommentView1_hfCaptcha');
+	BlogEngine.comments.controlId = 'ctl00$cphBody$CommentView1';
+	BlogEngine.comments.replyToId = BlogEngine.$("ctl00_cphBody_CommentView1_hiddenReplyTo"); 
+//-->
+</script>
+
+
+
+<script type="text/javascript">
+    function toggle_visibility(id, id2) {
+        var e = document.getElementById(id);
+        var h = document.getElementById(id2);
+        if (e.style.display == 'block') {
+            e.style.display = 'none';
+            h.innerHTML = "+";
+        }
+        else {
+            e.style.display = 'block';
+            h.innerHTML = "-";
+        }
+    }
+</script>
+
+
+
+  
+  
+
+      
+
+                </div>
+                <!-- End .postBox -->
+            </div>
+            <!-- end colleft -->
+            <!-- Begin #colRight -->
+            <div id="colRight">
+                <div id="widgetzone_be_WIDGET_ZONE" class="widgetzone"><div class="widget textbox"
+    id="widget1ef27b78-0218-420c-bfda-038163510def">
+<div class="rightBox"><div class="rightBoxTop"></div><div class="rightBoxMid" >    
+        <h2>About CollectedTech</h2>
+    
+<p>Hi. We're building something new. We're ambitious. We're not afraid. It's not the first time that we've launched something completely new, but this time we thought we've opensource our thought process. We expect to make mistakes. Maybe you'll learn something from what we do right and from what we do wrong (we sure hope to).&nbsp;</p>
+<p>We're relatively technology agnostic, but are fluent with .net technology so we usually start there. <strong>Start with what you know</strong>. Technology itself rarely makes the different in a successful startup. We incorporate whatever we can to solve the problem.&nbsp;</p>
+
+</div><div class="rightBoxBottom"></div></div></div>
+
+<div class="widget textbox"
+    id="widget118ed8cc-e154-4b1e-8a77-4b758bd2c316">
+<div class="rightBox"><div class="rightBoxTop"></div><div class="rightBoxMid" >    
+        <h2>The Bloggers</h2>
+    
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/image.axd?picture=/2012/08/James-Bright-Photo.jpg&amp;r=0.7168431032914668" alt="James Bright" /></p>
+<p><strong>James Bright</strong>, techapreneur, is a 18 year veteran of the IT world, and has the battle scars to prove it.&nbsp;</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/image.axd?picture=/2012/08/Christian-Heinzmann-Photo.png&amp;r=0.8974938865285367" alt="Christian Heinzmann" /></p>
+<p><strong>Christian Heinzmann</strong>, (Computer|Beer) Geek Dad.&nbsp;</p>
+
+</div><div class="rightBoxBottom"></div></div></div>
+
+<div class="widget twitter"
+    id="widgetacf1ea5f-062f-4d6c-8d8b-f2f6fd72c9e0">
+<div class="rightBox"><div class="rightBoxTop"></div><div class="rightBoxMid" >    
+        <h2>@CollectedIt on Twitter</h2>
+    
+
+    <img src="/widgets/Twitter/twitter.ico" alt="Twitter" />
+    <span id="widgetContaineracf1ea5f062f4d6c8d8bf2f6fd72c9e0_acf1ea5f062f4d6c8d8bf2f6fd72c9e0_repItems_ctl00_lblDate" style="color:gray">August 16. 23:28</span><br />
+    <span id="widgetContaineracf1ea5f062f4d6c8d8bf2f6fd72c9e0_acf1ea5f062f4d6c8d8bf2f6fd72c9e0_repItems_ctl00_lblItem"> Have a collection of old arcade games that don't work? Fix em and bring back the magic! <a href="http://t.co/Nxn3YcLD" rel="nofollow">http://t.co/Nxn3YcLD</a></span><br /><br />
+  
+    <img src="/widgets/Twitter/twitter.ico" alt="Twitter" />
+    <span id="widgetContaineracf1ea5f062f4d6c8d8bf2f6fd72c9e0_acf1ea5f062f4d6c8d8bf2f6fd72c9e0_repItems_ctl01_lblDate" style="color:gray">August 3. 14:47</span><br />
+    <span id="widgetContaineracf1ea5f062f4d6c8d8bf2f6fd72c9e0_acf1ea5f062f4d6c8d8bf2f6fd72c9e0_repItems_ctl01_lblItem"> More flea market adventures just posted on our blog: <a href="http://t.co/pr4nFLhl" rel="nofollow">http://t.co/pr4nFLhl</a></span><br /><br />
+  
+    <img src="/widgets/Twitter/twitter.ico" alt="Twitter" />
+    <span id="widgetContaineracf1ea5f062f4d6c8d8bf2f6fd72c9e0_acf1ea5f062f4d6c8d8bf2f6fd72c9e0_repItems_ctl02_lblDate" style="color:gray">July 26. 20:27</span><br />
+    <span id="widgetContaineracf1ea5f062f4d6c8d8bf2f6fd72c9e0_acf1ea5f062f4d6c8d8bf2f6fd72c9e0_repItems_ctl02_lblItem"> Hey #collectors how about a nice iPhone app to share your #collectables?
+<a href="http://t.co/m3woxQVz" rel="nofollow">http://t.co/m3woxQVz</a></span><br /><br />
+  
+    <img src="/widgets/Twitter/twitter.ico" alt="Twitter" />
+    <span id="widgetContaineracf1ea5f062f4d6c8d8bf2f6fd72c9e0_acf1ea5f062f4d6c8d8bf2f6fd72c9e0_repItems_ctl03_lblDate" style="color:gray">July 3. 19:25</span><br />
+    <span id="widgetContaineracf1ea5f062f4d6c8d8bf2f6fd72c9e0_acf1ea5f062f4d6c8d8bf2f6fd72c9e0_repItems_ctl03_lblItem"> Listen up! Hollywood is looking for hardcore collectors for a new show being produced called 'Master Collectors' - <a href="http://t.co/Wgf2pFSs" rel="nofollow">http://t.co/Wgf2pFSs</a></span><br /><br />
+  
+    <img src="/widgets/Twitter/twitter.ico" alt="Twitter" />
+    <span id="widgetContaineracf1ea5f062f4d6c8d8bf2f6fd72c9e0_acf1ea5f062f4d6c8d8bf2f6fd72c9e0_repItems_ctl04_lblDate" style="color:gray">June 30. 17:33</span><br />
+    <span id="widgetContaineracf1ea5f062f4d6c8d8bf2f6fd72c9e0_acf1ea5f062f4d6c8d8bf2f6fd72c9e0_repItems_ctl04_lblItem"> Can't wait to see more of this #collection #vintagecomouters <a href="http://t.co/7vUvwG9l" rel="nofollow">http://t.co/7vUvwG9l</a></span><br /><br />
+  
+
+<a id="widgetContaineracf1ea5f062f4d6c8d8bf2f6fd72c9e0_acf1ea5f062f4d6c8d8bf2f6fd72c9e0_hlTwitterAccount" rel="me" href="http://twitter.com/collectedit">Follow @CollectedIt!</a>
+
+</div><div class="rightBoxBottom"></div></div></div>
+
+<div class="widget search"
+    id="widgetfb38ecdd-5813-4d10-8c5f-8d901c7c731e">
+<div class="rightBox"><div class="rightBoxTop"></div><div class="rightBoxMidSearch" style='padding-top:6px'>    
+    
+<div id="searchbox">
+<label for="searchfield" style="display:none">Search</label><input type="text" value="Enter search term or APML url" id="searchfield" onkeypress="if(event.keyCode==13) return BlogEngine.search('/')" onfocus="BlogEngine.searchClear('Enter search term or APML url')" onblur="BlogEngine.searchClear('Enter search term or APML url')" /><input type="button" value="Search" id="searchbutton" onclick="BlogEngine.search('/');" onkeypress="BlogEngine.search('/');" /></div>
+
+
+</div><div class="rightBoxBottom"></div></div></div>
+
+<div class="widget monthlist"
+    id="widgetab2b8c27-02c4-46ab-a78f-28939c2a1a09">
+<div class="rightBox"><div class="rightBoxTop"></div><div class="rightBoxMid" >    
+        <h2>Month List</h2>
+    
+<ul id="monthList">
+	<li class="year" onclick="BlogEngine.toggleMonth(&#39;year2012&#39;)">2012<ul id="year2012" class="open">
+		<li><a href="/2012/08/default.aspx">August</a> (3)</li><li><a href="/2012/09/default.aspx">September</a> (3)</li><li><a href="/2012/11/default.aspx">November</a> (1)</li>
+	</ul></li>
+</ul>
+
+</div><div class="rightBoxBottom"></div></div></div>
+
+<div class="widget newsletter"
+    id="widgeta7d968b2-00e1-49d0-8576-2e54fa2e5e29">
+<div class="rightBox"><div class="rightBoxTop"></div><div class="rightBoxMid" >    
+        <h2>Newsletter</h2>
+    
+
+
+<div id="newsletterform">
+  <p>Get notified when a new post is published.</p>
+
+  <label for="widgetContainera7d968b200e149d085762e54fa2e5e29_a7d968b200e149d085762e54fa2e5e29_txtEmail" style="font-weight:bold">Enter your e-mail</label><br />
+  <input name="widgetContainera7d968b200e149d085762e54fa2e5e29$a7d968b200e149d085762e54fa2e5e29$txtEmail" type="text" id="widgetContainera7d968b200e149d085762e54fa2e5e29_a7d968b200e149d085762e54fa2e5e29_txtEmail" />
+  
+    
+  
+    
+  <div style="text-align:center">
+    <input type="submit" name="widgetContainera7d968b200e149d085762e54fa2e5e29$a7d968b200e149d085762e54fa2e5e29$btnSave" value="Notify me" onclick="return beginAddEmail();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;widgetContainera7d968b200e149d085762e54fa2e5e29$a7d968b200e149d085762e54fa2e5e29$btnSave&quot;, &quot;&quot;, true, &quot;newsletter&quot;, &quot;&quot;, false, false))" id="widgetContainera7d968b200e149d085762e54fa2e5e29_a7d968b200e149d085762e54fa2e5e29_btnSave" />
+  </div>
+</div>
+
+<div id="newsletterthanks" style="display:none;text-align:center">
+  <br /><br />
+  <h2 id="newsletteraction">Thank you</h2>
+  <br /><br />
+</div>
+
+<script type="text/javascript">
+  function beginAddEmail()
+  {
+    if(!Page_ClientValidate('newsletter'))
+      return false;
+      
+    var arg = BlogEngine.$('widgetContainera7d968b200e149d085762e54fa2e5e29_a7d968b200e149d085762e54fa2e5e29_txtEmail').value;
+    var context = 'newsletter';
+    WebForm_DoCallback('widgetContainera7d968b200e149d085762e54fa2e5e29$a7d968b200e149d085762e54fa2e5e29',arg,endAddEmail,context,null,false);
+    
+    return false;
+  }
+  
+  function endAddEmail(arg, context)
+  {
+    BlogEngine.$('newsletterform').style.display = 'none';
+    BlogEngine.$('newsletterthanks').style.display = 'block';
+    if (arg == "false")
+    {
+      BlogEngine.$('newsletteraction').innerHTML = "You are now unsubscribed";
+    }
+  }
+</script>
+
+</div><div class="rightBoxBottom"></div></div></div>
+
+</div>
+            </div>
+            <!-- End #colRight -->
+        </div>
+        <!-- end content -->
+    </div>
+    <!-- end wrapper -->
+    <div id="footer">
+        <div id="footerInner">
+        <div id="widgetzone_be_alltuts_WIDGET_ZONE" class="widgetzone"></div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div id="copyrightInner">
+            &copy; 2012
+            <a href="http://tech.collectedit.com/">CollectedTech</a>. Powered
+            by <a href="http://www.dotnetblogengine.net">BlogEngine.NET</a> 2.6.0.5
+            <div id="site5bottom">
+                Original theme by <a href="http://wordpress.site5.net/alltuts/">
+                    <img id="Img1" src="/themes/AllTuts/images/site5.png" alt="site5.com" /></a>
+                Adapted by <a href="http://pravesh.me">Pravesh Soni</a></div>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    
+  
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAIYBglQArxJzJFvgvVTsxAsKZJ6Dt0Qcz25oxNHHYGwJPCaCc9ZZ9rjohV5xqFlVxNyGAkTE5ii7czcNjnIPLaxwjrbW9usut+ErsA3a43HL3GnYEK704YEg7iwWO8Rx2rmgZmdmEGBChcsNehwoZRBbxfEDXUTpYZm0ELeTi6F1PbqwOBVw/Uqd1sI3dd08HxVdch0Q3Ww3vTvCWJXC3k1eoMlVolstgyQBkSLuLJpJVpgDA0Wcit7Q351GdUD5wPkDhiRYzJE+KEpzSwljOt1t6mD9iGVP+5Bz4yuxe3kOv2pdDHkT5De5kMFMcpMaJSIp4ssYc+e2edSLeF0FgptQ8XgPaeClqxdVRzaGF++q67GctKC2BdOQWPV5CZsHTJ0IizEwun/ZP3bZsno0BRsO2cDfmvDL7CSIrIc06ZCq0OgIkaf6km7fXqp0AAqXnelcLzdVPkZuqtayZ8YCNjk0viv3SxFspSrszhRejM3pmS677ZqCwYn7FqAlbhtLTSMqghSvJoKLuy+s4yqpah4dqXHug8J7twNNnnuCn+clOOgOE7m3rYLjTfkBMXVb6pr8nvIokyn7olV38HnPLveX4M+Z7VLfggOam4BA1fxz5wQAk3U8kYSZU3yX7U+3sJr1lab8y7KOyciDrwK0Z244SzOfmEFhvUnoyGG5hK/Ack55roHhp3NXeeb2/zsEiCADVVw6sMUMJsvns6h46JkwUyEQx2jl9lPvOKvmlQwAkx9DiR04TyVISNJNe42jJdMPWMFxu7gqu75+xq/G1cHFJsgn+3EcAOT3Uk72/RcuznmFB5pc1ZOpPKzwTP9Rqg2gkCTAhYKt0Oq/RIFscM465cYQpO3gRim0lOQYe6Xg0pZxIEWJ/FrGp5sOPppaafS1JcZ67IwFgC0F72ro+dBmT08YjY2NqyMD+islTzgxgQrNNecSF1PJO5PsEvKqzfcaa8vI0A1s/mJBsU2HEipVNiXlzGjPnMv18IUmPf5E3+RKWOi4TJ4FE0DH0/W5MSyXN5PgqlxGY3YY1RNYeVCyGYvgq9zarhXo6MWFgE+bl4ZJWevbP9np3/abrVyk0+ulk3v3aYXdznZReJZ4Cn0XOTsEDDJ1yeYw9UTWi0uN5Z9BXDXT+wH56RDfprs6q765N3Cyoz9+9fUuMFKUx7q9HU9zJhNmhNDE4sIzoBWb7s/0nRiSbPxACmt9+gRKfWNpO+cUO/6Z+45yldd2CmpFG9AvPLpaUqLKXsk2UzwKDteydM4EzeOMSzJaiCHc7C115d92oIal0YRqUOgk4WMkLDACpECQYDix0qjNTOrOA34l0et/drXHyQ7ZHCwaDbkUk+OdLyp6WYslSVJCy6mmAOMoF8WDkzPWzNUftDXJxCxF89PaDeOnnoYSNmmiyaLAZq76l6T0m2x9VVAx2fMkaUQIq3I85PpkT6rhLVbnSjPT3yTamdGzb+3uh+xVWRlOaIOWoG4oAB3sCIDep30zV7RebqNcxXmxQoJvleF5zYsaLMZtWizKKdgucnYKPtWVso7XJ+hOD90/BpCCGLN4ljxKjf/jSfy0fO/v5qrFu9QpMhVTURvVueB7zSjpfTw2SizCb5XllwtI4ULjiW2ow8KvY8uTdXAWcHRpb1YCaLnIzXoTG8lyVIDdTCyFMxVdis96j8NhwK2FwTodkceq45GO9jQXLC/mIBa8v/wTaOFgOEGOHH+Rrv7Png3c/CWcB4yp83+sAwJ0RXuC+ck52h3h8tcD1P3+OQDr2DL4MqSxBCzXvntEy6POX1hWVxtjU9vRQbIU7ZOLQB3DaNhxI4nu12xORhKDkBO6wqWVZz6kg/1FUP58uhVUeiy1kMNFEI0HOOSgZYLbqM0CfQFK8rVpLEYwh1sA1g6/qTlcQruwthOzjxeBNNKpmP/uJU8QzeNaYK+G4VYp/6FZvx6bIBvLNMgdqZtZKlvKxhJ2ZPKBjjwJPNmEQ+ba5053Cl862qfY989b2N7l+P0E72J8iTMU7Emhg9GtmNbZXSdmjY9Q0Nfjt3OEG9pUoB4olLt8JhoceEE3CSbbU+uw/ZXAcX+cV28IiwheU87sC6CT449qsnoHYWCqwFeo7YPQe3o4x3plc9jalgLS6kGTQBCcgD+4yhHxiRaadoXLqsIP27oxkNJTQhF4lY/Bnun2SE5Ao4jXoccavfM3ivyiYfzhJ7zlHIfq0zWhp5NGfmzQoRDfp1jm8WSe6ZjZUObJqH/No4wY7DwsgNRIOLmXBcCH4JEQJlNGFDa8JVLaWxtP15lfNoAv4v8HE8WKDk5FQmotxtN64ETUknSC3gLNkRuAEOIkD6VxiM9M1hVyKup1i301wYLcPcvS1RXXg9tPDlvNV5JjBBbJ+cOceFOWGDgiTMlAMbBzdGDZxhp29lcWflDJjUVO5nhLllvLSL7JuZFRK7ImgRCONqO39tEjispv0abdpuExz1U+4H720EwITkJU1Z5TYHhD3PQEbprPJw85D4Pnfo4khL/ncZbbqh9/ZrXsSjIyuRO06zOZruXDzpz9W2kkniE+4JLuh9FJij/eeQz6fqc5XlQUKk06BdeijaUt964+36IfHzc6L3Snr8+CIDwxSZ07sdloDxNz49+hEC5+S1xQ/T0TEsHFGrJRuz9BlE58FbUFrIiK7WHSMfU0rRaI9xj1i7hWwj3GpZcxEVL3dzCf/vPlRep/RvBEJBWYagbfzO4PEMMFJkJ7ySDXI1CEKrvwrT4sjSAppMSo29O2Oiq7ngsbitXX73LmFUsYv0lKaWVtPXfbCw8RispLDic2wg2Gr2KaMkXjs5wFKs4hZu3NF4aJerKBGQr70ohA0m7GBF3FoZD+APJGEP49bzWN7XdzUUevCwjLHHJh5n2LZw==" />
+</div></form>
+  
+</body>
+</html>

@@ -1,0 +1,1126 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+	<head>
+
+		<title>Shake Shack | Est. 2004</title>
+
+		<!-- Meta Start -->
+		<!-- Language -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="content-Language" content="en-us" />
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Content -->
+		<meta name="Title" content="Shake Shack" />
+		<meta name="Author" content="Shake Shack" />
+		<meta name="Subject" content="Shake Shack">
+		<meta name="Description" content="Shake Shack is a modern day 'roadside' burger stand serving the most delicious burgers, fries, hot dogs, frozen custard, beer, wine and more!">
+		<meta name="Keywords" content="Shake Shack, Shake, Shack, ShackBurger, Frozen Custard, Custard, Concretes, Danny Meyer, Burgers, Hot Dogs, ShackMeister, Ice Cream, Union Square Hospitality Group, USHG, Madison Square Park">
+		<meta name="Revisit-After" content="5 Days">
+		<meta name="Distribution" content="Global">
+		<meta name="Rating" content="General">
+		<meta name="Copyright" content="© Shake Shack 2012">
+
+		<meta property="og:title" content="Shake Shack" />
+		<meta property="og:description" content="Shake Shack is a modern day 'roadside' burger stand serving the most delicious burgers, fries, hot dogs, frozen custard, beer, wine and more!" />
+
+		<!-- URLs -->
+		<base href="http://www.shakeshack.com">
+		<meta http-equiv="Page URL" content="http://www.shakeshack.com/">
+		<meta http-equiv="content-Type" content="Business">
+
+		<!-- Robots -->
+		<meta name="Robots" content="All">
+
+		<!-- Meta End -->
+
+		<!-- Stylesheets -->
+					<link rel="stylesheet" href="http://www.shakeshack.com/wp-content/themes/shakeshack/css/libs/libs.min.css" />
+			<link rel="stylesheet" href="http://www.shakeshack.com/wp-content/themes/shakeshack/css/release/template_home.min.css" />
+		
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="http://www.shakeshack.com/wp-content/themes/shakeshack/js/libs/html5.js"></script>
+			<link rel="stylesheet" href="http://www.shakeshack.com/wp-content/themes/shakeshack/css/stylesheets/ie.css">
+		<![endif]-->
+		<!--[if IE 8]>
+			<link rel="stylesheet" href="http://www.shakeshack.com/wp-content/themes/shakeshack/css/stylesheets/ie8.css">
+		<![endif]-->
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="http://www.shakeshack.com/wp-content/themes/shakeshack/css/stylesheets/ie7.css">
+		<![endif]-->
+		<!--[if gte IE 9]>
+			<style type="text/css">
+				.gradient {
+				   filter: none;
+				}
+			</style>
+		<![endif]-->
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="http://fast.fonts.com/jsapi/e32a88dd-64b2-47c3-a2fd-71786263728a.js"></script>
+
+		<script type="text/javascript">
+			var SHAKE_SHACK_HOME_URL = "http://www.shakeshack.com";
+			var SHAKE_SHACK_THEME_URL = "http://www.shakeshack.com/wp-content/themes/shakeshack";
+			var SHAKE_SHACK_SITE_URL = "http://www.shakeshack.com";
+			var SHAKE_SHACK_CURRENT_URL = "http://www.shakeshack.com/";
+			var SHAKE_SHACK_CAMERA_URL = "http://shakeshack.com/camera.jpg";
+			var SHAKE_SHACK_TEMPLATE_NAME = "template_home";
+			var SHAKE_SHACK_MAP = {};
+			var SHAKE_SHACK_MAP_IMAGE = "http://www.shakeshack.com/wp-content/themes/shakeshack/images/location_map_icon.png";
+			var SHAKE_SHACK_MAP_SHADOW = "http://www.shakeshack.com/wp-content/themes/shakeshack/images/location_map_icon_shadow.png"
+			var MODE = "RELEASE";
+			var is_tablet = false;
+			var is_mobile = false;
+
+			if(	navigator.userAgent.match(/iPad/i) ||
+				navigator.userAgent.match(/1000/i) ||
+				navigator.userAgent.match(/9000/i) ||
+				navigator.userAgent.match(/m180/i) ||
+				navigator.userAgent.match(/t849/i) ||
+				navigator.userAgent.match(/i987/i) ||
+				navigator.userAgent.match(/tablet/i) ||
+				navigator.userAgent.match(/p100/i) ||
+				navigator.userAgent.match(/t849/i) ||
+				navigator.userAgent.match(/i800/i)
+			  )
+			{
+				is_tablet = true;
+			} else if( navigator.userAgent.match(/(opera mini|ipod|iphone|up.browser|up.link |mmp|symbian|smartphone|midp|wap|vodafone|o2|pocket|kindle|mobile|psp|treo|nokia|blackberry|pre\/0.1|android)/i)){
+					is_mobile = true;
+			}
+		</script>
+
+		<script src="http://www.shakeshack.com/wp-content/themes/shakeshack/js/libs/modernizr.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			switch(MODE)
+			{
+				case "DEBUG":
+					//console.log("debug");
+					Modernizr.load([
+						{
+							load: "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
+							complete: function ()
+							{
+								if(!window.jQuery) Modernizr.load(SHAKE_SHACK_THEME_URL + "/js/libs/jquery.min.js");
+							}
+						},
+						{
+														load: [
+								SHAKE_SHACK_THEME_URL + "/js/libs/jquery.jcarousel.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/jquery.jcarousel.control.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/jquery.mobile.customized.min.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/jquery.easing.1.3.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/camera.min.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/jquery.scrollTo-1.4.2-min.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/jquery-ui-1.8.19.custom.min.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/jquery.spritely-0.6.1.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/moment.min.js",
+																SHAKE_SHACK_THEME_URL + "/js/libs/chosen.jquery.min.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/jquery.validate.min.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/jquery.touchwipe.min.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/jquery.popupWindow.js",
+								SHAKE_SHACK_THEME_URL + "/js/libs/jquery.printElement.min.js"
+							],
+							complete: function()
+							{
+
+							}
+						},
+						{
+							load: [
+								SHAKE_SHACK_THEME_URL + "/js/src/debug/media-queries.js",
+								SHAKE_SHACK_THEME_URL + "/js/src/debug/console-ie.js",
+								SHAKE_SHACK_THEME_URL + "/js/src/debug/namespace.js",
+								SHAKE_SHACK_THEME_URL + "/js/src/debug/Core.js",
+								SHAKE_SHACK_THEME_URL + "/js/src/debug/instagram.js",
+								SHAKE_SHACK_THEME_URL + "/js/src/debug/safari3.js",
+																SHAKE_SHACK_THEME_URL + "/js/src/debug/template_home.js"
+							]
+						}
+					]);
+					break
+				case "RELEASE":
+
+					Modernizr.load([
+						{
+							load: "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js",
+							complete: function ()
+							{
+								if(!window.jQuery) Modernizr.load(SHAKE_SHACK_THEME_URL + "/js/libs/jquery.min.js");
+							}
+						},
+						{
+							load: [
+								SHAKE_SHACK_THEME_URL + "/js/libs/libs.min.js"
+							],
+							complete: function()
+							{
+								// bd: foursquare stats aggregate via ajax
+								$(document).ready(function(){
+									// console.log(SHAKE_SHACK_TEMPLATE_NAME);
+									if(SHAKE_SHACK_TEMPLATE_NAME === "template_location" || SHAKE_SHACK_TEMPLATE_NAME === "template_fans") {
+										fs_stats_aggregate("#fs-total-checkins");
+									}
+								});
+							}
+						},
+						{
+							load: [
+								SHAKE_SHACK_THEME_URL + "/js/src/release/core.min.js",
+								SHAKE_SHACK_THEME_URL + "/js/src/release/template_home.min.js"
+							]
+						}
+					]);
+					break
+			}
+		</script>
+
+						<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyApgzzigRz_pGp-L4liMmGH1nQAUquBAtI&sensor=false"></script>
+
+		
+		<!-- disqus vars -->
+		<script>
+			var disqus_developer = 1;
+			var disqus_url = 'http://shakeshack.com/';
+		</script>
+
+		<link rel="alternate" type="application/rss+xml" title="Shake Shack &raquo; Home Comments Feed" href="http://www.shakeshack.com/home/feed/" />
+<link rel='stylesheet' id='instapress-css'  href='http://www.shakeshack.com/wp-content/plugins/instapress/instapress.css' type='text/css' media='all' />
+<link rel='prev' title='Food &amp; Drink' href='http://www.shakeshack.com/food-and-drink/' />
+<link rel='next' title='Stand For Something Good' href='http://www.shakeshack.com/stand-for-something-good/' />
+<link rel='canonical' href='http://www.shakeshack.com/' />
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-19002224-1']);
+		  _gaq.push(['_setDomainName', 'shakeshack.com']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="span1 offset11">
+					<div id="back-to-top">
+						<a href="http://www.shakeshack.com/#"><span>Back to top</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header id="site-header">
+
+			<div id="mobile-header-menu">
+	<div class="mobile-header-menu-header">
+		<div class="container">
+			<div class="nearest-location row">
+				<div class="span10 offset1">
+					<div class="row">
+						<div class="nearest-location-headline span8">Nearest Location:</div>
+						<div class="nearest-location-shack span8">
+							<a href="http://www.shakeshack.com/#" title="Your nearest Shack"></a>
+						</div>
+						<a class="menu-button" style="background-image: url(http://www.shakeshack.com/wp-content/themes/shakeshack/images/Options_Sprite.png)"><span>Open Map</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mobile-header-menu-pages">
+		<ul>
+			<li class="tab-trigger-1"><a href="#page-1">Map</a></li>
+			<!-- <li class="tab-trigger-2"><a href="#page-2">Regions</a></li> -->
+			<li class="tab-trigger-3"><a href="#page-3">Nearby Shacks</a></li>
+		</ul>
+		<div id="page-1" class="page"></div>
+		<!-- <div id="page-2" class="page"></div> -->
+		<div id="page-3" class="page">
+			<ul></ul>
+		</div>
+	</div>
+</div>
+
+			<div id="primary-menu" class="container">
+				<ul class="primary-menu-large"><li class="location-menu"><a href="#">Location & Menu</a></li><li class="fans"><a href="http://www.shakeshack.com/fans/">Fans</a></li><li class="logo"><a href="http://www.shakeshack.com">Shake Shack</a></li><li class="food-and-drink"><a href="http://www.shakeshack.com/food-and-drink/">Food & Drink</a></li><li class="gift-card"><a href="http://www.shakeshack.com/gift-card/">Gift Card</a></li></ul>				<ul class="primary-menu-small"><li class="logo"><a href="http://www.shakeshack.com">Shake Shack</a></li><li class="location-menu"><a href="#">Location & Menu</a></li><li class="fans"><a href="http://www.shakeshack.com/fans/">Fans</a></li><li class="food-and-drink"><a href="http://www.shakeshack.com/food-and-drink/">Food & Drink</a></li><li class="gift-card"><a href="http://www.shakeshack.com/gift-card/">Gift Card</a></li></ul>			</div>
+
+			
+			<nav id="locations-menu" class="">
+				<div class="locations-menu-inner">
+
+					<div id="locations-dropdown-region" class="locations-dropdown">
+						<div id="header-nav-regions-wrapper">
+							<h1>Region</h1>
+							<ul id="header-nav-regions" class="header-nav-dropdown">
+																
+																<li>
+									<a data-open="nav-new-york-2" data-level="level3" href="#" title="New York">
+										<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ny-sprite-seeb5f4157d1.png)">New York</span>
+										<span class="name">New York</span>
+									</a>
+								</li>
+																<li>
+									<a data-open="nav-connecticut" data-level="level3" href="#" title="Connecticut">
+										<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ct-sprite-s4670941825.png)">Connecticut</span>
+										<span class="name">Connecticut</span>
+									</a>
+								</li>
+																<li>
+									<a data-open="nav-florida" data-level="level3" href="#" title="Florida">
+										<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/fl-sprite-s2cda83dd73.png)">Florida</span>
+										<span class="name">Florida</span>
+									</a>
+								</li>
+																<li>
+									<a data-open="nav-washington-d-c" data-level="level3" href="#" title="Washington DC">
+										<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/dc-sprite-s8786dca0ec.png)">Washington DC</span>
+										<span class="name">Washington DC</span>
+									</a>
+								</li>
+																<li>
+									<a data-open="nav-pennsylvania" data-level="level3" href="#" title="Pennsylvania">
+										<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/pa-sprite-sbb633d6776.png)">Pennsylvania</span>
+										<span class="name">Pennsylvania</span>
+									</a>
+								</li>
+								
+																																								<li class="">
+									<a data-open="nav-international" data-level="level2" href="#" title="International">
+										<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/intl-sprite-s724cabacc3.png)">International</span>
+										<span class="name">International</span>
+									</a>
+								</li>
+																							</ul><!-- /header-nav-regions -->
+							<div id="regions-pagination" class="carousel-pagination">
+								<a class="prev" href="#" title="Previous">&laquo;</a>
+								<a class="next" href="#" title="Next">&raquo;</a>
+							</div><!-- /regions-pagination -->
+						</div><!-- /header-nav-regions-wrapper -->
+					</div><!-- /locations-dropdown-region -->
+
+
+					<div id="locations-dropdown-area" class="locations-dropdown">
+						<div id="header-nav-areas-wrapper">
+							<h1>Area</h1>
+							<div id="header-nav-areas" class="header-nav-dropdown">
+																																											<div>
+										<nav id="nav-international" class="areas-nav">
+											<ul>
+																																																<li>
+													<a data-open="nav-middle-east" href="#" title="Middle East">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/intl-sprite-s724cabacc3.png)">Middle East</span>
+														<span class="name">Middle East</span>
+													</a>
+												</li>
+																																																											</ul>
+										</nav>
+									</div>
+																								</div><!-- /header-nav-areas -->
+							<div id="area-pagination" class="carousel-pagination">
+								<a class="prev" href="#" title="Previous">&laquo;</a>
+								<a class="next" href="#" title="Next">&raquo;</a>
+							</div><!-- /areas-pagination -->
+						</div> <!-- /header-nav-areas-wrapper -->
+					</div><!-- /areas-dropdown -->
+
+
+					<div id="locations-dropdown-location" class="locations-dropdown">
+						<div id="header-nav-locations-wrapper">
+							<h1>Locations</h1>
+							<div id="header-nav-locations" class="header-nav-dropdown">
+																	<div>
+										<nav id="nav-new-york-2" class="locations-nav">
+											<ul>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/madison-square-park/" title="Madison Square Park">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ny-msp-s31dcb73eff1.png)">Madison Square Park</span>
+														<span class="name">Madison Square Park</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/upper-east-side/" title="Upper East Side">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ny-ues-s8cab5d5d64.png)">Upper East Side</span>
+														<span class="name">Upper East Side</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/upper-west-side/" title="Upper West Side">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ny-uws-s350370d3ed.png)">Upper West Side</span>
+														<span class="name">Upper West Side</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/battery-park-city/" title="Battery Park City">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ny-bpc.png)">Battery Park City</span>
+														<span class="name">Battery Park City</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/theater-district/" title="Theater District">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ny-td-sac03c4d7d2.png)">Theater District</span>
+														<span class="name">Theater District</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/brooklyn/" title="Brooklyn">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ny-bk-s564f263323.png)">Brooklyn</span>
+														<span class="name">Brooklyn</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/westbury/" title="Westbury">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ny-wby-sf99b596ca0.png)">Westbury</span>
+														<span class="name">Westbury</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/citi-field/" title="Citi Field">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ny-mets.png)">Citi Field</span>
+														<span class="name">Citi Field</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/saratoga-springs/" title="Saratoga Springs">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ny-ssny-sdc965df744.png)">Saratoga Springs</span>
+														<span class="name">Saratoga Springs</span>
+													</a>
+												</li>
+																																			</ul>
+										</nav>
+									</div>
+																	<div>
+										<nav id="nav-connecticut" class="locations-nav">
+											<ul>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/westport/" title="Westport">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ct-wspt-scc5fb256f7.png)">Westport</span>
+														<span class="name">Westport</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/new-haven/" title="New Haven">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/ct-nhv.png)">New Haven</span>
+														<span class="name">New Haven</span>
+													</a>
+												</li>
+																																			</ul>
+										</nav>
+									</div>
+																	<div>
+										<nav id="nav-florida" class="locations-nav">
+											<ul>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/south-beach/" title="South Beach">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/fl-sobe-s77a3f1677d.png)">South Beach</span>
+														<span class="name">South Beach</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/coral-gables/" title="Coral Gables">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/fl-cg.png)">Coral Gables</span>
+														<span class="name">Coral Gables</span>
+													</a>
+												</li>
+																																			</ul>
+										</nav>
+									</div>
+																	<div>
+										<nav id="nav-washington-d-c" class="locations-nav">
+											<ul>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/dupont-circle/" title="Dupont Circle">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/dc-dc-s08f9127f77.png)">Dupont Circle</span>
+														<span class="name">Dupont Circle</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/nationals-park/" title="Nationals Park">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/dc-nats-sbede884da9.png)">Nationals Park</span>
+														<span class="name">Nationals Park</span>
+													</a>
+												</li>
+																																			</ul>
+										</nav>
+									</div>
+																	<div>
+										<nav id="nav-pennsylvania" class="locations-nav">
+											<ul>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/philadelphia/" title="Philadelphia">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/pa-phl-s609d2b1969.png)">Philadelphia</span>
+														<span class="name">Philadelphia</span>
+													</a>
+												</li>
+																																			</ul>
+										</nav>
+									</div>
+																	<div>
+										<nav id="nav-middle-east" class="locations-nav">
+											<ul>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/dubai/" title="Dubai">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/intl-moe.png)">Dubai</span>
+														<span class="name">Dubai</span>
+													</a>
+												</li>
+																																																<li>
+													<a href="http://www.shakeshack.com/location/kuwait-city/" title="Kuwait City">
+														<span class="icon" style="background-image: url(http://www.shakeshack.com/wp-content/uploads/2012/04/intl-aves-saae60ffb56.png)">Kuwait City</span>
+														<span class="name">Kuwait City</span>
+													</a>
+												</li>
+																																			</ul>
+										</nav>
+									</div>
+															</div><!-- /header-nav-locations -->
+							<div id="location-pagination" class="carousel-pagination">
+								<a class="prev" href="#" title="Previous">&laquo;</a>
+								<a class="next" href="#" title="Next">&raquo;</a>
+							</div><!-- /locations-pagination -->
+						</div> <!-- /header-nav-locations-wrapper -->
+					</div><!-- /locations-dropdown -->
+
+
+				</div><!-- /locations-menu-inner -->
+
+				<div id="locations-menu-close-btn" class="container">
+					<a href="#">x</a>
+				</div>
+
+			</nav>
+
+		</header><!-- /header -->
+		
+
+<section id="hero">
+	<div class="slideshow-wrapper">
+		
+
+	<div class="camera_wrap">
+								<div data-src="http://www.shakeshack.com/wp-content/uploads/2012/04/ss_london_hdr.jpg">
+				<div class="meta camera_caption fadeIn camera_effected">
+					<div class="content">
+						<div class="background" style="background-color: black">&nbsp;</div>
+						<div class="headline" style="color: white">Get Ready London, Shake Shack is Coming to Covent Garden Mid-2013!</div>
+						<div class="subhead"><a href="http://www.shakeshack.com/wp-content/uploads/2012/11/shake-shack-london_final.pdf">Click here to get the full scoop</a></div>
+					</div>
+				</div>
+			</div>
+								<div data-src="http://www.shakeshack.com/wp-content/uploads/2012/04/ss_wby_hmpg_hdr-v2.jpg">
+				<div class="meta camera_caption fadeIn camera_effected">
+					<div class="content">
+						<div class="background" style="background-color: black">&nbsp;</div>
+						<div class="headline" style="color: white">Strong Island, Represent!</div>
+						<div class="subhead"><a href="/location/westbury/">The Westbury Shack is Now Open</a></div>
+					</div>
+				</div>
+			</div>
+								<div data-src="http://www.shakeshack.com/wp-content/uploads/2012/04/Home_Header_1.jpg">
+				<div class="meta camera_caption fadeIn camera_effected">
+					<div class="content">
+						<div class="background" style="background-color: black">&nbsp;</div>
+						<div class="headline" style="color: white">Did Somebody Say Burger?</div>
+						<div class="subhead"><a href="/food-and-drink/#burgers">Take Your Pick: Shack, Smoke, or &#039;Shroom</a></div>
+					</div>
+				</div>
+			</div>
+								<div data-src="http://www.shakeshack.com/wp-content/uploads/2012/04/NHV_Header_1.jpg">
+				<div class="meta camera_caption fadeIn camera_effected">
+					<div class="content">
+						<div class="background" style="background-color: black">&nbsp;</div>
+						<div class="headline" style="color: white">Hello, Elm City!</div>
+						<div class="subhead"><a href="/location/new-haven/">New Haven Shake Shack Now Open</a></div>
+					</div>
+				</div>
+			</div>
+								<div data-src="http://www.shakeshack.com/wp-content/uploads/2012/04/Banner_Philly.jpg">
+				<div class="meta camera_caption fadeIn camera_effected">
+					<div class="content">
+						<div class="background" style="background-color: black">&nbsp;</div>
+						<div class="headline" style="color: white">Philadelphia Shake Shack: Spreading Brotherly Love</div>
+						<div class="subhead"><a href="/location/philadelphia/">Rittenhouse Square Is Where It&#039;s At</a></div>
+					</div>
+				</div>
+			</div>
+								<div data-src="http://www.shakeshack.com/wp-content/uploads/2012/04/hmpg_food.jpg">
+				<div class="meta camera_caption fadeIn camera_effected">
+					<div class="content">
+						<div class="background" style="background-color: black">&nbsp;</div>
+						<div class="headline" style="color: white">Now That&#039;s a Beautiful Sight</div>
+						<div class="subhead"><a href="/food-and-drink/">Shack Satisfaction</a></div>
+					</div>
+				</div>
+			</div>
+			</div>
+	</div>
+</section><!-- /hero -->
+
+<section id="main">
+
+	<div class="container">
+		<div class="row">
+			<div class="span10 offset1">
+				<div class="secondary-menu">
+					<ul>
+						<li><a href="http://www.shakeshack.com/#our-story" data-scroll="#our-story">Our Story</a></li>
+						<li><a href="http://www.shakeshack.com/#whats-new" data-scroll="#whats-new">What's New</a></li>
+						<li><a href="http://www.shakeshack.com/gift-card">Gift Card</a></li>
+						<li><a href="http://www.shakeshack.com/#stand-for-something-good" data-scroll="#stand-for-something-good">Stand for something good</a></li>
+						<li><a href="http://www.shakeshack.com/lets-talk-it-out">Let's talk it out</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="our-story" class="container">
+		<div class="row unit">
+			<div class="span10 offset1">
+				<div class="row">
+					<div class="span5 our-story-tout">
+
+						
+<h1 class="image-header comp-text-tout-image-header " style="background-image:url('http://www.shakeshack.com/wp-content/themes/shakeshack/images/section_titles/home_our_story.png');">Our Story</h1>
+
+
+<div class="comp-text-tout  our-story">
+	<div class="content"><p>Shake Shack sprouted from a <strong>hot dog cart</strong> in Madison Square Park in Manhattan created by Danny Meyer&#8217;s Union Square Hospitality Group (USHG) to support the Madison Square Park Conservancy&#8217;s first art installation. The cart was quite the success, with Shack Fans lined up daily for three summers.</p>
+</div>
+		</div>
+
+						<div class="comp-tout left  the-shack-cam">
+			<a href="http://www.shakeshack.com/location/madison-square-park/#shack-cam" title="The Shack Cam" target="_blank">
+	
+					<img class="icon" src="http://www.shakeshack.com/wp-content/uploads/2012/04/tout_shackcam1.png" alt="The Shack Cam">
+						</a>
+		<div class="meta">
+		<h2>The Shack Cam</h2>
+		<div class="content"><p>View the mother ship in action&#8230;</p>
+<p><a href="http://www.shakeshack.com/location/madison-square-park/#shack-cam">Check the line to plan your time</a>!</p>
+</div>
+	</div>
+</div>
+
+						<div class="comp-tout left  where-brooklyn-at">
+			<a href="http://pinterest.com/shakeshack/" title="IN IT TO PIN IT" target="_blank">
+	
+					<img class="icon" src="http://www.shakeshack.com/wp-content/uploads/2012/04/SS_Pinterest_Icon_WEB.jpg" alt="IN IT TO PIN IT">
+						</a>
+		<div class="meta">
+		<h2>IN IT TO PIN IT</h2>
+		<div class="content"><p>Check out what inspires us everyday on <a href="http://pinterest.com/shakeshack/" target="_blank">Pinterest</a>.</p>
+</div>
+	</div>
+</div>
+					</div>
+
+					<div class="span5 origins">
+						<div class="meta">
+							<div class="meta-image">
+								<img src="http://www.shakeshack.com/wp-content/themes/shakeshack/images/home_cart.png" alt="">
+							</div>
+							<div class="meta-content">
+								<p>In 2004, USHG won the bid to open a permanent kiosk in the Park: Shake Shack was born. This modern day “roadside” burger stand serves up the most delicious burgers, hot dogs, frozen custard, shakes, beer, wine and more. An instant neighborhood fixture, Shake Shack welcomed people from all over the city, country and world who gathered together to enjoy fresh, simple, high-quality versions of the classics in a majestic setting.</p>
+<p>The rest, as they say, is <strong>burger history.</strong></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="unit unit-wide tiled-background">
+		<div class="container">
+			<div class="row">
+				<div class="page-carousel span10 offset1">
+	<ul>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/Fries_Carousel1.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/UWS_Carousel_81.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/MSP_Carousel_21.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/HVN_Carousel_71.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/ss_carousel_rev4.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/uws-carousel-3.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/MSP_Carousel_11.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/Gallery_Home_Concrete.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/HVN_Carousel_61.jpg" />
+		</li>
+			</ul>
+	<nav>
+		<a class="prev" href="#" title="Prev" style="background-image: url(http://www.shakeshack.com/wp-content/themes/shakeshack/images/carousel/carousel-s0ac2410bfc.png)">Prev</a>
+		<a class="next" href="#" title="Next" style="background-image: url(http://www.shakeshack.com/wp-content/themes/shakeshack/images/carousel/carousel-s0ac2410bfc.png)">Next</a>
+	</nav>
+</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="whats-new" class="container">
+		<div class="row unit">
+			<div class="span10 offset1">
+				<div class="row">
+					<div class="span10">
+						<h1 class="home-whats-new">What's New</h1>
+					</div>
+
+					<div class="span5" id="news-carousel">
+						<div class="comp-news">
+	<div class="row">
+
+		<div class="span1">
+			<div class="icon news"></div>
+		</div>
+
+		<div class="span4">
+			<div class="meta">
+				<h2>Latest News</h2>
+				<div class="news-events-carousel">
+																							<ul class="row news-events-carousel-list">
+															<li class="span4 news-events-carousel-item">
+									<h3>Miami, The Sequel</h3>
+									<p>July 15th we opened our second <em>Sunshine State</em> Shack in <strong>Coral Gables</strong> just a burger’s throw from the <strong>University of Miami</strong>. With Shake Shack in town it’s gonna be a whole new U! Go ’CANES!</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Did Someone Say Bacon?!!</h3>
+									<p>It’s <strong>SmokeShack</strong> time! Cheeseburger topped with <strong>all-natural applewood smoked bacon</strong>, chopped cherry pepper &amp; ShackSauce. Available at US Shacks only, no ballparks. You’re bacon me crazy!</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Beautiful Beach</h3>
+									<p>Our South Beach Shack loves the beach. That’s why 5% of sales from our Vice Crispy Treat concrete support the <strong><a href="http://ecomb.org/" target="_blank">Environmental Coalition of Miami &amp; the Beaches</a></strong>.</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>School’s Now in Session</h3>
+									<p>The hallowed halls of Yale are now filled with ShackBurgers and frozen custard with Shake Shack taking root in <strong>The Elm City</strong>. Classes in deliciousness began September 13th. Glad to meet ya, <strong>New Haven</strong>!</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Custard for the Soul</h3>
+									<p>Our partnership with <strong>Miami Children’s Hospital Foundation</strong> is moving to our brand new Coral Gables Shack. The Shack team will continue to visit these awesome kids with <strong><a href="http://www.shakeshack.com/2012/07/24/a-scoop-of-custard-helps-the-medicine-go-down-in-coral-gables/" target="_blank">monthly frozen custard socials</a></strong> and smiles.</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Ein Prosit!</h3>
+									<p>From 10/12-10/21, we raised our steins at our annual <strong>Shacktoberfest</strong>. The celebration’s limited time menu, featuring Schaller &amp; Weber brats and shakes in traditional German flavors, had us all saying <strong>“Guten Appetit!”</strong></p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Let the Sun Shine</h3>
+									<p>We&#8217;re in a Long Island State of Mind! Our <strong>very first LI Shack</strong> made its home in Westbury on November 10th. Its <strong>solar panel covered roof</strong> makes this our greenest Shack yet.</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>So Long Sandy, Let’s Rally!</h3>
+									<p>Our guests are truly the best! From 11/4 &#8211; 11/11, the &#8220;Rally Shake&#8221; raised $11,111 for Superstorm Sandy relief efforts at the <a href="http://www.shakeshack.com/wp-content/uploads/2012/11/ss_rally-shake.pdf" target="_blank">American Red Cross</a>.</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Autumn Just Got Sweeter</h3>
+									<p>Our <strong>PUMPKIN PIE, OH MY!</strong> Concrete is back. Until Dec. 2nd, cozy up to Fall with our <strong>vanilla frozen custard blended with a slice of pumpkin pie</strong>. Taste for yourself why this is our most popular concrete, ever!</p>
+								</li>
+													</ul>
+
+										
+					<nav>
+						<a href="#" class="prev jcarousel-prev">Older</a>
+						<a href="#" class="next jcarousel-next">Newer</a>
+					</nav>
+
+					<div class="social-icons ">
+		<div>
+				<div class=" facebook"><a class="link-popup" href="http://www.facebook.com/sharer.php?s= 100&amp;p[title]=Shake+Shack&amp;p[url]=http%3A%2F%2Fwww.shakeshack.com%2F&amp;p[images][0]=http://www.shakeshack.com/wp-content/themes/shakeshack/images/Burger_Image.jpg&amp;p[summary]=Check It: The latest and greatest from Shake Shack...">Facebook</a></div>
+		
+		<div class=" twitter"><a class="link-popup" href="http://twitter.com/home?status=Check It: The latest and greatest from Shake Shack... http%3A%2F%2Fwww.shakeshack.com%2F" target="blank">Twitter</a></div>
+		
+		<div class=" email"><a href="mailto:?subject=Check It: The latest and greatest from Shake Shack...&body=http%3A%2F%2Fwww.shakeshack.com%2F">Email</a></div>
+	</div>
+</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+					</div>
+
+					<div class="span5" id="events-carousel">
+						<div class="comp-news">
+	<div class="row">
+
+		<div class="span1">
+			<div class="icon events"></div>
+		</div>
+
+		<div class="span4">
+			<div class="meta">
+				<h2>Latest Events</h2>
+				<div class="news-events-carousel">
+																							<ul class="row news-events-carousel-list">
+															<li class="span4 news-events-carousel-item">
+									<h3>Bring on the Bash</h3>
+									<p>Shake Shack was proud to take part in <strong><a href="http://nycwff.org/e/blue_moon_burger_bash_presented_by_pat_lafrieda_meats_hosted_by_rachael_ray-12" target="_blank">NYC’s Burger Bash</a></strong> on October 12th, supporting hunger relief. Burger lovers tried our brand-new bacon-topped SmokeShack burger and Pumpkin Pie, Oh My Concrete. As Bash host Rachael Ray would say, “Yum-o!”</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>A Shack-able Feast</h3>
+									<p>We joined top local chefs at <a href="http://www.phillyfeastival.com/">FEASTIVAL </a>to benefit the Philadelphia Live Arts and Philly Fringe. On Sep. 12<sup>th</sup>, we <strong>raised a glass of Shack Red</strong> to all things innovative and daring in the Philly culinary and art world.</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Small Town in the Big Apple</h3>
+									<p>New York City may be big, but Battery Park City locals know<strong> it’s all about the community</strong>. Our BPC Shack provided SHACKwiches (aka tasty frozen custard sandwiched between whoopie pies) alongside neighborhood restaurants at the <strong>BPC Block Party</strong> on Sep. 12th.</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Picking a Fight With Hunger</h3>
+									<p><strong>Top chefs</strong> battled it out to support DC Central Kitchen on Oct. 8<sup>th</sup> at <a href="http://www.capitalfoodfight.org/">Capital Food Fight</a>, hosted by Anthony Bourdain and José Andrés. The DC team were on hand to dish out signature items while the cooking war raged onstage.</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Eat, Drink, and Give to Charity</h3>
+									<p>The Westport Shack were breaking it down alongside celebrity chefs and musicians like Gregg Allman at the <a href="http://greenwichfoodandwine.com/" target="_blank">Greenwich Food + Wine Festival</a> on Oct. 6<sup>th</sup>. All proceeds benefited Paul Newman’s <a href="http://www.holeinthewallgang.org/" target="_blank">The Hole in the Wall Gang Camp</a>. Cheers to that!</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Bow Wow Wow</h3>
+									<p>Our Miami team got down with the dogs at <a href="https://www.facebook.com/media/set/?set=a.10152127475400182.921058.124653650181&amp;type=1" target="_blank">Sit. Stay. Love.</a>, an adoption event held at the local Anthropologie Sept. 17th. Guests met <strong>adorable pups</strong> from the Humane Society, while the dogs met (and devoured) tasty Pooch-inis straight from the Shack.</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>So Good You Can Taste It</h3>
+									<p>The spotlight was on local businesses at <a href="http://thetasteofdc.org/" target="_blank">Taste of DC</a> (10/6) and <strong>Taste of the Beach</strong> in Miami (9/29-9/30). Our Shacks were on hand to serve up signature ShackBurgers and special frozen custard like Maple Bacon Banan-za. <strong>Keepin’ it local!</strong></p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Shack or Treat</h3>
+									<p>Boo! No need to get scared &#8211; it’s just Shackenstein frozen custard and ShackBurgers at the <a href="http://www.miamimetrozoo.com/articles.asp?Id=677" target="_blank">Monster Masquerade</a>. We hit up Zoo Miami for this Halloween fest on 10/19.</p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Go &#8216;Canes!</h3>
+									<p>Football season’s in full swing at UM. We got pumped up with <strong>pregame parties</strong> before Florida State (10/20) and Virginia Tech (11/1). Free U-Malt concretes? <strong>Score!</strong></p>
+								</li>
+															<li class="span4 news-events-carousel-item">
+									<h3>Let’s Get Trivial</h3>
+									<p>Frozen custard: it’s good for the brain! Our BK Shack is scooping Brooklyn Blackout custard at 826NYC’s <a href="http://www.826nyc.org/trivianight/" target="_blank">Trivia Night</a> with John Hodgman on 11/20, benefitting free writing programs for students.</p>
+								</li>
+													</ul>
+
+										
+					<nav>
+						<a href="#" class="prev jcarousel-prev">Older</a>
+						<a href="#" class="next jcarousel-next">Newer</a>
+					</nav>
+
+					<div class="social-icons ">
+		<div>
+				<div class=" facebook"><a class="link-popup" href="http://www.facebook.com/sharer.php?s= 100&amp;p[title]=Shake+Shack&amp;p[url]=http%3A%2F%2Fwww.shakeshack.com%2F&amp;p[images][0]=http://www.shakeshack.com/wp-content/themes/shakeshack/images/Burger_Image.jpg&amp;p[summary]=Scene and Heard">Facebook</a></div>
+		
+		<div class=" twitter"><a class="link-popup" href="http://twitter.com/home?status=Shake Shack: Scene and Heard http%3A%2F%2Fwww.shakeshack.com%2F" target="blank">Twitter</a></div>
+		
+		<div class=" email"><a href="mailto:?subject=Shake Shack: Scene and Heard&body=http%3A%2F%2Fwww.shakeshack.com%2F">Email</a></div>
+	</div>
+</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row unit">
+			<div class="span10 offset1 bordered-span">
+				<div class="row">
+					<div class="span6 offset2">
+						<div class="comp-tout top  custard-calendar">
+			<a href="http://www.shakeshack.com/wp-content/uploads/2012/11/ss_custard-calendar_nov.pdf" title="Custard Calendar" target="_blank">
+	
+					<img class="icon" src="http://www.shakeshack.com/wp-content/uploads/2012/04/tout_custard1.png" alt="Custard Calendar">
+						</a>
+		<div class="meta">
+		<h2>Custard Calendar</h2>
+		<div class="content"><p><a href="http://www.shakeshack.com/wp-content/uploads/2012/11/ss_custard-calendar_nov.pdf" target="_blank">Find out</a> what Custard is being featured today at your Shack!</p>
+</div>
+	</div>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="gift-card" class="container">
+		<div class="row unit">
+			<div class="span10 offset1">
+				<div class="row">
+					<div class="span5">
+						
+<h1 class="image-header comp-text-tout-image-header " style="background-image:url('http://www.shakeshack.com/wp-content/themes/shakeshack/images/GiftCard_SectionTitles/SectionTitle_GiveSomeShack.png');">Give Some Shack!</h1>
+
+
+<div class="comp-text-tout  gift-some-shack">
+	<div class="content"><p>Treat someone special to burgers, fries and frozen custard from the Shack. Whether a Birthday, Holiday, Graduation, Congratulations, Thank You, Bon Voyage, Just Because or Whoops, My Bad – this is one gift that won’t be re-gifted. <strong>Do the right thing.</strong> Gift cards are available at Shake Shack. Or you can easily purchase one right now.</p>
+</div>
+		</div>
+
+						<div class="comp-tout top  give-the-gift-of-shack">
+			<a href="http://www.shakeshack.com/gift-card/" title="Give the&lt;br /&gt;Gift of Shack!">
+	
+					<img class="icon" src="http://www.shakeshack.com/wp-content/uploads/2012/04/tout_giftCard1.png" alt="Give the&lt;br /&gt;Gift of Shack!">
+						</a>
+		<div class="meta">
+		<h2>Give the<br />Gift of Shack!</h2>
+		<div class="content"><p>Treat someone you love to delicious burgers, fries and frozen custard! Consider it the gift that keeps on giving&#8230; <a href="http://www.shakeshack.com/gift-card/">Purchase now</a>.</p>
+</div>
+	</div>
+</div>
+					</div>
+					<div class="span5 food-image scaling-image">
+						<img src="http://www.shakeshack.com/wp-content/themes/shakeshack/images/home_food.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="unit unit-wide tiled-background">
+		<div class="container">
+			<div class="row">
+				<div class="page-carousel span10 offset1">
+	<ul>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/Gallery_N_6.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/Gallery_W_6.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/Gallery_N_10.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/ss_carousel_rev1.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/Gallery_Home_Couple.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/Gallery_BPC1.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/TD_Carousel_3.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/HVN_Carousel_51.jpg" />
+		</li>
+				<li>
+			<img src="http://www.shakeshack.com/wp-content/uploads/2012/04/HVN_Carousel_81.jpg" />
+		</li>
+			</ul>
+	<nav>
+		<a class="prev" href="#" title="Prev" style="background-image: url(http://www.shakeshack.com/wp-content/themes/shakeshack/images/carousel/carousel-s0ac2410bfc.png)">Prev</a>
+		<a class="next" href="#" title="Next" style="background-image: url(http://www.shakeshack.com/wp-content/themes/shakeshack/images/carousel/carousel-s0ac2410bfc.png)">Next</a>
+	</nav>
+</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="stand-for-something-good" class="container">
+		<div class="row unit">
+			<div class="span10 offset1">
+				<div class="row">
+					<div class="span10">
+						<h1 class="home-sfsg image-header">Stand for something good</h1>
+					</div>
+					<div class="span5 scaling-image">
+						<img src="http://www.shakeshack.com/wp-content/themes/shakeshack/images/home_sfsg_illustration.png" alt="">
+					</div>
+					<div class="span5 home-sfsg-content">
+						<p>We are the world! <strong>We love our planet and all its inhabitants.</strong> We&#8217;re working hard to lessen our footprint, and promise to keep pushing to make important new strides. We’re committed to <strong>extending hospitality</strong> beyond the four walls of each Shack into the surrounding community. Thank you for standing with us as we <strong>look to the future.</strong></p>
+<p><a title="Stand For Something Good" href="http://www.shakeshack.com/stand-for-something-good/">See more good</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row unit">
+			<div class="span10 offset1 bordered-span">
+				<div class="row">
+					<div class="span10">
+						<div class="comp-sfsg">
+							<h3>Here's a glimpse of what's going on now:</h3>
+														<ul class="sfsg-icons">
+																										<li class="good-ingredients"><a href="#">Good Ingredients</a></li>
+																										<li class="good-n-green"><a href="#">Good N&#039; Green</a></li>
+																										<li class="good-bones"><a href="#">Good Bones</a></li>
+																										<li class="good-neighbors"><a href="#">Good Neighbors</a></li>
+															</ul>
+
+							<ul class="sfsg-content">
+																										<li class="good-ingredients">
+										<h2>Good Ingredients</h2>
+										<p>100% all-natural Angus beef, vegetarian fed, humanely raised and source verified. No hormones or antibiotics – EVER. We pride ourselves on sourcing incredible ingredients from like-minded artisanal producers.</p>
+									</li>
+																										<li class="good-n-green">
+										<h2>Good N&#039; Green</h2>
+										<p>100% of our electric usage is offset through wind power and Renewable Energy Certificates. Bottles, cardboard, and plastics are recycled. Our cooking oil is reused to produce clean energy and our kitchen food is composted.</p>
+									</li>
+																										<li class="good-bones">
+										<h2>Good Bones</h2>
+										<p>Each Shack is constructed from recycled and sustainable materials. Tabletops sourced from reclaimed bowling alley lanes, walls made of reclaimed antique barn wood siding, booths feature lumber certified by the Forestry Stewardship Council. We use energy efficient kitchen equipment and employ LED lighting throughout.</p>
+									</li>
+																										<li class="good-neighbors">
+										<h2>Good Neighbors</h2>
+										<p>We’re all about our hood! We strive to be the best employers and citizens of each community we call home. Whether partnering with Share Our Strength or working with local charitable organizations to donate 5% of sales of a specific concrete – the Shack is committed to giving back.</p>
+									</li>
+															</ul>
+							<div class="social-icons ">
+		<div>
+				<div class=" facebook"><a class="link-popup" href="http://www.facebook.com/sharer.php?s= 100&amp;p[title]=Shake+Shack&amp;p[url]=http%3A%2F%2Fwww.shakeshack.com%2F&amp;p[images][0]=http://www.shakeshack.com/wp-content/themes/shakeshack/images/Burger_Image.jpg&amp;p[summary]=Shake Shack Stands for Something Good! ">Facebook</a></div>
+		
+		<div class=" twitter"><a class="link-popup" href="http://twitter.com/home?status=Shake Shack Stands for Something Good! http%3A%2F%2Fwww.shakeshack.com%2F" target="blank">Twitter</a></div>
+		
+		<div class=" email"><a href="mailto:?subject=Shake Shack Stands for Something Good!&body=http%3A%2F%2Fwww.shakeshack.com%2F">Email</a></div>
+	</div>
+</div>						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="lets-talk-it-out" class="container">
+		<div class="row unit">
+			<div class="span10 offset1">
+				<div class="row">
+					<div class="span5">
+						
+<h1 class="image-header comp-text-tout-image-header " style="background-image:url('http://www.shakeshack.com/wp-content/themes/shakeshack/images/section_titles/home_talk_it_out.png');">Let's Talk it Out</h1>
+
+
+<div class="comp-text-tout  lets-talk-it-out">
+	<div class="content"><p>Our team eagerly awaits your feedback! Questions, comments, cries of outrage? Fire away, and a real live human being will get back to you. Your observations are invaluable &#8211; thank you for taking the time to share with us. <strong>Inquiring minds want to know!</strong></p>
+</div>
+		</div>
+
+						<div class="no-icon-tout">
+							<h2 class="all-caps green"><a href="http://www.shakeshack.com/lets-talk-it-out/">What's on your mind?</a></h2>
+							<p>We want to hear from you.</p>
+						</div>
+					</div>
+					<div class="span5 custard-image scaling-image">
+						<img src="http://www.shakeshack.com/wp-content/themes/shakeshack/images/home_3concretes.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		</section><!-- /main -->
+
+		<footer id="site-footer">
+			<div class="container">
+				<div class="row unit">
+					<div class="span10 offset1">
+						<div class="row">
+							<div class="span3">
+								<h3>For you</h3>
+								<ul><li><a href="http://www.shakeshack.com/lets-talk-it-out/">Let's Talk It Out</a></li><li><a href="http://www.shakeshack.com/gift-card/">Gift Card</a></li><li><a href="http://www.shakeshack.com/fans#join-our-mailing-list">Join the Mailing List</a></li><li><a href="http://www.shakeshack.com/2012/01/01/custard-calendar/">Custard Calendar</a></li></ul>							</div>
+							<div class="span3 offset1">
+								<h3>Shake Shack</h3>
+								<ul><li><a href="http://www.shakeshack.com/stand-for-something-good/">Stand For Something Good</a></li><li><a href="http://www.shakeshack.com/join-our-team/">Join Our Team</a></li><li><a href="http://www.shakeshack.com/contact/">Contact</a></li><li><a href="http://ushgnyc.com/">USHG</a></li><li><a href="http://www.shakeshack.com/press/">Press</a></li><li><a href="http://www.shakeshack.com/contact/#fundraising">Request Donations</a></li></ul>							</div>
+							<div class="span2 offset1">
+								<h3>Social</h3>
+								<ul><li><a href="http://www.facebook.com/shakeshack" target="blank">Facebook: Like Us</a></li><li><a href="http://twitter.com/shakeshack" target="blank">Twitter: Follow Us</a></li><li><a href="https://foursquare.com/search?q=shakeshack" target="blank">Foursquare: Check-In</a></li><li><a href="http://instagram.com/shakeshack" target="blank">Instagram: Snap a Pic</a></li><li><a href="http://pinterest.com/shakeshack/" target="blank">Pinterest: Pin It</a></li></ul>							</div>
+						</div>
+						<div class="row links-row">
+							<div class="span3">
+								<div class="social-icons ">
+							<h4>Sharing is caring!</h4>
+				<div>
+				<div class="footer facebook"><a class="link-popup" href="http://www.facebook.com/sharer.php?s= 100&amp;p[title]=Shake Shack&amp;p[url]=http%3A%2F%2Fwww.shakeshack.com&amp;p[images][0]=http://www.shakeshack.com/wp-content/themes/shakeshack/images/Burger_Image.jpg&amp;p[summary]=Shake Shack's got a pretty new website for you!">Facebook</a></div>
+		
+		<div class="footer twitter"><a class="link-popup" href="http://twitter.com/home?status=Shake Shack's got a pretty new website for you! http%3A%2F%2Fwww.shakeshack.com" target="blank">Twitter</a></div>
+		
+		<div class="footer email"><a href="mailto:?subject=Shake Shack's got a pretty new website for you!&body=http%3A%2F%2Fwww.shakeshack.com">Email</a></div>
+	</div>
+</div>							</div>
+							<div class="span4 footer-logo">
+								<p><a href=""><img src="http://www.shakeshack.com/wp-content/themes/shakeshack/images/shakeshack_logo_footer.png" alt=""></a></p>
+								<h4>&copy;2012 Shake Shack. All rights reserved.</h4>
+								<h4>Some information on this site may vary slightly by location and in stadiums, event venues and international Shacks.</h4>
+							</div>
+							<div class="span1 offset2 fb-like-button">
+								<div class="fb-like" data-href="http://www.facebook.com/shakeshack" data-send="false" data-layout="box_count" data-width="40" data-show-faces="false"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- /site-footer -->
+
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=159561884171042";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+
+		    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'shakeshack';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+
+	</body>
+</html>
+
+<!-- Dynamic page generated in 0.429 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2012-11-21 09:47:41 -->
+<!-- super cache -->

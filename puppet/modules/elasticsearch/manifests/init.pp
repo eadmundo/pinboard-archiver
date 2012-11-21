@@ -1,6 +1,6 @@
 class elasticsearch {
 
-  $version = '0.19.11'
+  $version = '0.20.0.RC1'
   $java_package = 'default-jdk'
   $download = "http://cloud.github.com/downloads/elasticsearch/elasticsearch/elasticsearch-${version}.tar.gz"
 
@@ -102,6 +102,17 @@ class elasticsearch {
     enable   => true,
     provider => upstart,
     require => File["/etc/init/elasticsearch.conf"],
+  }
+
+  file { '/tmp/bookmarks-index-settings.json':
+    ensure => present,
+    content => template('elasticsearch/bookmarks-index-settings.json'),
+  }
+
+  exec { 'bookmarks-index':
+    command => "/usr/bin/curl -XPUT http://localhost:9200/bookmarks/ -d @bookmarks-index-settings.json",
+    cwd => '/tmp',
+    require => [Service[elasticsearch], Package[curl], File['/tmp/bookmarks-index-settings.json']],
   }
 
 }

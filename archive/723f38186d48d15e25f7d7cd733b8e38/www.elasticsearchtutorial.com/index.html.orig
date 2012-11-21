@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Welcome to ElasticSearch Tutorial.com - ElasticSearch Tutorial.com</title>
+<link rel="stylesheet" href="http://www.elasticsearchtutorial.com/css/reset.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="http://www.elasticsearchtutorial.com/css/style.css" type="text/css" media="screen"/>
+<!--[if IE]><link rel="stylesheet" href="http://www.elasticsearchtutorial.com/css/ie.css" type="text/css" media="screen" /><![endif]-->
+<link rel="stylesheet" href="http://www.elasticsearchtutorial.com/inc/geshi.css" type="text/css" media="screen"/>
+<script src="http://www.elasticsearchtutorial.com/js/jquery-1.4.2.min.js"></script>
+<script src="http://www.elasticsearchtutorial.com/js/menu.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="logo">
+<h1><a href="/index.html">ElasticSearch Tutorial.com</a></h1>
+</div>
+</div>
+<div id="content">
+<h1 id="home-title">Discover the ElasticSearch search engine</h1>
+<h2>First-time Visitors</h2>
+<p>If this is your first-time here, go straight to the <a href="elasticsearch-in-5-minutes.html">5 minute introduction to ElasticSearch</a>.</p>
+<p><a href="http://www.elasticsearch.org/">ElasticSearch</a> is an Open Source (Apache 2), Distributed Search Engine built on top of Apache Lucene. It allows you to start with one machine and scale to hundreds, and supports distributed search deployed over Amazon EC2's cloud hosting.</p>
+<hr/>
+<!--
+<h2>What's New</h2>
+<p><b>Oct 1 2011</b> - Redesigned the site, and incorporated the Disqus commenting system.</p>
+<hr/>
+-->
+<h2>Popular books related to ElasticSearch and information retrieval</h2>
+<table border="0" cellpadding="0">
+<tr><td>
+<a href="http://www.amazon.com/gp/product/1933988177?ie=UTF8&&tag=readingrex-20&&linkCode=as2&&camp=1789&&creative=9325&&creativeASIN=1933988177"><img border="0" src="http://www.elasticsearchtutorial.com/images/41GceIHrd4L._SL160_.jpg"></a><img src="http://www.assoc-amazon.com/e/ir?t=readingrex-20&&l=as2&&o=1&&a=1932394281" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/><div style="width:150px">&nbsp;</div>
+</td>
+<td><a href="http://www.amazon.com/gp/product/1849516065?ie=UTF8&&tag=readingrex-20&&linkCode=as2&&camp=1789&&creative=9325&&creativeASIN=1847195881"><img border="0" src="http://www.elasticsearchtutorial.com/images/51xNpWot9QL._SL160_.jpg"></a><img src="http://www.assoc-amazon.com/e/ir?t=readingrex-20&&l=as2&&o=1&&a=1847195881" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/><div style="width:170px">&nbsp;</div>
+</td>
+<td><a href="http://www.amazon.com/gp/product/1849512183?ie=UTF8&&tag=readingrex-20&&linkCode=as2&&camp=1789&&creative=9325&&creativeASIN=1849512183"><img border="0" src="http://www.elasticsearchtutorial.com/images/51P8NaL20-L._SL160_.jpg"></a><img src="http://www.assoc-amazon.com/e/ir?t=readingrex-20&&l=as2&&o=1&&a=1849512183" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/><div style="width:150px">&nbsp;</div>
+</td>
+<td><a href="http://www.amazon.com/gp/product/0521865719?ie=UTF8&&tag=readingrex-20&&linkCode=as2&&camp=1789&&creative=9325&&creativeASIN=0521865719"><img border="0" src="http://www.elasticsearchtutorial.com/images/41xVx99-4yL._SL160_.jpg"></a><img src="http://www.assoc-amazon.com/e/ir?t=readingrex-20&&l=as2&&o=1&&a=0521865719" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/><div style="width:150px">&nbsp;</div>
+</td>
+</tr><tr>
+<td valign="top"><a href="http://www.amazon.com/gp/product/1933988665?ie=UTF8&&tag=readingrex-20&&linkCode=as2&&camp=1789&&creative=9325&&creativeASIN=1933988665"><img border="0" src="http://www.elasticsearchtutorial.com/images/51EEz05N2HL._SL160_.jpg"></a><img src="http://www.assoc-amazon.com/e/ir?t=readingrex-20&&l=as2&&o=1&&a=1933988665" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
+</td>
+<td valign="top"><a href="http://www.amazon.com/gp/product/0615204252?ie=UTF8&&tag=readingrex-20&&linkCode=as2&&camp=1789&&creative=9325&&creativeASIN=0615204252"><img border="0" src="http://www.elasticsearchtutorial.com/images/41XoWcMPd6L._SL160_.jpg"></a><img src="http://www.assoc-amazon.com/e/ir?t=readingrex-20&&l=as2&&o=1&&a=0615204252" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
+</td>
+<td valign="top"><a href="http://www.amazon.com/gp/product/1449388345/ref=as_li_tf_il?ie=UTF8&tag=readingrex-20&linkCode=as2&camp=217145&creative=399369&creativeASIN=1449388345"><img border="0" src="http://www.elasticsearchtutorial.com/images/51jLcpv9N5L._SL160_.jpg"></a><img src="http://www.assoc-amazon.com/e/ir?t=readingrex-20&l=as2&o=1&a=1449388345&camp=217145&creative=399369" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
+</td>
+<!--
+<td valign="top"><a href="http://www.amazon.com/gp/product/0521113792/ref=as_li_tf_il?ie=UTF8&tag=readingrex-20&linkCode=as2&camp=217145&creative=399369&creativeASIN=0521113792"><img border="0" src="http://www.elasticsearchtutorial.com/images/41B3NWzzgDL._SL160_.jpg" ></a><img src="http://www.assoc-amazon.com/e/ir?t=readingrex-20&l=as2&o=1&a=0521113792&camp=217145&creative=399369" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+</td>
+-->
+<td><a href="http://www.amazon.com/gp/product/0596529325?ie=UTF8&&tag=readingrex-20&&linkCode=as2&&camp=1789&&creative=9325&&creativeASIN=0596529325"><img border="0" src="http://www.elasticsearchtutorial.com/images/51pZYWZFkZL._SL160_.jpg"></a><img src="http://www.assoc-amazon.com/e/ir?t=readingrex-20&&l=as2&&o=1&&a=0596529325" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"/>
+</td>
+</tr>
+</table>
+</div>
+<div id="sidebar">
+<div class="block">
+<h3>Getting Started</h3>
+<ul class="menu noaccordion">
+<li>
+<a href="http://www.elasticsearchtutorial.com/index.html">Home</a>
+</li>
+<li>
+<a href="http://www.elasticsearchtutorial.com/elasticsearch-in-5-minutes.html">ElasticSearch in 5 Minutes</a>
+</li>
+<li>
+<a href="http://www.elasticsearchtutorial.com/basic-elasticsearch-concepts.html">Basic Concepts</a>
+</li>
+<li>
+<a href="http://www.elasticsearchtutorial.com/elasticsearch-vs-solr.html">Solr vs ElasticSearch</a>
+</li>
+</ul>
+<h3>Misc</h3>
+<ul class="menu noaccordion">
+<li>
+<a href="http://supermind.org/bio.html">About Me</a>
+</li>
+<li>
+<a href="#">Services</a>
+<ul class="noacitem">
+<li>
+<a href="http://supermind.org/lucene-consultant.html">- Lucene Consulting</a>
+</li>
+<li>
+<a href="http://supermind.org/solr-consultant.html">- Solr Consulting</a>
+</li>
+<li>
+<a href="http://supermind.org/elastic-search-consultant.html">- ElasticSearch Consulting</a>
+</li>
+<li>
+<a href="http://verticalsearchcrawler.com/">- Vertical Search Crawler</a>
+</li>
+<li>
+<a href="http://supermind.org/custom-crawler-development.html">- Custom Crawl Services</a>
+</li></ul>
+</li>
+</ul>
+<h3>Siblings</h3>
+<ul class="menu noaccordion">
+<li>
+<a href="http://www.lucenetutorial.com">LuceneTutorial.com</a>
+</li>
+<li>
+<a href="http://www.solrtutorial.com">SolrTutorial.com</a>
+</li>
+</ul>
+<!--
+      <h3>Sponsored Links</h3>
+      -->
+</div>
+</div>
+<div id="footer">
+<p>&copy; Copyright 2012 <a href="http://www.supermind.org/">Kelvin Tan - Lucene Solr Elastic Search consultant</a><br/>Sponsored by <a href="http://verticalsearchcrawler.com/">Flexile Vertical Search Crawler</a></p>
+</div>
+</div>
+<script type="text/javascript">var name='info';var mail=name+"@"+"supermind.org";function getEmailAddressAnchor(){return"mailto:"+mail;}
+function getEmailAddressOnClick(){return"_gaq.push(['_trackPageview', '/contact'])";}
+function getEmailAddress(){return"<a href="+getEmailAddressAnchor()+" onClick=\""+getEmailAddressOnClick()+"\">"+mail+"</a>";}
+function getEmailAddressNamed(link){return"<a href="+getEmailAddressAnchor()+" onClick=\""+getEmailAddressOnClick()+"\">"+link+"</a>";}
+function printEmailAddress(){document.write(getEmailAddress());}
+$(document).ready(function(){var url=window.location.href;$('#menu li a').each(function(e){if(url.indexOf($(this).attr('href'))>-1){$(this).parent().addClass('selected');};});});</script>
+<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-29605120-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/link-enhancer?tag=readingrex-20&&o=1"></script>
+<noscript>
+<img src="http://www.assoc-amazon.com/s/noscript?tag=readingrex-20" alt=""/>
+</noscript>
+</body>
+</html>

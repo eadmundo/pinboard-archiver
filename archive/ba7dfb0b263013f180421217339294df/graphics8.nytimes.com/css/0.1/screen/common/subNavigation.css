@@ -1,0 +1,137 @@
+/*$Id: subNavigation.css 19182 2009-05-17 22:53:30Z jguinto $
+/css/0.1/screen/common/subNavigation.css 
+(c)2006 - 2008 The New York Times Company */
+
+.navigation ul li.selected { 
+	border-bottom: none;
+	padding: 7px 0 0; 
+}
+
+.subNavigation:after  {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+	
+.subNavigation { 
+	border-width: 0 0 1px 0;
+	padding: 10px; 
+}
+
+.subNavigation .inlineSearchControl .text {
+	margin-right: 3px;
+}
+
+.subNavigation .inlineSearchControl {
+  float:left;
+}
+
+/* columns */
+
+.subNavigation .column { 
+	border-right: 1px solid #ccc;
+	height: 38px;
+	margin-right: 0; 
+	min-height: 38px;
+} 
+
+.subNavigation div.last,
+.subNavigation .lastColumn { 
+	border-right: none;
+	margin-right: 0;
+}
+
+.subNavigation .columnGroup { 
+	margin-bottom: 0; 
+	margin-left: 10px; 
+	margin-right: 10px;
+	}
+	
+.subNavigation .first .columnGroup,
+.subNavigation .firstColumn .columnGroup { 
+	margin-left: 0px;
+}
+
+.subNavigation .last .columnGroup,
+.subNavigation .lastColumn .columnGroup { 
+	margin-right: 0px; 
+}
+
+/* headings */
+
+.subNavigation label, 
+.subNavigation h5 { 
+	font-size: 1.4em; /* 14px */
+}
+
+.subNavigation label {
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.subNavigation h5 {
+	font-family: arial, helvetica, sans-serif; 	
+	margin-bottom: 5px;
+}
+
+.subNavigation h5 a,
+.subNavigation h5 a:visited { 
+	color: #000;
+}
+
+/* unordered lists */
+
+.subNavigation ul li { 
+	background: none; 
+	border-left: 1px solid #ccc;
+	float: left; 
+	font-family: arial, helvetica, sans-serif; 
+	font-size: 1.1em; /* 11px */
+	padding: 0 8px; 
+}
+
+.subNavigation ul li.first,
+.subNavigation ul li.firstItem { 
+	padding: 0 8px 0 0; 
+	border-left: none; 
+}
+
+.subNavigation ul li.last,
+.subNavigation ul li.lastItem { 
+	padding: 0 0 0 8px;
+}
+
+.subNavigation ul li.selected {
+	color: #333;
+}
+
+.subNavigation ul li a,
+.subNavigation ul li.selected { 
+	font-weight: bold; 
+}
+
+/* query suggestions autocomplete */
+
+.subNavigation .querySuggestions {
+  	background-color: #fff;
+	border: 1px solid #ccc;
+  	overflow: hidden; 
+}
+
+.subNavigation .inlineSearchControl .querySuggestions * {
+  	vertical-align: bottom;
+}
+
+.subNavigation .querySuggestions ul li {	
+  	border: 0;
+  	color: #000;
+  	float: none;
+}
+
+.subNavigation .querySuggestions ul li.selected {
+  	background-color: #eee;
+  	color: #000;
+  	font-weight: normal;
+}

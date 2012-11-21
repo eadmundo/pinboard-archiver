@@ -1,0 +1,63 @@
+function google_ad_request_done(google_ads) {
+	/*
+	* This function is required and is used to display
+	* the ads that are returned from the JavaScript
+	* request. You should modify the document.write
+	* commands so that the HTML they write out fits
+	* with your desired ad layout.
+	*/
+	var s = '';
+	var i;
+
+	/*
+	* Verify that there are actually ads to display.
+	*/
+	if (google_ads.length == 0) {
+		return;
+	}
+
+	/*
+	* If an image or flash ad is returned, display that ad.
+	* Otherwise, build a string containing all of the ads and
+	* then use a document.write() command to print that string.
+	*/
+
+	if (google_ads[0].type == "flash") {
+
+        s += '<a href="http://www.wired.com/js/ads/'&#32;+&#32;google_info.feedback_url&#32;+&#32;'" style="color:#000">Ads by Google</a><br /><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="' + google_ad.image_width + '" height="' + google_ad.image_height + '"> <param name="movie" value="' + google_ad.image_url + '" /><param name="quality" value="high" /><param name="AllowScriptAccess" value="never" /><embed src="http://www.wired.com/js/ads/'&#32;+&#32;google_ad.image_url&#32;+&#32;'" width="' + google_ad.image_width + '" height="' + google_ad.image_height + '" type="application/x-shockwave-flash" AllowScriptAccess="never" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed></object>';
+
+	} else if (google_ads[0].type == "image") {
+
+		s += '<a href="http://www.wired.com/js/ads/'&#32;+&#32;google_info.feedback_url&#32;+&#32;'" style="color:#000">Ads by Google</a><br /><a href="http://www.wired.com/js/ads/'&#32;+&#32;google_ads[0].url&#32;+&#32;'" target="_top" title="go to ' +	google_ads[0].visible_url + '"><img border="0" src="http://www.wired.com/js/ads/'&#32;+&#32;google_ads[0].image_url&#32;+&#32;'" width="' + google_ads[0].image_width + '" height="' + google_ads[0].image_height + '" /></a>';
+
+	} else if (google_ads[0].type == "html") {
+
+	    s += google_ads[0].snippet;
+
+	} else if (google_ads.length >= 1) {
+
+	  /*
+	  * For text ads, append each ad to the string.
+	  */
+
+		for(i = 0; i < google_ads.length; ++i) {
+
+			s += '<a style="text-decoration:none" href="http://www.wired.com/js/ads/'&#32;+	google_ads[i].url&#32;+&#32;'"><span><b>' + google_ads[i].line1 + '</b></span></a><br /><span class="ad_text">' + google_ads[i].line2 + ' ' + google_ads[i].line3 + '</span> - <span><a style="color:#000;text-decoration:underline;font-size: 1em;" href="http://www.wired.com/js/ads/'&#32;+	google_ads[i].url&#32;+&#32;'">' + google_ads[i].visible_url + '</a></span><br /><br />';
+		}
+		s += '<a href="http://www.wired.com/js/ads/'&#32;+&#32;google_info.feedback_url&#32;+&#32;'" class="ads_by_google">Ads by Google</a>';
+	}
+    document.write(s);
+    return;
+}
+
+google_ad_client = "pub-9817987453265044";
+/* Wired 300x250 FIXED, created 6/5/08 */
+google_ad_slot = "3569583265";
+google_ad_width = 300;
+google_ad_height = 250;
+/* params for customization added 8/31 */
+google_ad_output = "js";
+google_ad_type = "text/html";
+google_feedback = "on";
+google_language = "en";
+google_max_num_ads = 4;

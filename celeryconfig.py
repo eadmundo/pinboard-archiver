@@ -9,12 +9,12 @@ CELERY_TASK_RESULT_EXPIRES = 3600
 
 from datetime import timedelta
 
-CELERYBEAT_SCHEDULE = {
-    'check-pinboard-update': {
-        'task': 'tasks.posts_update',
-        'schedule': timedelta(seconds=15),
-        #'args': (16, 16)
-    },
-}
+#CELERYBEAT_SCHEDULE = {
+#    'check-pinboard-update': {
+#        'task': 'tasks.posts_update',
+#        'schedule': timedelta(minutes=60),
+#        #'args': (16, 16)
+#    },
+#}
 
 CELERY_TIMEZONE = 'UTC'

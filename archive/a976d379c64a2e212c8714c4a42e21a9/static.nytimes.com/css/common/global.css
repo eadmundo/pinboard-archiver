@@ -1,0 +1,69 @@
+/*
+$Id: global.css 103282 2012-07-11 16:21:29Z konige $
+(c)2006 - 2007 The New York Times Company 
+*/
+
+
+body {
+	background-color: white;
+	font: small Georgia, serif;
+	}
+
+@media print {
+		body { 
+			background-image: url(http://wt.o.nytimes.com/dcsym57yw10000s1s8g0boozt_9t1x/dcs.gif?dcsuri=print.html&dcsdat=1068453281752&WT.ti=Print-Tracker&WT.z_dcsm=1); 
+			}
+	}
+
+html>body {
+	font: 84.5% Georgia, serif;
+	}
+
+h1, h2, h3, h4, h5 {
+	color: black;
+	}
+
+a {
+	color: #004276;
+	text-decoration: none;
+	}
+
+a:hover {
+	text-decoration: underline;
+	}
+
+a:visited {
+	color: #666699;
+	}
+
+img {
+	border: none;
+	text-decoration: none;
+	}
+
+form {
+	padding: 0px;
+	width: 0px;
+	display: inline;
+	}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+	
+ol {
+	margin: 0;
+	padding: 0;
+	}
+	
+li {
+	margin: 0;
+	padding: 0;
+	}
+	
+#nagBar {
+	display: none;
+	}
+

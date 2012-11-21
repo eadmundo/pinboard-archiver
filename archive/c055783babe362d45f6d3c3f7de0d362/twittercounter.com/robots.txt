@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /amcharts*
+Disallow: /tweet/*
+Disallow: */affl/*
+Disallow: /remote/*
+Disallow: /counter/*
+Disallow: /embed/*
+Disallow: *?btest*
+Allow: /
+
+# Sitemap files
+Sitemap: http://twittercounter.com/sitemap_index.xml

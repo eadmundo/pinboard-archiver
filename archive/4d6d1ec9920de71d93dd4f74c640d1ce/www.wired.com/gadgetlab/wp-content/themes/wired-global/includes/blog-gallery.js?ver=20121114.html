@@ -1,0 +1,139 @@
+/* Slideshow ******************************************************************/
+
+function initializeGallery( parentContainer ) {
+
+    loadFirstSlide( parentContainer );
+
+    // Set up the thumbnail events
+    jQuery(parentContainer + ' .gallery-thumbnails').find('a').live('click', function(event) {
+        event.preventDefault();
+
+        var currentid = jQuery(this).attr('href');
+        showNewSlide( parentContainer, currentid );
+    });
+
+    // Set up the slide button events
+    jQuery(parentContainer + ' .gallery-navigation').find('a').live('click', function(event) {
+        event.preventDefault();
+
+        var currentid = jQuery(this).attr('href');
+        showNewSlide( parentContainer, currentid );
+    });
+
+    // Show the slide buttons on mouseover
+    jQuery(parentContainer + ' .gallery-slide').live('mouseenter', function(event) {
+        jQuery(this).find('.gallery-navigation').show();
+
+    }).live('mouseexit', function(event) {
+        jQuery(this).find('.gallery-navigation').hide();
+
+    });
+
+    // Carousel Buttons - Moves the carousel but does not change the slide
+    jQuery(parentContainer + ' .thumbnails-next a').bind('click', function(event) {
+        event.preventDefault();
+
+        // display the thumbnail for the image after the currently selected one
+        //var nextid = jQuery(parentContainer + ' .gallery-thumbnails').find('li.selected').next().find('a').attr('href');
+
+        // Pop the first child off the list and add it to the end
+        var $thumbnailsList = jQuery(parentContainer + ' .gallery-thumbnails').children('li');
+        $thumbnailsList.first().clone().appendTo( $thumbnailsList.parent() );
+        $thumbnailsList.first().remove();
+
+        //console.info(nextid);
+        //showNewSlide( parentContainer, nextid );
+    });
+
+    jQuery(parentContainer + ' .thumbnails-previous a').bind('click', function(event) {
+        event.preventDefault();
+
+        // Pop the last child off the list and add it to the start
+        var $thumbnailsList = jQuery(parentContainer + ' .gallery-thumbnails').children('li');
+        $thumbnailsList.last().clone().prependTo( $thumbnailsList.parent() );
+        $thumbnailsList.last().remove();
+
+        // display the thumbnail for the image before the currently selected one
+        //var previousid = jQuery(parentContainer + ' .gallery-thumbnails').find('li.selected').prev().find('a').attr('href');
+
+        //showNewSlide( parentContainer, previousid );
+    });
+}
+
+function loadFirstSlide( parentContainer ) {
+    var currentid = window.location.hash;
+    currentid = currentid.replace('slideid-', 'slide-');
+
+    if ( CN.url.params('pid') != '' ) {
+        // First, check if we've got a legacy ?pid=1234 slide id in the querystring and convert that
+        showNewSlide( parentContainer, '#slide-'+CN.url.params('pid') );
+
+    } else if ( currentid.indexOf('slide-') !== -1 ) {
+        // Next, check if there is a hashtag and show that slide first if there is
+        showNewSlide( parentContainer, currentid );
+
+    } else {
+        // Finally, start with all the slides hidden except the first
+        // This is also handled in CSS for no-js browsers
+        jQuery(parentContainer + ' .gallery-slides li.slide-first').addClass('selected').show();
+        jQuery(parentContainer + ' .gallery-thumbnails li.thumb-first').addClass('selected').show();
+    }
+}
+
+function showNewSlide( parentContainer, slideid ) {
+    //console.info(slideid);
+
+    if ( slideid.indexOf('slide-') === -1 ) {
+        slideid = jQuery(parentContainer + '.gallery-slides li.slide-first a').attr('href');
+        console.info('Error');
+    }
+
+    var $slideshow = jQuery( slideid ).parentsUntil('.gallery-overview').parent();
+    $slideshow.find('.gallery-thumbnails').find('li').removeClass('selected');
+    $slideshow.find('.gallery-slide').hide().find('li').removeClass('selected');
+
+    jQuery(slideid.replace('slide-', 'thumb-')).addClass('selected');
+    jQuery(slideid).fadeIn('fast').addClass('selected');
+    //jQuery(slideid).show().addClass('selected');
+
+    // Add the hash to the url so we can link to individual slides
+    // change the name so it doesn't directly match a DOM element so the page won't scroll
+    window.location.hash = slideid.replace('slide-', 'slideid-');
+
+    // refresh the ads
+    CN.dart.refresh();
+
+    // Trigger the click with omniture
+    makeOmnitureCalls( slideid );
+}
+
+function makeOmnitureCalls( slideid ) {
+    // This is the actual call to update omniture.
+    s.t();
+}
+
+/* Transitions */
+
+function HorizontalSlideAnimation(img_container, direction, desc, desc_container) {
+    var current_left = parseInt(img_container.css('left'), 10);
+    if(direction == 'left') {
+        var old_image_left = '-'+ this.image_wrapper_width +'px';
+        img_container.css('left',this.image_wrapper_width +'px');
+    } else {
+        var old_image_left = this.image_wrapper_width +'px';
+        img_container.css('left','-'+ this.image_wrapper_width +'px');
+    };
+    if(direction == 'left') {
+        var old_desc_left = '-'+ img_container.width() +'px';
+        desc_container.css('left',img_container.width() +'px');
+    } else {
+        var old_desc_left = img_container.width() +'px';
+        desc_container.css('left','-'+ img_container.width() +'px');
+    };
+    return {
+        old_image: {left: old_image_left},
+        new_image: {left: current_left},
+        old_description: {left: old_desc_left},
+        new_description: {left: '0px'}
+    };
+};

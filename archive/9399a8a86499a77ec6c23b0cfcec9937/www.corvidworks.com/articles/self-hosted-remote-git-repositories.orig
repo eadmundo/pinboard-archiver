@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if gte IE 9]><!--><html lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Host your own remote Git repositories // Corvid Works</title>
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel='stylesheet' href='http://static.corvidworks.com/css/foundation.css?1352487943' type='text/css' media='all' />
+<link rel='stylesheet' href='http://static.corvidworks.com/css/stylesheet.css?1352487945' type='text/css' media='all' />
+<!--[if lte IE 8]><script src="/js/ie-html5.js" type="text/javascript"></script><![endif]-->
+</head>
+<body class="articles articles_self-hosted-remote-git-repositories">
+<header>
+	<nav class="cufon1">
+		<a href="/services/" id="nav1" class="">Services</a> <a href="/case-studies/" id="nav2" class="">Case Studies</a> <a href="/projects/" id="nav3" class="">Projects</a> <a href="/articles/" id="nav4" class="current">Articles</a> <a href="/contact/" id="nav5" class="">Contact</a>
+	</nav>
+	<a href="/" id="logo"><img src='http://static.corvidworks.com/images/corvid-works.png?1352487943' width='660' height='120' alt='Corvid Works'  /></a>
+</header>
+<section id="content">
+
+<article>
+
+<header>
+	<h1>Host your own remote Git repositories <time datetime="2011-05-31" pubdate="pubdate">// May 31, 2011</time></h1>
+</header>
+<div class="divider divider2"></div>
+
+<p>As more and more developers are moving to Git for their version control needs, one important use case is being left behind: that of the development team who wants a single official repository but prefers not to rely on a third party such as Github to host it. Unlike Subversion, the distributed nature of Git means that maintaining a single authoritative copy isn’t as easy as it should be. Github’s paid plans ease this pain but third-party hosting isn’t always the best answer, or even possible in some cases. Here’s how you can do it yourself.</p>
+
+<div class="aside">
+	<h3>First, a few assumptions</h3>
+	<p>This article assumes you have a dedicated Linux server, physical or virtual, with root or sudo access. These instructions will not work on shared hosting or Windows servers, but they will work on <abbr>BSD</abbr> or other Unix variants with very little modification. I’m using Ubuntu for these examples. It also assumes a basic level of familiarity with managing user accounts and using <abbr>SSH</abbr> keys, as well as familiarity with Git itself.</p>
+</div>
+
+<div class="aside">
+	<h3>A note about terminology</h3>
+	<p>When referring to your server, I use the hostname <em>server.example.com</em>. You’ll want to replace this with your own server’s hostname. Likewise, when I refer to Github <abbr>URL</abbr>s, I use <em>username</em> in place of the account name. Be sure to use your own here as well. Finally, <em>repository.git</em> should always be changed to the actual name of your own Git repository.</p>
+</div>
+
+<p>Sound good? Ok, let’s get started.</p>
+
+<h3>Server Setup</h3>
+
+<p>I shouldn’t need to mention this step, but just in case:</p>
+<pre>
+$ sudo apt-get install git
+</pre>
+
+<p>We’re going to use the Github model for our Git server &mdash; a single user account that’s used to access all the repositories on the server. Logins are allowed with <abbr>SSH</abbr> keys only, and even then only to run Git commands. For consistency, we’ll call this account <em>git</em> and give it a home directory of <code>/var/git</code>.</p>
+
+<p>We’re giving this account a Bash shell initially so we can more easily run the setup commands as this user. When we’re finished we’ll change it to the more restrictive <code>git-shell</code>, a shell included in the Git package that restricts commands to those used for Git interaction.</p>
+<pre>
+$ sudo useradd -m -d /var/git -s /bin/bash -c 'Git' git
+</pre>
+
+<p>Now become the <em>git</em> user. Unless otherwise noted, the rest of these commands will be run as this user.</p>
+<pre>
+$ sudo su - git
+</pre>
+
+
+<p>The next step is to collect <abbr>SSH</abbr> keys from your developers and place them in a single <code>authorized_keys</code> file in the <em>git</em> user’s <code>~/.ssh</code> directory. Note that this directory must be readable only by this user.</p>
+<pre>
+$ mkdir /var/git/.ssh
+$ touch /var/git/.ssh/authorized_keys
+$ chmod 700 /var/git/.ssh
+</pre>
+
+<p>Now add the <abbr>SSH</abbr> keys you collected to this new <em>authorized_keys</em> file, one key per line.</p>
+
+<h3>Your Repositories</h3>
+
+<p>Now that you have a Git account and your developers can access it, it’s time to give them something to work with. We’ll cover copying existing repositories from Github and also creating new, empty ones and pushing your own code into it.</p>
+
+<p>But first, we need to actually create a repository. The initial steps are the same regardless of how you’ll be adding your code to it. So create the directory to work with, initialize it as a bare Git repository, and set the appropriate ownership. You’ll naturally want to use your own repository name instead of <em>repository.git</em>, as I use here.</p>
+<pre>
+$ mkdir /var/git/repository.git
+$ cd /var/git/repository.git
+$ git --bare init
+</pre>
+
+<p>Now, where is your code coming from?</p>
+
+<h4>Scenario 1: Copy an existing repository from Github</h4>
+
+<p>In this first example, we’re going to migrate an existing repository from Github to our own server. In this example, replace <em>username</em> with your own Github username and <em>repository.git</em> with the name of your own repository.</p>
+<pre>
+$ git --bare fetch https://username@github.com/username/repository.git master:master
+</pre>
+
+<p>The output of the above should look something like this:</p>
+<pre>
+$ git --bare fetch https://corvidworks@github.com/corvidworks/asset-helper.git master:master
+Password: 
+remote: Counting objects: 20, done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 20 (delta 7), reused 0 (delta 0)
+Unpacking objects: 100% (20/20), done.
+From github.com:corvidworks/asset-helper
+ * [new branch]      master     -> master
+</pre>
+
+<p>If that looks like what you got, you’re done and ready to move on.</p>
+
+<h4>Scenario 2: Create a new repository</h4>
+
+<p>In our second example, we’re creating a remote repository for some code that only exists on your local development machine. This is also very easy, but it requires some steps to be done locally. Open another terminal window and move into your local Git repository directory, then run the following lines to add the new remote repository <abbr>URL</abbr> and push up your code. In this example, <em>dev.example.com</em> will be replaced with the hostname of your own development server.</p>
+<pre>
+$ git remote add origin git@dev.example.com:repository.git
+$ git push origin master
+</pre>
+
+<p>When pushing your code, you’ll see something similar to this:</p>
+<pre>
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 4.49 KiB, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To git@dev.example.com:repository.git
+ * [new branch]      master -> master
+</pre>
+
+<p>Look good? Let’s move on.</p>
+
+<h3>Finishing Up</h3>
+
+<p>You now have a fully functional Git repository on your server, and a dedicated account your developers can use to access it. Our final step is to log out of the <em>git</em> account and change its shell to <code>git-shell</code>. This will ensure that users can’t run arbitrary commands with this shared user account.</p>
+<pre>
+$ logout
+$ sudo chsh -s /usr/bin/git-shell git
+</pre>
+
+<p>To begin working, just clone your new repository and get started:</p>
+<pre>
+$ git clone git@dev.example.com:repository.git
+</pre>
+
+<h3>Managing Changes</h3>
+
+<p>If you’ve been using Github, you already know what to do. But if remote Git repositories are new to you, you’ll need to adjust your workflow a bit to push your changes to the server and pull down changes made by the other developers on the team.</p>
+
+<p>As we saw in the previous step, pushing up your code is as easy as:</p>
+<pre>
+$ git push origin master
+</pre>
+
+<p>Syncing changes committed by other developers is similarly easy: you’ll use either <code>git fetch</code> or <code>git pull</code>. The two are similar except that <code>git pull</code> essentially does <code>git fetch &amp;&amp; git merge</code>, so use <code>git fetch</code> if you prefer to handle merging yourself. Explaining that in more detail is beyond the scope of this article but there are a lot of good tutorials out there for basic Git usage and workflows.</p>
+
+<h3>Need More Help?</h3>
+<p>If this is something you’re interested in for your own projects but lack the time or expertise to do it yourself, <a href="/contact/#form" class="cta">get in touch for a free consultation</a>.</p>
+
+</article>
+
+</section><!-- end section#content -->
+<section id="footer">
+<footer>
+	<nav>
+		<span class="label cufon2">Navigate</span> <a href="/services/">Services</a> / <a href="/case-studies/">Case Studies</a> / <a href="/projects/">Projects</a> / <a href="/articles/">Articles</a> / <a href="/contact/">Contact</a>
+	</nav>
+	<div class="meta">
+		<img src='http://static.corvidworks.com/images/meta.png?1352487943' width='75' height='100' alt=''  />		&copy; 2012 Corvid Works, <abbr>LLC</abbr><br /> All Rights Reserved<br /> Portland, Oregon<br /> <span class="email" title="contact"><a href="/contact/#form">Get in touch!</a></span><br /> <a href="/#corvid" class="lightbox_content_link">What <em>is</em> a corvid?</a>
+	</div>
+	<div class="about">
+		<div class="label cufon2">About Me</div>
+		<img src='http://static.corvidworks.com/images/about-photo.jpg?1352487943' width='63' height='63' alt=''  />		<p>Kenn Wilson is a web technologist who spends an inordinate amount of his free time keeping up on the latest developments in web technologies. Kenn lives in beautiful Portland, Oregon with his wife Sarai and two cats of exceptional beauty and charm. <a href="/contact/#form">Get In Touch!</a></p>
+	</div>
+</footer>
+</section>
+<div class="lightbox_wrapper">
+	<section id="corvid" class="lightbox_content">
+		<img src='http://static.corvidworks.com/images/corvid.png?1352487943' width='60' height='60' alt=''  />		<h4>What <em>is</em> a corvid?</h4>
+		<p><em>Corvidae</em> is the family of birds that contains crows, ravens, magpies, and jays, among others. Widely considered to be the most intelligent of the birds, they live in complex social groups and take part in elaborate games. Various members of the corvid family have demonstrated self-awareness, the ability to memorize,  and they are even known to create and use simple tools.</p>
+		<p>Found nearly everywhere on Earth, corvids have played an important role in art, literature, and mythology throughout history.</p>
+	</section>
+</div>
+<script src='http://static.corvidworks.com/js/jquery.js?1352487943' type='text/javascript'></script>
+<script src='http://static.corvidworks.com/js/framework.js?1352487943' type='text/javascript'></script>
+<script src='http://static.corvidworks.com/js/application.js?1352487947' type='text/javascript'></script>
+<script type="text/javascript">
+	var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-342312-16'], ['_trackPageview']);
+	(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s  = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+</script>
+<!-- 
+	Looking for a web developer? If my code meets your standards, just click that 'contact' link up top and send me a note! 
+-->
+</body>
+</html>

@@ -1,0 +1,14 @@
+jQuery(function(){
+
+    // Sections dropdown
+    jQuery('#entrySections .button a').click(function() {
+        jQuery('#entrySections').toggleClass('open');
+        return false;
+    });
+
+    jQuery('body.archive #entrySections li:nth-child(2) a').click(function() {
+        return false;
+    });
+
+});
+

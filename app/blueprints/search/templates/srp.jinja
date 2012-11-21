@@ -1,0 +1,5 @@
+<ul>
+{% for result in results %}
+    <li><a href="{{ result['fields']['archive_url']|replace('archive/', '') }}">{{ result['fields']['title'] }}</li>
+{% endfor %}
+</ul>

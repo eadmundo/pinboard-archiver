@@ -1,0 +1,18 @@
+{
+    "settings" : {
+        "number_of_shards" : 1
+    },
+    "mappings" : {
+        "bookmark" : {
+            "properties" : {
+                "title": { "type" : "string" },
+                "url" : { "type" : "string" },
+                "meta": { "type" : "string" },
+                "hash": { "type" : "string" },
+                "text" : { "type" : "string" },
+                "archive_url": { "type" : "string" },
+                "posts_update" : { "type" : "date" }
+            }
+        }
+    }
+}

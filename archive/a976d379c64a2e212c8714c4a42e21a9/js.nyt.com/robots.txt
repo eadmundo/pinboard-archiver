@@ -1,0 +1,28 @@
+# robots.txt, www.nytimes.com 6/29/2006
+#
+User-agent: *
+Disallow: /pages/college/
+Disallow: /college/
+Disallow: /library/
+Disallow: /learning/
+Disallow: /aponline/
+Disallow: /reuters/
+Disallow: /cnet/
+Disallow: /partners/
+Disallow: /archives/
+Disallow: /indexes/
+Disallow: /adx/bin/
+Disallow: /thestreet/
+Disallow: /nytimes-partners/
+Disallow: /financialtimes/
+Allow: /pages/
+Allow: /2003/
+Allow: /2004/
+Allow: /2005/
+Allow: /top/
+Allow: /ref/
+Allow: /services/xml/
+
+User-agent: Mediapartners-Google*
+Disallow:
+

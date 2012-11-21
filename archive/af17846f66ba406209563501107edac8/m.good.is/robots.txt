@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /system
+Disallow: /community/
+Disallow: /tags/
+Disallow: /post/
+Disallow: /post_service/
+Disallow: /blog/
+Disallow: /shared_users/*
+Disallow: /members/*/todos
+Sitemap: http://www.good.is/sitemap.xml

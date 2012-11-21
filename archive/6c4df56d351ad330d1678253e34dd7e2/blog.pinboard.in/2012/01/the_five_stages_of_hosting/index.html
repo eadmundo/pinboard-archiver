@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="alternate" type="application/rss+xml" title="Pinboard Blog"  href="http://blog.pinboard.in/feed/" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>The Five Stages of Hosting (Pinboard Blog)</title>
+	
+<style>
+.faint { color:#9cc; }
+pre { margin-top:30px; }
+.error { color:#333; }
+.footnote { color:#888; }
+body
+{
+  color:#333;
+  font-family:arial;
+  margin-left:20px;
+  font-size:13px;
+  font-family: arial, sans-serif;
+   word-wrap:break-word;text-align:center;
+}
+#content { border:0px solid orange;width:1050px;margin-left:auto;margin-right:auto }
+#banner
+{
+  background:white;
+  color:black;
+  border-bottom:1px dotted #aaa;
+  margin-bottom:0.7em;
+  width:980px;
+  padding-bottom:9px;
+  text-align:left;
+}
+
+a { text-decoration:none;color:#11a;}
+a:visited { color:#51a }
+
+#pinboard_name { font-size:18px;color:black; }
+
+blockquote
+{
+    background:#fffff1;
+    line-height:160%;
+    color:#555;
+    padding:10px;
+}
+
+#banner a { color:#aaa; }
+#banner a.admin { color:#e00 }
+#banner a.banner_username { color:blue; }
+
+#logo { float:left;width:270px;color:#aaa}
+.pin_logo { margin-right:2px; }
+#top_menu { margin-top:2px}
+#top_menu { float:right; }
+#top_menu a { color:blue }
+
+
+.alert { color:#333;background:#ced;padding:10px;width:550px;border:1px solid #acc; }
+.blog_title {font-size:1.3em;color:#248 }
+.blog_post { font-family:times;}
+
+ol { padding-left:20px; }
+
+h3 { font-size:1em;margin-top:30px; }
+
+code
+{
+  color:#555;
+}
+
+
+ 
+ #main_column
+ {
+  width:700px;
+  border:0px solid yellow;
+  min-height:500px;
+  text-align:left;
+  float:left;
+ }
+
+
+#footer
+{
+  margin-top:3em;color:#888;
+ }
+ 
+em { color:#aaa; font-style:italic}
+
+
+.rss_linkbox
+{
+    float:right;
+    margin-right:30px;
+}
+
+a.rss_link
+{
+    color:#ee9922;
+    font-size:0.8em;
+}
+
+
+    li
+    {
+        
+    }
+    #main_column
+    {
+        width:600px;
+    }
+    
+    #blog_content
+    {
+        line-height:130%;width:550px
+    }
+    
+    #blog_page_title
+    {
+        font-size:1.5em;
+        color:#55a;
+        margin-bottom:20px
+    }
+    #right_column
+    {
+        padding:20px;text-align:left;margin-left:20px;line-height:140%;background:#ffc;float:left;width:300px
+    }
+    
+</style>
+</head>
+<body id="pinboard">
+<div id="content">
+    <div id="banner">
+        <div id="logo" style="width:230px;">
+        <img src="http://pinboard.in/bluepin.gif" class="pin_logo"/>
+          <a id="pinboard_name" href="http://pinboard.in/">Pinboard</a>
+        </div>
+
+        <div id="top_menu">
+<a href="https://pinboard.in">go to site</a>  ‧  
+<a href="https://pinboard.in/tour/">take a tour</a>
+  </div> <!-- END BANNER -->
+
+  <div style="clear:both"></div>
+</div>
+<div id="main_column">
+<div id="blog_content">
+<div style="float:right;margin-right:20px;"><a style="color:#d90;font-size:0.9em;" href="http://blog.pinboard.in/feed/">RSS</a></div><p id="blog_page_title"><a href="http://blog.pinboard.in/blog/">Pinboard Blog</a></p>
+<table style="border:0px;margin-bottom:20px"><tr><td width="100"></td><td></td></tr></table>      <div class="blog_entry" >
+        <p><a class="blog_title" href="index.html" >The Five Stages of Hosting</a></p>        <p class="blog_entry" ><p>As a proud <a href="http://en.wikipedia.org/wiki/Virtual_private_server">VPS</a> survivor, I thought it might be fun to write up five common options for hosting a web business, ranked in decreasing order of 'cloudiness'.  People who aren't interested in this kind of minutia would be wise to pull the rip cord right here.</p>
+
+<br/>
+
+<p>1. <b>The Monastery</b></p>
+
+<p>  You run your site on an 'application platform' like <a href="http://www.heroku.com/">Heroku</a>, <a href="http://www.windowsazure.com/en-us/">Azure</a>, or <a href="http://code.google.com/appengine/">Google App Engine</a>.   You design your application around whatever metaphors and APIs the service lays out, and in return you are veiled from all the mysteries of implementation.  You never interact with the computer directly, but upload your code to the platform with the proper incantations and it runs.  The orders vary in strictness, with GAE requiring that you purify yourself of all worldly design habits before writing your app, Azure insisting you renounce the demon Unix, and Heroku somewhat more welcoming to the fallen.    On all three platforms, when your application needs more resources, you press the 'more resources' button.  A lot of fancy sandboxing, monitoring and administration tools come standard, and it's very easy to deploy and test different versions of your app.
+
+<p><b>Good</b>: Skilled beardos toiling behind the scenes make sure everything Just Works.  As long as your application obeys the commandments, you can have faith that it will endure any trial.   Prototypes are fast and easy to build, and all you have to do to turn them into production services is add money.  You don't have to spend any time worrying about backups, load balancing, configuration, hardware, or anything except your app.
+
+<p><b>Bad</b>: You have to design your app in a very specific way, and learn the holy texts by heart.  If you decide to convert to another service, or become an apostate and run things yourself, you'll find yourself having to rebuild from the foundations.  Of course, being a programmer it will be more tempting to just create your own application platform instead.  All this abstraction is expensive, and it can be hard to estimate cost ahead of time. It's also easy to rack up significant fees if you don't pay attention.   You are vulnerable to <a href="http://highscalability.com/blog/2011/9/7/what-google-app-engine-price-changes-say-about-the-future-of.html">sudden changes in the pricing model</a>. </p>
+
+<br/>
+
+<p>2. <b>The Dorm Room</b></p>  
+
+<p>You lease a virtual server from a company like <a href="http://www.linode.com/">Linode</a>, <a href="http://prgmr.com/xen/">prgmr</a>, <a href="http://www.slicehost.com/">Slicehost</a> or <a href="http://aws.amazon.com/ec2/">Amazon</a>.  You get to pretend like you have your own computer, and nobody can tell you what to do, man!  In reality you inhabit a small slice of a giant shared resource, but the hosting company does a good job of making it feel like a standalone machine. You're assigned a certain amount of memory, disk, and CPU, and can do whatever you want within those bounds.  You can put up your Bob Marley posters and even build a loft!   
+
+<p><b>Good</b>: You are isolated from a lot of real responsibility.  If a disk goes bad, people will fix it and you may not even know anything happened.  For small servers, the cost of virtual hosting is pretty low.  Pricing is straightforward and transparent, and you can usually add resources just by asking.  If there is downtime, it's likely to be brief, as your virtual machine can move to another server.  Most of the time you won't notice the neighbors.
+
+<p><b>Bad</b>:  Sometimes you will REALLY notice the neighbors, and can't do anything about it.  I/O performance in particular can be awful.  Your operating system will lie to you about performance because it lives in the Matrix and can't see all the way down to the hardware.     And if you test the boundaries, you'll discover you can't actually do whatever you want.  Deviate too far from expected behavior (by churning through millions of files, for example) and the R.A. will come knocking.
+
+<p>The larger tiers of virtual hosting are expensive compared to equivalent dedicated servers.  There's often no way to choose the ratio of CPU to disk to RAM.</p>
+
+</p>
+
+<br/>
+<p>3.  <b>The Apartment</b></p>
+
+<p>You lease a dedicated server from a company like <a href="http://blog.pinboard.in/2012/01/the_five_stages_of_hosting/'http://www.leaseweb.com/en">Leaseweb</a> or <a href="http://www.serverbeach.com/">ServerBeach</a> or a thousand others.  This is just like (2), except now you really do have full control over an actual, physical computer that is not shared with anyone.  You get a wider choice of operating systems and hardware, and you can custom-order all kinds of extras for your server.  The machine still belongs to the hosting company, but you pay by the month or year for exclusive use.
+
+<p>There is a subtype of this arrangement known as "managed" hosting, where for additional money the hosting company takes care of general housekeeping and holds your hand if you get scared.  Think of it as renting a basement apartment from your parents. 
+
+<p><b>Good</b>: Extensive configuration options.  If any hardware breaks, the hosting company will fix it.  It's easier to diagnose and characterize performance problems. Frequently you'll get an 'out of band' console, so you can reboot or monitor your server from the outside.  Sustained and random access I/O speed is much higher and performance in general is predictable and consistent.
+
+<p><b>Bad</b>: The cost of rental will quickly exceed the amortized cost of just buying  hardware, particularly if you require a lot of RAM or hard disk space.   It's hard to evaluate the quality of tech support until you actually need it.  Pricing is opaque and highly variable.  If something breaks, it can be quite a while before the host can replace it.  
+</p>
+
+<br/>
+<p>4. <b>The Condo</b></p>
+
+<p>You buy your own computer and rent space for it in a colocation facility.  This is just like (3), except now the machine sitting in the data center physically belongs to you.  You buy it, you set it up, you run it, and it's your job to fix it if it breaks. The hosting company provides electricity, cooling, physical security, and some minimal "remote hands" service if you need someone to press a button or look at your blinkenlights.  But ask not for whom the pager beeps — for sysadmin, it beeps for thee.
+
+<p><b>Good</b>: You can fit your hardware to the exact needs of your application.  If you use it long enough, you will save substantial money over rental.  You can run your own routers, switches, and storage appliances - whatever fits in the rack.  You have total control over everything.
+
+<p><b>Bad</b>: You have total control over everything.  Hardware is hard.   You pay a lot of money up front.  If something goes wrong, expect to either travel or FedEx heavy packages back and forth while under great stress.  Pricing is even more opaque and variable than with rental, and you may have trouble finding good options if you need less than a full rack (room for about a dozen big servers).  
+</p>
+
+<br/>
+
+<p>5. <b>The Stately Manor</b></p>
+
+<p>Your own datacenter.</p>
+
+<p><b>Good</b>: No need to take hosting advice from blog posts.</p>
+
+<p><b>Bad</b>: God help you.</p>
+
+
+</p>
+        <p class="when">—maciej on <a href="index.html">January 29, 2012</a></p>
+       </div><br/><br/><table style="border:0px;margin-bottom:20px"><tr><td width="100"></td><td></td></tr></table></div>
+</div>
+<div id="right_column">
+
+<p>
+<a href="http://pinboard.in/">Pinboard</a> is a bookmarking site and personal archive with an emphasis on speed over socializing.</p>
+<p>This is the Pinboard developer blog, where I announce features and share news.</p>
+<br/><br/><br/>
+
+<p style="font-size:1.4em;color:#33a">How To Reach Help</p>
+
+<p>Send bug reports to bugs@pinboard.in</p>
+
+<p>Talk to me on <a href="http://twitter.com/pinboard">Twitter</a></p>
+<p>Post to the discussion group at <a href="http://groups.google.com/group/pinboard-dev/">pinboard-dev</a></p>
+
+<p>Or find me on IRC:  #pinboard at freenode.net</p>
+
+</div>
+
+</div>
+<br/>
+<div style="clear:both"></div>
+<div id="footer">
+
+&copy; Nine Fives Software.  Problems or questions?  Contact &lt;<a href="mailto:support@pinboard.in">support@pinboard.in</a>&gt;
+
+<br/><hr style="border-top:1px dotted #aaa;">
+<a href="http://pinboard.in/tos/">terms of service</a> ‧
+<a href="http://pinboard.in/about/">about</a> ‧
+<a href="http://pinboard.in/faq/">FAQ</a> ‧ 
+<a href="http://pinboard.in/resources/">resources</a>
+</div>
+
+ 
+  <div style="clear:both"></div>
+  </div>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9451753-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

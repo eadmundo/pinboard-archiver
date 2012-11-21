@@ -4,7 +4,7 @@ from fabfile.virtualenv import venv_path
 
 def run():
     """Start app in debug mode (for development)."""
-    do('%s/bin/python manage.py runserver' % venv_path)
+    do('export FLASK_CONFIG=config/dev.py && %s/bin/python manage.py runserver' % venv_path)
 
 
 def freeze():

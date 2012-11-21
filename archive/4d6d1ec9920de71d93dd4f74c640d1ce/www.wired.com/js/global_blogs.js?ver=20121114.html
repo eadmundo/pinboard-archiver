@@ -1,0 +1,165 @@
+/*
+    Global blogs js for headers and footers.
+*/
+jQuery(function(){
+
+    if ( CN.cookie.get('WiredEditor') || document.domain.indexOf("localhost") >= 0 ) {
+        jQuery('.entryEdit').show();
+        CN.debug.info('Enable edit');
+    }
+
+/* Prev/Next ********************************************************************/
+
+    if ( jQuery('div.entry').length > 0 ) {
+        var postNavElem = jQuery('#post_nav');
+        var entryElem = jQuery('div.entry');
+
+        // Visibility/stickiness based on scroll position
+        jQuery(window).scroll( function(event) {
+            var scrollPos = jQuery(window).scrollTop(),
+            //docHeight = jQuery(document).height(),
+            winHeight = jQuery(window).height(),
+            articleHeight = entryElem.height(),
+            articleOffset = entryElem.offset(),
+            scrollThreshold = scrollPos + winHeight,
+            scrollTrigger = articleOffset.top + articleHeight/2,
+            footerOffset = jQuery('#footer').offset().top,
+            stickyTrigger = scrollPos + winHeight;
+
+            if ( scrollThreshold > scrollTrigger ) {
+                postNavElem.slideDown('fast').removeClass('hidden').addClass('visible');
+            } else {
+                postNavElem.slideUp('fast').addClass('hidden').removeClass('visible');
+            }
+
+            if ( footerOffset < stickyTrigger ) {
+                postNavElem.addClass('relative').removeClass('fixed');
+            } else {
+                postNavElem.removeClass('relative').addClass('fixed');
+            }
+        });
+
+        // Cookie for toggle state
+        var toggleStateCookie = CN.cookie.get('wired-post_nav-toggle');
+        if ( toggleStateCookie ) {
+            var toggleState = CN.cookie.get('wired-post_nav-toggle');
+        } else {
+            var toggleState = 'expanded';
+            CN.cookie.set('wired-post_nav-toggle',toggleState,{expires: 2160, path: '/'});
+        }
+        postNavElem.addClass(toggleState);
+
+        // Nav hints
+        jQuery('#post_nav a.prev img').attr('title','Previous article (Press j or ←)');
+        jQuery('#post_nav a.next img').attr('title','Next article (Press k or →)');
+
+        // Toggle
+        function postNavToggle(){
+            postNavElem.toggleClass('collapsed expanded');
+            var stateClass = postNavElem.attr('class');
+            if ( stateClass.indexOf('collapsed') >= 0 ) {
+                var toggleState = 'collapsed';
+                jQuery('#post_nav button').attr('title','Expand menu (Press m)').html('Expand');
+            } else if ( stateClass.indexOf('expanded') >= 0 ) {
+                var toggleState = 'expanded';
+                jQuery('#post_nav button').attr('title','Collapse menu (Press m)').html('Collapse');
+            }
+            CN.cookie.set('wired-post_nav-toggle',toggleState,{expires: 2160, path: '/'});
+        }
+
+        jQuery('#post_nav button').click( function(){
+            postNavToggle();
+        });
+
+        // Keyboard nav
+        jQuery(document).keyup( function(event) {
+            if ( !( jQuery('input:text, textarea').is(':focus') ) ) {
+                if ( event.keyCode == 74 || event.keyCode == 37 ) {
+                    // j or ← : Previous post
+                    var prevHref = jQuery('#post_nav a.prev').attr('href');
+                    if ( prevHref ) {
+                        window.location.href = prevHref;
+                    }
+                } else if ( event.keyCode == 75 || event.keyCode == 39 ) {
+                    // k or → : Next post
+                    var nextHref = jQuery('#post_nav a.next').attr('href');
+                    if ( nextHref ) {
+                        window.location.href = nextHref;
+                    }
+                } else if ( event.shiftKey && event.keyCode == 82 ) {
+                    // Shift + r : Random post
+                    var randHref = jQuery('#post_nav a.rand').attr('href');
+                    if ( randHref ) {
+                        window.location.href = randHref;
+                    }
+                } else if ( event.keyCode == 77 ) {
+                    // m : Toggle menu
+                    if ( postNavElem.hasClass('visible') ) {
+                        postNavToggle();
+                    }
+                } else if ( event.shiftKey && event.keyCode == 191 ) {
+                    // Shift + / (?) : Help
+                    alert('Press j or ← to navigate to the previous article; press k or → to navigate to the next. If the menu is visible, press m to toggle its state.')
+                }
+            }
+        });
+    }
+
+/* Footer ********************************************************************/
+
+    // Select links
+    jQuery('#footer_dropdowns_subscribe, #footer_dropdowns_sites, #footer_dropdowns_international').bind('change', function() {
+        window.open(jQuery(this).val());
+    });
+
+/* Sign In/Sign Out ***********************************************************/
+
+    // Check if the user is logged in
+    var username_string = CN.cookie.get('amg_user_info');
+    if (username_string !== '') {
+        jQuery('#gh_greeting').html('<span class="gh_username">Hi, ' + username_string + '&nbsp;|&nbsp;</span><a href="http://www.wired.com/user/logout">Sign Out</a>&nbsp;|');
+    } else {
+        jQuery('#gh_greeting').html('<a href="http://www.wired.com/user/login">Sign In</a>&nbsp;|');
+    }
+
+/* Reviews Category Dropdown */
+    jQuery('#pnav_list_test a.primaryLink').bind('mouseenter', function() {
+        // hide all the menus that may be showing already
+        jQuery('.dropdownMenu').hide();
+        jQuery(this).parentsUntil('#pnav_list_test').find('.dropdownMenu').show();
+        jQuery(this).addClass('over');
+    });
+    // Actions on leaving the dropdown
+    jQuery('#pnav_list_test li .dropdownMenu').bind('mouseleave', function() {
+        jQuery(this).delay(500).fadeOut(200);
+        jQuery(this).parentsUntil('#pnav_list_test').find('a.primaryLink').removeClass('over');
+    });
+
+/* Top 3 */
+    var tallestHeight = 0;
+    var top3 = jQuery('body.top-3 div.top-3-product ul.top-3-details').not('body.top-3 div.top-3-product.product-4 ul.top-3-details');
+    top3.each(function(){
+        if( jQuery(this).height() > tallestHeight ) {
+            tallestHeight = jQuery(this).height();
+        }
+    });
+    top3.height(tallestHeight).children('li.rating-review-link').addClass('sticky');
+});
+
+/* Reviews */
+function resizeImage(img,new_width,new_height) {
+    if(img.width == new_width && img.height == new_height){
+        img.className = "prod_review_img_on";
+        return;
+    } else {
+        if (jQuery(img).height() > jQuery(img).width()) {
+            var h = new_height;
+            var w = Math.ceil($(img).width() / jQuery(img).height() * new_height);
+        } else {
+            var w = new_width;
+            var h = Math.ceil(jQuery(img).height() / jQuery(img).width() * new_width);
+        }
+        jQuery(img).css({ height: h, width: w });
+        img.className = "prod_review_img_offset";
+    }
+}

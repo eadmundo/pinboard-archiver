@@ -1,0 +1,292 @@
+.gallery-overview.native {
+    position: relative;
+    border-bottom: dashed 1px #ccc;
+}
+    .gallery-overview.native ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+.gallery-view {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    clear: both;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+/* Thumbnails */
+.gallery-overview.native .gallery-thumbnails-wrap {
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    overflow: hidden;
+}
+    .gallery-overview.native.gallery-dark .gallery-thumbnails-wrap {
+        background-color: #666;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+    }
+
+.gallery-overview.native .gallery-thumbnails-wrap .gallery-carousel-wrap {
+    width: auto;
+    overflow: hidden;
+    margin: 0 30px;
+    z-index: 10;
+}
+
+    .gallery-overview.native .gallery-thumbnails {
+        width: 100000000px;
+    }
+
+    .gallery-overview.native .gallery-thumbnails .thumb-first {
+    }
+    .gallery-overview.native .gallery-thumbnails .thumb-last {
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+        /* DARK */
+        .gallery-overview.native.gallery-dark .gallery-thumbnails .thumb-last {
+            border-right: dotted 1px #EEE;
+        }
+
+        /* LIGHT */
+        .gallery-overview.native.gallery-light .gallery-thumbnails .thumb-last {
+            border-right: dotted 1px #666;
+        }
+
+    .gallery-overview.native .gallery-thumbnail a,
+    .gallery-overview.native .gallery-thumbnail a:hover {
+        background: none;
+    }
+
+    .gallery-overview.native .thumbnails-previous a,
+    .gallery-overview.native .thumbnails-next a {
+        position:absolute;
+        top: 5px;
+        width: 28px;
+        height: 65px;
+    }
+    .gallery-overview.native .thumbnails-previous a {
+        left: 0;
+        cursor: pointer;
+    }
+        /* DARK */
+        .gallery-overview.native.gallery-dark .thumbnails-previous a {
+            text-indent: -9999px;
+            background: url('images/controls.png') no-repeat top left #666;
+        }
+            .gallery-overview.native.gallery-dark .thumbnails-previous a:hover {
+                background-position:bottom left;
+                background-color: #666;
+            }
+
+        /* LIGHT */
+        .gallery-overview.native.gallery-light .thumbnails-previous a {
+            text-indent: -9999px;
+            background: url('images/ad_scroll_back.png') no-repeat center left transparent;
+            opacity: 0.6;
+        }
+            .gallery-overview.native.gallery-light .thumbnails-previous a:hover {
+                opacity: 1;
+            }
+
+    .gallery-overview.native .thumbnails-next a {
+        right: 0;
+        cursor: pointer;
+    }
+        /* DARK */
+        .gallery-overview.native.gallery-dark .thumbnails-next a {
+            text-indent: -9999px;
+            background: url('images/controls.png') no-repeat top right #666;
+        }
+            .gallery-overview.native.gallery-dark .thumbnails-next a:hover {
+                background-position:bottom right;
+                background-color: #666;
+            }
+
+        /* LIGHT */
+        .gallery-overview.native.gallery-light .thumbnails-next a {
+            text-indent: -9999px;
+            background: url('images/ad_scroll_forward.png') no-repeat center right transparent;
+            opacity: 0.6;
+        }
+            .gallery-overview.native.gallery-light .thumbnails-next a:hover {
+                opacity: 1;
+            }
+
+    .gallery-overview.native .gallery-thumbnails {
+        padding: 10px 0;
+    }
+
+    .gallery-overview.native .gallery-thumbnail {
+        display: inline-block;
+        cursor: pointer;
+        opacity: 0.5;
+        text-align: center;
+        position: relative;
+    }
+        .gallery-overview.native .gallery-thumbnail .video-icon {
+            display: block;
+            background: url('images/video-icon.png') no-repeat 0 0 transparent;
+            opacity: 0.9;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            bottom: 7px;
+            left: 10px;
+        }
+
+        .gallery-overview.native .gallery-thumbnail a {
+            display: block;
+            margin: 0 5px;
+        }
+            /* DARK */
+            .gallery-overview.native.gallery-dark .gallery-thumbnails a {
+                padding: 4px 5px 2px;
+                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+            }
+            /* LIGHT */
+            .gallery-overview.native.gallery-light .gallery-thumbnails a {
+                padding: 3px;
+                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+            }
+
+        .gallery-overview.native .gallery-thumbnail img {
+            width: 55px;
+            height: 55px;
+        }
+        .gallery-overview.native .gallery-thumbnail:hover {
+            opacity: 0.8;
+        }
+
+        .gallery-overview.native .gallery-thumbnail.selected,
+        .gallery-overview.native .gallery-thumbnail.selected:hover {
+            opacity: 1;
+        }
+
+        .gallery-overview.native .gallery-thumbnail a:hover {
+            background-color: #DDD;
+        }
+
+        .gallery-overview.native .gallery-thumbnail.selected a,
+        .gallery-overview.native .gallery-thumbnail.selected a:hover {
+            background-color: #EEE;
+        }
+
+/* Slides */
+
+.gallery-overview.native .gallery-slides,
+.gallery-viewall.native .gallery-slides {
+    clear: both;
+    position: relative;
+    margin-bottom: 20px;
+
+    /* the height of this is set dynamically in the php */
+}
+
+    .gallery-overview.native .gallery-slide {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none; /* hide by default */
+
+        margin-top: -115px;
+        padding-top: 115px;
+    }
+        .gallery-viewall.native .gallery-slide {
+            width: 100%;
+            display: block;
+        }
+
+        .gallery-overview.native .gallery-slide.slide-first {
+            display: block; /* show the first slide */
+        }
+
+    /* Size images to the content well width */
+    .gallery-overview.native .gallery-pic {
+        width: 100%;
+        overflow: auto;
+        text-align: center;
+    }
+        /* DARK */
+        .gallery-overview.native.gallery-dark .gallery-pic.video-slide {
+            background: url('images/loading_dark.gif') no-repeat 50% 50% #4a4949;
+        }
+        .gallery-overview.native.gallery-dark .gallery-pic.ad-slide {
+            background: url('images/loading_dark.gif') no-repeat 50% 50% #4a4949;
+        }
+
+        /* LIGHT */
+        .gallery-overview.native.gallery-light .gallery-pic.video-slide {
+            background: url('images/loading_light.gif') no-repeat 50% 50% #FFF;
+        }
+        .gallery-overview.native.gallery-light .gallery-pic.ad-slide {
+            background: url('images/loading_light.gif') no-repeat 50% 50% #FFF;
+        }
+
+        .gallery-overview.native .gallery-pic img {
+            width: 100%;
+            padding: 0;
+        }
+
+    .gallery-overview.native .gallery-caption {
+        margin-bottom: 20px;
+        background-color: #000;
+        color: #DDD;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 10px;
+    }
+
+        .gallery-overview.native .gallery-caption img.creative-commons{
+            position: relative;
+            top: 3px;
+            left: 3px;
+        }
+
+    .gallery-overview.native .gallery-description {
+        margin-bottom: 20px;
+    }
+        .gallery-overview.native .gallery-description p {
+            font-size: 12px;
+            line-height: 15px;
+            margin: 10px 0;
+        }
+
+/* The navigation only shows on mouseover */
+.gallery-overview.native .gallery-navigation {
+    width: 100%;
+    position: absolute;
+    top: 125px;
+    display: none;
+}
+    .gallery-overview.native .gallery-previous a {
+        position:absolute;
+        top: 50%;
+        left: 0;
+        background: url('images/controls.png') no-repeat top left;
+        width: 28px;
+        height: 65px;
+        text-indent: -9999px;
+    }
+        .gallery-overview.native .gallery-previous a:hover {
+            background-position:bottom left;
+        }
+
+    .gallery-overview.native .gallery-next a {
+        position:absolute;
+        top: 50%;
+        right: 0;
+        background:url('images/controls.png') no-repeat top right;
+        width: 28px;
+        height: 65px;
+        text-indent: -9999px;
+    }
+        .gallery-overview.native .gallery-next a:hover {
+            background-position:bottom right;
+        }
+

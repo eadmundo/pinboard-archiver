@@ -1,0 +1,93 @@
+﻿/*
+Theme Name: brainpickings_p2h
+*/
+.widget_newsletter fieldset{padding: 3px 0 0;}
+.widget_newsletter .text{
+	background: url(images/bg-subscribe-form.gif) no-repeat;
+	width: 134px;
+	height: 29px;
+	padding: 0 8px 6px;
+	display: block;
+}
+.widget_newsletter .text input{
+	border: 0;
+	padding: 8px 0 4px;
+	margin: 0;
+	width: 134px;
+	background: none;
+	line-height: 20px;
+}
+.widget_newsletter .submit{
+	color: #ffdb00;
+	background: url(images/bg-subscribe-form.gif) no-repeat -155px 0;
+	text-align: center;
+	width: 64px;
+	height: 23px;
+	border: 0;
+	font-size: 10px;
+	line-height: 20px;
+	padding: 0 0 3px;
+	margin: 5px 0 0 1px;
+	cursor: pointer;
+	display: block;
+}
+.widget_newsletter .submit:hover,
+.widget_newsletter .submit.hover{
+	background-position: -227px 0;
+	color: #000;
+}
+.ie9 .widget_newsletter.text input,
+.ie8 .widget_newsletter .text input{padding: 5px 0 4px;}
+.ie6 .widget_newsletter .text input,
+.ie7 .widget_newsletter .text input{padding: 4px 0 !important;}
+.ie9 .widget_newsletter .submit{padding-top: 2px;}
+/*----------------------------------------------------------------------------*/
+.tagcloud{
+	margin: 0 -14px 0 0;
+	padding: 0;
+	list-style: none;
+	line-height: 20px;
+}
+.tagcloud a{
+	display: inline;
+	padding: 0 5px 0 0;
+    color: #544801;
+}
+/*----------------------------------------------------------------------------*/
+.alignright {
+    float: right;
+}
+.alignleft {
+    float: left;
+}
+.nothing{
+    margin:0 !important;
+    padding:0 !important;
+}
+/*----------------------------------------------------------------------------*/
+#commentform dd{
+    margin:0 !important;
+}
+h1{
+    font-size:28px;
+}
+/*----------------------------------------------------------------------------*/
+.paging ul li.prev a{
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(images/arrowsprev.gif) no-repeat;
+}
+.paging ul li.prev a:hover{background: url(images/arrowsprev.gif) no-repeat 0 -20px;}
+
+/*CUSTOM----------------------------------------------------------------------------*/
+
+.author {
+	text-weight: normal;
+}
+
+p.author {
+	text-weight: normal;
+}

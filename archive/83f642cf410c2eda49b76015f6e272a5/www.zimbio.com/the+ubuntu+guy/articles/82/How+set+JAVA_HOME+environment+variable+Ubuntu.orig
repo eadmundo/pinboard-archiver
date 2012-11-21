@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"
+>
+<title>How to set JAVA_HOME environment variable in Ubuntu - the ubuntu guy - Zimbio</title>
+<meta name="keywords" content="the ubuntu guy, the ubuntu guy blog, the ubuntu guy bloggers, the ubuntu guy articles" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="I am actually creating this blog entry as a bookmark for myself, but since I know that I never remember how to do it, others might benefit as well! One way that you can set your JAVA_HOME variable a..." />
+<meta property="fb:app_id" content="137068566357971" />
+<meta property="og:site_name" content="Zimbio" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.zimbio.com/the+ubuntu+guy/articles/82/How+set+JAVA_HOME+environment+variable+Ubuntu" />
+<meta property="og:title" content="How to set JAVA_HOME environment variable in Ubuntu" />
+<meta property="og:description" content="I am actually creating this blog entry as a bookmark for myself, but since I know that I never remember how to do it, others might benefit as well! One way that you can set your JAVA_HOME variable a..." />
+<meta property="og:image" content="http://www3.pictures.zimbio.com/mp/v08xMrunlNAc.jpg" />
+<link rel="icon" href="http://www1.static.zimbio.com/zimbio_favicon.ico" />
+<link rel="canonical" href="http://www.zimbio.com/the+ubuntu+guy/articles/82/How+set+JAVA_HOME+environment+variable+Ubuntu" />
+<script type="text/javascript">
+if (window.self != window.top){top.location.replace(window.location.pathname);}
+var Timer = {s: (new Date().getTime()),Stack: {},add: function(n){Timer.Stack[n] = new Date().getTime() - Timer.s;} };
+</script>
+<script>Timer.add('pre-general');</script>
+<script type="text/javascript" src="http://www1.static.zimbio.com/loader/024892.123.library__loader__track__prototype_170__bGlicmFyeWx__.js"></script>
+<script>Timer.add('post-general');</script>
+<script type="text/javascript" src="http://www1.static.zimbio.com/loader/024892.123.embed_poll__ZW1iZWRfcG9__.js"></script>
+<script type="text/javascript">
+Settings.init({
+domain: "Zimbio",
+version: '024892.123',
+baseAPIUrl: "http://www.zimbio.com",
+geoCountry: "GB",
+testBucket: "A"
+});
+</script>
+<script type='text/javascript'>
+(function() {
+var useSSL = 'https:' == document.location.protocol;
+var src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+</script>
+<script>
+var Ad = {fill:function(a){var g=googletag;g.cmd.push(function(){g.display(a);});} };
+googletag.cmd.push(function() {
+var g = googletag,
+pub = g.pubads(),
+stack = {},
+define = function(a,b,c) {if (!stack[c]) {g.defineSlot(a,b,c).addService(pub);stack[c]=c;}; }, 
+target = function(obj){for (var a in obj) {if(obj[a]) pub.setTargeting(a,obj[a])}; };
+define('/1028834/Zimbio_Sitewide_Top_Leaderboard', [728, 90], 'topLeaderboard');
+define('/1028834/Zimbio_Sitewide_Top_300x250', [300, 250],'topMREC');
+define('/1028834/Inline_Zine_MREC', [300, 250], 'sideMREC');
+define('/1028834/Zimbio_Center_728x90', [728, 90], 'centerLeaderboard');
+target({
+"Domain":"Zimbio",
+"Category":"Life",
+"Section":"Life",
+"Directory":"TheUbuntuGuy",
+"PV": "001",
+"Media_Type":"Article",
+"AuthorType":"Linked",
+"Tester":"A"
+});
+pub.enableSingleRequest();
+g.enableServices();
+});
+</script>
+<link type="text/css" rel="stylesheet" href="http://www1.static.zimbio.com/loader/024892.123.base__base_white__share_bar__font__color__color_zimbio__YmFzZWJhc2V__.css" />
+<link type="text/css" rel="stylesheet" href="http://www1.static.zimbio.com/loader/024892.123.zine_base__emluZV9iYXN__.css" />
+<link type="text/css" rel="stylesheet" href="http://www1.static.zimbio.com/loader/024892.123.article__article_templates__sidebar__YXJ0aWNsZWF__.css" />
+</head>
+<body>
+<div id="bodycontainer">
+<!-- google_ad_section_start(weight=ignore) -->
+<div class="_c" id="domainBar">
+<ul id="domainLeft" class="lnk3 clr3">
+<li><a class="domainZimbioActive" href="http://www.zimbio.com/"><span>ZIMBIO</span></a></li>
+<li><a class="domainStyle" href="http://www.stylebistro.com/"><span>STYLEBISTRO</span></a></li>
+<li><a class="domainHome" href="http://www.lonny.com/"><span>LONNY</span></a></li>
+</ul>
+<ul id="domainRight" class="lnk3 clr3">
+<li><a id="accountRegister" href="/join">REGISTER</a></li><li><span class="domainPipe">|</span></li>
+<li><a id="accountLogin" class="_login" href="/login" id="loginHeaderLink">LOGIN</a></li>
+</ul>
+</div>
+<div class="corporateHeader">
+<a href="/"><img class="corporateLogo" title="logo" src="http://www1.static.zimbio.com/images/logo_Zimbio_Main.png" /></a>
+<div id="topLeaderboard" class="embeddedAd">
+<script>Ad.fill('topLeaderboard');</script>
+</div>
+<div class="clear"></div>
+</div>
+<div id="nNav" class="_c" _cmod="NavBar">
+<ul id="nNavMain">
+<li class="nNavOption"><a class="nNavHome" href="/"><span></span></a></li>
+<li id="pictures" class="nNavOption"><a _cid="Pictures" href="/pictures"><span>PICTURES</span></a></li>
+<li id="videos" class="nNavOption"><a _cid="Videos" href="/videos"><span>VIDEOS</span></a></li>
+<li id="celebs" class="nNavOption"><a _cid="Celebs" href="/celebs"><span>CELEBS</span></a></li>
+<li id="movies" class="nNavOption"><a _cid="Movies" href="/Movies"><span>MOVIES</span></a></li>
+<li id="tv" class="nNavOption"><a _cid="TV" href="/TV"><span>TV</span></a></li>
+<li id="music" class="nNavOption"><a _cid="Music" href="/Music"><span>MUSIC</span></a></li>
+<li id="life" class="nNavOption active"><a _cid="Life" href="/category/Life"><span>LIFE</span></a></li>
+<li id="corpMoreLink" class="nNavOption"><a _cid="More" id="corpMore" onclick="Dropdown.show('corpNavDropdown',event);" class="corpNavMore" href="javascript:void(0);"><span>MORE</span><span id="corpNavMoreIcon">&nbsp;</span></a></li>
+</ul>
+<div id="corpNavDropdown" class="_dropdown" style="display:none">
+<div id="corpNavDropdownInner" class="dropdownInnerBox lnk1">
+<a _cid="CurrentEvents" href="/category/Current+Events">CURRENT EVENTS</a>
+<a _cid="Sports" href="/category/Sports">SPORTS</a>
+<a _cid="Games" href="/games">GAMES</a>
+<a _cid="Dating" href="/dating">DATING</a>
+<a _cid="Polls" href="/polls">POLLS</a>
+<a _cid="PhotoSpecials" href="/specials">PHOTO SPECIALS</a>
+</div>
+</div>
+<div id="nNavSearch">
+<form method="get" action="/search">
+<input class="nSearch nSearchSmall _c" autocomplete="off" onfocus="this.style.color='#000'" type="text" id="q" name="q" value="" placeholder="Search" />
+<input class="_c" id="searchIcon" type="submit" value="" />
+<input type="hidden" name="type" value="all" />
+</form>
+<div class="clear"></div>
+</div>
+</div>
+<!-- google_ad_section_end -->
+<div id="Container">
+<div _cmod="zineHeader" class="sectionHead _c" id="sectionHead">
+<div id="sectionHeadWrapper">
+<!-- google_ad_section_start -->
+<div class="mugshot">
+<a _cid="mugImage" href="/the+ubuntu+guy">
+<img _cid="mugImage" src="http://www3.pictures.zimbio.com/img/8a20/MemberAction/1964c.jpg" title="the ubuntu guy" alt="the ubuntu guy" />
+</a>
+</div>
+<div class="sectionHeadMain">
+<h1 class="sh1"><a id="zineTitle" _cid="zineTitle" href="/the+ubuntu+guy">the ubuntu guy</a></h1>
+<!-- google_ad_section_end -->
+<div class="nSectionNav lnk1" id="sectionNav">
+<ul id="sectionNavList">
+<li><a _cid="nav_Main" href="/the+ubuntu+guy">Main</a></li>
+<li><a _cid="nav_Articles" class="selected" href="/the+ubuntu+guy/articles">Articles</a></li>
+<li><a _cid="nav_Polls" href="/the+ubuntu+guy/polls">Polls</a></li>
+<li><div id="sectionNavMore" style="display:inline"><a id="navMore" onclick="Dropdown.show('sectionNavDropdown',event);return false;" href="#">more <span>&nbsp;&nbsp;&nbsp;</span></a></div></li>
+</ul>
+<div id="sectionNavDropdown" class="_dropdown" style="display:none">
+<div id="sectionNavDropdownInner" class="dropdownInner">
+<a _cid="nav_Notes" href="/the+ubuntu+guy/notes">Notes</a>
+<a _cid="nav_Links" href="/the+ubuntu+guy/rolls">Links</a>
+</div>
+</div>
+</div>
+</div>
+<div class="subHeadNext" _cid="nextButton">
+<a _cid="nextButton" class="nextButton fRight themeButton" title="wallpaper ubuntu" href="/the+ubuntu+guy/articles/v_JpGXL2UdV/wallpaper+ubuntu"><span id="nextSub" class="next _c">NEXT &raquo;</span></a>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="Content">
+<div _cmod="topNextBack" class="_c">
+<a _cid="back" class="prevButton fLeft themeButton" title="Ubuntu Tweak 0.6.0 Released (Ubuntu Installation Include)" href="/the+ubuntu+guy/articles/B3K4H7HH62J/Ubuntu+Tweak+0+6+0+Released+Ubuntu+Installation"><span id="prev" class="prev _c">&laquo; PREV</span></a>
+<a _cid="next" class="nextButton fRight themeButton" title="wallpaper ubuntu" href="/the+ubuntu+guy/articles/v_JpGXL2UdV/wallpaper+ubuntu"><span id="next" class="next _c">NEXT &raquo;</span></a>
+</div>
+<div class="clear"></div>
+<!-- google_ad_section_start -->
+<h1 class="zTitle hd1b clr1">How to set JAVA_HOME environment variable in Ubuntu</h1>
+<!-- google_ad_section_end -->
+<div class="lib_entry_byline lib_entry_byline_article clr3 _c" id="byline">
+<span>By </span>
+<a id="bylineAuthor" href="/member/dshuck">InstantSpot </a>
+on 
+<script type="text/javascript">document.write(LocalTime.getMDY('March 20, 2009 18:02'));</script><noscript>2009-03-20 18:02:00</noscript>
+<span><span class="bylinePipe">|</span></span>&nbsp;From </span><a class="lnkS1" id="bylineSource" href="http://daveshuck.instantspot.com/blog/2009/03/20/How-to-set-JAVAHOME-environment-variable-in-Ubuntu-">daveshuck.instantspot.com</a>
+</div>
+<div id="zBlog" class="zBlog _c">
+<!-- google_ad_section_start -->
+<p>I am actually creating this blog entry as a bookmark for myself, but since I know that I never remember how to do it, others might benefit as well!</p>
+<p>One way that you can set your JAVA_HOME variable and add to your PATH, is be doing the folowing.&nbsp; As &#39;sudo&#39; open up <strong>/etc/bash.bashrc</strong> and add the following to the end of the file.&nbsp; NOTE: Set the java path to whatever the actual path is on your environment if it does not match <strong>/usr/lib/jvm/java</strong></p>
+<p>&nbsp;</p><pre>JAVA_HOME=/usr/lib/jvm/java<br />export JAVA_HOME<br />PATH=$PATH:$JAVA_HOME/bin<br />export PATH</pre><p>&nbsp;</p>
+<p>When you reboot, try running the following:</p>
+<p>&nbsp;</p><pre>$ echo $JAVA_HOME<br />/usr/lib/jvm/java<br /> echo $PATH<br />[probably lots of paths]:/usr/lib/jvm/java/bin<br /><br />More on Zimbio:</pre><div>
+<div><a  href="/Get+the+Look+-+Dress+Like+Steve+Jobs" ><img class=" t_Left" src="http://www3.pictures.zimbio.com/mp/v08xMrunlNAc.jpg" border="0" alt="Get the Look - Dress Like Steve Jobs" title="Get the Look - Dress Like Steve Jobs" width="110" height="110" /></a></div>
+<span class="topicHeadline"><a  href="/Get+the+Look+-+Dress+Like+Steve+Jobs" >Get the Look - Dress Like Steve Jobs</a></span>
+<div>Steve Jobs did not get where he is today by looking like a slouch. Instead of spreading himself thin, he found one look and stuck with it. Check it out. </div>
+</div><pre><br /></pre><p>&nbsp;</p>
+<div class="clear"></div>
+<div class="moreArticles">Related Articles:</div>
+<div class="clear"></div>
+<!-- google_ad_section_start -->
+<ul class="relatedPic _c" id="relatedArticles">
+<li class="relatedArticles" >
+<div class="relatedArticlesLink" id="listv_JpGXL2UdV"><a id="floatTitlev_JpGXL2UdV" _cid="WallpaperUbuntu" href="/the+ubuntu+guy/articles/v_JpGXL2UdV/wallpaper+ubuntu">wallpaper ubuntu</a></div>
+<div class="floatingInfo floatingDescShadow" id="descv_JpGXL2UdV">
+<div class="floatingThumbnail"><a class="lnk1" href="/the+ubuntu+guy/articles/v_JpGXL2UdV/wallpaper+ubuntu"><img class="floatingImg" src="http://www1.pictures.zimbio.com/mp/VYPE_iwz1Nsm.jpg" title="wallpaper ubuntu. DaveN. Mar 4, 08:12 PM. From the first article quot;A diesel Cruze would be - From imageshack.us"/></a></div>
+<div class="floatingDesc" >
+<div class="floatingTitle"><a href="/the+ubuntu+guy/articles/v_JpGXL2UdV/wallpaper+ubuntu" class="floatingTitleLink">wallpaper ubuntu</a></div>
+wallpaper ubuntu. Nice Ubuntu Logo Nice Ubuntu Logo bigtime007 06-26 01:41 PM It seem like the...
+<div class="clear"></div>
+<a class="floatingFullStory" href="/the+ubuntu+guy/articles/v_JpGXL2UdV/wallpaper+ubuntu"> Read&nbsp;Full&nbsp;Story »</a>
+<div class="clear"></div>
+</div>
+<div class="chat-arrow transback">
+</div>
+<div class="chat-bubble-arrow-border"></div>
+<div class="chat-bubble-arrow"></div>
+</div>
+</li>
+<li class="relatedArticles" >
+<div class="relatedArticlesLink" id="listkKRKlizVLiW"><a id="floatTitlekKRKlizVLiW" _cid="AnkleBootsAndSkinnyJeans" href="/the+ubuntu+guy/articles/kKRKlizVLiW/Ankle+Boots+and+Skinny+Jeans">Ankle Boots and Skinny Jeans</a></div>
+<div class="floatingInfo floatingDescShadow" id="desckKRKlizVLiW">
+<div class="floatingThumbnail"><a class="lnk1" href="/the+ubuntu+guy/articles/kKRKlizVLiW/Ankle+Boots+and+Skinny+Jeans"><img class="floatingImg" src="http://www3.pictures.zimbio.com/mp/iH6jZn50eQkm.jpg" title="Ankle Boots and Skinny Jeans - From 92.219"/></a></div>
+<div class="floatingDesc" >
+<div class="floatingTitle"><a href="/the+ubuntu+guy/articles/kKRKlizVLiW/Ankle+Boots+and+Skinny+Jeans" class="floatingTitleLink">Ankle Boots and Skinny Jeans</a></div>
+The key occur of shoes to fatigue with skinny jeans is ankle boots, especially in winter when it...
+<div class="clear"></div>
+<a class="floatingFullStory" href="/the+ubuntu+guy/articles/kKRKlizVLiW/Ankle+Boots+and+Skinny+Jeans"> Read&nbsp;Full&nbsp;Story »</a>
+<div class="clear"></div>
+</div>
+<div class="chat-arrow transback">
+</div>
+<div class="chat-bubble-arrow-border"></div>
+<div class="chat-bubble-arrow"></div>
+</div>
+</li>
+<li class="relatedArticles" >
+<div class="relatedArticlesLink" id="list8Mzr_zvNI8A"><a id="floatTitle8Mzr_zvNI8A" _cid="23AwesomeThemesUbuntuLinux" href="/the+ubuntu+guy/articles/8Mzr_zvNI8A/23+Awesome+Themes+Ubuntu+Linux">23 Awesome Themes for Ubuntu Linux</a></div>
+<div class="floatingInfo floatingDescShadow" id="desc8Mzr_zvNI8A">
+<div class="floatingThumbnail"><a class="lnk1" href="/the+ubuntu+guy/articles/8Mzr_zvNI8A/23+Awesome+Themes+Ubuntu+Linux"><img class="floatingImg" src="http://www3.pictures.zimbio.com/mp/rbHg086z-MNm.jpg" title="ubuntu-soffice-400x320 - From aazee.com"/></a></div>
+<div class="floatingDesc" >
+<div class="floatingTitle"><a href="/the+ubuntu+guy/articles/8Mzr_zvNI8A/23+Awesome+Themes+Ubuntu+Linux" class="floatingTitleLink">23 Awesome Themes for Ubuntu Linux</a></div>
+I started using Ubuntu 4 months back, and since then I’ve been looking for ways to customize and...
+<div class="clear"></div>
+<a class="floatingFullStory" href="/the+ubuntu+guy/articles/8Mzr_zvNI8A/23+Awesome+Themes+Ubuntu+Linux"> Read&nbsp;Full&nbsp;Story »</a>
+<div class="clear"></div>
+</div>
+<div class="chat-arrow transback">
+</div>
+<div class="chat-bubble-arrow-border"></div>
+<div class="chat-bubble-arrow"></div>
+</div>
+</li>
+<li class="relatedArticles" >
+<div class="relatedArticlesLink" id="list2J6ubvmdRdo"><a id="floatTitle2J6ubvmdRdo" _cid="MicrosoftTextFontsUbuntuLinux" href="/the+ubuntu+guy/articles/71/Microsoft+Text+Fonts+Ubuntu+Linux">Microsoft Text Fonts In Ubuntu Linux</a></div>
+<div class="floatingInfo floatingDescShadow" id="desc2J6ubvmdRdo">
+<div class="floatingThumbnail"><a class="lnk1" href="/the+ubuntu+guy/articles/71/Microsoft+Text+Fonts+Ubuntu+Linux"><img class="floatingImg" src="http://www1.pictures.zimbio.com/img/f718/gwendogould/61m.jpg" title="Microsoft Text Fonts In Ubuntu Linux - From blogspot.com"/></a></div>
+<div class="floatingDesc" >
+<div class="floatingTitle"><a href="/the+ubuntu+guy/articles/71/Microsoft+Text+Fonts+Ubuntu+Linux" class="floatingTitleLink">Microsoft Text Fonts In Ubuntu Linux</a></div>
+Arial, Times New Roman, Impact and Verdana are some of the most commonly used fonts. They are so...
+<div class="clear"></div>
+<a class="floatingFullStory" href="/the+ubuntu+guy/articles/71/Microsoft+Text+Fonts+Ubuntu+Linux"> Read&nbsp;Full&nbsp;Story »</a>
+<div class="clear"></div>
+</div>
+<div class="chat-arrow transback">
+</div>
+<div class="chat-bubble-arrow-border"></div>
+<div class="chat-bubble-arrow"></div>
+</div>
+</li>
+<li class="relatedArticles" >
+<div class="relatedArticlesLink" id="listbnnVD2h-RlV"><a id="floatTitlebnnVD2h-RlV" _cid="SkypeUbuntuInstallationGuide" href="/the+ubuntu+guy/articles/bnnVD2h-RlV/Skype+Ubuntu+Installation+guide">Skype for Ubuntu – Installation guide</a></div>
+<div class="floatingInfo floatingDescShadow" id="descbnnVD2h-RlV">
+<div class="floatingThumbnail"><a class="lnk1" href="/the+ubuntu+guy/articles/bnnVD2h-RlV/Skype+Ubuntu+Installation+guide"><img class="floatingImg" src="http://www1.pictures.zimbio.com/mp/7OSgsJiTAH2m.jpg" title="Skype for Ubuntu  - From skypeforubuntu.com"/></a></div>
+<div class="floatingDesc" >
+<div class="floatingTitle"><a href="/the+ubuntu+guy/articles/bnnVD2h-RlV/Skype+Ubuntu+Installation+guide" class="floatingTitleLink">Skype for Ubuntu – Installation guide</a></div>
+Skype for Ubuntu &#8211; Installation guide 
+Ubuntu is an excellent operating system built on the...
+<div class="clear"></div>
+<a class="floatingFullStory" href="/the+ubuntu+guy/articles/bnnVD2h-RlV/Skype+Ubuntu+Installation+guide"> Read&nbsp;Full&nbsp;Story »</a>
+<div class="clear"></div>
+</div>
+<div class="chat-arrow transback">
+</div>
+<div class="chat-bubble-arrow-border"></div>
+<div class="chat-bubble-arrow"></div>
+</div>
+</li>
+<li class="relatedArticles" >
+<div class="relatedArticlesLink" id="listDNnfUgYBTde"><a id="floatTitleDNnfUgYBTde" _cid="UbuntuFreeWallpapersUbuntuLinuxAbstract" href="/the+ubuntu+guy/articles/DNnfUgYBTde/Ubuntu+Free+Wallpapers+Ubuntu+Linux+Abstract">Ubuntu Free Wallpapers Ubuntu Linux Abstract ROM</a></div>
+<div class="floatingInfo floatingDescShadow" id="descDNnfUgYBTde">
+<div class="floatingThumbnail"><a class="lnk1" href="/the+ubuntu+guy/articles/DNnfUgYBTde/Ubuntu+Free+Wallpapers+Ubuntu+Linux+Abstract"><img class="floatingImg" src="http://www4.pictures.zimbio.com/mp/bhineXRpHcSm.jpg" title="Ubuntu Free Wallpapers Ubuntu Linux Abstract ROM Photo - From wallpaperlinux.com"/></a></div>
+<div class="floatingDesc" >
+<div class="floatingTitle"><a href="/the+ubuntu+guy/articles/DNnfUgYBTde/Ubuntu+Free+Wallpapers+Ubuntu+Linux+Abstract" class="floatingTitleLink">Ubuntu Free Wallpapers Ubuntu Linux Abstract ROM</a></div>
+Ubuntu Free Wallpapers Ubuntu Linux Abstract ROM 
+Ubuntu Linux Wallpapers 
+Related External...
+<div class="clear"></div>
+<a class="floatingFullStory" href="/the+ubuntu+guy/articles/DNnfUgYBTde/Ubuntu+Free+Wallpapers+Ubuntu+Linux+Abstract"> Read&nbsp;Full&nbsp;Story »</a>
+<div class="clear"></div>
+</div>
+<div class="chat-arrow transback">
+</div>
+<div class="chat-bubble-arrow-border"></div>
+<div class="chat-bubble-arrow"></div>
+</div>
+</li>
+</ul>
+<!-- google_ad_section_end -->
+<div class="clear"></div>
+<!-- google_ad_section_end -->
+</div>
+<div class="clear">
+</div>
+<div _cmod="bottomNextBack" class="floatingNavBar _c">
+<a _cid="back" class="prevButton fLeft themeButton" title="Ubuntu Tweak 0.6.0 Released (Ubuntu Installation Include)" href="/the+ubuntu+guy/articles/B3K4H7HH62J/Ubuntu+Tweak+0+6+0+Released+Ubuntu+Installation"><span id="prevBottom" class="prev _c">&laquo; PREV</span></a>
+<a _cid="next" class="nextButton fRight themeButton" title="wallpaper ubuntu" href="/the+ubuntu+guy/articles/v_JpGXL2UdV/wallpaper+ubuntu"><span id="nextBottom" class="next _c">NEXT &raquo;</span></a>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div class="commentHeader hd1b">Comments</div>
+<div class="fbBox _c" id="commentBox">
+<fb:comments href="http://www.zimbio.com/the+ubuntu+guy/articles/82/How+set+JAVA_HOME+environment+variable+Ubuntu" migrated="1" numposts="10" width="600"></fb:comments>
+</div>
+<div id="searchLink" class="_c"></div>
+</div>
+<!-- end Content -->
+<div id="Sidebar">
+<!-- google_ad_section_start(weight=ignore) -->
+<div id="topMREC" class="embeddedAd clr2">
+<script>Ad.fill('topMREC');</script>
+</div>
+<div class="clear"></div>
+<div class="moduleSide sidebarFacebook _c" _cmod="TopArticles">
+<div class="mt1">Featured Stories</div>
+<div class="sidePopularZinesB">
+<div class="sideFeaturedArticleB boxHover">
+<a class="boxHoverImage" _cid="ByeByeBabyWeight" href="/Most+Impressive+Post-Baby+Bods/articles/zEZvVefa-dg/Bye+Bye+Baby+Weight">
+<img _cid="ByeByeBabyWeight" src="http://www3.pictures.zimbio.com/mp/x2eaoac6n0vm.jpg" /></a>
+<a class="sideFeaturedArticleTitleB hd1c" _cid="ByeByeBabyWeight" href="/Most+Impressive+Post-Baby+Bods/articles/zEZvVefa-dg/Bye+Bye+Baby+Weight">Most Impressive Post-Baby Bods</a>
+</div>
+<div class="sideFeaturedArticleB boxHover">
+<a class="boxHoverImage" _cid="GreatestSlideshowTimeStarts" href="http://www.stylebistro.com/Best+Dressed+Pooches+at+the+2012+NYC+Halloween+Dog+Parade/articles/53z64cNHueR/Greatest+Slideshow+Time+Starts">
+<img _cid="GreatestSlideshowTimeStarts" src="http://www3.pictures.zimbio.com/pc/HALLOWEEN+HOUNDS+Hundreds+dog+owners+dressed+6_vNHzJ5Zilm.jpg" /></a>
+<a class="sideFeaturedArticleTitleB hd1c" _cid="GreatestSlideshowTimeStarts" href="http://www.stylebistro.com/Best+Dressed+Pooches+at+the+2012+NYC+Halloween+Dog+Parade/articles/53z64cNHueR/Greatest+Slideshow+Time+Starts">Best Dressed Pooches at the 2012 NYC Halloween Dog Parade</a>
+</div>
+<div class="sideFeaturedArticleB boxHover">
+<a class="boxHoverImage" _cid="10ActorsSurprisinglyFluentOtherLanguages" href="/Casey+Affleck/articles/WPv56pO8wiq/10+Actors+Surprisingly+Fluent+Other+Languages">
+<img _cid="10ActorsSurprisinglyFluentOtherLanguages" src="http://www1.pictures.zimbio.com/mp/EKgl3moihUSm.jpg" /></a>
+<a class="sideFeaturedArticleTitleB hd1c" _cid="10ActorsSurprisinglyFluentOtherLanguages" href="/Casey+Affleck/articles/WPv56pO8wiq/10+Actors+Surprisingly+Fluent+Other+Languages">10 Actors Who Are Surprisingly Fluent in Other Languages</a>
+</div>
+<div class="sideFeaturedArticleB boxHover">
+<a class="boxHoverImage" _cid="TheSincerestFormOfFlattery" href="/Today's+Actresses+as+Yesterday's+Hollywood+Icons/articles/Ss2Mrj1xYZc/The+Sincerest+Form+of+Flattery">
+<img _cid="TheSincerestFormOfFlattery" src="http://www1.pictures.zimbio.com/mp/HPGGose1Wiqm.jpg" /></a>
+<a class="sideFeaturedArticleTitleB hd1c" _cid="TheSincerestFormOfFlattery" href="/Today's+Actresses+as+Yesterday's+Hollywood+Icons/articles/Ss2Mrj1xYZc/The+Sincerest+Form+of+Flattery">Today&#39;s Actresses as Yesterday&#39;s Hollywood Icons</a>
+</div>
+<div class="sideFeaturedArticleB boxHover lastInColumn">
+<a class="boxHoverImage" _cid="IMGay" href="/Stars+Coming+Out/articles/cUHbyOWw6T3/I+m+Gay">
+<img _cid="IMGay" src="http://www3.pictures.zimbio.com/gi/2011+CFDA+Fashion+Awards+Arrivals+8oos3y0ORbWm.jpg" /></a>
+<a class="sideFeaturedArticleTitleB hd1c" _cid="IMGay" href="/Stars+Coming+Out/articles/cUHbyOWw6T3/I+m+Gay">Anderson Cooper and 22 Other Stars Coming Out</a>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="moduleSide sidebarFacebook">
+<div class="mt1">Like Us on Facebook</div>
+<div class="fb-like-box" data-href="http://www.facebook.com/zimbio" data-width="320" data-show-faces="true" data-border-color="#FFF" data-stream="false" data-header="false"></div>
+</div>
+<div id="sideMREC" class="embeddedAd clr2">
+<script>Ad.fill('sideMREC');</script>
+</div>
+<div class="clear"></div>
+<!-- google_ad_section_end -->
+</div>
+<div class="clear clearPad"></div>
+</div>
+<!-- end Container -->
+<div id="homepageFooterBox" class="moduleBottom footWrapper _c" _cmod="articleFooter">
+<div class="domainarticlesDiv">
+<div class="domainName">
+<a class="linkMore designerTitle" href="http://www.zimbio.com">more from Zimbio &raquo;</a>
+<a href="http://www.zimbio.com"><img src="http://www1.static.zimbio.com/images/logo_Zimbio_32x86.png" title="Zimbio"></a>
+</div>
+<div class="clear"></div>
+<div class="hybridArticle ">
+<a _cid="VampireDiariesCastsTwilightHottieKey" href="/Camille+Guaty/articles/xflSXoOlz2P/Vampire+Diaries+Casts+Twilight+Hottie+Key"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www1.pictures.zimbio.com/od/EbFn1Q2YLi8/RWJGbjFRMll/225x150.jpg"  >
+<noscript><img _cid="VampireDiariesCastsTwilightHottieKey" alt="&#39;Vampire Diaries&#39; Casts &#39;Twilight&#39; Hottie in Key Role" title="&#39;Vampire Diaries&#39; Casts &#39;Twilight&#39; Hottie in Key Role" src="http://www1.pictures.zimbio.com/od/EbFn1Q2YLi8/RWJGbjFRMll/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="VampireDiariesCastsTwilightHottieKey" href="/Camille+Guaty/articles/xflSXoOlz2P/Vampire+Diaries+Casts+Twilight+Hottie+Key">&#39;Vampire Diaries&#39; Casts &#39;Twilight&#39; Hottie in Key Role</a>
+</div>
+<div class="hybridArticle ">
+<a _cid="DancingStarsStarsFinalists" href="/Dancing+with+the+Stars/articles/nofyGecWgqY/Dancing+Stars+Stars+Finalists"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www2.pictures.zimbio.com/od/dk4wiJioy0X/ZGs0d2lKaW9/225x150.jpg"  >
+<noscript><img _cid="DancingStarsStarsFinalists" alt="And the &#39;Dancing with the Stars: All Stars&#39; Finalists Are..." title="And the &#39;Dancing with the Stars: All Stars&#39; Finalists Are..." src="http://www2.pictures.zimbio.com/od/dk4wiJioy0X/ZGs0d2lKaW9/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="DancingStarsStarsFinalists" href="/Dancing+with+the+Stars/articles/nofyGecWgqY/Dancing+Stars+Stars+Finalists">And the &#39;Dancing with the Stars: All Stars&#39; Finalists Are...</a>
+</div>
+<div class="hybridArticle ">
+<a _cid="LindsayLohanInspiredMarilynMonroe" href="/Lindsay+Lohan/articles/8MblaYd6mBy/Lindsay+Lohan+Inspired+Marilyn+Monroe"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www1.pictures.zimbio.com/od/E4Vg_1HwprZ/RTRWZ18xSHd/225x150.jpg"  >
+<noscript><img _cid="LindsayLohanInspiredMarilynMonroe" alt="Lindsay Lohan Is Inspired By Marilyn Monroe" title="Lindsay Lohan Is Inspired By Marilyn Monroe" src="http://www1.pictures.zimbio.com/od/E4Vg_1HwprZ/RTRWZ18xSHd/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="LindsayLohanInspiredMarilynMonroe" href="/Lindsay+Lohan/articles/8MblaYd6mBy/Lindsay+Lohan+Inspired+Marilyn+Monroe">Lindsay Lohan Is Inspired By Marilyn Monroe</a>
+</div>
+<div class="hybridArticle rightMostArticle ">
+<a _cid="FionaApplePostponesSouthAmericanTour" href="/Fiona+Apple/articles/wdGLvpvtG1h/Fiona+Apple+Postpones+South+American+Tour"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www3.pictures.zimbio.com/od/oxf_TxD8Fe4/b3hmX1R4RDh/225x150.jpg"  >
+<noscript><img _cid="FionaApplePostponesSouthAmericanTour" alt="Fiona Apple Postpones South American Tour to Care for Her Dying Dog" title="Fiona Apple Postpones South American Tour to Care for Her Dying Dog" src="http://www3.pictures.zimbio.com/od/oxf_TxD8Fe4/b3hmX1R4RDh/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="FionaApplePostponesSouthAmericanTour" href="/Fiona+Apple/articles/wdGLvpvtG1h/Fiona+Apple+Postpones+South+American+Tour">Fiona Apple Postpones South American Tour to Care for Her...</a>
+</div>
+<div class="clear"></div>
+</div>
+<div class="domainarticlesDiv">
+<div class="domainName">
+<a class="linkMore designerTitle" href="http://www.stylebistro.com">more from StyleBistro &raquo;</a>
+<a href="http://www.stylebistro.com"><img src="http://www1.static.zimbio.com/images/logo_Style_32x174.png" title="StyleBistro"></a>
+</div>
+<div class="clear"></div>
+<div class="hybridArticle ">
+<a _cid="UNVEILEDMirandaKerrSecretAmazingStreet" href="http://www.stylebistro.com/Look+of+the+Day/articles/NDcos3QkCDf/UNVEILED+Miranda+Kerr+Secret+Amazing+Street"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www2.pictures.zimbio.com/od/wtIH3lrN2MB/d3RJSDNsck4/225x150.jpg"  >
+<noscript><img _cid="UNVEILEDMirandaKerrSecretAmazingStreet" alt="UNVEILED: Miranda Kerr&#39;s Secret to Amazing Street Style" title="UNVEILED: Miranda Kerr&#39;s Secret to Amazing Street Style" src="http://www2.pictures.zimbio.com/od/wtIH3lrN2MB/d3RJSDNsck4/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="UNVEILEDMirandaKerrSecretAmazingStreet" href="http://www.stylebistro.com/Look+of+the+Day/articles/NDcos3QkCDf/UNVEILED+Miranda+Kerr+Secret+Amazing+Street">UNVEILED: Miranda Kerr&#39;s Secret to Amazing Street Style</a>
+</div>
+<div class="hybridArticle ">
+<a _cid="DIYThanksgivingNailArt10TurkeyDayNail" href="http://www.stylebistro.com/Beauty+News/articles/ur3O9tsm2r9/DIY+Thanksgiving+Nail+Art+10+Turkey+Day+Nail"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www1.pictures.zimbio.com/od/hOPvaCsuwZQ/aE9QdmFDc3V/225x150.jpg"  >
+<noscript><img _cid="DIYThanksgivingNailArt10TurkeyDayNail" alt="DIY Thanksgiving Nail Art: 10 Turkey Day Nail Ideas to Try" title="DIY Thanksgiving Nail Art: 10 Turkey Day Nail Ideas to Try" src="http://www1.pictures.zimbio.com/od/hOPvaCsuwZQ/aE9QdmFDc3V/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="DIYThanksgivingNailArt10TurkeyDayNail" href="http://www.stylebistro.com/Beauty+News/articles/ur3O9tsm2r9/DIY+Thanksgiving+Nail+Art+10+Turkey+Day+Nail">DIY Thanksgiving Nail Art: 10 Turkey Day Nail Ideas to Try</a>
+</div>
+<div class="hybridArticle ">
+<a _cid="OhSnapSelenaGomezStealsEndorsementDeal" href="http://www.stylebistro.com/Fashion+News/articles/Z76tIrZcltR/Oh+Snap+Selena+Gomez+Steals+Endorsement+Deal"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www3.pictures.zimbio.com/od/O2k5oGfx2ue/TzJrNW9HZng/225x150.jpg"  >
+<noscript><img _cid="OhSnapSelenaGomezStealsEndorsementDeal" alt="Oh Snap! Selena Gomez Steals Endorsement Deal From Ex Justin Bieber" title="Oh Snap! Selena Gomez Steals Endorsement Deal From Ex Justin Bieber" src="http://www3.pictures.zimbio.com/od/O2k5oGfx2ue/TzJrNW9HZng/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="OhSnapSelenaGomezStealsEndorsementDeal" href="http://www.stylebistro.com/Fashion+News/articles/Z76tIrZcltR/Oh+Snap+Selena+Gomez+Steals+Endorsement+Deal">Oh Snap! Selena Gomez Steals Endorsement Deal From Ex...</a>
+</div>
+<div class="hybridArticle rightMostArticle ">
+<a _cid="NaomiWattsMajorSleeveActionLetDiscuss" href="http://www.stylebistro.com/Celebrity+Style/articles/_-IDI2b6bVM/Naomi+Watts+Major+Sleeve+Action+Let+Discuss"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www2.pictures.zimbio.com/od/YxWUtRDc-SX/WXhXVXRSRGM/225x150.jpg"  >
+<noscript><img _cid="NaomiWattsMajorSleeveActionLetDiscuss" alt="Naomi Watts&#39;s Major Sleeve Action—Let&#39;s Discuss" title="Naomi Watts&#39;s Major Sleeve Action—Let&#39;s Discuss" src="http://www2.pictures.zimbio.com/od/YxWUtRDc-SX/WXhXVXRSRGM/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="NaomiWattsMajorSleeveActionLetDiscuss" href="http://www.stylebistro.com/Celebrity+Style/articles/_-IDI2b6bVM/Naomi+Watts+Major+Sleeve+Action+Let+Discuss">Naomi Watts&#39;s Major Sleeve Action—Let&#39;s Discuss</a>
+</div>
+<div class="clear"></div>
+</div>
+<div class="domainarticlesDiv">
+<div class="domainName">
+<a class="linkMore designerTitle" href="http://www.lonny.com">more from Lonny &raquo;</a>
+<a href="http://www.lonny.com"><img src="http://www1.static.zimbio.com/images/logo_Lonny_32x46.png" title="Lonny"></a>
+</div>
+<div class="clear"></div>
+<div class="hybridArticle ">
+<a _cid="HowToMixOldAndNewDecor" href="http://www.lonny.com/Design+Inspiration/articles/i3ywDXn0gn8/How+to+Mix+Old+and+New+Decor"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www4.pictures.zimbio.com/od/njtX8-OJa7F/bmp0WDgtT0p/225x150.jpg"  >
+<noscript><img _cid="HowToMixOldAndNewDecor" alt="How to Mix Old and New Decor" title="How to Mix Old and New Decor" src="http://www4.pictures.zimbio.com/od/njtX8-OJa7F/bmp0WDgtT0p/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="HowToMixOldAndNewDecor" href="http://www.lonny.com/Design+Inspiration/articles/i3ywDXn0gn8/How+to+Mix+Old+and+New+Decor">How to Mix Old and New Decor</a>
+</div>
+<div class="hybridArticle ">
+<a _cid="HowAddInstantCharmVintagePortraits" href="http://www.lonny.com/How+to+Add+Instant+Charm+With+Vintage+Portraits/articles/UpYDIFDdM4C/Group+in+Multiples"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www3.pictures.zimbio.com/od/3S3CN-oLBav/M1MzQ04tb0x/225x150.jpg"  >
+<noscript><img _cid="HowAddInstantCharmVintagePortraits" alt="How to Add Instant Charm With Vintage Portraits" title="How to Add Instant Charm With Vintage Portraits" src="http://www3.pictures.zimbio.com/od/3S3CN-oLBav/M1MzQ04tb0x/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="HowAddInstantCharmVintagePortraits" href="http://www.lonny.com/How+to+Add+Instant+Charm+With+Vintage+Portraits/articles/UpYDIFDdM4C/Group+in+Multiples">How to Add Instant Charm With Vintage Portraits</a>
+</div>
+<div class="hybridArticle ">
+<a _cid="FestiveTabletopIdeas" href="http://www.lonny.com/Festive+Tabletop+Ideas/articles/vJOPMUdNBOq/Rustic+Country+Thanksgiving"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www3.pictures.zimbio.com/od/kVZEUa8L0DC/a1ZaRVVhOEw/225x150.jpg"  >
+<noscript><img _cid="FestiveTabletopIdeas" alt="Festive Tabletop Ideas" title="Festive Tabletop Ideas" src="http://www3.pictures.zimbio.com/od/kVZEUa8L0DC/a1ZaRVVhOEw/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="FestiveTabletopIdeas" href="http://www.lonny.com/Festive+Tabletop+Ideas/articles/vJOPMUdNBOq/Rustic+Country+Thanksgiving">Festive Tabletop Ideas</a>
+</div>
+<div class="hybridArticle rightMostArticle ">
+<a _cid="10ProductsWillImproveLivingRoom" href="http://www.lonny.com/Design+Inspiration/articles/EEysGAkooD0/10+Products+Will+Improve+Living+Room"  class="lazy_load"  _width="225" _height="150" _lsrc="http://www1.pictures.zimbio.com/od/IigJE6aJ_q0/SWlnSkU2YUp/225x150.jpg"  >
+<noscript><img _cid="10ProductsWillImproveLivingRoom" alt="10 Products That Will Improve Your Living Room  " title="10 Products That Will Improve Your Living Room  " src="http://www1.pictures.zimbio.com/od/IigJE6aJ_q0/SWlnSkU2YUp/225x150.jpg" width="225" height="150" /></noscript>
+</a>
+<a class="articleTitle hd2" _cid="10ProductsWillImproveLivingRoom" href="http://www.lonny.com/Design+Inspiration/articles/EEysGAkooD0/10+Products+Will+Improve+Living+Room">10 Products That Will Improve Your Living Room  </a>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<div id="centerLeaderboard" class="embeddedAd">
+<script>Ad.fill('centerLeaderboard');</script>
+</div>
+<div class="clear"></div>
+<!-- google_ad_section_start(weight=ignore) -->
+<div id="bottomFooter" class="clr3 _c">
+<div class="footerBorderStroke"></div>
+<div class="footerLinks">
+<a href="/">Home</a>
+<a href="http://www.livingly.com/terms-of-service/">Terms &amp; Policies</a>
+<a href="http://www.livingly.com/for-bloggers/">For Bloggers</a>
+<a href="http://www.livingly.com/">Advertise</a>
+<a href="/sitemap">Sitemap</a>
+<a href="/contentmap">Contentmap</a>
+<a href="http://www.livingly.com/about/">About Us</a>
+</div>
+<div class="footerBorderStroke footerLinksStroke"></div>
+<div id="footerLogos">
+<div id="footerLogoWrapper">
+<a href="http://www.livingly.com/" id="livinglyFooterLogo"></a>
+<div id="footerLogoSpacer"></div>
+<a href="http://www.zimbio.com/" id="zimbioFooterLogo"></a>
+<a href="http://www.stylebistro.com/" id="styleBistroFooterLogo"></a>
+<a href="http://www.lonny.com/" id="lonnyFooterLogo"></a>
+<div class="clear"></div>
+</div>
+</div>
+<div class="footerCC">Copyright &copy; 2012 - Livingly Media, Inc.  All Rights Reserved.</div>
+<div class="footerExtra">
+Zimbio Entertainment
+</div>
+</div>
+<!-- google_ad_section_end -->
+</div><!-- END bodycontainer -->
+<div id="socialWrapper" _cmod="shareBar" class="_c"><div id="socialBox">
+<div class="socialItem socialShare">
+<div id="socialBoxTitle">Share</div>
+</div>
+<div class="socialItem socialTweet">
+<a id="custom-tweet-button" _cid="tweet" href="https://twitter.com/share" target="_blank"><span _cid="tweet" class="tweetIcon _c"></span>Tweet</a>
+</div>
+<div class="socialItem socialPint">
+<a href="javascript:void(0)" id="PinItButton" _cid="pint" title="Pin it on Pinterest">Pin it</a>
+</div>
+<div id="fbPageLoading" class="socialItem">
+<div class="fbAsk"><span>. . .</span></div>
+</div>
+<div id="fbPageLoaded" _cid="fcbkShare" class="socialItem _c">
+<div class="fb-like" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" ref="bar"></div>
+</div>
+<div class="socialItem socialFollow">
+<div id="socialBoxTitle">Follow</div>
+</div>
+<div id="fbFollowLoading" class="socialItem">
+<div class="fbAsk"><span>. . .</span></div>
+</div>
+<div id="fbFollowLoaded" _cid="fcbkFollow" class="socialItem _c" _callback="FCBK.recommend">
+<div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" ref="bar" data-href="http://www.facebook.com/zimbio"></div>
+</div>
+</div></div>
+<script type="text/javascript"> 
+Handler.attach({id:'accountLogin',type:'click',fn:function(e){ User.login();return Handler.prevent(e); } });
+</script>
+<script type="text/javascript">
+Social.init({
+fcbkAppId: 137068566357971,
+fcbkAppNamespace: 'zimbiofb',
+trackComments:true,
+socialActionsEnabled: 
+false
+,
+socialActionsEnabledSite: true
+});
+AutoSearch.init();
+Loader.Lazy.init();
+Scroller.init();
+MoreFromZimbio = {source_obj:"none"}
+RelatedArticle_Config = {
+guid_list:["v_JpGXL2UdV", "kKRKlizVLiW", "8Mzr_zvNI8A", "2J6ubvmdRdo", "bnnVD2h-RlV", "DNnfUgYBTde" ]
+};
+Loader.getScript("http://www1.static.zimbio.com/loader/024892.123.article__YXJ0aWNsZQ=__.js", function(){RelatedArticle.init()}, true);
+FCBK.setScrollActions([]);
+</script>
+<script type="text/javascript">
+Track.pageType = "article";
+Track.init({
+clickTracking: true,
+category: "Life",
+quantcastLabels: "Life",
+comscoreKeyword: "entertainment",
+attributes: [
+['domain:' + Settings.domain],
+['pageType:' + Track.pageType],
+['category:Life'],
+['articleSource:linked'],
+['articleAuthor:dshuck'],
+['articleDomain:instantspot.com'],
+['articleDays:181+'],
+['eventMatch:None'],
+['featuredPerson:0'],
+['videoMatch:' + Track.videoMatch],
+['looksMatch:' + Track.lookMatch],
+['gameMatch:' + Track.gameMatch],
+['footerMatch:' + MoreFromZimbio.source_obj],
+['textLength:916'],
+['htmlLength:1454'],
+['picLength:1'],
+['geo:' + Settings.geoCountry],
+['testName:ten_buckets'],
+['testBucket:' + Settings.testBucket],
+['pv:' + '1'],
+['sessionId:u_aaD1Ip1rw'],
+['sessionStartTime:1353496364'],
+['source:othr'], 
+['section:Life'],
+['ad_campaign:'],
+['url:' + window.location]
+]
+});
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/b?c1=2&c2=6167726&comscorekw=entertainment" alt="" />
+<img src="http://pixel.quantserve.com/pixel/p-124BfeS-bwiSE.gif?labels=Life" style="display: none" border="0" height="1" width="1" alt=""/>
+</noscript>
+</body>
+</html>
