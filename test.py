@@ -18,14 +18,14 @@ from tasks import post_archive, posts_index_all, posts_update, get_posts, test_e
 
 #post = json.loads('{"description": "isolani - Web Standards: Web App Mistakes: Condemned to repeat","extended": "","hash": "3d97600671eec824e1e00a568593568a","href": "http://isolani.co.uk/blog/standards/WebAppMistakesWeAreCondemnedToRepeat","meta": "2da2ce176998ead694fcb2ae5e406024","shared": "no","tags": "","time": "2012-11-16T12:08:27Z","toread": "yes"}')
 
-json_data = open('all.json').read()
-posts = json.loads(json_data)
+#json_data = open('all.json').read()
+#posts = json.loads(json_data)
 
 #get_posts(1, 2, None)
 
-posts_index_all.delay()
+#posts_index_all.delay()
 
-#posts_update()
+posts_update.delay()
 #print posts[0]
 
 #for i, post in enumerate(posts):

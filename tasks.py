@@ -14,13 +14,13 @@ from datetime import datetime
 celery = Celery()
 celery.config_from_object(celeryconfig)
 
-auth_token = 'edwardjstone:OTC3ZDJMZGNJN2E5MGY2'
+auth_token = 'edwardjstone:MGRKNJYZNTNIMTC4NZK4'
 base_qstr = '?format=json&auth_token=%s' % auth_token
 base_api_url = 'https://api.pinboard.in/v1/'
 
-get_results = 5
+get_results = 50
 start_from = 0
-wait_for = 10  # seconds
+wait_for = 300  # seconds
 
 es_host = 'http://localhost:9200/'
 es_index = 'bookmarks'
@@ -29,14 +29,15 @@ datetime_mask = "%Y-%m-%dT%H:%M:%SZ"
 
 
 def posts_update_date():
-    #r = requests.get('%sposts/update%s' % (base_api_url, base_qstr))
-    #return datetime.strptime(r.json.get('update_time'), "%Y-%m-%dT%H:%M:%SZ")
-    return datetime.strptime('2012-11-20T12:45:30Z', datetime_mask)
+    r = requests.get('%sposts/update%s' % (base_api_url, base_qstr))
+    return datetime.strptime(r.json.get('update_time'), "%Y-%m-%dT%H:%M:%SZ")
+    #return datetime.strptime('2012-11-20T12:45:30Z', datetime_mask)
 
 
 @celery.task
 def posts_update():
     most_recent = posts_update_date()
+    print most_recent
     query = {
         "from": 0,
         "size": 1,
@@ -53,6 +54,7 @@ def posts_update():
     r = requests.get('%s%s/_search' % (es_host, es_index), data=json.dumps(query))
     last_update_str = r.json['hits']['hits'][0]['fields']['posts_update']
     last_update = datetime.strptime(last_update_str, datetime_mask)
+    print last_update
     if last_update < most_recent:
         print "there's an update - getting posts"
         get_posts.delay(start_from, get_results, from_date=last_update_str)
@@ -68,20 +70,21 @@ def get_posts(start, results, from_date):
     url = '%sposts/all%s&start=%d&results=%d' % (base_api_url, base_qstr, start, results)
     if from_date is not None:
         url = '%s&fromdt=%s' % (url, from_date)
+        index_date = from_date
     else:
-        from_date = datetime.strftime(posts_update_date(), datetime_mask)
-    #r = requests.get(url)
-    #rjson = r.json
-    print from_date
-    rjson = json.loads(open('all.json').read())[start:start+results]
+        index_date = datetime.strftime(posts_update_date(), datetime_mask)
+    r = requests.get(url)
+    rjson = r.json
+    #print from_date
+    #rjson = json.loads(open('all.json').read())[start:start+results]
     print len(rjson)
     print start, results
     #last_update = datetime.strptime(from_date, datetime_mask)
     if len(rjson):
         get_posts.apply_async((start + results, results, from_date), countdown=wait_for)
         for post in rjson:
-            print post['href']
-            #post_archive.delay(post, from_date)
+            #print post['href']
+            post_archive.delay(post, index_date)
 
 
 @celery.task
