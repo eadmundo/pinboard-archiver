@@ -1,0 +1,420 @@
+--2012-11-26 17:19:40--  https://speakerdeck.com/kennethreitz/python-for-humans
+Resolving speakerdeck.com (speakerdeck.com)... 23.23.245.167, 23.23.246.66, 107.21.253.158
+Connecting to speakerdeck.com (speakerdeck.com)|23.23.245.167|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12327 (12K) [text/html]
+Saving to: `archive/test/speakerdeck.com/kennethreitz/python-for-humans.html'
+
+     0K .......... ..                                         100%  130K=0.09s
+
+2012-11-26 17:19:41 (130 KB/s) - `archive/test/speakerdeck.com/kennethreitz/python-for-humans.html' saved [12327/12327]
+
+Loading robots.txt; please ignore errors.
+--2012-11-26 17:19:41--  https://fonts.googleapis.com/robots.txt
+Resolving fonts.googleapis.com (fonts.googleapis.com)... 173.194.78.95, 2a00:1450:400c:c00::5f
+Connecting to fonts.googleapis.com (fonts.googleapis.com)|173.194.78.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: `archive/test/fonts.googleapis.com/robots.txt'
+
+     0K                                                        3.63M=0s
+
+2012-11-26 17:19:41 (3.63 MB/s) - `archive/test/fonts.googleapis.com/robots.txt' saved [28]
+
+Loading robots.txt; please ignore errors.
+--2012-11-26 17:19:41--  https://speakerdeck.com/robots.txt
+Connecting to speakerdeck.com (speakerdeck.com)|23.23.245.167|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 204 [text/plain]
+Saving to: `archive/test/speakerdeck.com/robots.txt'
+
+     0K                                                       100% 29.5M=0s
+
+2012-11-26 17:19:42 (29.5 MB/s) - `archive/test/speakerdeck.com/robots.txt' saved [204/204]
+
+Loading robots.txt; please ignore errors.
+--2012-11-26 17:19:42--  https://secure.gravatar.com/robots.txt
+Resolving secure.gravatar.com (secure.gravatar.com)... 72.233.69.5, 72.233.61.123, 72.233.61.125, ...
+Connecting to secure.gravatar.com (secure.gravatar.com)|72.233.69.5|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 130 [text/plain]
+Saving to: `archive/test/secure.gravatar.com/robots.txt'
+
+     0K                                                       100% 20.7M=0s
+
+2012-11-26 17:19:42 (20.7 MB/s) - `archive/test/secure.gravatar.com/robots.txt' saved [130/130]
+
+Loading robots.txt; please ignore errors.
+--2012-11-26 17:19:42--  https://speakerd.s3.amazonaws.com/robots.txt
+Resolving speakerd.s3.amazonaws.com (speakerd.s3.amazonaws.com)... 207.171.163.196
+Connecting to speakerd.s3.amazonaws.com (speakerd.s3.amazonaws.com)|207.171.163.196|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 26 [text/plain]
+Saving to: `archive/test/speakerd.s3.amazonaws.com/robots.txt'
+
+     0K                                                       100% 4.99M=0s
+
+2012-11-26 17:19:43 (4.99 MB/s) - `archive/test/speakerd.s3.amazonaws.com/robots.txt' saved [26/26]
+
+--2012-11-26 17:19:43--  https://speakerdeck.com/assets/application-7ac233efd2eba4425b6fa8f7db9a2870.css
+Connecting to speakerdeck.com (speakerdeck.com)|23.23.245.167|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 71172 (70K) [text/css]
+Saving to: `archive/test/speakerdeck.com/assets/application-7ac233efd2eba4425b6fa8f7db9a2870.css'
+
+     0K .......... .......... .......... .......... .......... 71%  135K 0s
+    50K .......... .........                                  100%  218K=0.5s
+
+2012-11-26 17:19:44 (152 KB/s) - `archive/test/speakerdeck.com/assets/application-7ac233efd2eba4425b6fa8f7db9a2870.css' saved [71172/71172]
+
+--2012-11-26 17:19:44--  https://speakerdeck.com/assets/application-4b587c88a476c900044cdb7aaf0c5e16.js
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 266136 (260K) [application/javascript]
+Saving to: `archive/test/speakerdeck.com/assets/application-4b587c88a476c900044cdb7aaf0c5e16.js'
+
+     0K .......... .......... .......... .......... .......... 19%  182K 1s
+    50K .......... .......... .......... .......... .......... 38%  276K 1s
+   100K .......... .......... .......... .......... .......... 57%  538K 0s
+   150K .......... .......... .......... .......... .......... 76% 9.88M 0s
+   200K .......... .......... .......... .......... .......... 96%  579K 0s
+   250K .........                                             100% 32.8M=0.6s
+
+2012-11-26 17:19:45 (406 KB/s) - `archive/test/speakerdeck.com/assets/application-4b587c88a476c900044cdb7aaf0c5e16.js' saved [266136/266136]
+
+--2012-11-26 17:19:45--  https://secure.gravatar.com/avatar/2eccc4005572c1e2b12a9c00580bc86f?s=47
+Connecting to secure.gravatar.com (secure.gravatar.com)|72.233.69.5|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4212 (4.1K) [image/png]
+Saving to: `archive/test/secure.gravatar.com/avatar/2eccc4005572c1e2b12a9c00580bc86f?s=47'
+
+     0K ....                                                  100%  513M=0s
+
+2012-11-26 17:19:46 (513 MB/s) - `archive/test/secure.gravatar.com/avatar/2eccc4005572c1e2b12a9c00580bc86f?s=47' saved [4212/4212]
+
+--2012-11-26 17:19:46--  https://speakerdeck.com/assets/grey-6fa4e48c254e8479b941049c049a0a6f.jpg
+Connecting to speakerdeck.com (speakerdeck.com)|23.23.245.167|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1354 (1.3K) [image/jpeg]
+Saving to: `archive/test/speakerdeck.com/assets/grey-6fa4e48c254e8479b941049c049a0a6f.jpg'
+
+     0K .                                                     100% 4.41M=0s
+
+2012-11-26 17:19:46 (4.41 MB/s) - `archive/test/speakerdeck.com/assets/grey-6fa4e48c254e8479b941049c049a0a6f.jpg' saved [1354/1354]
+
+--2012-11-26 17:19:46--  https://speakerdeck.com/assets/dark-3835687ae3abb07024b966e03a564a6d.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 10880 (11K) [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/dark-3835687ae3abb07024b966e03a564a6d.png'
+
+     0K ..........                                            100%  110K=0.1s
+
+2012-11-26 17:19:46 (110 KB/s) - `archive/test/speakerdeck.com/assets/dark-3835687ae3abb07024b966e03a564a6d.png' saved [10880/10880]
+
+--2012-11-26 17:19:46--  https://speakerdeck.com/assets/logo-ecee27932af3265086007c8cae6da3e9.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1977 (1.9K) [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/logo-ecee27932af3265086007c8cae6da3e9.png'
+
+     0K .                                                     100% 12.7M=0s
+
+2012-11-26 17:19:46 (12.7 MB/s) - `archive/test/speakerdeck.com/assets/logo-ecee27932af3265086007c8cae6da3e9.png' saved [1977/1977]
+
+--2012-11-26 17:19:46--  https://speakerdeck.com/assets/browse-52966c3eee8be4d267006cdc42387708.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 166 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/browse-52966c3eee8be4d267006cdc42387708.png'
+
+     0K                                                       100% 25.3M=0s
+
+2012-11-26 17:19:46 (25.3 MB/s) - `archive/test/speakerdeck.com/assets/browse-52966c3eee8be4d267006cdc42387708.png' saved [166/166]
+
+--2012-11-26 17:19:46--  https://speakerdeck.com/assets/upload-eca18ecc6ee95d7038febcf9eb95631c.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 494 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/upload-eca18ecc6ee95d7038febcf9eb95631c.png'
+
+     0K                                                       100%  139M=0s
+
+2012-11-26 17:19:47 (139 MB/s) - `archive/test/speakerdeck.com/assets/upload-eca18ecc6ee95d7038febcf9eb95631c.png' saved [494/494]
+
+--2012-11-26 17:19:47--  https://speakerdeck.com/assets/amazing-shadow-85f074542b5329e8f6283c895fe55f7e.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 377 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/amazing-shadow-85f074542b5329e8f6283c895fe55f7e.png'
+
+     0K                                                       100%  135M=0s
+
+2012-11-26 17:19:47 (135 MB/s) - `archive/test/speakerdeck.com/assets/amazing-shadow-85f074542b5329e8f6283c895fe55f7e.png' saved [377/377]
+
+--2012-11-26 17:19:47--  https://speakerdeck.com/assets/glass-f412da31dac9ad7f84dcc8ad2219a586.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 243 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/glass-f412da31dac9ad7f84dcc8ad2219a586.png'
+
+     0K                                                       100% 42.4M=0s
+
+2012-11-26 17:19:47 (42.4 MB/s) - `archive/test/speakerdeck.com/assets/glass-f412da31dac9ad7f84dcc8ad2219a586.png' saved [243/243]
+
+--2012-11-26 17:19:47--  https://speakerdeck.com/assets/spinner-dark-eb5ef77147a87011284fd91502cdb9ef.gif
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1440 (1.4K) [image/gif]
+Saving to: `archive/test/speakerdeck.com/assets/spinner-dark-eb5ef77147a87011284fd91502cdb9ef.gif'
+
+     0K .                                                     100% 9.74M=0s
+
+2012-11-26 17:19:47 (9.74 MB/s) - `archive/test/speakerdeck.com/assets/spinner-dark-eb5ef77147a87011284fd91502cdb9ef.gif' saved [1440/1440]
+
+--2012-11-26 17:19:47--  https://speakerdeck.com/assets/spinner-f95b015b366719017e271cb9aa76bd70.gif
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1440 (1.4K) [image/gif]
+Saving to: `archive/test/speakerdeck.com/assets/spinner-f95b015b366719017e271cb9aa76bd70.gif'
+
+     0K .                                                     100% 4.35M=0s
+
+2012-11-26 17:19:47 (4.35 MB/s) - `archive/test/speakerdeck.com/assets/spinner-f95b015b366719017e271cb9aa76bd70.gif' saved [1440/1440]
+
+--2012-11-26 17:19:47--  https://speakerdeck.com/assets/white-302ef3fc97b0686650be012153076d3c.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 10815 (11K) [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/white-302ef3fc97b0686650be012153076d3c.png'
+
+     0K ..........                                            100%  116K=0.09s
+
+2012-11-26 17:19:47 (116 KB/s) - `archive/test/speakerdeck.com/assets/white-302ef3fc97b0686650be012153076d3c.png' saved [10815/10815]
+
+--2012-11-26 17:19:47--  https://speakerdeck.com/assets/close_tab-066413bdf4e91e313a6913dfe1747d52.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 140 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/close_tab-066413bdf4e91e313a6913dfe1747d52.png'
+
+     0K                                                       100% 16.5M=0s
+
+2012-11-26 17:19:48 (16.5 MB/s) - `archive/test/speakerdeck.com/assets/close_tab-066413bdf4e91e313a6913dfe1747d52.png' saved [140/140]
+
+--2012-11-26 17:19:48--  https://speakerdeck.com/assets/twitter-login-white-d2c6aa0aef7e275f467cb58074f9d681.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1515 (1.5K) [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/twitter-login-white-d2c6aa0aef7e275f467cb58074f9d681.png'
+
+     0K .                                                     100% 1.18M=0.001s
+
+2012-11-26 17:19:48 (1.18 MB/s) - `archive/test/speakerdeck.com/assets/twitter-login-white-d2c6aa0aef7e275f467cb58074f9d681.png' saved [1515/1515]
+
+--2012-11-26 17:19:48--  https://speakerdeck.com/assets/facebook-login-white-8111b67b6b281656fcd89cea7c49c7fc.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1121 (1.1K) [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/facebook-login-white-8111b67b6b281656fcd89cea7c49c7fc.png'
+
+     0K .                                                     100%  372M=0s
+
+2012-11-26 17:19:48 (372 MB/s) - `archive/test/speakerdeck.com/assets/facebook-login-white-8111b67b6b281656fcd89cea7c49c7fc.png' saved [1121/1121]
+
+--2012-11-26 17:19:48--  https://speakerdeck.com/assets/github-login-white-e14a9079de2f201d54353b820d7b3d60.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1845 (1.8K) [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/github-login-white-e14a9079de2f201d54353b820d7b3d60.png'
+
+     0K .                                                     100% 11.3M=0s
+
+2012-11-26 17:19:48 (11.3 MB/s) - `archive/test/speakerdeck.com/assets/github-login-white-e14a9079de2f201d54353b820d7b3d60.png' saved [1845/1845]
+
+--2012-11-26 17:19:48--  https://speakerdeck.com/assets/twitter-login-8854c05cf86624e61ca287662e5e64b9.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1614 (1.6K) [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/twitter-login-8854c05cf86624e61ca287662e5e64b9.png'
+
+     0K .                                                     100%  741M=0s
+
+2012-11-26 17:19:49 (741 MB/s) - `archive/test/speakerdeck.com/assets/twitter-login-8854c05cf86624e61ca287662e5e64b9.png' saved [1614/1614]
+
+--2012-11-26 17:19:49--  https://speakerdeck.com/assets/facebook-login-36e6463e1b429bdc02cdbd122f2de136.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1152 (1.1K) [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/facebook-login-36e6463e1b429bdc02cdbd122f2de136.png'
+
+     0K .                                                     100%  518M=0s
+
+2012-11-26 17:19:49 (518 MB/s) - `archive/test/speakerdeck.com/assets/facebook-login-36e6463e1b429bdc02cdbd122f2de136.png' saved [1152/1152]
+
+--2012-11-26 17:19:49--  https://speakerdeck.com/assets/github-login-64bf52d20b72b88d6ff9e51833b4f1b0.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1688 (1.6K) [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/github-login-64bf52d20b72b88d6ff9e51833b4f1b0.png'
+
+     0K .                                                     100% 13.4M=0s
+
+2012-11-26 17:19:49 (13.4 MB/s) - `archive/test/speakerdeck.com/assets/github-login-64bf52d20b72b88d6ff9e51833b4f1b0.png' saved [1688/1688]
+
+--2012-11-26 17:19:49--  https://speakerdeck.com/assets/sd-login-22509a75c2425a1afa4c174c149375d0.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1651 (1.6K) [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/sd-login-22509a75c2425a1afa4c174c149375d0.png'
+
+     0K .                                                     100% 9.68M=0s
+
+2012-11-26 17:19:49 (9.68 MB/s) - `archive/test/speakerdeck.com/assets/sd-login-22509a75c2425a1afa4c174c149375d0.png' saved [1651/1651]
+
+--2012-11-26 17:19:49--  https://speakerdeck.com/assets/icon/edit_hover-6787c5b4b0d5a7a3d53995694c5976e5.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 763 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/edit_hover-6787c5b4b0d5a7a3d53995694c5976e5.png'
+
+     0K                                                       100% 2.82G=0s
+
+2012-11-26 17:19:49 (2.82 GB/s) - `archive/test/speakerdeck.com/assets/icon/edit_hover-6787c5b4b0d5a7a3d53995694c5976e5.png' saved [763/763]
+
+--2012-11-26 17:19:49--  https://speakerdeck.com/assets/icon/like_active-813fddf229193f9c24c7440a7d46f243.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1000 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/like_active-813fddf229193f9c24c7440a7d46f243.png'
+
+     0K                                                       100%  395M=0s
+
+2012-11-26 17:19:49 (395 MB/s) - `archive/test/speakerdeck.com/assets/icon/like_active-813fddf229193f9c24c7440a7d46f243.png' saved [1000/1000]
+
+--2012-11-26 17:19:49--  https://speakerdeck.com/assets/icon/twitter_hover-7942da774365a4ee442e474f78679485.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 478 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/twitter_hover-7942da774365a4ee442e474f78679485.png'
+
+     0K                                                       100%  118M=0s
+
+2012-11-26 17:19:49 (118 MB/s) - `archive/test/speakerdeck.com/assets/icon/twitter_hover-7942da774365a4ee442e474f78679485.png' saved [478/478]
+
+--2012-11-26 17:19:49--  https://speakerdeck.com/assets/icon/edit-ac875bb7caac05fae6c44966d26ffe6a.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 753 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/edit-ac875bb7caac05fae6c44966d26ffe6a.png'
+
+     0K                                                       100% 94.8M=0s
+
+2012-11-26 17:19:50 (94.8 MB/s) - `archive/test/speakerdeck.com/assets/icon/edit-ac875bb7caac05fae6c44966d26ffe6a.png' saved [753/753]
+
+--2012-11-26 17:19:50--  https://speakerdeck.com/assets/icon/embed_hover-a900f224b5311cd434630d89fb740b46.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 539 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/embed_hover-a900f224b5311cd434630d89fb740b46.png'
+
+     0K                                                       100%  153M=0s
+
+2012-11-26 17:19:50 (153 MB/s) - `archive/test/speakerdeck.com/assets/icon/embed_hover-a900f224b5311cd434630d89fb740b46.png' saved [539/539]
+
+--2012-11-26 17:19:50--  https://speakerdeck.com/assets/icon/link_hover-57377e00d53bc8560614bf25e0bb15e2.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 626 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/link_hover-57377e00d53bc8560614bf25e0bb15e2.png'
+
+     0K                                                       100%  216M=0s
+
+2012-11-26 17:19:50 (216 MB/s) - `archive/test/speakerdeck.com/assets/icon/link_hover-57377e00d53bc8560614bf25e0bb15e2.png' saved [626/626]
+
+--2012-11-26 17:19:50--  https://speakerdeck.com/assets/icon/download_hover-8365951fd92d57d1e4c46089b274c654.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 323 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/download_hover-8365951fd92d57d1e4c46089b274c654.png'
+
+     0K                                                       100%  158M=0s
+
+2012-11-26 17:19:50 (158 MB/s) - `archive/test/speakerdeck.com/assets/icon/download_hover-8365951fd92d57d1e4c46089b274c654.png' saved [323/323]
+
+--2012-11-26 17:19:50--  https://speakerdeck.com/assets/icon/like-3f680ba2c9f055b8a3e4af8cc632d936.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 375 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/like-3f680ba2c9f055b8a3e4af8cc632d936.png'
+
+     0K                                                       100%  516M=0s
+
+2012-11-26 17:19:52 (516 MB/s) - `archive/test/speakerdeck.com/assets/icon/like-3f680ba2c9f055b8a3e4af8cc632d936.png' saved [375/375]
+
+--2012-11-26 17:19:52--  https://speakerdeck.com/assets/icon/category-f651ef2adc57bbbd76fb495b6e217066.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 299 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/category-f651ef2adc57bbbd76fb495b6e217066.png'
+
+     0K                                                       100% 72.2M=0s
+
+2012-11-26 17:19:52 (72.2 MB/s) - `archive/test/speakerdeck.com/assets/icon/category-f651ef2adc57bbbd76fb495b6e217066.png' saved [299/299]
+
+--2012-11-26 17:19:52--  https://speakerdeck.com/assets/icon/stats-c2e6dab18c89c7081b856ddc279cc423.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 1153 (1.1K) [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/stats-c2e6dab18c89c7081b856ddc279cc423.png'
+
+     0K .                                                     100%  223M=0s
+
+2012-11-26 17:19:52 (223 MB/s) - `archive/test/speakerdeck.com/assets/icon/stats-c2e6dab18c89c7081b856ddc279cc423.png' saved [1153/1153]
+
+--2012-11-26 17:19:52--  https://speakerdeck.com/assets/icon/twitter-08f65c5c1e3e7b30ec7f31303a9b86ae.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 473 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/twitter-08f65c5c1e3e7b30ec7f31303a9b86ae.png'
+
+     0K                                                       100%  156M=0s
+
+2012-11-26 17:19:53 (156 MB/s) - `archive/test/speakerdeck.com/assets/icon/twitter-08f65c5c1e3e7b30ec7f31303a9b86ae.png' saved [473/473]
+
+--2012-11-26 17:19:53--  https://speakerdeck.com/assets/icon/embed-f8362e42f63f1f7efc3963fc787f6d79.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 537 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/embed-f8362e42f63f1f7efc3963fc787f6d79.png'
+
+     0K                                                       100% 82.3M=0s
+
+2012-11-26 17:19:53 (82.3 MB/s) - `archive/test/speakerdeck.com/assets/icon/embed-f8362e42f63f1f7efc3963fc787f6d79.png' saved [537/537]
+
+--2012-11-26 17:19:53--  https://speakerdeck.com/assets/icon/link-9ef7beea903125a6fc372e9720aea5c3.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 625 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/link-9ef7beea903125a6fc372e9720aea5c3.png'
+
+     0K                                                       100% 91.1M=0s
+
+2012-11-26 17:19:53 (91.1 MB/s) - `archive/test/speakerdeck.com/assets/icon/link-9ef7beea903125a6fc372e9720aea5c3.png' saved [625/625]
+
+--2012-11-26 17:19:53--  https://speakerdeck.com/assets/icon/download-a143be9114e8957911817f2355ec4e3f.png
+Reusing existing connection to speakerdeck.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 329 [image/png]
+Saving to: `archive/test/speakerdeck.com/assets/icon/download-a143be9114e8957911817f2355ec4e3f.png'
+
+     0K                                                       100%  154M=0s
+
+2012-11-26 17:19:53 (154 MB/s) - `archive/test/speakerdeck.com/assets/icon/download-a143be9114e8957911817f2355ec4e3f.png' saved [329/329]
+
+FINISHED --2012-11-26 17:19:53--
+Total wall clock time: 13s
+Downloaded: 40 files, 393K in 1.4s (284 KB/s)
+Converting archive/test/speakerdeck.com/kennethreitz/python-for-humans.html... 9-40
+Converting archive/test/speakerdeck.com/assets/application-7ac233efd2eba4425b6fa8f7db9a2870.css... 76-0
+Converted 2 files in 0.03 seconds.

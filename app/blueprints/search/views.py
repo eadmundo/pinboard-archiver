@@ -10,7 +10,7 @@ def results():
 
     page = int(request.args.get('page', 1))
     qstr = request.args.get('q', '')
-    size = 10
+    size = 20
 
     es = rawes.Elastic('localhost:9200')
 
@@ -25,8 +25,8 @@ def results():
             }
         }
 
-    print qstr
-    print query
+    #print qstr
+    #print query
 
     results = es.get('bookmarks/bookmark/_search', data={
         'version': True,
@@ -39,8 +39,10 @@ def results():
         }
     })
 
+    #print results
+
     pagination = Pagination(page, size, results['hits']['total'], results['hits']['hits'])
 
-    #pprint(pagination.items)
+    pprint(pagination.pages)
 
     return render_template('srp.jinja', pagination=pagination, qstr=qstr)

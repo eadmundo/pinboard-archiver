@@ -10,17 +10,18 @@ import re
 import sys
 import os
 from datetime import datetime
+from httpretty import HTTPretty
 
 celery = Celery()
 celery.config_from_object(celeryconfig)
 
-auth_token = 'edwardjstone:OTC3ZDJMZGNJN2E5MGY2'
+auth_token = 'edwardjstone:MGRKNJYZNTNIMTC4NZK4'
 base_qstr = '?format=json&auth_token=%s' % auth_token
 base_api_url = 'https://api.pinboard.in/v1/'
 
-get_results = 5
+get_results = 50
 start_from = 0
-wait_for = 10  # seconds
+wait_for = 300  # seconds
 
 es_host = 'http://localhost:9200/'
 es_index = 'bookmarks'
@@ -29,14 +30,18 @@ datetime_mask = "%Y-%m-%dT%H:%M:%SZ"
 
 
 def posts_update_date():
-    #r = requests.get('%sposts/update%s' % (base_api_url, base_qstr))
-    #return datetime.strptime(r.json.get('update_time'), "%Y-%m-%dT%H:%M:%SZ")
-    return datetime.strptime('2012-11-20T12:45:30Z', datetime_mask)
+    url = '%sposts/update%s' % (base_api_url, base_qstr)
+    #print url
+    #sys.exit()
+    r = requests.get(url)
+    return datetime.strptime(r.json.get('update_time'), "%Y-%m-%dT%H:%M:%SZ")
+    #return datetime.strptime("2012-11-27T15:18:34Z", datetime_mask)
 
 
 @celery.task
 def posts_update():
     most_recent = posts_update_date()
+    #most_recent_str = datetime.strftime(most_recent, datetime_mask)
     query = {
         "from": 0,
         "size": 1,
@@ -44,15 +49,18 @@ def posts_update():
             "match_all": {}
         },
         "sort": {
-            "posts_update": {
+            "last_updated": {
                 "order": "desc"
             }
         },
-        "fields": ["posts_update"]
+        "fields": ["last_updated"]
     }
     r = requests.get('%s%s/_search' % (es_host, es_index), data=json.dumps(query))
-    last_update_str = r.json['hits']['hits'][0]['fields']['posts_update']
+    #print r.json['hits']['hits']
+    last_update_str = r.json['hits']['hits'][0]['fields']['last_updated']
     last_update = datetime.strptime(last_update_str, datetime_mask)
+    print last_update
+    print most_recent
     if last_update < most_recent:
         print "there's an update - getting posts"
         get_posts.delay(start_from, get_results, from_date=last_update_str)
@@ -63,25 +71,41 @@ def posts_index_all():
     get_posts.apply_async((start_from, get_results, None))
 
 
+debug = False
+
+
 @celery.task
 def get_posts(start, results, from_date):
     url = '%sposts/all%s&start=%d&results=%d' % (base_api_url, base_qstr, start, results)
     if from_date is not None:
         url = '%s&fromdt=%s' % (url, from_date)
+        index_date = from_date
     else:
-        from_date = datetime.strftime(posts_update_date(), datetime_mask)
-    #r = requests.get(url)
-    #rjson = r.json
+        index_date = datetime.strftime(posts_update_date(), datetime_mask)
+    print url
+    if debug:
+        with open('debug-api/start=%d&results=%d.json' % (start, results)) as f:
+            body_text = f.read()
+        #print body_text
+        HTTPretty.enable()
+        HTTPretty.register_uri(HTTPretty.GET, url, body=body_text, content_type="application/json")
+    r = requests.get(url)
+    if debug:
+        HTTPretty.disable()
+    print r.status_code
+    rjson = r.json
     print from_date
-    rjson = json.loads(open('all.json').read())[start:start+results]
+    #rjson = json.loads(open('all.json').read())[start:start+results]
     print len(rjson)
     print start, results
     #last_update = datetime.strptime(from_date, datetime_mask)
     if len(rjson):
-        get_posts.apply_async((start + results, results, from_date), countdown=wait_for)
+        if len(rjson) == results:
+            get_posts.apply_async((start + results, results, from_date), countdown=wait_for)
         for post in rjson:
-            print post['href']
-            #post_archive.delay(post, from_date)
+            #print post['href']
+            #pass
+            post_archive.delay(post, index_date)
 
 
 @celery.task
@@ -116,13 +140,17 @@ def post_archive(post, update_date):
     #print "indexed", indexed
 
     archive_path = '%s%s%s' % (archive_directory, o.netloc, o.path)
-    if len(o.query):
-        archive_path = '%s?%s' % (archive_path, o.query)
+    #if o.path.endswith('/'):
+    #    archive_path = '%sindex.html' % (archive_path)
+    #if len(o.query):
+    #    archive_path = '%s?%s' % (archive_path, o.query)
 
     if not fetched or url_changed:
         print "wget -E -H -k -K -p -P 'archive/%s' '%s'" % (post['hash'], post['href'])
         e = envoy.run("wget -E -H -k -K -p -P 'archive/%s' '%s'" % (post['hash'], post['href']))
-        match = re.search('(%s.*)\' saved' % re.escape(archive_path), e.std_err)
+        #print e.std_err
+        #print archive_path
+        match = re.search("Saving to: %s(.*)'" % re.escape('`'), e.std_err)
         archive_url = 'http://localhost:8080/%s' % match.group(1)
         archive_path = '/vagrant/%s' % match.group(1)
         changed = True
@@ -143,6 +171,7 @@ def post_archive(post, update_date):
     #sys.exit()
 
     #print "changed", changed
+    #changed = True
 
     if not indexed or changed:
         #sys.exit()
@@ -162,6 +191,7 @@ def post_archive(post, update_date):
             "posts_update": update_date,
             "hash": post['hash'],
             "archive_url": archive_url,
+            "last_updated": post['time'],
         }
         data = {
             "doc": post_data,

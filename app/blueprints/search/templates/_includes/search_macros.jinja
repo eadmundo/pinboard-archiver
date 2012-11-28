@@ -21,7 +21,8 @@ https://mikewest.org/2010/02/an-accessible-pagination-pattern
 #}
 <p id="paginglabel" class="audible">Pagination</p>
 <ul role="navigation" aria-labelledby="paginglabel">
-{% for i in range(1, [num_pages + 1, 8]|sort|first) %}
+{#{ [num_pages + 1, 8]|sort|first}#}
+{% for i in range(1, num_pages + 1) %}
     <li>{{ pagination_item(i, page, terms) }}</li>
 {% endfor %}
 </ul>

@@ -1,4 +1,5 @@
 {% from '_includes/search_macros.jinja' import pagination_ui %}
+<p>There are {{ pagination.total_count }} results in total.</p>
 <ul>
 {% for result in pagination.items %}
     <li><a href="{{ result['fields']['archive_url']|replace('archive/', '') }}">{{ result['fields']['title'] }}</a></li>
