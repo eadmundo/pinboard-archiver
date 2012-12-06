@@ -15,12 +15,12 @@ from boilerpipe.extract import Extractor
 
 import json
 import re
-from tasks import post_archive, posts_index_all, posts_update, get_posts, test_extraction
+from tasks import post_archive, posts_index_all, posts_update, get_posts
 
 #post = json.loads('{"description": "isolani - Web Standards: Web App Mistakes: Condemned to repeat","extended": "","hash": "3d97600671eec824e1e00a568593568a","href": "http://isolani.co.uk/blog/standards/WebAppMistakesWeAreCondemnedToRepeat","meta": "2da2ce176998ead694fcb2ae5e406024","shared": "no","tags": "","time": "2012-11-16T12:08:27Z","toread": "yes"}')
 
-json_data = open('debug-api/start=100&results=50.json').read()
-posts = json.loads(json_data)
+#json_data = open('debug-api/start=100&results=50.json').read()
+#posts = json.loads(json_data)
 
 #for post in posts:
 #    print post['href']

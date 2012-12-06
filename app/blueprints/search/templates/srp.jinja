@@ -2,7 +2,7 @@
 <p>There are {{ pagination.total_count }} results in total.</p>
 <ul>
 {% for result in pagination.items %}
-    <li><a href="{{ result['fields']['archive_url']|replace('archive/', '') }}">{{ result['fields']['title'] }}</a></li>
+    <li><a href="{{ result['fields']['archive_url'] }}">{{ result['fields']['title'] }}</a></li>
 {% endfor %}
 </ul>
 {{ pagination_ui(pagination.pages, pagination.page, qstr) }}

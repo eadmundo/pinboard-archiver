@@ -18,11 +18,17 @@ def results():
         query = {
             'match_all': {}
         }
+        sort = {
+            'last_updated': 'desc'
+        }
     else:
         query = {
             'term': {
                 '_all': qstr
             }
+        }
+        sort = {
+            '_score': 'desc'
         }
 
     #print qstr
@@ -31,15 +37,13 @@ def results():
     results = es.get('bookmarks/bookmark/_search', data={
         'version': True,
         'query': query,
-        'fields': ['title', 'archive_url'],
+        'fields': ['title', 'archive_url', 'last_updated'],
         'size': size,
         'from': (page * size) - size,
-        'sort': {
-            '_score': 'desc'
-        }
+        'sort': sort,
     })
 
-    #print results
+    print results
 
     pagination = Pagination(page, size, results['hits']['total'], results['hits']['hits'])
 

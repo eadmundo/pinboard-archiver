@@ -109,10 +109,10 @@ class elasticsearch {
     content => template('elasticsearch/bookmarks-index-settings.json'),
   }
 
-  exec { 'bookmarks-index':
-    command => "/usr/bin/curl -XPUT http://localhost:9200/bookmarks/ -d @bookmarks-index-settings.json",
-    cwd => '/tmp',
-    require => [Service[elasticsearch], Package[curl], File['/tmp/bookmarks-index-settings.json']],
-  }
+  #exec { 'bookmarks-index':
+  #  command => "/usr/bin/curl -XPUT http://localhost:9200/bookmarks/ -d @bookmarks-index-settings.json",
+  #  cwd => '/tmp',
+  #  require => [Service[elasticsearch], Package[curl], File['/tmp/bookmarks-index-settings.json']],
+  #}
 
 }

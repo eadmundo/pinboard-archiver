@@ -140,7 +140,7 @@ path.conf: /etc/elasticsearch
 
 # Path to directory where to store index data allocated for this node.
 #
-path.data: /var/lib/elasticsearch
+path.data: /vagrant/data
 #
 # Can optionally include more than one location, causing data to be striped across
 # the locations (à la RAID 0) on a file level, favouring locations with most free

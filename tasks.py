@@ -3,7 +3,7 @@ import requests
 import envoy
 from celery import Celery
 import celeryconfig
-from boilerpipe.extract import Extractor
+#from boilerpipe.extract import Extractor
 from bs4 import UnicodeDammit
 import json
 import re
@@ -15,7 +15,7 @@ from httpretty import HTTPretty
 celery = Celery()
 celery.config_from_object(celeryconfig)
 
-auth_token = 'edwardjstone:MGRKNJYZNTNIMTC4NZK4'
+auth_token = 'edwardjstone:MWU0MTRMM2IYYZQ3YZGX'
 base_qstr = '?format=json&auth_token=%s' % auth_token
 base_api_url = 'https://api.pinboard.in/v1/'
 
@@ -107,13 +107,13 @@ def get_posts(start, results, from_date):
             #pass
             post_archive.delay(post, index_date)
 
-
+"""
 @celery.task
 def test_extraction():
     extractor = Extractor(extractor='ArticleExtractor', url='http://paulgraham.com/startupideas.html')
     print 'extractor created'
     print extractor.getText()
-
+"""
 
 @celery.task
 def post_archive(post, update_date):
@@ -201,7 +201,7 @@ def post_archive(post, update_date):
         r = requests.post(url, data=json.dumps(data).encode('utf-8'))
         print r.status_code
 
-
+"""
 @celery.task
 def post_index(post):
     extractor = Extractor(extractor='ArticleExtractor', url=post['href'])
@@ -210,3 +210,4 @@ def post_index(post):
     data = '{"title":"%s", "url":"%s", "text":"%s"}' % (post['description'], post['href'], post_text.replace('"', '\\"'))
     r = requests.put(url, data=data)
     print r.status_code
+"""
