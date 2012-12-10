@@ -37,8 +37,8 @@ from tasks import post_archive, posts_index_all, posts_update, get_posts
 
 #posts_index_all.delay()
 
-#posts_update()
-posts_update.delay()
+posts_update()
+#posts_update.delay()
 #print posts[0]
 
 #for i, post in enumerate(posts):

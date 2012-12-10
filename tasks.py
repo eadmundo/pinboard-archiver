@@ -3,8 +3,6 @@ import requests
 import envoy
 from celery import Celery
 import celeryconfig
-#from boilerpipe.extract import Extractor
-from bs4 import UnicodeDammit
 import json
 import re
 import sys
@@ -12,10 +10,16 @@ import os
 from datetime import datetime
 from httpretty import HTTPretty
 
+from app import create_app
+
+flask_app = create_app()
 celery = Celery()
 celery.config_from_object(celeryconfig)
+celery.add_defaults(flask_app.config)
 
-auth_token = 'edwardjstone:MWU0MTRMM2IYYZQ3YZGX'
+#sys.exit()
+
+auth_token = 'edwardjstone:NWM4MWEZNTDKNDBIZTLI'
 base_qstr = '?format=json&auth_token=%s' % auth_token
 base_api_url = 'https://api.pinboard.in/v1/'
 
@@ -23,8 +27,8 @@ get_results = 50
 start_from = 0
 wait_for = 300  # seconds
 
-es_host = 'http://localhost:9200/'
-es_index = 'bookmarks'
+es_host = celery.conf.get('ES_HOST')
+es_index = celery.conf.get('ES_INDEX')
 
 datetime_mask = "%Y-%m-%dT%H:%M:%SZ"
 
@@ -114,6 +118,7 @@ def test_extraction():
     print 'extractor created'
     print extractor.getText()
 """
+
 
 @celery.task
 def post_archive(post, update_date):

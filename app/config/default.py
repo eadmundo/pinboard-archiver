@@ -12,3 +12,9 @@ DEFAULT_MAIL_SENDER = 'vagrant@%s' % socket.getfqdn()
 
 # General email address for admins and errors
 ADMIN_RECIPIENTS = ERROR_EMAIL = ['vagrant@localhost']
+
+# Elasticsearch hostname
+ES_HOST = 'http://localhost:9200/'
+
+# ES index
+ES_INDEX = 'bookmarks'
