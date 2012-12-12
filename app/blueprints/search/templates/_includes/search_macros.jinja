@@ -28,9 +28,22 @@ https://mikewest.org/2010/02/an-accessible-pagination-pattern
 </ul>
 {% endmacro %}
 
+{% macro bcpagination_ui(pagination, current_page, terms) %}
+    <div class="pagination">
+        <p id="paginglabel" class="audible">Pagination</p>
+        <ul role="navigation" aria-labelledby="paginglabel">
+        {% for  page in pagination %}
+            <li{% if page == current_page %} class="active"{% elif page == '...' %} class="disabled"{% endif %}>{{ pagination_item(page, current_page, terms) }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endmacro %}
+
 {% macro pagination_item(i, current, terms) -%}
     {% if i == current %}
-        <p><span class="audible">You&rsquo;re currently reading Search Results Page </span>{{ i }}</p>
+        {% call pagination_link(i, terms) %}
+            <span class="audible">You&rsquo;re currently reading Search Results Page </span>{{ i }}
+        {% endcall %}
     {% elif i == current - 1 %}
         {% call pagination_link(i, terms, rel="prev") %}
             <span class="prev">Previous<span class="audible">: Search Results Page </span></span>{{ i }}
@@ -39,6 +52,8 @@ https://mikewest.org/2010/02/an-accessible-pagination-pattern
         {% call pagination_link(i, terms, rel="next") %}
             <span class="next">Next<span class="audible">: Search Results Page </span></span>{{ i }}
         {% endcall %}
+    {% elif i == '...' %}
+        <a>{{ i }}</a>
     {% else %}
         {% call pagination_link(i, terms) %}
             <span class="audible">Search Results Page</span> {{ i }}

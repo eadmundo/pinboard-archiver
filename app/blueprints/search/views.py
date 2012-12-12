@@ -1,7 +1,7 @@
 from pprint import pprint
 from flask import request, render_template
 import rawes
-from app.helpers import Pagination
+from app.helpers import Pagination, BellCurvePagination
 from . import blueprint
 
 
@@ -10,7 +10,7 @@ def results():
 
     page = int(request.args.get('page', 1))
     qstr = request.args.get('q', '')
-    size = 20
+    size = 15
 
     es = rawes.Elastic('localhost:9200')
 
@@ -43,10 +43,14 @@ def results():
         'sort': sort,
     })
 
-    print results
+    #print results
 
     pagination = Pagination(page, size, results['hits']['total'], results['hits']['hits'])
 
-    pprint(pagination.pages)
+    bcpagination = BellCurvePagination(page, size, results['hits']['total'], results['hits']['hits'])
 
-    return render_template('srp.jinja', pagination=pagination, qstr=qstr)
+    #print bcpagination.pagination
+
+    #pprint(pagination.pages)
+
+    return render_template('srp.jinja', pagination=bcpagination, qstr=qstr)

@@ -1,6 +1,7 @@
 import os
 import logging
 from flask import Flask
+from app.extensions.assets import configure_assets
 
 DEFAULT_BLUEPRINTS = [
     ('search', ''),
@@ -29,8 +30,8 @@ def create_app(config=None, blueprints=None):
 
     # Configure assets last so that blueprints can have a chance to import and
     # add their static files to the asset bundles.
-    # configure_assets(app)
-    # configure_extensions(app)
+    configure_assets(app)
+    #configure_extensions(app)
 
     return app
 

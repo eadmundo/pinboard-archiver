@@ -1,8 +1,14 @@
-{% from '_includes/search_macros.jinja' import pagination_ui %}
-<p>There are {{ pagination.total_count }} results in total.</p>
-<ul>
-{% for result in pagination.items %}
-    <li><a href="{{ result['fields']['archive_url'] }}">{{ result['fields']['title'] }}</a></li>
-{% endfor %}
-</ul>
-{{ pagination_ui(pagination.pages, pagination.page, qstr) }}
+{% extends 'base.jinja' %}
+
+{% block body %}
+    {% from '_includes/search_macros.jinja' import bcpagination_ui %}
+    <p>There are {{ pagination.total_count }} results in total.</p>
+    <ul>
+    {% for result in pagination.items %}
+        <li><a href="{{ result['fields']['archive_url'] }}">{{ result['fields']['title'] }}</a></li>
+    {% endfor %}
+    </ul>
+    {#{ pagination_ui(pagination.pages, pagination.page, qstr) }#}
+    {{ bcpagination_ui(pagination.pagination, pagination.page, qstr) }}
+
+{% endblock body %}

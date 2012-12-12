@@ -1,0 +1,29 @@
+.pagination {
+    position: relative;
+    width: 450px;
+    /*background: green;*/
+    padding-left: 100px;
+}
+
+.audible {
+    left: -999em;
+    position: absolute;
+}
+
+.prev {
+    position: absolute;
+    left: 0;
+}
+
+.prev:before {
+    content: "← ";
+}
+
+.next {
+    position: absolute;
+    right: -5em;
+    top: -3px;
+}
+.next:after {
+    content: " →";
+}

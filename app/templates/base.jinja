@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        {% assets 'css_main' -%}
+        <link rel="stylesheet{% if ASSET_URL.endswith('.less') %}/less{% endif %}" href="{{ ASSET_URL }}" media="screen" />
+        {% endassets %}
+    </head>
+
+    <body>
+
+        {% block body %}
+        {% endblock body %}
+
+    </body>
+</html>
